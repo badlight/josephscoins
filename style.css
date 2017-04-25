@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+h1 {
+  text-align: center;
+  color:  grey;
+  font-size: 50px;
+}
+
+body {
+  text-align: center;
+  font-family: 'Crimson Text', serif;
+  font-size: 22px;
+  background-color: white;
+  color: black;
+}
+
+strong {
+  font-weight: bold;
+  color: white;
+  font-size: 25px
+}
+
+em {
+  color: white;
+}
+
+.pic {
+  border: 1px solid darkgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-width: thick;
+  width: 500px;
+}
+
+.big_pic{
+  border: 5px solid darkgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 750px;
+}
+
+.coin {
+  margin-top: 25px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 512.5px;
+  background-color: darkgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.coin:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.coin_page {
+  padding-bottom: 25px;
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  width: 762.5px;
+  background-color: darkgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.caption-title {
+  display: block;
+  color: white;
+  font-size: 25px;
+}
+
+.caption-subtitle {
+  display: block;
+  color: white;
+  font-style: italic;
+  padding-bottom: 25px;
+  font-size: 22px;
+}
+
+.coin-title {
+  font-size: 30px;
+}
+
+.coin-subtitle {
+  font-size: 22px;
+  font-style: italic;
+  margin-top: -30px;
+}
+
+.description {
+  font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgrey;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.inactive:hover {
+  background-color: grey;
+}
+
+.active {
+  background-color: grey;
+}
+
+.inactive-null {
+  pointer-events: none;
+  curosr: default;
+  color: silver;
+}
