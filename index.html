@@ -14,125 +14,48 @@
   <li><a class="inactive" href="#about">About</a></li>
 </ul>
 
-<div class="coin">
-  <a href="./coins/trajan.html" style="text-decoration:none">
-    <img src="./images/trajan.jpg" class="pic"/>
-    <span class="caption-title">
-      Trajan</br>
-      <span class="caption-subtitle">
-        AR Denarius
-      </span>
-    </span>
-  </a>
-</div>
+<script type='text/javascript'>
+  window.onload=function(){
+  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        var response = JSON.parse(xhttp.responseText);
+        var coins = response.coins; 
+        
+        for (var key in coins) {
+          for (var i = 0; i < coins[key].length; i++) {
+            var imp = coins[key][i].emperor;
+            var title = coins[key][i].file
+            var mat = coins[key][i].material;
+            var denom = coins[key][i].denomination;
+            var card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML =
+              '<div  class="coin">' +
+              '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
+              '    <img src="./images/' + title + '.jpg" class="pic"/>' +
+              '    <span class="caption-title">' +
+              '      ' + imp + '</br>' +
+              '      <span class="caption-subtitle">' +
+              '        ' + mat + ' ' + denom +
+              '      </span>' +
+              '    </span>' +
+              '  </a>' +
+              '</div>';
+            document.getElementById(key).appendChild(card);
+          }
+        }
+      }
+    }
+  }
+     
+  xhttp.open("GET", "coins.json", true);
+  xhttp.send();
 
-<div class="coin">
-  <a href="./coins/hadrian.html" style="text-decoration:none">
-    <img src="./images/hadrian.jpg" class="pic"/>
-    <span class="caption-title">
-      Hadrian</br>
-      <span class="caption-subtitle">
-        AR Denarius
-      </span>
-    </span>
-  </a>
-</div>
+</script>
 
-<div class="coin">
-  <a href="./coins/antoninuspius.html" style="text-decoration:none">
-    <img src="./images/antoninuspius.jpg" class="pic"/>
-    <span class="caption-title">
-      Antoninus Pius</br>
-      <span class="caption-subtitle">
-        AR Denarius
-      </span>
-    </span>
-  </a>
-</div>
-
-<div class="coin">
-  <a href="./coins/septimiusseverus.html" style="text-decoration:none">
-    <img src="./images/septimiusseverus.jpg" class="pic"/>
-    <span class="caption-title">
-      Septimius Severus</br>
-      <span class="caption-subtitle">
-        AR Denarius
-      </span>
-    </span>
-  </a>
-</div>
-
-<div class="coin">
-  <a href="./coins/caracalla.html" style="text-decoration:none">
-    <img src="./images/caracalla.jpg" class="pic"/>
-    <span class="caption-title">
-      Caracalla</br>
-      <span class="caption-subtitle">
-        AR Denarius
-      </span>
-    </span>
-  </a>
-</div>
-
-<div class="coin">
-  <a href="./coins/severusalexander.html" style="text-decoration:none">
-    <img src="./images/severusalexander.jpg" class="pic"/>
-    <span class="caption-title">
-      Severus Alexander</br>
-      <span class="caption-subtitle">
-        AE Sestertius
-      </span>
-    </span>
-  </a>
-</div>
-
-<div class="coin">
-  <a href="./coins/gordianiii.html" style="text-decoration:none">
-    <img src="./images/gordianiii.jpg" class="pic"/>
-    <span class="caption-title">
-      Gordian III</br>
-      <span class="caption-subtitle">
-        AR Antoninianus
-      </span>
-    </span>
-  </a>
-</div>
-
-<div class="coin">
-  <a href="./coins/valeriani.html" style="text-decoration:none">
-    <img src="./images/valeriani.jpg" class="pic"/>
-    <span class="caption-title">
-      Valerian I</br>
-      <span class="caption-subtitle">
-        AE Antoninianus
-      </span>
-    </span>
-  </a>
-</div>
-
-<div class="coin">
-  <a href="./coins/aurelian.html" style="text-decoration:none">
-    <img src="./images/aurelian.jpg" class="pic"/>
-    <span class="caption-title">
-      Aurelian</br>
-      <span class="caption-subtitle">
-        AE Antoninianus
-      </span>
-    </span>
-  </a>
-</div>
-
-<div class="coin">
-  <a href="./coins/valentiniani.html" style="text-decoration:none">
-    <img src="./images/valentiniani.jpg" class="pic"/>
-    <span class="caption-title">
-      Valentinian I</br>
-      <span class="caption-subtitle">
-        AE Centenionalis
-      </span>
-    </span>
-  </a>
-</div>
+<div id="Roman"></div>
 
 </body>
 </html>
