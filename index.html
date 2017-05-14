@@ -14,37 +14,34 @@
   <li><a class="inactive" href="#about">About</a></li>
 </ul>
 
-<script type='text/javascript'>
-  window.onload=function(){
-  
+<script type='text/javascript'>  
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        var response = JSON.parse(xhttp.responseText);
-        var coins = response.coins; 
-        
-        for (var key in coins) {
-          for (var i = 0; i < coins[key].length; i++) {
-            var imp = coins[key][i].emperor;
-            var title = coins[key][i].file
-            var mat = coins[key][i].material;
-            var denom = coins[key][i].denomination;
-            var card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML =
-              '<div  class="coin">' +
-              '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
-              '    <img src="./images/' + title + '.jpg" class="pic"/>' +
-              '    <span class="caption-title">' +
-              '      ' + imp + '</br>' +
-              '      <span class="caption-subtitle">' +
-              '        ' + mat + ' ' + denom +
-              '      </span>' +
-              '    </span>' +
-              '  </a>' +
-              '</div>';
-            document.getElementById(key).appendChild(card);
-          }
+    if (this.readyState == 4 && this.status == 200) {
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response.coins; 
+      
+      for (var key in coins) {
+        for (var i = 0; i < coins[key].length; i++) {
+          var imp = coins[key][i].emperor;
+          var title = coins[key][i].file
+          var mat = coins[key][i].material;
+          var denom = coins[key][i].denomination;
+          var card = document.createElement('div');
+          card.className = 'card';
+          card.innerHTML =
+            '<div  class="coin">' +
+            '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
+            '    <img src="./images/' + title + '.jpg" class="pic"/>' +
+            '    <span class="caption-title">' +
+            '      ' + imp + '</br>' +
+            '      <span class="caption-subtitle">' +
+            '        ' + mat + ' ' + denom +
+            '      </span>' +
+            '    </span>' +
+            '  </a>' +
+            '</div>';
+          document.getElementById(key).appendChild(card);
         }
       }
     }
