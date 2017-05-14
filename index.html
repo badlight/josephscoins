@@ -16,11 +16,12 @@
 
 <script type='text/javascript'>  
   var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+  xhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
+  
       var response = JSON.parse(xhttp.responseText);
-      var coins = response.coins; 
-      
+      var coins = response; 
+
       for (var key in coins) {
         for (var i = 0; i < coins[key].length; i++) {
           var imp = coins[key][i].emperor;
@@ -45,8 +46,7 @@
         }
       }
     }
-  }
-     
+  };
   xhttp.open("GET", "coins.json", true);
   xhttp.send();
 
