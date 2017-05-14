@@ -29,6 +29,8 @@
           var mat = coins[key][i].material;
           var denom = coins[key][i].denomination;
           var card = document.createElement('div');
+          card.style.display = "inline-block";
+          card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
             '<div  class="coin">' +
@@ -52,7 +54,7 @@
 
 </script>
 
-<div id="Roman"></div>
+<div id="Roman" class></div>
 
 </body>
 </html>
