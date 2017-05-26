@@ -173,7 +173,6 @@ li a {
   
 }
 
-
 .paragraph {
   padding-bottom: 25px;
   vertical-align: top;
@@ -188,4 +187,9 @@ li a {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   margin-bottom: 25px;
   padding-top: 25px;
+}
+
+.marginated {
+  margin-left: 100px; 
+  margin-right: 100px;
 }
