@@ -70,6 +70,22 @@ em {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 25px
+}
+
+.images {
+  padding-bottom: 25px;
+  vertical-align: top;
+  margin: auto;
+  text-align: center;
+  width: 762.5px;
+  background-color: darkgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 25px
 }
 
 .caption-title {
@@ -128,11 +144,48 @@ li a {
 
 .active {
   background-color: grey;
+  pointer-events: none;
+  cursor: default;
 }
 
 .inactive-null {
   pointer-events: none;
-  curosr: default;
+  cursor: default;
   color: silver;
 }
 
+.cool-link {
+  text-decoration: none;
+  color: grey;
+}
+
+.cool-link:hover {
+  color: black;
+}
+
+.cool-link2 {
+  text-decoration: none;
+  color: white;
+}
+
+.cool-link2:hover {
+  color: lightgrey;
+  
+}
+
+
+.paragraph {
+  padding-bottom: 25px;
+  vertical-align: top;
+  margin: auto;
+  text-align: center;
+  width: 762.5px;
+  background-color: darkgrey;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
