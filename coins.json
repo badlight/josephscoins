@@ -1,6 +1,6 @@
 {
   "Roman": [
-    "trajan": {
+    {
       "emperor": "Trajan",
       "file": "trajan",
       "material": "AR",
@@ -19,7 +19,7 @@
       "reverse_desc": "Pietas, draped, veiled, standing left, with right hand dropping incense on lighted alter left, and holding sceptre in left hand",
       "reference": "RIC II 104"
     },
-    "hadrian": {
+    {
       "emperor": "Hadrian",
       "file": "hadrian",
       "material": "AR",
@@ -38,7 +38,7 @@
       "reverse_desc": "Salus seated left, feeding serpent, who is wrapped around an altar, out of patera with right hand",
       "reference": "RIC II 137C"
     },      
-    "antoninuspius": {
+    {
       "emperor": "Antoninus Pius",
       "file": "antoninuspius",
       "material": "AR",
@@ -57,7 +57,7 @@
       "reverse_desc": "Vesta, veiled, draped, standing left, holding simpulum in extended right hand and palladium at shoulder in left",
       "reference": "RIC III 209"
     },            
-    "septimiusseverus": {
+    {
       "emperor": "Septimius Severus",
       "file": "septimiusseverus",
       "material": "AR",
@@ -76,7 +76,7 @@
       "reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
       "reference": "RIC IV 295"
     },
-    "caracalla": {
+    {
       "emperor": "Caracalla",
       "file": "caracalla",
       "material": "AR",
@@ -95,7 +95,7 @@
       "reverse_desc": "Mars, helmeted, naked except for cloak on left shoulder, standing left, right foot set on helmet, holding branch in right hand and spear in left hand",
       "reference": "RIC IV 80B"
     },
-    "severusalexander": {
+    {
       "emperor": "Severus Alexander",
       "file": "severusalexander",
       "material": "AE",
@@ -114,7 +114,7 @@
       "reverse_desc": "Mars, helmeted, walking right, carrying spear in right hand and shield in left hand",
       "reference": "RIC IV 635"
     },     
-    "gordianiii2": {
+    {
       "emperor": "Gordian III",
       "file": "gordianiii2",
       "material": "AR",
@@ -133,7 +133,7 @@
       "reverse_desc": "Virtus, helmeted, in military attire, standing front, head left, holding branch in right hand and spear in left hand; against right side, shield resting",
       "reference": "RIC IV 39"
     },   
-    "valeriani": {
+    {
       "emperor": "Valerian I",
       "file": "valeriani",
       "material": "AE",
@@ -152,7 +152,7 @@
       "reverse_desc": "Fides, draped, standing left, holding two ensigns",
       "reference": "RIC V 89"
     },         
-    "victorinus1": {
+    {
       "emperor": "Victorinus",
       "file": "victorinus1",
       "material": "AE",
@@ -171,7 +171,7 @@
       "reverse_desc": "Pax, draped, standing left, holding olive-branch in right hand and sceptre in left hand",
       "reference": "RIC V 118"
     },         
-    "victorinus2": {
+    {
       "emperor": "Victorinus",
       "file": "victorinus2",
       "material": "AE",
@@ -190,7 +190,7 @@
       "reverse_desc": "Sol, walking left, raising right hand and holding whip in left hand",
       "reference": "RIC V 114"
     },         
-    "aurelian": {
+    {
       "emperor": "Aurelian",
       "file": "aurelian",
       "material": "AE",
@@ -209,7 +209,7 @@
       "reverse_desc": "Sol standing right, radiate, nude but for cloak over shoulders, raising branch in right, bow in left, left foot on captive",
       "reference": "RIC V 64"
     },   
-    "ulpiaseverina": {
+    {
       "emperor": "Ulpia Severina",
       "file": "ulpiaseverina",
       "material": "BI",
@@ -228,7 +228,7 @@
       "reverse_desc": "Aurelian, standing right or left, clasping hand of Severina, standing right or left",
       "reference": "RIC V 3"
     },       
-    "valentiniani": {
+    {
       "emperor": "Valentinian I",
       "file": "valentiniani",
       "material": "AE",
