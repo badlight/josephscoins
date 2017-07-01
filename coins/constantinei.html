@@ -22,54 +22,52 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      for (var key in coins) {
-        var imp = coins[key][12].emperor;
-        var title = coins[key][12].file
-        var mat = coins[key][12].material;
-        var denom = coins[key][12].denomination;
-        var date = coins[key][12].year;
-        var mnt = coins[key][12].mint;
-        var off = coins[key][12].officina;
-        var em = coins[key][12].emission;
-        var wt = coins[key][12].weight;
-        var diam = coins[key][12].diameter;
-        var ax = coins[key][12].axis;
-        var obv = coins[key][12].obverse_legend;
-        var rev = coins[key][12].reverse_legend;
-        var ex = coins[key][12].exergue;
-        var obvd = coins[key][12].obverse_desc;
-        var revd = coins[key][12].reverse_desc; 
-        var ref = coins[key][12].reference;
-        var card = document.createElement('div');
-        card.style.display = "inline-block";
-        card.style.padding = "10px";
-        card.className = 'card';
-        card.innerHTML =
-          '<p class="coin-title">' + imp + '</p>' +
-          '<p class="coin-subtitle">' + mat + ' ' + denom + '</p>' +
-          '<div class="coin_page">' +
-          '  <img id="myImg" src="../images/' + file + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
-          '  <div id="myModal" class="modal">' +
-          '    <span class="close">X</span>' +
-          '    <img class="modal-content" id="img01">' +
-          '    <div id="caption"></div>' +
-          '  </div>' +
-          '  <span class="caption-title">' +
-          '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
-          '    <span class="caption-subtitle">' +
-          '      ' + wt +', ' + diam + ', ' + ax + '</br>' +
-          '    </span>' +
-          '    <span class="description">' +
-          '      <strong>Obverse:</strong> ' + obv + ', <em>' + obvd + '</em></br>' +
-          '      <strong>Reverse:</strong> ' + rev + ', <em>' + revd + '</em></br>' +
-          '      <strong>Exergue:</strong> ' + ex + '</br></br>' +
-          '      <hr class="marginated">' +
-          '      <strong>Reference:</strong> ' + ref + ' +
-          '    </span>' +
-          '  </span>' +
-          '</div>';
-        document.getElementById(key).appendChild(card);
-      }
+      var imp = coins['Roman'][12].emperor;
+      var title = coins['Roman'][12].file
+      var mat = coins['Roman'][12].material;
+      var denom = coins['Roman'][12].denomination;
+      var date = coins['Roman'][12].year;
+      var mnt = coins['Roman'][12].mint;
+      var off = coins['Roman'][12].officina;
+      var em = coins['Roman'][12].emission;
+      var wt = coins['Roman'][12].weight;
+      var diam = coins['Roman'][12].diameter;
+      var ax = coins['Roman'][12].axis;
+      var obv = coins['Roman'][12].obverse_legend;
+      var rev = coins['Roman'][12].reverse_legend;
+      var ex = coins['Roman'][12].exergue;
+      var obvd = coins['Roman'][12].obverse_desc;
+      var revd = coins['Roman'][12].reverse_desc; 
+      var ref = coins['Roman'][12].reference;
+      var card = document.createElement('div');
+      card.style.display = "inline-block";
+      card.style.padding = "10px";
+      card.className = 'card';
+      card.innerHTML =
+        '<p class="coin-title">' + imp + '</p>' +
+        '<p class="coin-subtitle">' + mat + ' ' + denom + '</p>' +
+        '<div class="coin_page">' +
+        '  <img id="myImg" src="../images/' + file + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+        '  <div id="myModal" class="modal">' +
+        '    <span class="close">X</span>' +
+        '    <img class="modal-content" id="img01">' +
+        '    <div id="caption"></div>' +
+        '  </div>' +
+        '  <span class="caption-title">' +
+        '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
+        '    <span class="caption-subtitle">' +
+        '      ' + wt +', ' + diam + ', ' + ax + '</br>' +
+        '    </span>' +
+        '    <span class="description">' +
+        '      <strong>Obverse:</strong> ' + obv + ', <em>' + obvd + '</em></br>' +
+        '      <strong>Reverse:</strong> ' + rev + ', <em>' + revd + '</em></br>' +
+        '      <strong>Exergue:</strong> ' + ex + '</br></br>' +
+        '      <hr class="marginated">' +
+        '      <strong>Reference:</strong> ' + ref + ' +
+        '    </span>' +
+        '  </span>' +
+        '</div>';
+      document.getElementById(key).appendChild(card);
     }
   };
   xhttp.open("GET", "../coins.json", true);
