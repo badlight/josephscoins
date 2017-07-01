@@ -1,5 +1,5 @@
 {
-  "Roman": [
+  "Roman": {
     "trajan": {
       "emperor": "Trajan",
       "file": "trajan",
@@ -266,5 +266,5 @@
       "reverse_desc": "Victory advancing left, holding wreath and palm",
       "reference": "RIC IX Siscia 7A type II-B"
     }
-  ]
+  }
 }
