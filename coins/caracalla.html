@@ -14,31 +14,93 @@
   <li><a class="inactive" href="#about">About</a></li>
 </ul>
 
-<p class="coin-title">Caracalla</p>
-<p class="coin-subtitle">AR Denarius</p>
+<script type='text/javascript'>  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
 
-<div class="coin_page">
-  <img id="myImg" src="../images/caracalla.jpg" alt="Caracalla, AR Denarius" class="big_pic"/>
-  <div id="myModal" class="modal">
-    <span class="close">X</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
-  <span class="caption-title">
-    205 A.D., Rome Mint</br>
-    <span class="caption-subtitle">
-      3.40g, 20.0mm, 6H</br>
-    </span>
-    <span class="description">
-      <strong>Obverse:</strong> ANTONINVS PIVS AVG, <em>Bust of Caracalla, laureate, draped, facing right</em></br>
-      <strong>Reverse:</strong> PONTIF TR P VIII COS II, <em>Mars, helmeted, naked except for cloak on left shoulder, standing left, right foot set on helmet, holding branch in right hand and spear in left hand</em></br></br>
-      <hr class="marginated">
-      <strong>Reference:</strong> RIC IV 80B
-    </span>
-  </span>
-</div>
+      var imp = coins['Roman'][4].emperor;
+      var title = coins['Roman'][4].file
+      var mat = coins['Roman'][4].material;
+      var denom = coins['Roman'][4].denomination;
+      var date = coins['Roman'][4].year;
+      var mnt = coins['Roman'][4].mint;
+      var off = coins['Roman'][4].officina;
+      var em = coins['Roman'][4].emission;
+      var wt = coins['Roman'][4].weight;
+      var diam = coins['Roman'][4].diameter;
+      var ax = coins['Roman'][4].axis;
+      var obv = coins['Roman'][4].obverse_legend;
+      var rev = coins['Roman'][4].reverse_legend;
+      var ex = coins['Roman'][4].exergue;
+      var obvd = coins['Roman'][4].obverse_desc;
+      var revd = coins['Roman'][4].reverse_desc; 
+      var ref = coins['Roman'][4].reference;
+      var card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML =
+        '<p class="coin-title">' + imp + '</p>' +
+        '<p class="coin-subtitle">' + mat + ' ' + denom + '</p>' +
+        '<div class="coin_page">' +
+        '  <img id="myImg" src="../images/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+        '  <div id="myModal" class="modal">' +
+        '    <span class="close">X</span>' +
+        '    <img class="modal-content" id="img01">' +
+        '    <div id="caption"></div>' +
+        '  </div>' +
+        '  <span class="caption-title">' +
+        '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
+        '    <span class="caption-subtitle">' +
+        '      ' + wt +', ' + diam + ', ' + ax + '</br>' +
+        '    </span>' +
+        '    <span class="description">' +
+        '      <strong>Obverse:</strong> ' + obv + ', <em>' + obvd + '</em></br>' +
+        '      <strong>Reverse:</strong> ' + rev + ', <em>' + revd + '</em></br>' +
+        '      <strong>Exergue:</strong> ' + ex + '</br></br>' +
+        '      <hr class="marginated">' +
+        '      <strong>Reference:</strong> ' + ref +
+        '    </span>' +
+        '  </span>' +
+        '</div>';
+      document.getElementById('Roman').appendChild(card);
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[4];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }     
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
 
-<script type="text/javascript" src="getModal.js"></script>
+</script>
+
+<div id="Roman" class></div>
 
 </body>
 </html>
