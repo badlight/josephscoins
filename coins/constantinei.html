@@ -14,30 +14,70 @@
   <li><a class="inactive" href="#about">About</a></li>
 </ul>
 
-<p class="coin-title">Constantine I</p>
-<p class="coin-subtitle">AE Centenionalis</p>
+<script type='text/javascript'>  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
 
-<div class="coin_page">
-  <img id="myImg" src="../images/constantinei.jpg" alt="Constantine I, AE Centenionalis" class="big_pic"/>
-  <div id="myModal" class="modal">
-    <span class="close">X</span>
-    <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
-  <span class="caption-title">
-    328 A.D., Constantinople Mint, 2nd Officina</br>
-    <span class="caption-subtitle">
-      3.08g, 19.74mm, 7H</br>
-    </span>
-    <span class="description">
-      <strong>Obverse:</strong> CONSTANTINVS MAX AVG, <em>Bust of Constantine I, rosette-diademed, draped, cuirassed, facing right</em></br>
-      <strong>Reverse:</strong> CONSTANTINIANA DAFNE, <em>Victory, winged, draped, seated left on cippus, head right, holding palm in each hand; before her, trophy; at foot of trophy, kneeling captive, head turned, being spurned by Victory</em></br>
-      <strong>Exergue:</strong> B/-//CONS</br></br>
-      <hr class="marginated">
-      <strong>Reference:</strong> RIC VII Constantinople 35
-    </span>
-  </span>
-</div>
+      for (var key in coins) {
+        var imp = coins[key][12].emperor;
+        var title = coins[key][12].file
+        var mat = coins[key][12].material;
+        var denom = coins[key][12].denomination;
+        var date = coins[key][12].year;
+        var mnt = coins[key][12].mint;
+        var off = coins[key][12].officina;
+        var em = coins[key][12].emission;
+        var wt = coins[key][12].weight;
+        var diam = coins[key][12].diameter;
+        var ax = coins[key][12].axis;
+        var obv = coins[key][12].obverse_legend;
+        var rev = coins[key][12].reverse_legend;
+        var ex = coins[key][12].exergue;
+        var obvd = coins[key][12].obverse_desc;
+        var revd = coins[key][12].reverse_desc; 
+        var ref = coins[key][12].reference;
+        var card = document.createElement('div');
+        card.style.display = "inline-block";
+        card.style.padding = "10px";
+        card.className = 'card';
+        card.innerHTML =
+          '<p class="coin-title">' + imp + '</p>' +
+          '<p class="coin-subtitle">' + mat + ' ' + denom + '</p>' +
+          '<div class="coin_page">' +
+          '  <img id="myImg" src="../images/' + file + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+          '  <div id="myModal" class="modal">' +
+          '    <span class="close">X</span>' +
+          '    <img class="modal-content" id="img01">' +
+          '    <div id="caption"></div>' +
+          '  </div>' +
+          '  <span class="caption-title">' +
+          '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
+          '    <span class="caption-subtitle">' +
+          '      ' + wt +', ' + diam + ', ' + ax + '</br>' +
+          '    </span>' +
+          '    <span class="description">' +
+          '      <strong>Obverse:</strong> ' + obv + ', <em>' + obvd + '</em></br>' +
+          '      <strong>Reverse:</strong> ' + rev + ', <em>' + revd + '</em></br>' +
+          '      <strong>Exergue:</strong> ' + ex + '</br></br>' +
+          '      <hr class="marginated">' +
+          '      <strong>Reference:</strong> ' + ref + ' +
+          '    </span>' +
+          '  </span>' +
+          '</div>';
+        document.getElementById(key).appendChild(card);
+      }
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
+
+</script>
+
+<div id="Roman" class></div>
 
 <script type="text/javascript" src="getModal.js"></script>
 
