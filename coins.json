@@ -265,6 +265,25 @@
       "obverse_desc": "Bust of Valentinian I, pearl-diademed, draped and cuirassed, facing right",
       "reverse_desc": "Victory advancing left, holding wreath and palm",
       "reference": "RIC IX Siscia 7A type II-B"
-    }
+    },
+    {
+      "emperor": "Aelia Flaccilla",
+      "file": "aeliaflaccilla",
+      "material": "AE",
+      "denomination": "Maiorina",
+      "year": "383 - 388 A.D.",
+      "mint": "Constantinople",
+      "officina": "5th",
+      "emission": null,
+      "weight": "5.78g",
+      "diameter": "23.0mm",
+      "axis": "6H",
+      "obverse_legend": "AEL FLACCILLA AVG",
+      "reverse_legend": "SALVS REIPVBLICAE",
+      "exergue": "-/TP//CONSЄ",
+      "obverse_desc": "Bust of Aelia Flaccilla, with elabroate head-dress, draped, necklace, and mantle",
+      "reverse_desc": "Emperor, head right, standing facing, arms folded on breast",
+      "reference": "RIC IX Constantinople 82"
+    }    
   ]
 }
