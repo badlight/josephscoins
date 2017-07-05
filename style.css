@@ -292,3 +292,7 @@ li a {
     from { opacity: 1;} 
     to { opacity: 0;}
 }
+
+.coptic {
+  font-family: 'Noto Sans Coptic', 'Crimson Text', serif;
+}
