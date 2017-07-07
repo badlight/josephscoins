@@ -23,11 +23,11 @@
       var coins = response; 
 
       for (var key in coins) {
-        for (var i = 0; i < coins[key].length; i++) {
-          var imp = coins[key][i].emperor;
-          var title = coins[key][i].file
-          var mat = coins[key][i].material;
-          var denom = coins[key][i].denomination;
+        for (var coin in coins[key]) {
+          var imp = coins[key][coin].emperor;
+          var title = coins[key][coin].file
+          var mat = coins[key][coin].material;
+          var denom = coins[key][coin].denomination;
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
