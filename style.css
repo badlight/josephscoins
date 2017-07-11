@@ -213,6 +213,7 @@ li a {
 .marginated {
   margin-left: 100px; 
   margin-right: 100px;
+  color: grey;
 }
 
 /*Image Modal*/
