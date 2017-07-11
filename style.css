@@ -27,8 +27,8 @@ em {
 }
 
 .pic {
-  border: 1px solid grey;
-  width: 512px;
+W  border-bottom: 1px solid grey;
+  width: 508px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
 }
