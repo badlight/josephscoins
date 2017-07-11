@@ -27,7 +27,6 @@ em {
 }
 
 .pic {
-  padding-top: 2px;
   border: 2px solid grey;
   width: 508px;
   border-top-left-radius: 25px;
@@ -52,6 +51,7 @@ em {
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
+  border: 2px solid grey;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   -webkit-transition: background-color 0.1s ease-out;
   -moz-transition: background-color 0.1s ease-out;
