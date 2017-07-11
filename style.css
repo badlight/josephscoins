@@ -18,12 +18,12 @@ body {
 
 strong {
   font-weight: bold;
-  color: white;
+  color: grey;
   font-size: 25px
 }
 
 em {
-  color: white;
+  color: grey;
 }
 
 .pic {
