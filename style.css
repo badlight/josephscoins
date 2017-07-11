@@ -61,7 +61,6 @@ em {
 
 .coin:hover {
   background-color: #DFDFDF;
-  cursor: pointer;
   -webkit-transition: background-color 0.25s ease-out;
   -moz-transition: background-color 0.25s ease-out;
   -o-transition: background-color 0.25s ease-out;
