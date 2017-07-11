@@ -130,7 +130,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: darkgrey;
+    background-color: #EAEAEA;
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -147,12 +147,23 @@ li a {
     text-decoration: none;
 }
 
+.inactive {
+  -webkit-transition: background-color 0.1s ease-out;
+  -moz-transition: background-color 0.1s ease-out;
+  -o-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+
 .inactive:hover {
-  background-color: grey;
+  background-color: #DFDFDF;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
 }
 
 .active {
-  background-color: grey;
+  background-color: #DFDFDF;
   pointer-events: none;
   cursor: default;
 }
@@ -179,7 +190,6 @@ li a {
 
 .cool-link2:hover {
   color: lightgrey;
-  
 }
 
 .paragraph {
