@@ -311,3 +311,47 @@ li a {
     from { opacity: 1;} 
     to { opacity: 0;}
 }
+
+.button {
+  background-color: #EAEAEA;
+  border: 1px solid grey;
+  color: grey;
+  padding: 10px 32px; 
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-transition: background-color 0.1s ease-out;
+  -moz-transition: background-color 0.1s ease-out;
+  -o-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+
+.button-null {
+  background-color: #DFDFDF;
+  border: 1px solid grey;
+  color: grey;
+  padding: 10px 32px; 
+  margin-top: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  pointer-events: none;
+  cursor: default;
+}
+
+.button:hover {
+  background-color: #DFDFDF;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+}
