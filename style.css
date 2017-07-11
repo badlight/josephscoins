@@ -57,6 +57,10 @@ em {
   -moz-transition: background-color 1s ease-out;
   -o-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
+  -webkit-transition: box-shadow 1s ease-out;
+  -moz-transition: box-shadow 1s ease-out;
+  -o-transition: box-shadow 1s ease-out;
+  transition: box-shadow 1s ease-out;
 }
 
 .coin:hover {
