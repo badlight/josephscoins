@@ -370,7 +370,7 @@ hr.style-one {
 }
 
 hr.style-one:after {
-  content: '\2CE9';
+  content: '\25CC';
   display: inline-block;
   position: relative;
   top: -0.7em;
