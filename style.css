@@ -34,7 +34,7 @@ em {
 }
 
 .big_pic{
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   width: 762.5px;
