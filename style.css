@@ -97,13 +97,13 @@ em {
 
 .caption-title {
   display: block;
-  color: white;
+  color: grey;
   font-size: 25px;
 }
 
 .caption-subtitle {
   display: block;
-  color: white;
+  color: grey;
   font-style: italic;
   padding-bottom: 25px;
   font-size: 22px;
