@@ -14,7 +14,7 @@
   <li><a class="inactive" href="">About</a></li>
 </ul>
 
-<a href="index.html" class="button-null">All</a>
+<a href="index.html" class="button">All</a>
 <a href="" class="button-null">Roman Imperial</a>
 <a href="roman_provincial.html" class="button">Roman Provincial</a>
 
@@ -26,30 +26,28 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      for (var key in coins) {
-        for (var coin in coins[key]) {
-          var imp = coins[key][coin].emperor;
-          var title = coins[key][coin].file
-          var mat = coins[key][coin].material;
-          var denom = coins[key][coin].denomination;
-          var card = document.createElement('div');
-          card.style.display = "inline-block";
-          card.style.padding = "10px";
-          card.className = 'card';
-          card.innerHTML =
-            '<div  class="coin">' +
-            '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
-            '    <img src="./images/' + title + '.jpg" class="pic"/>' +
-            '    <span class="caption-title">' +
-            '      ' + imp + '</br>' +
-            '      <span class="caption-subtitle">' +
-            '        ' + mat + ' ' + denom +
-            '      </span>' +
-            '    </span>' +
-            '  </a>' +
-            '</div>';
-          document.getElementById(key).appendChild(card);
-        }
+      for (var coin in coins['roman_imperial']) {
+        var imp = coins['roman_imperial'][coin].emperor;
+        var title = coins['roman_imperial'][coin].file
+        var mat = coins['roman_imperial'][coin].material;
+        var denom = coins['roman_imperial'][coin].denomination;
+        var card = document.createElement('div');
+        card.style.display = "inline-block";
+        card.style.padding = "10px";
+        card.className = 'card';
+        card.innerHTML =
+          '<div  class="coin">' +
+          '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
+          '    <img src="./images/' + title + '.jpg" class="pic"/>' +
+          '    <span class="caption-title">' +
+          '      ' + imp + '</br>' +
+          '      <span class="caption-subtitle">' +
+          '        ' + mat + ' ' + denom +
+          '      </span>' +
+          '    </span>' +
+          '  </a>' +
+          '</div>';
+        document.getElementById('roman_imperial').appendChild(card);
       }
     }
   };

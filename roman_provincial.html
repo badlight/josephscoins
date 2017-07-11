@@ -26,30 +26,28 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      for (var key in coins) {
-        for (var coin in coins[key]) {
-          var imp = coins[key][coin].emperor;
-          var title = coins[key][coin].file
-          var mat = coins[key][coin].material;
-          var denom = coins[key][coin].denomination;
-          var card = document.createElement('div');
-          card.style.display = "inline-block";
-          card.style.padding = "10px";
-          card.className = 'card';
-          card.innerHTML =
-            '<div  class="coin">' +
-            '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
-            '    <img src="./images/' + title + '.jpg" class="pic"/>' +
-            '    <span class="caption-title">' +
-            '      ' + imp + '</br>' +
-            '      <span class="caption-subtitle">' +
-            '        ' + mat + ' ' + denom +
-            '      </span>' +
-            '    </span>' +
-            '  </a>' +
-            '</div>';
-          document.getElementById(key).appendChild(card);
-        }
+      for (var coin in coins['roman_provincial']) {
+        var imp = coins['roman_provincial'][coin].emperor;
+        var title = coins['roman_provincial'][coin].file
+        var mat = coins['roman_provincial'][coin].material;
+        var denom = coins['roman_provincial'][coin].denomination;
+        var card = document.createElement('div');
+        card.style.display = "inline-block";
+        card.style.padding = "10px";
+        card.className = 'card';
+        card.innerHTML =
+          '<div  class="coin">' +
+          '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
+          '    <img src="./images/' + title + '.jpg" class="pic"/>' +
+          '    <span class="caption-title">' +
+          '      ' + imp + '</br>' +
+          '      <span class="caption-subtitle">' +
+          '        ' + mat + ' ' + denom +
+          '      </span>' +
+          '    </span>' +
+          '  </a>' +
+          '</div>';
+        document.getElementById('roman_provincial').appendChild(card);
       }
     }
   };
