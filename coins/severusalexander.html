@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['severusalexander'].emperor;
-      var title = coins['Roman']['severusalexander'].file
-      var mat = coins['Roman']['severusalexander'].material;
-      var denom = coins['Roman']['severusalexander'].denomination;
-      var date = coins['Roman']['severusalexander'].year;
-      var mnt = coins['Roman']['severusalexander'].mint;
-      var off = coins['Roman']['severusalexander'].officina;
-      var em = coins['Roman']['severusalexander'].emission;
-      var wt = coins['Roman']['severusalexander'].weight;
-      var diam = coins['Roman']['severusalexander'].diameter;
-      var ax = coins['Roman']['severusalexander'].axis;
-      var obv = coins['Roman']['severusalexander'].obverse_legend;
-      var rev = coins['Roman']['severusalexander'].reverse_legend;
-      var ex = coins['Roman']['severusalexander'].exergue;
-      var obvd = coins['Roman']['severusalexander'].obverse_desc;
-      var revd = coins['Roman']['severusalexander'].reverse_desc; 
-      var ref = coins['Roman']['severusalexander'].reference;
+      var imp = coins['roman_imperial']['severusalexander'].emperor;
+      var title = coins['roman_imperial']['severusalexander'].file
+      var mat = coins['roman_imperial']['severusalexander'].material;
+      var denom = coins['roman_imperial']['severusalexander'].denomination;
+      var date = coins['roman_imperial']['severusalexander'].year;
+      var mnt = coins['roman_imperial']['severusalexander'].mint;
+      var off = coins['roman_imperial']['severusalexander'].officina;
+      var em = coins['roman_imperial']['severusalexander'].emission;
+      var wt = coins['roman_imperial']['severusalexander'].weight;
+      var diam = coins['roman_imperial']['severusalexander'].diameter;
+      var ax = coins['roman_imperial']['severusalexander'].axis;
+      var obv = coins['roman_imperial']['severusalexander'].obverse_legend;
+      var rev = coins['roman_imperial']['severusalexander'].reverse_legend;
+      var ex = coins['roman_imperial']['severusalexander'].exergue;
+      var obvd = coins['roman_imperial']['severusalexander'].obverse_desc;
+      var revd = coins['roman_imperial']['severusalexander'].reverse_desc; 
+      var ref = coins['roman_imperial']['severusalexander'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -65,7 +65,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

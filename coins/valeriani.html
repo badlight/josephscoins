@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['valeriani'].emperor;
-      var title = coins['Roman']['valeriani'].file
-      var mat = coins['Roman']['valeriani'].material;
-      var denom = coins['Roman']['valeriani'].denomination;
-      var date = coins['Roman']['valeriani'].year;
-      var mnt = coins['Roman']['valeriani'].mint;
-      var off = coins['Roman']['valeriani'].officina;
-      var em = coins['Roman']['valeriani'].emission;
-      var wt = coins['Roman']['valeriani'].weight;
-      var diam = coins['Roman']['valeriani'].diameter;
-      var ax = coins['Roman']['valeriani'].axis;
-      var obv = coins['Roman']['valeriani'].obverse_legend;
-      var rev = coins['Roman']['valeriani'].reverse_legend;
-      var ex = coins['Roman']['valeriani'].exergue;
-      var obvd = coins['Roman']['valeriani'].obverse_desc;
-      var revd = coins['Roman']['valeriani'].reverse_desc; 
-      var ref = coins['Roman']['valeriani'].reference;
+      var imp = coins['roman_imperial']['valeriani'].emperor;
+      var title = coins['roman_imperial']['valeriani'].file
+      var mat = coins['roman_imperial']['valeriani'].material;
+      var denom = coins['roman_imperial']['valeriani'].denomination;
+      var date = coins['roman_imperial']['valeriani'].year;
+      var mnt = coins['roman_imperial']['valeriani'].mint;
+      var off = coins['roman_imperial']['valeriani'].officina;
+      var em = coins['roman_imperial']['valeriani'].emission;
+      var wt = coins['roman_imperial']['valeriani'].weight;
+      var diam = coins['roman_imperial']['valeriani'].diameter;
+      var ax = coins['roman_imperial']['valeriani'].axis;
+      var obv = coins['roman_imperial']['valeriani'].obverse_legend;
+      var rev = coins['roman_imperial']['valeriani'].reverse_legend;
+      var ex = coins['roman_imperial']['valeriani'].exergue;
+      var obvd = coins['roman_imperial']['valeriani'].obverse_desc;
+      var revd = coins['roman_imperial']['valeriani'].reverse_desc; 
+      var ref = coins['roman_imperial']['valeriani'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -64,7 +64,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

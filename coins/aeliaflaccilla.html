@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['aeliaflaccilla'].emperor;
-      var title = coins['Roman']['aeliaflaccilla'].file
-      var mat = coins['Roman']['aeliaflaccilla'].material;
-      var denom = coins['Roman']['aeliaflaccilla'].denomination;
-      var date = coins['Roman']['aeliaflaccilla'].year;
-      var mnt = coins['Roman']['aeliaflaccilla'].mint;
-      var off = coins['Roman']['aeliaflaccilla'].officina;
-      var em = coins['Roman']['aeliaflaccilla'].emission;
-      var wt = coins['Roman']['aeliaflaccilla'].weight;
-      var diam = coins['Roman']['aeliaflaccilla'].diameter;
-      var ax = coins['Roman']['aeliaflaccilla'].axis;
-      var obv = coins['Roman']['aeliaflaccilla'].obverse_legend;
-      var rev = coins['Roman']['aeliaflaccilla'].reverse_legend;
-      var ex = coins['Roman']['aeliaflaccilla'].exergue;
-      var obvd = coins['Roman']['aeliaflaccilla'].obverse_desc;
-      var revd = coins['Roman']['aeliaflaccilla'].reverse_desc; 
-      var ref = coins['Roman']['aeliaflaccilla'].reference;
+      var imp = coins['roman_imperial']['aeliaflaccilla'].emperor;
+      var title = coins['roman_imperial']['aeliaflaccilla'].file
+      var mat = coins['roman_imperial']['aeliaflaccilla'].material;
+      var denom = coins['roman_imperial']['aeliaflaccilla'].denomination;
+      var date = coins['roman_imperial']['aeliaflaccilla'].year;
+      var mnt = coins['roman_imperial']['aeliaflaccilla'].mint;
+      var off = coins['roman_imperial']['aeliaflaccilla'].officina;
+      var em = coins['roman_imperial']['aeliaflaccilla'].emission;
+      var wt = coins['roman_imperial']['aeliaflaccilla'].weight;
+      var diam = coins['roman_imperial']['aeliaflaccilla'].diameter;
+      var ax = coins['roman_imperial']['aeliaflaccilla'].axis;
+      var obv = coins['roman_imperial']['aeliaflaccilla'].obverse_legend;
+      var rev = coins['roman_imperial']['aeliaflaccilla'].reverse_legend;
+      var ex = coins['roman_imperial']['aeliaflaccilla'].exergue;
+      var obvd = coins['roman_imperial']['aeliaflaccilla'].obverse_desc;
+      var revd = coins['roman_imperial']['aeliaflaccilla'].reverse_desc; 
+      var ref = coins['roman_imperial']['aeliaflaccilla'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -65,7 +65,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['caracalla'].emperor;
-      var title = coins['Roman']['caracalla'].file
-      var mat = coins['Roman']['caracalla'].material;
-      var denom = coins['Roman']['caracalla'].denomination;
-      var date = coins['Roman']['caracalla'].year;
-      var mnt = coins['Roman']['caracalla'].mint;
-      var off = coins['Roman']['caracalla'].officina;
-      var em = coins['Roman']['caracalla'].emission;
-      var wt = coins['Roman']['caracalla'].weight;
-      var diam = coins['Roman']['caracalla'].diameter;
-      var ax = coins['Roman']['caracalla'].axis;
-      var obv = coins['Roman']['caracalla'].obverse_legend;
-      var rev = coins['Roman']['caracalla'].reverse_legend;
-      var ex = coins['Roman']['caracalla'].exergue;
-      var obvd = coins['Roman']['caracalla'].obverse_desc;
-      var revd = coins['Roman']['caracalla'].reverse_desc; 
-      var ref = coins['Roman']['caracalla'].reference;
+      var imp = coins['roman_imperial']['caracalla'].emperor;
+      var title = coins['roman_imperial']['caracalla'].file
+      var mat = coins['roman_imperial']['caracalla'].material;
+      var denom = coins['roman_imperial']['caracalla'].denomination;
+      var date = coins['roman_imperial']['caracalla'].year;
+      var mnt = coins['roman_imperial']['caracalla'].mint;
+      var off = coins['roman_imperial']['caracalla'].officina;
+      var em = coins['roman_imperial']['caracalla'].emission;
+      var wt = coins['roman_imperial']['caracalla'].weight;
+      var diam = coins['roman_imperial']['caracalla'].diameter;
+      var ax = coins['roman_imperial']['caracalla'].axis;
+      var obv = coins['roman_imperial']['caracalla'].obverse_legend;
+      var rev = coins['roman_imperial']['caracalla'].reverse_legend;
+      var ex = coins['roman_imperial']['caracalla'].exergue;
+      var obvd = coins['roman_imperial']['caracalla'].obverse_desc;
+      var revd = coins['roman_imperial']['caracalla'].reverse_desc; 
+      var ref = coins['roman_imperial']['caracalla'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -64,7 +64,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

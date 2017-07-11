@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['gordianiii2'].emperor;
-      var title = coins['Roman']['gordianiii2'].file
-      var mat = coins['Roman']['gordianiii2'].material;
-      var denom = coins['Roman']['gordianiii2'].denomination;
-      var date = coins['Roman']['gordianiii2'].year;
-      var mnt = coins['Roman']['gordianiii2'].mint;
-      var off = coins['Roman']['gordianiii2'].officina;
-      var em = coins['Roman']['gordianiii2'].emission;
-      var wt = coins['Roman']['gordianiii2'].weight;
-      var diam = coins['Roman']['gordianiii2'].diameter;
-      var ax = coins['Roman']['gordianiii2'].axis;
-      var obv = coins['Roman']['gordianiii2'].obverse_legend;
-      var rev = coins['Roman']['gordianiii2'].reverse_legend;
-      var ex = coins['Roman']['gordianiii2'].exergue;
-      var obvd = coins['Roman']['gordianiii2'].obverse_desc;
-      var revd = coins['Roman']['gordianiii2'].reverse_desc; 
-      var ref = coins['Roman']['gordianiii2'].reference;
+      var imp = coins['roman_imperial']['gordianiii2'].emperor;
+      var title = coins['roman_imperial']['gordianiii2'].file
+      var mat = coins['roman_imperial']['gordianiii2'].material;
+      var denom = coins['roman_imperial']['gordianiii2'].denomination;
+      var date = coins['roman_imperial']['gordianiii2'].year;
+      var mnt = coins['roman_imperial']['gordianiii2'].mint;
+      var off = coins['roman_imperial']['gordianiii2'].officina;
+      var em = coins['roman_imperial']['gordianiii2'].emission;
+      var wt = coins['roman_imperial']['gordianiii2'].weight;
+      var diam = coins['roman_imperial']['gordianiii2'].diameter;
+      var ax = coins['roman_imperial']['gordianiii2'].axis;
+      var obv = coins['roman_imperial']['gordianiii2'].obverse_legend;
+      var rev = coins['roman_imperial']['gordianiii2'].reverse_legend;
+      var ex = coins['roman_imperial']['gordianiii2'].exergue;
+      var obvd = coins['roman_imperial']['gordianiii2'].obverse_desc;
+      var revd = coins['roman_imperial']['gordianiii2'].reverse_desc; 
+      var ref = coins['roman_imperial']['gordianiii2'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -64,7 +64,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['aurelian'].emperor;
-      var title = coins['Roman']['aurelian'].file
-      var mat = coins['Roman']['aurelian'].material;
-      var denom = coins['Roman']['aurelian'].denomination;
-      var date = coins['Roman']['aurelian'].year;
-      var mnt = coins['Roman']['aurelian'].mint;
-      var off = coins['Roman']['aurelian'].officina;
-      var em = coins['Roman']['aurelian'].emission;
-      var wt = coins['Roman']['aurelian'].weight;
-      var diam = coins['Roman']['aurelian'].diameter;
-      var ax = coins['Roman']['aurelian'].axis;
-      var obv = coins['Roman']['aurelian'].obverse_legend;
-      var rev = coins['Roman']['aurelian'].reverse_legend;
-      var ex = coins['Roman']['aurelian'].exergue;
-      var obvd = coins['Roman']['aurelian'].obverse_desc;
-      var revd = coins['Roman']['aurelian'].reverse_desc; 
-      var ref = coins['Roman']['aurelian'].reference;
+      var imp = coins['roman_imperial']['aurelian'].emperor;
+      var title = coins['roman_imperial']['aurelian'].file
+      var mat = coins['roman_imperial']['aurelian'].material;
+      var denom = coins['roman_imperial']['aurelian'].denomination;
+      var date = coins['roman_imperial']['aurelian'].year;
+      var mnt = coins['roman_imperial']['aurelian'].mint;
+      var off = coins['roman_imperial']['aurelian'].officina;
+      var em = coins['roman_imperial']['aurelian'].emission;
+      var wt = coins['roman_imperial']['aurelian'].weight;
+      var diam = coins['roman_imperial']['aurelian'].diameter;
+      var ax = coins['roman_imperial']['aurelian'].axis;
+      var obv = coins['roman_imperial']['aurelian'].obverse_legend;
+      var rev = coins['roman_imperial']['aurelian'].reverse_legend;
+      var ex = coins['roman_imperial']['aurelian'].exergue;
+      var obvd = coins['roman_imperial']['aurelian'].obverse_desc;
+      var revd = coins['roman_imperial']['aurelian'].reverse_desc; 
+      var ref = coins['roman_imperial']['aurelian'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -65,7 +65,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

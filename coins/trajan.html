@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['trajan'].emperor;
-      var title = coins['Roman']['trajan'].file
-      var mat = coins['Roman']['trajan'].material;
-      var denom = coins['Roman']['trajan'].denomination;
-      var date = coins['Roman']['trajan'].year;
-      var mnt = coins['Roman']['trajan'].mint;
-      var off = coins['Roman']['trajan'].officina;
-      var em = coins['Roman']['trajan'].emission;
-      var wt = coins['Roman']['trajan'].weight;
-      var diam = coins['Roman']['trajan'].diameter;
-      var ax = coins['Roman']['trajan'].axis;
-      var obv = coins['Roman']['trajan'].obverse_legend;
-      var rev = coins['Roman']['trajan'].reverse_legend;
-      var ex = coins['Roman']['trajan'].exergue;
-      var obvd = coins['Roman']['trajan'].obverse_desc;
-      var revd = coins['Roman']['trajan'].reverse_desc; 
-      var ref = coins['Roman']['trajan'].reference;
+      var imp = coins['roman_imperial']['trajan'].emperor;
+      var title = coins['roman_imperial']['trajan'].file
+      var mat = coins['roman_imperial']['trajan'].material;
+      var denom = coins['roman_imperial']['trajan'].denomination;
+      var date = coins['roman_imperial']['trajan'].year;
+      var mnt = coins['roman_imperial']['trajan'].mint;
+      var off = coins['roman_imperial']['trajan'].officina;
+      var em = coins['roman_imperial']['trajan'].emission;
+      var wt = coins['roman_imperial']['trajan'].weight;
+      var diam = coins['roman_imperial']['trajan'].diameter;
+      var ax = coins['roman_imperial']['trajan'].axis;
+      var obv = coins['roman_imperial']['trajan'].obverse_legend;
+      var rev = coins['roman_imperial']['trajan'].reverse_legend;
+      var ex = coins['roman_imperial']['trajan'].exergue;
+      var obvd = coins['roman_imperial']['trajan'].obverse_desc;
+      var revd = coins['roman_imperial']['trajan'].reverse_desc; 
+      var ref = coins['roman_imperial']['trajan'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -65,7 +65,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

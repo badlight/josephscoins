@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['hadrian'].emperor;
-      var title = coins['Roman']['hadrian'].file
-      var mat = coins['Roman']['hadrian'].material;
-      var denom = coins['Roman']['hadrian'].denomination;
-      var date = coins['Roman']['hadrian'].year;
-      var mnt = coins['Roman']['hadrian'].mint;
-      var off = coins['Roman']['hadrian'].officina;
-      var em = coins['Roman']['hadrian'].emission;
-      var wt = coins['Roman']['hadrian'].weight;
-      var diam = coins['Roman']['hadrian'].diameter;
-      var ax = coins['Roman']['hadrian'].axis;
-      var obv = coins['Roman']['hadrian'].obverse_legend;
-      var rev = coins['Roman']['hadrian'].reverse_legend;
-      var ex = coins['Roman']['hadrian'].exergue;
-      var obvd = coins['Roman']['hadrian'].obverse_desc;
-      var revd = coins['Roman']['hadrian'].reverse_desc; 
-      var ref = coins['Roman']['hadrian'].reference;
+      var imp = coins['roman_imperial']['hadrian'].emperor;
+      var title = coins['roman_imperial']['hadrian'].file
+      var mat = coins['roman_imperial']['hadrian'].material;
+      var denom = coins['roman_imperial']['hadrian'].denomination;
+      var date = coins['roman_imperial']['hadrian'].year;
+      var mnt = coins['roman_imperial']['hadrian'].mint;
+      var off = coins['roman_imperial']['hadrian'].officina;
+      var em = coins['roman_imperial']['hadrian'].emission;
+      var wt = coins['roman_imperial']['hadrian'].weight;
+      var diam = coins['roman_imperial']['hadrian'].diameter;
+      var ax = coins['roman_imperial']['hadrian'].axis;
+      var obv = coins['roman_imperial']['hadrian'].obverse_legend;
+      var rev = coins['roman_imperial']['hadrian'].reverse_legend;
+      var ex = coins['roman_imperial']['hadrian'].exergue;
+      var obvd = coins['roman_imperial']['hadrian'].obverse_desc;
+      var revd = coins['roman_imperial']['hadrian'].reverse_desc; 
+      var ref = coins['roman_imperial']['hadrian'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -65,7 +65,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       

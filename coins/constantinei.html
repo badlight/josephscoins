@@ -22,23 +22,23 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman']['constantinei'].emperor;
-      var title = coins['Roman']['constantinei'].file
-      var mat = coins['Roman']['constantinei'].material;
-      var denom = coins['Roman']['constantinei'].denomination;
-      var date = coins['Roman']['constantinei'].year;
-      var mnt = coins['Roman']['constantinei'].mint;
-      var off = coins['Roman']['constantinei'].officina;
-      var em = coins['Roman']['constantinei'].emission;
-      var wt = coins['Roman']['constantinei'].weight;
-      var diam = coins['Roman']['constantinei'].diameter;
-      var ax = coins['Roman']['constantinei'].axis;
-      var obv = coins['Roman']['constantinei'].obverse_legend;
-      var rev = coins['Roman']['constantinei'].reverse_legend;
-      var ex = coins['Roman']['constantinei'].exergue;
-      var obvd = coins['Roman']['constantinei'].obverse_desc;
-      var revd = coins['Roman']['constantinei'].reverse_desc; 
-      var ref = coins['Roman']['constantinei'].reference;
+      var imp = coins['roman_imperial']['constantinei'].emperor;
+      var title = coins['roman_imperial']['constantinei'].file
+      var mat = coins['roman_imperial']['constantinei'].material;
+      var denom = coins['roman_imperial']['constantinei'].denomination;
+      var date = coins['roman_imperial']['constantinei'].year;
+      var mnt = coins['roman_imperial']['constantinei'].mint;
+      var off = coins['roman_imperial']['constantinei'].officina;
+      var em = coins['roman_imperial']['constantinei'].emission;
+      var wt = coins['roman_imperial']['constantinei'].weight;
+      var diam = coins['roman_imperial']['constantinei'].diameter;
+      var ax = coins['roman_imperial']['constantinei'].axis;
+      var obv = coins['roman_imperial']['constantinei'].obverse_legend;
+      var rev = coins['roman_imperial']['constantinei'].reverse_legend;
+      var ex = coins['roman_imperial']['constantinei'].exergue;
+      var obvd = coins['roman_imperial']['constantinei'].obverse_desc;
+      var revd = coins['roman_imperial']['constantinei'].reverse_desc; 
+      var ref = coins['roman_imperial']['constantinei'].reference;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -65,7 +65,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       
