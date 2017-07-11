@@ -141,7 +141,7 @@ li {
 
 li a {
     display: inline-block;
-    color: white;
+    color: grey;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -171,7 +171,7 @@ li a {
 .inactive-null {
   pointer-events: none;
   cursor: default;
-  color: silver;
+  color: white;
 }
 
 .cool-link {
