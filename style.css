@@ -47,7 +47,7 @@ em {
   display: inline-block;
   text-align: center;
   width: 512.5px;
-  background-color: darkgrey;
+  background-color: white;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -57,6 +57,12 @@ em {
 
 .coin:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: darkgrey;
+  cursor: pointer;
+  -webkit-transition: background-color 1.5s ease-out;
+  -moz-transition: background-color 1.5s ease-out;
+  -o-transition: background-color 1.5s ease-out;
+  transition: background-color 1.5s ease-out;
 }
 
 .coin_page {
