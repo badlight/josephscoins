@@ -17,7 +17,8 @@
       "reverse_legend": "COS V P P S P Q R OPTIMO PRINC",
       "obverse_desc": "Bust of Trajan, laureate, draped on left shoulder, facing right",
       "reverse_desc": "Pietas, draped, veiled, standing left, with right hand dropping incense on lighted alter left, and holding sceptre in left hand",
-      "reference": "RIC II 104"
+      "reference": "RIC II 104",
+      "provenance": "Ex. Carpe Diem Nvmismatics"
     },
     "hadrian": {
       "emperor": "Hadrian",
@@ -36,7 +37,8 @@
       "exergue": "SAL AVG",      
       "obverse_desc": "Bust of Hadrian, laureate, draped, cuirassed, facing right",
       "reverse_desc": "Salus seated left, feeding serpent, who is wrapped around an altar, out of patera with right hand",
-      "reference": "RIC II 137C"
+      "reference": "RIC II 137C",
+      "provenance": "Ex. Romae Aeternae Numismatics"
     },      
     "antoninuspius": {
       "emperor": "Antoninus Pius",
@@ -55,7 +57,8 @@
       "exergue": null,      
       "obverse_desc": "Bust of Antoninus Pius, laureate, facing right",
       "reverse_desc": "Vesta, veiled, draped, standing left, holding simpulum in extended right hand and palladium at shoulder in left",
-      "reference": "RIC III 209"
+      "reference": "RIC III 209",
+      "provenance": "Ex. Romae Aeternae Numismatics"
     },            
     "septimiusseverus": {
       "emperor": "Septimius Severus",
@@ -74,7 +77,8 @@
       "exergue": null,      
       "obverse_desc": "Bust of Septimius Severus, laureate, facing right",
       "reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
-      "reference": "RIC IV 295"
+      "reference": "RIC IV 295",
+      "provenance": "Ex. Forvm Ancient Coins"
     },
     "caracalla": {
       "emperor": "Caracalla",
@@ -93,7 +97,8 @@
       "exergue": null,      
       "obverse_desc": "Bust of Caracalla, laureate, draped, facing right",
       "reverse_desc": "Mars, helmeted, naked except for cloak on left shoulder, standing left, right foot set on helmet, holding branch in right hand and spear in left hand",
-      "reference": "RIC IV 80B"
+      "reference": "RIC IV 80B",
+      "provenance": "Ex. Romae Aeternae Numismatics"
     },
     "severusalexander": {
       "emperor": "Severus Alexander",
@@ -112,7 +117,8 @@
       "exergue": "S/C//-",      
       "obverse_desc": "Bust of Severus Alexander, laureate, draped, facing right",
       "reverse_desc": "Mars, helmeted, walking right, carrying spear in right hand and shield in left hand",
-      "reference": "RIC IV 635"
+      "reference": "RIC IV 635",
+      "provenance": "Ex. Romae Aeternae Numismatics"
     },     
     "gordianiii2": {
       "emperor": "Gordian III",
@@ -131,7 +137,8 @@
       "exergue": null,      
       "obverse_desc": "Bust of Gordian III, radiate, draped, cuirassed, facing right",
       "reverse_desc": "Virtus, helmeted, in military attire, standing front, head left, holding branch in right hand and spear in left hand; against right side, shield resting",
-      "reference": "RIC IV 39"
+      "reference": "RIC IV 39",
+      "provenance": "Ex. Ancient Numismatic Enterprise"
     },   
     "valeriani": {
       "emperor": "Valerian I",
@@ -150,7 +157,8 @@
       "exergue": null,     
       "obverse_desc": "Bust of Valerian, radiate, draped, facing right",
       "reverse_desc": "Fides, draped, standing left, holding two ensigns",
-      "reference": "RIC V 89"
+      "reference": "RIC V 89",
+      "provenance": "Ex. Forvm Ancient Coins"
     },         
     "victorinus1": {
       "emperor": "Victorinus",
@@ -169,7 +177,8 @@
       "exergue": "V/*//-",     
       "obverse_desc": "Bust of Victorinus, radiate, cuirassed or draped, facing right",
       "reverse_desc": "Pax, draped, standing left, holding olive-branch in right hand and sceptre in left hand",
-      "reference": "RIC V 118"
+      "reference": "RIC V 118",
+      "provenance": "Ex. Art Ancient Ltd., Ex. <a href="south_petherton_hoard.html">South Petherton Hoard</a>"
     },         
     "victorinus2": {
       "emperor": "Victorinus",
@@ -188,7 +197,8 @@
       "exergue": null,     
       "obverse_desc": "Bust of Victorinus, radiate, draped, right, or bust of Victorinus, radiate, draped, cuirassed, facing right",
       "reverse_desc": "Sol, walking left, raising right hand and holding whip in left hand",
-      "reference": "RIC V 114"
+      "reference": "RIC V 114",
+      "provenance": "Ex. Art Ancient Ltd., Ex. <a href="south_petherton_hoard.html">South Petherton Hoard</a>"
     },         
     "aurelian": {
       "emperor": "Aurelian",
@@ -207,7 +217,8 @@
       "exergue": "I/-//XXIR",      
       "obverse_desc": "Radiate and cuirassed bust right, from the front",
       "reverse_desc": "Sol standing right, radiate, nude but for cloak over shoulders, raising branch in right, bow in left, left foot on captive",
-      "reference": "RIC V 64"
+      "reference": "RIC V 64",
+      "provenance": "Ex. Forvm Ancient Coins"
     },   
     "ulpiaseverina": {
       "emperor": "Ulpia Severina",
@@ -226,7 +237,8 @@
       "exergue": "ΓXXIR",      
       "obverse_desc": "Bust of Severina, diademed, draped, on crescent, right",
       "reverse_desc": "Aurelian, standing right or left, clasping hand of Severina, standing right or left",
-      "reference": "RIC V 3"
+      "reference": "RIC V 3",
+      "provenance": "Ex. Ken Dorney"
     },       
     "constantinei": {
       "emperor": "Constantine I",
@@ -245,7 +257,8 @@
       "exergue": "B/-//CONS",      
       "obverse_desc": "Bust of Constantine I, rosette-diademed, draped, cuirassed, facing right",
       "reverse_desc": "Victory, winged, draped, seated left on cippus, head right, holding palm in each hand; before her, trophy; at foot of trophy, kneeling captive, head turned, being spurned by Victory",
-      "reference": "RIC VII Constantinople 35"
+      "reference": "RIC VII Constantinople 35",
+      "provenance": "Ex. Agora Auctions 67 Lot 322"
     },     
     "valentiniani": {
       "emperor": "Valentinian I",
@@ -264,7 +277,8 @@
       "exergue": "•ΔSISC",
       "obverse_desc": "Bust of Valentinian I, pearl-diademed, draped and cuirassed, facing right",
       "reverse_desc": "Victory advancing left, holding wreath and palm",
-      "reference": "RIC IX Siscia 7A type II-B"
+      "reference": "RIC IX Siscia 7A type II-B",
+      "provenance": "Ex. Ken Dorney"
     },
     "aeliaflaccilla": {
       "emperor": "Aelia Flaccilla",
@@ -283,7 +297,8 @@
       "exergue": "-/⳨//CONSⲈ",
       "obverse_desc": "Bust of Aelia Flaccilla, with elabroate head-dress, draped, necklace, and mantle",
       "reverse_desc": "Emperor, head right, standing facing, arms folded on breast",
-      "reference": "RIC IX Constantinople 82"
+      "reference": "RIC IX Constantinople 82",
+      "provenance": "Ex. Aegean Numismatics"
     }
   },
   "roman_provincial": {
@@ -304,8 +319,8 @@
       "exergue": "L/H//-",      
       "obverse_desc": "Bust of Antoninus Pius, laureate, facing right",
       "reverse_desc": "Serapis enthroned left within distyle temple, Kerberos at his feet, pediment decorated with disk, date across field",
-      "reference": "Köln 1486, Dattari 3057"
-      "provenance": "
-    } 
+      "reference": "Köln 1486, Dattari 3057",
+      "provenance": "Ex. Robert L. Grover Collection, Art Institute of Chicago (Gemini XIII, 6 April 2017), lot 463 (part of), Ex. CNG Auction 401 Lot 323"
+    }
   }
 }
