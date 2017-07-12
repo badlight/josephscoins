@@ -389,3 +389,7 @@ hr.style-one:after {
   padding: 0 0.25em;
   background: white;
 }
+
+.aligned {
+  text-align: justify; 
+}
