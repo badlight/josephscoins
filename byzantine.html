@@ -15,9 +15,9 @@
 </ul>
 
 <a href="index.html" class="button">All</a>
-<a href="" class="button-null">Roman Imperial</a>
+<a href="roman_imperial.html" class="button">Roman Imperial</a>
 <a href="roman_provincial.html" class="button">Roman Provincial</a>
-<a href="byzantine.html" class="button">Byzantine</a>
+<a href="" class="button-null">Byzantine</a>
 
 <script type='text/javascript'>  
   var xhttp = new XMLHttpRequest();
@@ -27,11 +27,11 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      for (var coin in coins['roman_imperial']) {
-        var imp = coins['roman_imperial'][coin].emperor;
-        var title = coins['roman_imperial'][coin].file
-        var mat = coins['roman_imperial'][coin].material;
-        var denom = coins['roman_imperial'][coin].denomination;
+      for (var coin in coins['byzantine']) {
+        var imp = coins['byzantine'][coin].emperor;
+        var title = coins['byzantine'][coin].file
+        var mat = coins['byzantine'][coin].material;
+        var denom = coins['byzantine'][coin].denomination;
         var card = document.createElement('div');
         card.style.display = "inline-block";
         card.style.padding = "10px";
@@ -48,7 +48,7 @@
           '    </span>' +
           '  </a>' +
           '</div>';
-        document.getElementById('roman_imperial').appendChild(card);
+        document.getElementById('byzantine').appendChild(card);
       }
     }
   };
@@ -57,9 +57,9 @@
 
 </script>
 
-<p class="coin-title">Roman Imperial</p>
+<p class="coin-title">Byzantine</p>
 <hr class="style-one">
-<div id="roman_imperial" class></div>
+<div id="byzantine" class></div>
 
 </body>
 </html>
