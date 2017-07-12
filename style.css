@@ -41,7 +41,6 @@ em {
 }
 
 .coin {
-  margin-top: 25px;
   vertical-align: top;
   display: inline-block;
   text-align: center;
@@ -378,7 +377,7 @@ hr.style-one {
   text-align: center;
   width: 750px;
   margin-top: 25px; 
-  margin-bottom:-50px;
+  margin-bottom:-25px;
   font-family: 'Noto Sans Coptic', 'Crimson Text', serif;
 }
 
