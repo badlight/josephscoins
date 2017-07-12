@@ -287,5 +287,24 @@
     }
   },
   "roman_provincial": {
+    "antoninuspius": {
+      "emperor": "Antoninus Pius",
+      "file": "antoninuspius2",
+      "material": "AE",
+      "denomination": "Drachm",
+      "year": "144/145 A.D.",
+      "mint": "Alexandria",
+      "officina": null,
+      "emission": null,
+      "weight": "25.41g",
+      "diameter": "34.0mm",
+      "axis": "12H",
+      "obverse_legend": "AVTKTAIΛAΔP ANT",
+      "reverse_legend": "-",
+      "exergue": "L/H//-",      
+      "obverse_desc": "Bust of Antoninus Pius, laureate, facing right",
+      "reverse_desc": "Serapis enthroned left within distyle temple, Kerberos at his feet, pediment decorated with disk, date across field",
+      "reference": "Dattari 3057"
+    },  
   }
 }
