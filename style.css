@@ -112,6 +112,13 @@ em {
   padding-bottom: 25px;
 }
 
+.caption-subtitle2 {
+  display: block;
+  color: grey;
+  font-style: italic;
+  font-size: 22px;
+}
+
 .coin-title {
   font-size: 30px;
   color: grey;
