@@ -88,7 +88,7 @@ em {
   margin: auto;
   text-align: center;
   width: 762.5px;
-  background-color: darkgrey;
+  background-color: #EAEAEA;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
@@ -194,11 +194,11 @@ li a {
 
 .cool-link2 {
   text-decoration: none;
-  color: white;
+  color: lightgrey;
 }
 
 .cool-link2:hover {
-  color: lightgrey;
+  color: grey;
 }
 
 .paragraph {
