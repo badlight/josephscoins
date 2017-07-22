@@ -1,25 +1,5 @@
 {
   "roman_imperial": {
-    "trajan": {
-      "emperor": "Trajan",
-      "file": "trajan",
-      "material": "AR",
-      "denomination": "Denarius",
-      "year": "103 - 111 A.D.",
-      "mint": "Rome",
-      "officina": null,
-      "emission": null,
-      "weight": "3.15g",
-      "diameter": "20.0mm",
-      "axis": "6H",
-      "exergue": "PIET",      
-      "obverse_legend": "IMP TRAIANO AVG GER DAC P M TR P",
-      "reverse_legend": "COS V P P S P Q R OPTIMO PRINC",
-      "obverse_desc": "Bust of Trajan, laureate, draped on left shoulder, facing right",
-      "reverse_desc": "Pietas, draped, veiled, standing left, with right hand dropping incense on lighted alter left, and holding sceptre in left hand",
-      "reference": "RIC II 104",
-      "provenance": "Ex. Carpe Diem Nvmismatics"
-    },
     "hadrian": {
       "emperor": "Hadrian",
       "file": "hadrian",
@@ -244,7 +224,7 @@
       "emperor": "Constantine I",
       "file": "constantinei",
       "material": "AE",
-      "denomination": "Centenionalis",
+      "denomination": "Follis",
       "year": "328 A.D.",
       "mint": "Constantinople",
       "officina": "2nd",
