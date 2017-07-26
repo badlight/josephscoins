@@ -220,6 +220,26 @@
       "reference": "RIC V 3",
       "provenance": "Ex. Ken Dorney"
     },       
+    "constantiusi": {
+      "emperor": "Constantius I Chlorus",
+      "file": "constantiusi",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "297 - 299 A.D.",
+      "mint": "Cyzicus",
+      "officina": "2nd",
+      "emission": null,
+      "weight": "7.59g",
+      "diameter": "25.0mm",
+      "axis": "12H",
+      "obverse_legend": "FL VAL CONSTANTIVS NOB CAES",
+      "reverse_legend": "GENIO AVGG ET CAESARVM NN",
+      "exergue": "-/-//KB",      
+      "obverse_desc": "Head of Constantius Chlorus, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
+      "reference": "RIC VI Cyzicus 11a",
+      "provenance": "Ex. Cayón Subastas Auction 42 Lot 2592"
+    },        },       
     "constantinei": {
       "emperor": "Constantine I",
       "file": "constantinei",

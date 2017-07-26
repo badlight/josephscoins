@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Joseph's Constantine I</title>
+  <title>Joseph's Constantius Chlorus</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -22,23 +22,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['Roman'][12].emperor;
-      var title = coins['Roman'][12].file
-      var mat = coins['Roman'][12].material;
-      var denom = coins['Roman'][12].denomination;
-      var date = coins['Roman'][12].year;
-      var mnt = coins['Roman'][12].mint;
-      var off = coins['Roman'][12].officina;
-      var em = coins['Roman'][12].emission;
-      var wt = coins['Roman'][12].weight;
-      var diam = coins['Roman'][12].diameter;
-      var ax = coins['Roman'][12].axis;
-      var obv = coins['Roman'][12].obverse_legend;
-      var rev = coins['Roman'][12].reverse_legend;
-      var ex = coins['Roman'][12].exergue;
-      var obvd = coins['Roman'][12].obverse_desc;
-      var revd = coins['Roman'][12].reverse_desc; 
-      var ref = coins['Roman'][12].reference;
+      var imp = coins['roman_imperial']['constantiusi'].emperor;
+      var title = coins['roman_imperial']['constantiusi'].file
+      var mat = coins['roman_imperial']['constantiusi'].material;
+      var denom = coins['roman_imperial']['constantiusi'].denomination;
+      var date = coins['roman_imperial']['constantiusi'].year;
+      var mnt = coins['roman_imperial']['constantiusi'].mint;
+      var off = coins['roman_imperial']['constantiusi'].officina;
+      var em = coins['roman_imperial']['constantiusi'].emission;
+      var wt = coins['roman_imperial']['constantiusi'].weight;
+      var diam = coins['roman_imperial']['constantiusi'].diameter;
+      var ax = coins['roman_imperial']['constantiusi'].axis;
+      var obv = coins['roman_imperial']['constantiusi'].obverse_legend;
+      var rev = coins['roman_imperial']['constantiusi'].reverse_legend;
+      var ex = coins['roman_imperial']['constantiusi'].exergue;
+      var obvd = coins['roman_imperial']['constantiusi'].obverse_desc;
+      var revd = coins['roman_imperial']['constantiusi'].reverse_desc; 
+      var ref = coins['roman_imperial']['constantiusi'].reference;
+      var prov = coins['roman_imperial']['constantiusi'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -53,19 +54,20 @@
         '  </div>' +
         '  <span class="caption-title">' +
         '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
-        '    <span class="caption-subtitle">' +
-        '      ' + wt +', ' + diam + ', ' + ax + '</br>' +
+        '    <span class="caption-subtitle2">' +
+        '      ' + wt +', ' + diam + ', ' + ax +
         '    </span>' +
         '    <span class="description">' +
-        '      <strong>Obverse:</strong> ' + obv + ', <em>' + obvd + '</em></br>' +
-        '      <strong>Reverse:</strong> ' + rev + ', <em>' + revd + '</em></br>' +
-        '      <strong>Exergue:</strong> ' + ex + '</br></br>' +
-        '      <hr class="marginated">' +
+        '      <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
+        '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
+        '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+        '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+       '      <hr class="marginated">' +
         '      <strong>Reference:</strong> ' + ref +
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('Roman').appendChild(card);
+      document.getElementById('roman_imperial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       
@@ -100,7 +102,7 @@
 
 </script>
 
-<div id="Roman" class></div>
+<div id="roman_imperial" class></div>
 
 </body>
 </html>
