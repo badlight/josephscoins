@@ -20,26 +20,6 @@
       "reference": "RIC II 137C",
       "provenance": "Ex. Romae Aeternae Numismatics"
     },      
-    "antoninuspius": {
-      "emperor": "Antoninus Pius",
-      "file": "antoninuspius",
-      "material": "AR",
-      "denomination": "Denarius",
-      "year": "151 - 152 A.D.",
-      "mint": "Rome",
-      "officina": null,
-      "emission": null,
-      "weight": "3.06g",
-      "diameter": "17.0mm",
-      "axis": "6H",
-      "obverse_legend": "IMP CAES T AEL HADR ANTONINVS AVG PIVS P P",
-      "reverse_legend": "TR POT XV COS IIII",
-      "exergue": null,      
-      "obverse_desc": "Bust of Antoninus Pius, laureate, facing right",
-      "reverse_desc": "Vesta, veiled, draped, standing left, holding simpulum in extended right hand and palladium at shoulder in left",
-      "reference": "RIC III 209",
-      "provenance": "Ex. Romae Aeternae Numismatics"
-    },            
     "septimiusseverus": {
       "emperor": "Septimius Severus",
       "file": "septimiusseverus",
@@ -59,26 +39,6 @@
       "reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
       "reference": "RIC IV 295",
       "provenance": "Ex. Forvm Ancient Coins"
-    },
-    "caracalla": {
-      "emperor": "Caracalla",
-      "file": "caracalla",
-      "material": "AR",
-      "denomination": "Denarius",
-      "year": "205 A.D.",
-      "mint": "Rome",
-      "officina": null,
-      "emission": null,
-      "weight": "3.40g",
-      "diameter": "20.0mm",
-      "axis": "6H",
-      "obverse_legend": "ANTONINVS PIVS AVG",
-      "reverse_legend": "PONTIF TR P VIII COS II",
-      "exergue": null,      
-      "obverse_desc": "Bust of Caracalla, laureate, draped, facing right",
-      "reverse_desc": "Mars, helmeted, naked except for cloak on left shoulder, standing left, right foot set on helmet, holding branch in right hand and spear in left hand",
-      "reference": "RIC IV 80B",
-      "provenance": "Ex. Romae Aeternae Numismatics"
     },
     "severusalexander": {
       "emperor": "Severus Alexander",
