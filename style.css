@@ -255,7 +255,7 @@ li a {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 100%;
+    max-width: 1000px;
 }
 
 /* Caption of Modal Image */
