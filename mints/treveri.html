@@ -8,8 +8,8 @@
 <h1>Joseph's Ancient Coins</h1>
 
 <ul>
-  <li><a class="active" href="">Home</a></li>
-  <li><a class="inactive-null" href="">N/A</a></li>
+  <li><a class="inactive" href="index.html">Home</a></li>
+  <li><a class="active" href="">Mint</a></li>
   <li><a class="inactive" href="">Contact</a></li>
   <li><a class="inactive" href="">About</a></li>
 </ul>
@@ -17,19 +17,11 @@
 <div class="dropdown">
   <li>Mint</li>
   <div class="dropdown-content">
-    <a href="alexandria.html">Alexandria</a>
-    <a href="aquileia.html">Aquileia</a>
-    <a href="arelate.html">Arelate</a>
-    <a href="cologne.html">Cologne</a>
-    <a href="constantinople.html">Constantinople</a>
-    <a href="cyzicus.html">Cyzicus</a>
-    <a href="lugdunum.html">Lugdunum</a>
     <a href="rome.html">Rome</a>
-    <a href="siscia.html">Siscia</a>
-    <a href="treveri.html">Treveri</a>
+    <a href="constantinople.html">Constantinople</a>
   </div>
 </div>
-
+ 
 <a href="roman_imperial.html" class="button">Roman Imperial</a>
 <a href="roman_provincial.html" class="button">Roman Provincial</a>
 <a href="byzantine.html" class="button">Byzantine</a>
@@ -48,6 +40,7 @@
           var title = coins[key][coin].file
           var mat = coins[key][coin].material;
           var denom = coins[key][coin].denomination;
+          var mnt = coins[key][coin].mint; 
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
@@ -64,7 +57,9 @@
             '    </span>' +
             '  </a>' +
             '</div>';
-          document.getElementById(key).appendChild(card);
+          if (mnt === "Treveri") {
+            document.getElementById(key).appendChild(card);
+          }
         }
       }
     }
@@ -74,16 +69,10 @@
 
 </script>
 
-<p class="coin-title">Roman Imperial</p>
+<p class="coin-title">Rome Mint</p>
 <hr class="style-one">
 <div id="roman_imperial" class></div>
-
-<p class="coin-title">Roman Provincial</p>
-<hr class="style-one">
 <div id="roman_provincial" class></div>
-
-<p class="coin-title">Byzantine</p>
-<hr class="style-one">
 <div id="byzantine" class></div>
 
 </body>
