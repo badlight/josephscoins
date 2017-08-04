@@ -55,8 +55,8 @@
           card.className = 'card';
           card.innerHTML =
             '<div  class="coin">' +
-            '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
-            '    <img src="./images/' + title + '.jpg" class="pic"/>' +
+            '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+            '    <img src="../images/' + title + '.jpg" class="pic"/>' +
             '    <span class="caption-title">' +
             '      ' + imp + '</br>' +
             '      <span class="caption-subtitle">' +
@@ -72,7 +72,7 @@
       }
     }
   };
-  xhttp.open("GET", "../coins.json", true);
+  xhttp.open("GET", ".../coins.json", true);
   xhttp.send();
 
 </script>
