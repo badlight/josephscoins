@@ -40,6 +40,7 @@
           var title = coins[key][coin].file
           var mat = coins[key][coin].material;
           var denom = coins[key][coin].denomination;
+          var mnt = coins[key][coin].mint; 
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
@@ -56,7 +57,9 @@
             '    </span>' +
             '  </a>' +
             '</div>';
-          document.getElementById(key).appendChild(card);
+          if (mnt === "Rome") {
+            document.getElementById(key).appendChild(card);
+          }
         }
       }
     }
@@ -66,17 +69,9 @@
 
 </script>
 
-<p class="coin-title">Roman Imperial</p>
+<p class="coin-title">Rome Mint</p>
 <hr class="style-one">
 <div id="roman_imperial" class></div>
-
-<p class="coin-title">Roman Provincial</p>
-<hr class="style-one">
-<div id="roman_provincial" class></div>
-
-<p class="coin-title">Byzantine</p>
-<hr class="style-one">
-<div id="byzantine" class></div>
 
 </body>
 </html>
