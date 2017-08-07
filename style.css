@@ -447,3 +447,10 @@ hr.style-one:after {
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+#map {
+   width: 765px;
+   height: 400px;
+   background-color: white;
+   margin: auto;
+ }

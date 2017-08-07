@@ -79,6 +79,20 @@
 
 <p class="coin-title">Rome Mint</p>
 <hr class="style-one">
+<div id="map"></div>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(41.902783,12.496366);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QTRDUOZDE2oGpBYseQJuNpwAN7-fWbM&callback=myMap"></script>
+<hr class="style-one">
+
 <div id="roman_imperial" class></div>
 <div id="roman_provincial" class></div>
 <div id="byzantine" class></div>
