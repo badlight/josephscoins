@@ -65,15 +65,40 @@ w3.includeHTML();
 <p class="coin-title">Constantinople Mint</p>
 <hr class="style-one">
 <div id="map"></div>
-<script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(41.008238,28.978359);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 5};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-}
+<script type="text/javascript">
+  function myMap() {
+    var myCenter = new google.maps.LatLng(41.008238,28.978359);
+    var impMapType = new google.maps.ImageMapType({
+      getTileUrl: function(coord, zoom) {
+      return "http://pelagios.org/tilesets/imperium/" + zoom + "/" + coord.x + "/" + coord  .y + ".png";
+    },
+    tileSize: new google.maps.Size(256, 256),
+    isPng: true,
+    alt: "Imperium Romanum",
+    name: "Imperium",
+    minZoom: 3,
+    maxZoom: 11,
+    overviewMapControl: true
+    });
+    var mapOptions = {
+      disableDefaultUI: true,
+      zoomControl: true,
+      scaleControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL
+      },
+      zoom: 5,
+      center: myCenter,
+      mapTypeId: 'IMP'
+    };
+  
+    var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+    map.mapTypes.set('IMP',impMapType);
+    map.setMapTypeId('IMP');
+  
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+  }
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QTRDUOZDE2oGpBYseQJuNpwAN7-fWbM&callback=myMap"></script>
 <hr class="style-one">
