@@ -14,26 +14,6 @@
   <li><a class="inactive" href="">About</a></li>
 </ul>
 
-<div class="dropdown">
-  <li>Mint</li>
-  <div class="dropdown-content">
-    <a href="alexandria.html">Alexandria</a>
-    <a href="aquileia.html">Aquileia</a>
-    <a href="arelate.html">Arelate</a>
-    <a href="cologne.html">Cologne</a>
-    <a href="constantinople.html">Constantinople</a>
-    <a href="cyzicus.html">Cyzicus</a>
-    <a href="lugdunum.html">Lugdunum</a>
-    <a href="rome.html">Rome</a>
-    <a href="siscia.html">Siscia</a>
-    <a href="treveri.html">Treveri</a>
-  </div>
-</div>
- 
-<a href="../roman_imperial.html" class="button">Roman Imperial</a>
-<a href="../roman_provincial.html" class="button">Roman Provincial</a>
-<a href="../byzantine.html" class="button">Byzantine</a>
-
 <script type='text/javascript'>  
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function(){
@@ -65,7 +45,7 @@
             '    </span>' +
             '  </a>' +
             '</div>';
-          if (mnt === "Cyzicus") {
+          if (denom === "Sestertius") {
             document.getElementById(key).appendChild(card);
           }
         }
@@ -77,12 +57,12 @@
 
 </script>
 
-<p class="coin-title">Cyzicus Mint</p>
+<p class="coin-title">Aquileia Mint</p>
 <hr class="style-one">
 <div id="map"></div>
 <script>
 function myMap() {
-  var myCenter = new google.maps.LatLng(40.38, 27.89);
+  var myCenter = new google.maps.LatLng(45.767780,13.369374);
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: myCenter, zoom: 5};
   var map = new google.maps.Map(mapCanvas, mapOptions);

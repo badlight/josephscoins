@@ -29,7 +29,7 @@
     <a href="treveri.html">Treveri</a>
   </div>
 </div>
- 
+  
 <a href="../roman_imperial.html" class="button">Roman Imperial</a>
 <a href="../roman_provincial.html" class="button">Roman Provincial</a>
 <a href="../byzantine.html" class="button">Byzantine</a>
@@ -65,7 +65,7 @@
             '    </span>' +
             '  </a>' +
             '</div>';
-          if (mnt === "Rome") {
+          if (denom === "Denarius") {
             document.getElementById(key).appendChild(card);
           }
         }
@@ -77,12 +77,12 @@
 
 </script>
 
-<p class="coin-title">Rome Mint</p>
+<p class="coin-title">Alexandria Mint</p>
 <hr class="style-one">
 <div id="map"></div>
 <script>
 function myMap() {
-  var myCenter = new google.maps.LatLng(41.902783,12.496366);
+  var myCenter = new google.maps.LatLng(31.2001,29.9187);
   var mapCanvas = document.getElementById("map");
   var mapOptions = {center: myCenter, zoom: 5};
   var map = new google.maps.Map(mapCanvas, mapOptions);
