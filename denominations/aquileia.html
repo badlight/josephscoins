@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+  <title>Joseph's Ancient Coins</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Joseph's Ancient Coins</h1>
+
+<ul>
+  <li><a class="inactive" href="../index.html">Home</a></li>
+  <li><a class="active" href="">Mint</a></li>
+  <li><a class="inactive" href="">Contact</a></li>
+  <li><a class="inactive" href="">About</a></li>
+</ul>
+
+<div class="dropdown">
+  <li>Mint</li>
+  <div class="dropdown-content">
+    <a href="alexandria.html">Alexandria</a>
+    <a href="aquileia.html">Aquileia</a>
+    <a href="arelate.html">Arelate</a>
+    <a href="cologne.html">Cologne</a>
+    <a href="constantinople.html">Constantinople</a>
+    <a href="cyzicus.html">Cyzicus</a>
+    <a href="lugdunum.html">Lugdunum</a>
+    <a href="rome.html">Rome</a>
+    <a href="siscia.html">Siscia</a>
+    <a href="treveri.html">Treveri</a>
+  </div>
+</div>
+ 
+<a href="../roman_imperial.html" class="button">Roman Imperial</a>
+<a href="../roman_provincial.html" class="button">Roman Provincial</a>
+<a href="../byzantine.html" class="button">Byzantine</a>
+
+<script type='text/javascript'>  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
+
+      for (var key in coins) {
+        for (var coin in coins[key]) {
+          var imp = coins[key][coin].emperor;
+          var title = coins[key][coin].file
+          var mat = coins[key][coin].material;
+          var denom = coins[key][coin].denomination;
+          var mnt = coins[key][coin].mint; 
+          var card = document.createElement('div');
+          card.style.display = "inline-block";
+          card.style.padding = "10px";
+          card.className = 'card';
+          card.innerHTML =
+            '<div  class="coin">' +
+            '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+            '    <img src="../images/' + title + '.jpg" class="pic"/>' +
+            '    <span class="caption-title">' +
+            '      ' + imp + '</br>' +
+            '      <span class="caption-subtitle">' +
+            '        ' + mat + ' ' + denom +
+            '      </span>' +
+            '    </span>' +
+            '  </a>' +
+            '</div>';
+          if (mnt === "Aquileia") {
+            document.getElementById(key).appendChild(card);
+          }
+        }
+      }
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
+
+</script>
+
+<p class="coin-title">Aquileia Mint</p>
+<hr class="style-one">
+<div id="map"></div>
+<script>
+function myMap() {
+  var myCenter = new google.maps.LatLng(45.767780,13.369374);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 5};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QTRDUOZDE2oGpBYseQJuNpwAN7-fWbM&callback=myMap"></script>
+<hr class="style-one">
+
+<div id="roman_imperial" class></div>
+<div id="roman_provincial" class></div>
+<div id="byzantine" class></div>
+
+</body>
+</html>

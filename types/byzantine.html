@@ -2,13 +2,13 @@
 <html>
 <head>
   <title>Joseph's Ancient Coins</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <h1>Joseph's Ancient Coins</h1>
 
 <ul>
-  <li><a class="inactive" href="index.html">Home</a></li>
+  <li><a class="inactive" href="../index.html">Home</a></li>
   <li><a class="active" href="#type">Type</a></li>
   <li><a class="inactive" href="">Contact</a></li>
   <li><a class="inactive" href="">About</a></li>
@@ -17,16 +17,16 @@
 <div class="dropdown">
   <li>Mint</li>
   <div class="dropdown-content">
-    <a href="mints/alexandria.html">Alexandria</a>
-    <a href="mints/aquileia.html">Aquileia</a>
-    <a href="mints/arelate.html">Arelate</a>
-    <a href="mints/cologne.html">Cologne</a>
-    <a href="mints/constantinople.html">Constantinople</a>
-    <a href="mints/cyzicus.html">Cyzicus</a>
-    <a href="mints/lugdunum.html">Lugdunum</a>
-    <a href="mints/rome.html">Rome</a>
-    <a href="mints/siscia.html">Siscia</a>
-    <a href="mints/treveri.html">Treveri</a>
+    <a href="../mints/alexandria.html">Alexandria</a>
+    <a href="../mints/aquileia.html">Aquileia</a>
+    <a href="../mints/arelate.html">Arelate</a>
+    <a href="../mints/cologne.html">Cologne</a>
+    <a href="../mints/constantinople.html">Constantinople</a>
+    <a href="../mints/cyzicus.html">Cyzicus</a>
+    <a href="../mints/lugdunum.html">Lugdunum</a>
+    <a href="../mints/rome.html">Rome</a>
+    <a href="../mints/siscia.html">Siscia</a>
+    <a href="../mints/treveri.html">Treveri</a>
   </div>
 </div>
  
@@ -53,8 +53,8 @@
         card.className = 'card';
         card.innerHTML =
           '<div  class="coin">' +
-          '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
-          '    <img src="./images/' + title + '.jpg" class="pic"/>' +
+          '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+          '    <img src="../images/' + title + '.jpg" class="pic"/>' +
           '    <span class="caption-title">' +
           '      ' + imp + '</br>' +
           '      <span class="caption-subtitle">' +
@@ -67,7 +67,7 @@
       }
     }
   };
-  xhttp.open("GET", "coins.json", true);
+  xhttp.open("GET", "../coins.json", true);
   xhttp.send();
 
 </script>
