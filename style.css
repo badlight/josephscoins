@@ -418,7 +418,7 @@ hr.style-one:after {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: lightgrey;
+    background-color: grey;
     min-width: 160px;
     margin-left: -33px;
     margin-top: 10px;
@@ -433,7 +433,9 @@ hr.style-one:after {
     display: block;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {
+  background-color: lightgrey;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
