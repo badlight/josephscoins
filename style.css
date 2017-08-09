@@ -408,10 +408,6 @@ hr.style-one:after {
   text-decoration: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-transition: background-color 0.1s ease-out;
-  -moz-transition: background-color 0.1s ease-out;
-  -o-transition: background-color 0.1s ease-out;
-  transition: background-color 0.1s ease-out;
 
 }
 
@@ -440,10 +436,6 @@ hr.style-one:after {
 .dropdown:hover .dropdown-content {
   display: block;
   background-color: #DFDFDF;
-  -webkit-transition: background-color 0.25s ease-out;
-  -moz-transition: background-color 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
 }
 
 .dropdown:hover .dropbtn {
