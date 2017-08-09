@@ -67,8 +67,24 @@ w3.includeHTML();
 <hr class="style-one">
 <div id="map"></div>
 <script type="text/javascript">
+  var coors = { "lat" : "45.485077" , "long" : "16.373116" };
+  
+  function MakeControl(controlDiv, label) {
+  
+    // Set up the control border.
+    var controlUI = document.createElement('div');
+    controlUI.title = label;
+    controlUI.className = 'controlUI';
+    controlDiv.appendChild(controlUI);
+  
+    // Set up the inner control.
+    var controlText = document.createElement('div');
+    controlText.innerHTML = label;
+    controlText.className = 'controlText';
+  controlUI.appendChild(controlText);
+  }
   function myMap() {
-    var myCenter = new google.maps.LatLng(45.485077,16.373116);
+    var myCenter = new google.maps.LatLng(coors.lat, coors.long);
     var impMapType = new google.maps.ImageMapType({
       getTileUrl: function(coord, zoom) {
       return "http://pelagios.org/tilesets/imperium/" + zoom + "/" + coord.x + "/" + coord  .y + ".png";
@@ -99,7 +115,15 @@ w3.includeHTML();
   
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
+
+    var controlText = ['&copy Digital Atlas of the Roman Empire, <a href="https://dare.ht.lu.se/">DARE.</a>', google.maps.ControlPosition.TOP_RIGHT];
+
+    var divLabel = controlText[0];
+    var divName = document.createElement('div');
+    var newDiv = new MakeControl(divName, divLabel);
+    map.controls[controlText[1]].push(divName);
   }
+  google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QTRDUOZDE2oGpBYseQJuNpwAN7-fWbM&callback=myMap"></script>
 <hr class="style-one">

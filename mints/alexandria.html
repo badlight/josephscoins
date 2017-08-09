@@ -68,6 +68,8 @@ w3.includeHTML();
 <div id="map"></div>
 
 <script type="text/javascript">
+  var coors = { "lat" : "31.2001" , "long" : "29.9187" };
+  
   function MakeControl(controlDiv, label) {
   
     // Set up the control border.
@@ -83,7 +85,7 @@ w3.includeHTML();
   controlUI.appendChild(controlText);
   }
   function myMap() {
-    var myCenter = new google.maps.LatLng(31.2001,29.9187);
+    var myCenter = new google.maps.LatLng(coors.lat, coors.long);
     var impMapType = new google.maps.ImageMapType({
       getTileUrl: function(coord, zoom) {
       return "http://pelagios.org/tilesets/imperium/" + zoom + "/" + coord.x + "/" + coord  .y + ".png";
@@ -115,7 +117,7 @@ w3.includeHTML();
     var marker = new google.maps.Marker({position:myCenter});
     marker.setMap(map);
 
-    var controlText = ['&copy Digital Atlas of the Roman Empire', google.maps.ControlPosition.TOP_RIGHT];
+    var controlText = ['&copy Digital Atlas of the Roman Empire, <a href="https://dare.ht.lu.se/">DARE.</a>', google.maps.ControlPosition.TOP_RIGHT];
 
     var divLabel = controlText[0];
     var divName = document.createElement('div');
