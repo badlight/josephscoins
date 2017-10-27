@@ -198,8 +198,28 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Cyzicus 11a",
-      "provenance": "Ex. Cayón Subastas Auction 42 Lot 2592"
+      "provenance": "Ex. Cayón Subastas 42 Lot 2592"
     },    
+    "diocletian": {
+      "emperor": "Diocletian",
+      "file": "diocletian",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "299 - 300 A.D.",
+      "mint": "Antioch",
+      "officina": "1st",
+      "emission": null,
+      "weight": "11.705g",
+      "diameter": "27.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP C DIOCLETIANVS P F AVG",
+      "reverse_legend": "GENIO POPV-LI ROMANI",
+      "exergue": "-/A//ANT",      
+      "obverse_desc": "Head of Diocletian, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
+      "reference": "RIC VI Antioch 52a",
+      "provenance": "Ex. Wayne Miller, 1991, Valentinian (Warren) 2017"
+    },
     "maximian": {
       "emperor": "Maximian",
       "file": "maximian",
@@ -259,6 +279,26 @@
       "reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 323a",
       "provenance": "Ex. ValiantKnight (Jeff)"
+    },     
+    "liciniusi1": {
+      "emperor": "Licinius I",
+      "file": "liciniusi1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "314 A.D.",
+      "mint": "Rome",
+      "officina": "4th",
+      "emission": null,
+      "weight": "3.20g",
+      "diameter": "21.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP LICINIVS P F AVG",
+      "reverse_legend": "SOLI INV-I-CTO COMITI",
+      "exergue": "R/F//R*Q",      
+      "obverse_desc": "Bust of Licinius, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Rome 22",
+      "provenance": "Ex. Wolf (Ancient & US Coins LLC), Chicago ANA 2013, Valentinian (Warren) 2017"
     },     
     "constantinei2": { 
       "emperor": "Constantine I",
@@ -360,6 +400,26 @@
       "reference": "RIC VII Aquileia 123",
       "provenance": "Ex. YOC (Pete)"
     },     
+    "julianii": {
+      "emperor": "Julian II the Apostate",
+      "file": "julianii",
+      "material": "AE",
+      "denomination": "Maiorina",
+      "year": "361 - 363 A.D.",
+      "mint": "Antioch",
+      "officina": "1st",
+      "emission": null,
+      "weight": "8.46g",
+      "diameter": "30.0mm",
+      "axis": "6H",
+      "obverse_legend": "D N FL CL IVLI-ANVS P F AVG",
+      "reverse_legend": "SECVRITAS REI PVB",
+      "exergue": "-/-//(palm branch left)ANTA(palm branch right)",      
+      "obverse_desc": "Bust of Julian, pearl-diademed, draped, cuirassed, right",
+      "reverse_desc": "Bull, standing right, head front; above, two stars",
+      "reference": "RIC VIII Antioch 216",
+      "provenance": "Ex. CNG Auction 406 Lot 797"
+    },     
     "valentiniani": {
       "emperor": "Valentinian I",
       "file": "valentiniani",
@@ -399,6 +459,26 @@
       "reverse_desc": "Emperor, head right, standing facing, arms folded on breast",
       "reference": "RIC IX Constantinople 82",
       "provenance": "Ex. Aegean Numismatics"
+    }
+    "theodosiusi": {
+      "emperor": "Theodosius I",
+      "file": "theodosiusi",
+      "material": "AE",
+      "denomination": "Maiorina",
+      "year": "392 - 395 A.D.",
+      "mint": "Cyzicus",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "5.56g",
+      "diameter": "23.0mm",
+      "axis": "12H",
+      "obverse_legend": "D N THEODO-SIVS P F AVG",
+      "reverse_legend": "GLORIA-ROMANORVM",
+      "exergue": "-/⳨//CONSⲈ",
+      "obverse_desc": "Bust of Theodosius I, pearl-diademed, draped and cuirassed, right",
+      "reverse_desc": "Emperor, head right, standing facing, holding standard and globe",
+      "reference": "RIC IX Cyzicus 27A",
+      "provenance": "Ex. Cayon Subastas 42 Lot 2697"
     }
   },
   "roman_provincial": {
