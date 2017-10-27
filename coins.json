@@ -260,6 +260,26 @@
       "reference": "RIC VI Treveri 873",
       "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 410"
     },     
+    "maximinusii": {
+      "emperor": "Maximinus II Daia",
+      "file": "maximinus",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "312 A.D.",
+      "mint": "Alexandria",
+      "officina": "1st",
+      "emission": null,
+      "weight": "5.00g",
+      "diameter": "21.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP C GAL VAL MAXIMINVS P F AVG",
+      "reverse_legend": "GENIO - AVGVSTI",
+      "exergue": "N/A//ALE",      
+      "obverse_desc": "Head of Maximinus Daia, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding head of Serapis in right hand and cornucopiae in left hand",
+      "reference": "RIC VI Alexandria 157b",
+      "provenance": "Ex. Eng Collection, John Zielinski Auction 108 Lot 6"
+    },     
     "constantinei1": {
       "emperor": "Constantine I",
       "file": "constantinei1",
