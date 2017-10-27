@@ -241,7 +241,7 @@
       "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398"
     },    
     "constantinei3": {
-      "emperor": "Constantine I",
+      "emperor": "Constantine I the Great",
       "file": "constantinei3",
       "material": "AE",
       "denomination": "Follis",
@@ -281,7 +281,7 @@
       "provenance": "Ex. Eng Collection, John Zielinski Auction 108 Lot 6"
     },     
     "constantinei1": {
-      "emperor": "Constantine I",
+      "emperor": "Constantine I the Great",
       "file": "constantinei1",
       "material": "AE",
       "denomination": "Follis",
@@ -320,8 +320,48 @@
       "reference": "RIC VII Rome 22",
       "provenance": "Ex. Wolf (Ancient & US Coins LLC), Chicago ANA 2013, Valentinian (Warren) 2017"
     },     
+    "constantinei4": {
+      "emperor": "Constantine I the Great",
+      "file": "constantinei4",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "314 - 315 A.D.",
+      "mint": "Rome",
+      "officina": "2nd",
+      "emission": null,
+      "weight": "3.23g",
+      "diameter": "23.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "SOLI INV-I-CTO COMITI",
+      "exergue": "(R on X)/F//RS",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Rome 27",
+      "provenance": "Ex. Carpe Diem Nvmismatics"
+    },     
+    "constantinei5": {
+      "emperor": "Constantine I the Great",
+      "file": "constantinei5",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "317 A.D.",
+      "mint": "Rome",
+      "officina": "4th",
+      "emission": null,
+      "weight": "3.84g",
+      "diameter": "20.5mm",
+      "axis": "12H",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "SOLI INV-I-CTO COMITI",
+      "exergue": "A/-//RQ",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Rome 78",
+      "provenance": "Ex. Carpe Diem Nvmismatics"
+    },     
     "constantinei2": { 
-      "emperor": "Constantine I",
+      "emperor": "Constantine I the Great",
       "file": "constantinei2",
       "material": "AE",
       "denomination": "Follis",
