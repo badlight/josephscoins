@@ -459,7 +459,7 @@
       "reverse_desc": "Emperor, head right, standing facing, arms folded on breast",
       "reference": "RIC IX Constantinople 82",
       "provenance": "Ex. Aegean Numismatics"
-    }
+    },
     "theodosiusi": {
       "emperor": "Theodosius I",
       "file": "theodosiusi",
@@ -480,7 +480,7 @@
       "reference": "RIC IX Cyzicus 27A",
       "provenance": "Ex. Cayon Subastas 42 Lot 2697"
     }
-  },
+  }
   "roman_provincial": {
     "antoninuspius": {
       "emperor": "Antoninus Pius",
