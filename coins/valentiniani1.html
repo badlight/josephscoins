@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+  <title>Joseph's Valentinian I</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Joseph's Ancient Coins</h1>
+
+<ul>
+  <li><a class="inactive" href="../index.html">Home</a></li>
+  <li><a class="active" href="#coin">Coin</a></li>
+  <li><a class="inactive" href="#contact">Contact</a></li>
+  <li><a class="inactive" href="#about">About</a></li>
+</ul>
+
+<script type='text/javascript'>  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
+
+      var imp = coins['roman_imperial']['valentiniani1'].emperor;
+      var title = coins['roman_imperial']['valentiniani1'].file
+      var mat = coins['roman_imperial']['valentiniani1'].material;
+      var denom = coins['roman_imperial']['valentiniani1'].denomination;
+      var date = coins['roman_imperial']['valentiniani1'].year;
+      var mnt = coins['roman_imperial']['valentiniani1'].mint;
+      var off = coins['roman_imperial']['valentiniani1'].officina;
+      var em = coins['roman_imperial']['valentiniani1'].emission;
+      var wt = coins['roman_imperial']['valentiniani1'].weight;
+      var diam = coins['roman_imperial']['valentiniani1'].diameter;
+      var ax = coins['roman_imperial']['valentiniani1'].axis;
+      var obv = coins['roman_imperial']['valentiniani1'].obverse_legend;
+      var rev = coins['roman_imperial']['valentiniani1'].reverse_legend;
+      var ex = coins['roman_imperial']['valentiniani1'].exergue;
+      var obvd = coins['roman_imperial']['valentiniani1'].obverse_desc;
+      var revd = coins['roman_imperial']['valentiniani1'].reverse_desc; 
+      var ref = coins['roman_imperial']['valentiniani1'].reference;
+      var prov = coins['roman_imperial']['valentiniani1'].provenance;
+      var card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML =
+        '<p class="coin-title">' + imp + '</p>' +
+        '<p class="coin-subtitle">' + mat + ' ' + denom + '</p>' +
+        '<div class="coin_page">' +
+        '  <img id="myImg" src="../images/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+        '  <div id="myModal" class="modal">' +
+        '    <span class="close">X</span>' +
+        '    <img class="modal-content" id="img01">' +
+        '    <div id="caption"></div>' +
+        '  </div>' +
+        '  <span class="caption-title">' +
+        '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
+        '    <span class="caption-subtitle2">' +
+        '      ' + wt +', ' + diam + ', ' + ax +
+        '    </span>' +
+        '    <span class="description">' +
+        '      <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
+        '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
+        '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+        '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+        '      <hr class="marginated">' +
+        '      <strong>Reference:</strong> ' + ref +
+        '    </span>' +
+        '  </span>' +
+        '</div>';
+      document.getElementById('roman_imperial').appendChild(card);
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }     
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
+
+</script>
+
+<div id="roman_imperial" class></div>
+
+</body>
+</html>
