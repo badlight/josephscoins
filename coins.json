@@ -300,26 +300,6 @@
       "reference": "RIC VI Heraclea 27b",
       "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398"
     },    
-    "constantinei10": {
-      "emperor": "Constantine I the Great",
-      "file": "constantinei10",
-      "material": "AE",
-      "denomination": "Follis",
-      "year": "310 A.D.",
-      "mint": "Londinium",
-      "officina": "1st",
-      "emission": null,
-      "weight": "4.00g",
-      "diameter": "22.0mm",
-      "axis": "6H",
-      "obverse_legend": "IMP CONSTANTINVS P AVG",
-      "reverse_legend": "SOLI INVIC-TO COMITI",
-      "exergue": "T/F//PLN",      
-      "obverse_desc": "Bust of Constantine I, laureate, cuirassed, right",
-      "reverse_desc": "Sol, chlamys falling from left shoulder, standing left, raising right hand and holding up globe with left hand",
-      "reference": "RIC VI Londinium 124",
-      "provenance": "Ex. Carpe Diem Numismatics 2017"
-    },     
     "constantinei3": {
       "emperor": "Constantine I the Great",
       "file": "constantinei3",
