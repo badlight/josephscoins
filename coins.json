@@ -780,26 +780,6 @@
       "reference": "RIC VIII Antioch 216",
       "provenance": "Ex. CNG Auction 406 Lot 797"
     },     
-    "valentiniani1": {
-      "emperor": "Valentinian I",
-      "file": "valentiniani1",
-      "material": "AE",
-      "denomination": "Centenionalis",
-      "year": "364 - 367 A.D.",
-      "mint": "Siscia",
-      "officina": "4th",
-      "emission": null,
-      "weight": "2.06g",
-      "diameter": "19.0mm",
-      "axis": "6H",
-      "obverse_legend": "D N VALENTINIANVS P F AVG",
-      "reverse_legend": "SECVRITAS REIPVBLICAE",
-      "exergue": "•ΔSISC",
-      "obverse_desc": "Bust of Valentinian I, pearl-diademed, draped and cuirassed, facing right",
-      "reverse_desc": "Victory advancing left, holding wreath and palm",
-      "reference": "RIC IX Siscia 7A type II-B",
-      "provenance": "Ex. Ken Dorney"
-    },
     "valentiniani2": {
       "emperor": "Valentinian I",
       "file": "valentiniani2",
