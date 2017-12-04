@@ -321,7 +321,7 @@
       "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398"
     },    
     "constantinei3": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei3",
       "material": "AE",
       "denomination": "Follis",
@@ -361,7 +361,7 @@
       "provenance": "Ex. Eng Collection, John Zielinski Auction 108 Lot 6"
     },     
     "constantinei1": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei1",
       "material": "AE",
       "denomination": "Follis",
@@ -381,7 +381,7 @@
       "provenance": "Ex. ValiantKnight (Jeff)"
     },     
     "constantinei11": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei11",
       "material": "AE",
       "denomination": "Follis",
@@ -401,7 +401,7 @@
       "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 606"
     },     
     "constantinei12": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei12",
       "material": "AE",
       "denomination": "Follis",
@@ -421,7 +421,7 @@
       "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 606"
     },     
     "constantinei13": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei13",
       "material": "AE",
       "denomination": "Follis",
@@ -461,7 +461,7 @@
       "provenance": "Ex. Wolf (Ancient & US Coins LLC), Chicago ANA 2013, Valentinian (Warren) 2017"
     },     
     "constantinei4": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei4",
       "material": "AE",
       "denomination": "Follis",
@@ -521,7 +521,7 @@
       "provenance": "Ex. FSR Coin Bargain Bin 2017"
     },     
     "constantinei14": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei14",
       "material": "AE",
       "denomination": "Follis",
@@ -541,7 +541,7 @@
       "provenance": "Ex. Carpe Diem Numismatics 2017"
     },     
     "constantinei6": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei6",
       "material": "AE",
       "denomination": "Follis",
@@ -561,7 +561,7 @@
       "provenance": "Ex. FSR Coin Bargain Bin 2017"
     },     
     "constantinei8": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei8",
       "material": "AE",
       "denomination": "Follis",
@@ -581,7 +581,7 @@
       "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 607"
     },     
     "constantinei5": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei5",
       "material": "AE",
       "denomination": "Follis",
@@ -601,7 +601,7 @@
       "provenance": "Ex. Carpe Diem Nvmismatics 2017"
     },     
     "constantinei9": {
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei9",
       "material": "AE",
       "denomination": "Follis",
@@ -621,7 +621,7 @@
       "provenance": "Ex. Carpe Diem Nvmismatics 2017"
     },     
     "constantinei2": { 
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei2",
       "material": "AE",
       "denomination": "Follis",
@@ -641,7 +641,7 @@
       "provenance": "Ex. Agora Auctions 67 Lot 322"
     },     
     "constantinei7": { 
-      "emperor": "Constantine I the Great",
+      "emperor": "Constantine the Great",
       "file": "constantinei7",
       "material": "AE",
       "denomination": "Follis",
@@ -867,7 +867,7 @@
       "file": "antoninuspius2",
       "material": "AE",
       "denomination": "Drachm",
-      "year": "144/145 A.D.",
+      "year": "144 - 145 A.D.",
       "mint": "Alexandria",
       "officina": null,
       "emission": null,
@@ -881,6 +881,28 @@
       "reverse_desc": "Serapis enthroned left within distyle temple, Kerberos at his feet, pediment decorated with disk, date across field",
       "reference": "Köln 1486, Dattari 3057",
       "provenance": "Ex. Robert L. Grover Collection, Art Institute of Chicago (Gemini XIII, 6 April 2017), lot 463 (part of), Ex. CNG Auction 401 Lot 323"
+    }
+  },
+  "byzantine": {
+    "justiniani1": {
+      "emperor": "Justinian the Great",
+      "file": "justiniani1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "540 - 541 A.D.",
+      "mint": "Nicomedia",
+      "officina": "1st",
+      "emission": null,
+      "weight": "23.31g",
+      "diameter": "39.0mm",
+      "axis": "6H",
+      "obverse_legend": "D N IVSTINIANVS P P AVG",
+      "reverse_legend": "-",
+      "exergue": "NIKO",      
+      "obverse_desc": "Helmeted and cuirassed bust of Justinian I facing, holding globus cruciger and shield decorated with horseman motif; cross to right",
+      "reverse_desc": "Large M; A/N/N/O - X/II/II (R.Y. 14) across field, cross above, A below",
+      "reference": "Sear 201",
+      "provenance": "Ex. Numismatik Naumann Auction 60 Lot 593"
     }
   }
 }
