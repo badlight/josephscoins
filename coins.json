@@ -620,6 +620,26 @@
       "reference": "RIC VII Treveri 135",
       "provenance": "Ex. Carpe Diem Nvmismatics 2017"
     },     
+    "constantinei15": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei15",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "317 - 318 A.D.",
+      "mint": "Rome",
+      "officina": "1st",
+      "emission": null,
+      "weight": "4.00g",
+      "diameter": "21.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "SOLI INV-I-CTO COMITI",
+      "exergue": "(wreath)/-//RP",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Rome 97",
+      "provenance": "Ex. Carpe Diem Nvmismatics 2017"
+    },     
     "constantinei2": { 
       "emperor": "Constantine the Great",
       "file": "constantinei2",
