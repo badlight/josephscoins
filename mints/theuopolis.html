@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+  <title>Joseph's Ancient Coins</title>
+  <link rel="stylesheet" href="../style.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+</head>
+<body>
+<h1>Joseph's Ancient Coins</h1>
+
+<ul>
+  <li><a class="inactive" href="../index.html">Home</a></li>
+  <li><a class="active" href="">Mint</a></li>
+  <li><a class="inactive" href="">Contact</a></li>
+  <li><a class="inactive" href="">About</a></li>
+</ul>
+
+<div w3-include-html="/josephscoins/menu.html"></div>
+<script>
+w3.includeHTML();
+</script>
+
+<script type='text/javascript'>  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
+
+      for (var key in coins) {
+        for (var coin in coins[key]) {
+          var imp = coins[key][coin].emperor;
+          var title = coins[key][coin].file
+          var mat = coins[key][coin].material;
+          var denom = coins[key][coin].denomination;
+          var mnt = coins[key][coin].mint; 
+          var card = document.createElement('div');
+          card.style.display = "inline-block";
+          card.style.padding = "10px";
+          card.className = 'card';
+          card.innerHTML =
+            '<div  class="coin">' +
+            '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+            '    <img src="../images/' + title + '.jpg" class="pic"/>' +
+            '    <span class="caption-title">' +
+            '      ' + imp + '</br>' +
+            '      <span class="caption-subtitle">' +
+            '        ' + mat + ' ' + denom +
+            '      </span>' +
+            '    </span>' +
+            '  </a>' +
+            '</div>';
+          if (mnt === "Theuopolis") {
+            document.getElementById(key).appendChild(card);
+          }
+        }
+      }
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
+
+</script>
+
+<p class="coin-title">Theuopolis Mint</p>
+<hr class="style-one">
+<div id="map"></div>
+<script type="text/javascript">
+  var coors = { "lat" : "36.2" , "long" : "36.15" };
+  
+  function MakeControl(controlDiv, label) {
+  
+    // Set up the control border.
+    var controlUI = document.createElement('div');
+    controlUI.title = label;
+    controlUI.className = 'controlUI';
+    controlDiv.appendChild(controlUI);
+  
+    // Set up the inner control.
+    var controlText = document.createElement('div');
+    controlText.innerHTML = label;
+    controlText.className = 'controlText';
+  controlUI.appendChild(controlText);
+  }
+  function myMap() {
+    var myCenter = new google.maps.LatLng(coors.lat, coors.long);
+    var impMapType = new google.maps.ImageMapType({
+      getTileUrl: function(coord, zoom) {
+      return "http://pelagios.org/tilesets/imperium/" + zoom + "/" + coord.x + "/" + coord  .y + ".png";
+    },
+    tileSize: new google.maps.Size(256, 256),
+    isPng: true,
+    alt: "Imperium Romanum",
+    name: "Imperium",
+    minZoom: 3,
+    maxZoom: 11,
+    overviewMapControl: true
+    });
+    var mapOptions = {
+      disableDefaultUI: true,
+      zoomControl: true,
+      scaleControl: true,
+      zoomControlOptions: {
+        style: google.maps.ZoomControlStyle.SMALL
+      },
+      zoom: 5,
+      center: myCenter,
+      mapTypeId: 'IMP'
+    };
+  
+    var map = new google.maps.Map(document.getElementById("map"),mapOptions);
+    map.mapTypes.set('IMP',impMapType);
+    map.setMapTypeId('IMP');
+  
+    var marker = new google.maps.Marker({position:myCenter});
+    marker.setMap(map);
+
+    var controlText = ['&copy Digital Atlas of the Roman Empire, <a href="https://dare.ht.lu.se/">DARE.</a>', google.maps.ControlPosition.TOP_RIGHT];
+
+    var divLabel = controlText[0];
+    var divName = document.createElement('div');
+    var newDiv = new MakeControl(divName, divLabel);
+    map.controls[controlText[1]].push(divName);
+  }
+  google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QTRDUOZDE2oGpBYseQJuNpwAN7-fWbM&callback=myMap"></script>
+<hr class="style-one">
+
+<div id="roman_imperial" class></div>
+<div id="roman_provincial" class></div>
+<div id="byzantine" class></div>
+
+</body>
+</html>

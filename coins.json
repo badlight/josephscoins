@@ -480,6 +480,26 @@
       "reference": "RIC VII Rome 27",
       "provenance": "Ex. Carpe Diem Nvmismatics"
     },     
+    "constantinei10": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei10",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "314 - 315 A.D.",
+      "mint": "Rome",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "3.67g",
+      "diameter": "20.0mm",
+      "axis": "12H",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "SOLI INV-I-CTO COMITI",
+      "exergue": "(R on X)/F//RT",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Rome 27",
+      "provenance": "Ex. Aegean Numismatics"
+    },     
     "liciniusi3": {
       "emperor": "Licinius I",
       "file": "liciniusi3",
@@ -923,6 +943,26 @@
       "reverse_desc": "Large M; A/N/N/O - X/II/II (R.Y. 14) across field, cross above, A below",
       "reference": "Sear 201",
       "provenance": "Ex. Numismatik Naumann Auction 60 Lot 593"
+    },
+    "maurice1": {
+      "emperor": "Maurice Tiberius",
+      "file": "maurice1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "595 - 596 A.D.",
+      "mint": "Theuopolis",
+      "officina": "5th",
+      "emission": null,
+      "weight": "11.40g",
+      "diameter": "31.0mm",
+      "axis": "6H",
+      "obverse_legend": "D N IVSTINIANVS P P AVG",
+      "reverse_legend": "-",
+      "exergue": "τHEUP'",      
+      "obverse_desc": "Bust facing, crown with trefoil ornament, consular robes, mappa in right, eagle tipped scepter in left",
+      "reverse_desc": "Large M between A/N/N/O and X/IIII (R.Y. 14), cross above, E below",
+      "reference": "Sear 533",
+      "provenance": "Ex. Ex. John Zielinski Auction 114 Lot 9"
     }
   }
 }
