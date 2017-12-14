@@ -28,7 +28,7 @@ em {
 
 .pic {
   border-bottom: 1px solid grey;
-  width: 512px;
+  width: 256px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -101,15 +101,15 @@ em {
 .caption-title {
   display: block;
   color: grey;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .caption-subtitle {
   display: block;
   color: grey;
   font-style: italic;
-  font-size: 15px;
-  padding-bottom: 5px;
+  font-size: 18px;
+  padding-bottom: 10px;
 }
 
 .caption-subtitle2 {
