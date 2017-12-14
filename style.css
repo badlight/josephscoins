@@ -376,16 +376,15 @@ hr.style-one {
   width: 750px;
   margin-top: 25px; 
   margin-bottom:-25px;
-  font-family: 'Noto Sans Coptic', 'Crimson Text', serif;
 }
 
 hr.style-one:after {
   content: '\2627';
   display: inline-block;
   position: relative;
-  top: 0em;
+  top: 1em;
   font-size: 2em;
-  padding: 0 0.25em;
+  padding: 0 0.5em;
   background: white;
 }
 
