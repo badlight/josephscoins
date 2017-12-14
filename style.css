@@ -100,15 +100,15 @@ em {
 .caption-title {
   display: block;
   color: grey;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .caption-subtitle {
   display: block;
   color: grey;
   font-style: italic;
-  font-size: 22px;
-  padding-bottom: 25px;
+  font-size: 15px;
+  padding-bottom: 5px;
 }
 
 .caption-subtitle2 {
@@ -152,7 +152,7 @@ li a {
     display: inline-block;
     color: grey;
     text-align: center;
-    padding: 14px 16px;
+    padding: 7px 8px;
     text-decoration: none;
 }
 
