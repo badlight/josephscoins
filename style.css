@@ -59,7 +59,6 @@ em {
 }
 
 #clip {
-  position: absolute;
   clip: rect(0, 128px, 129px, 0);
   /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
 }
