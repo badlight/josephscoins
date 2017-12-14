@@ -28,7 +28,7 @@ em {
 
 .pic {
   border-bottom: 1px solid grey;
-  width: 256px;
+  width: 512px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
@@ -56,11 +56,7 @@ em {
   -moz-transition: background-color 0.1s ease-out;
   -o-transition: background-color 0.1s ease-out;
   transition: background-color 0.1s ease-out;
-}
-
-#clip {
-  clip: rect(0, 128px, 129px, 0);
-  /* clip: shape(top, right, bottom, left); NB 'rect' is the only available option */
+  overflow:hidden;
 }
 
 .coin:hover {
