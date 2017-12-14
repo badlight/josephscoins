@@ -49,7 +49,7 @@ em {
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 13px;
+  border-bottom-right-radius: 0x;
   border: 1px solid grey !important;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
   -webkit-transition: background-color 0.1s ease-out;
@@ -100,7 +100,7 @@ em {
 .caption-title {
   display: block;
   color: grey;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 .caption-subtitle {
