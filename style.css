@@ -101,14 +101,14 @@ em {
 .caption-title {
   display: block;
   color: grey;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .caption-subtitle {
   display: block;
   color: grey;
   font-style: italic;
-  font-size: 18px;
+  font-size: 15px;
   padding-bottom: 10px;
 }
 
