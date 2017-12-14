@@ -379,12 +379,12 @@ hr.style-one {
 }
 
 hr.style-one:after {
-  content: '\2627';
+  content: '\205C';
   display: inline-block;
   position: relative;
-  top: 1em;
+  top: -1em;
   font-size: 2em;
-  padding: 0 0.5em;
+  padding: 0 0.25em;
   background: white;
 }
 
