@@ -60,26 +60,6 @@
       "reference": "RIC IV Septimius Severus 295",
       "provenance": "Ex. Forvm Ancient Coins"
     },
-    "severusalexander": {
-      "emperor": "Severus Alexander",
-      "file": "severusalexander",
-      "material": "AE",
-      "denomination": "Sestertius",
-      "year": "231 - 235 A.D.",
-      "mint": "Rome",
-      "officina": null,
-      "emission": null,
-      "weight": "22.96g",
-      "diameter": "29.0mm",
-      "axis": "12H",
-      "obverse_legend": "IMP ALEXANDER PIVS AVG",
-      "reverse_legend": "MARS VLTOR",
-      "exergue": "S/C//-",      
-      "obverse_desc": "Bust of Severus Alexander, laureate, draped, facing right",
-      "reverse_desc": "Mars, helmeted, walking right, carrying spear in right hand and shield in left hand",
-      "reference": "RIC IV 635",
-      "provenance": "Ex. Romae Aeternae Numismatics"
-    },     
     "gordianiii2": {
       "emperor": "Gordian III",
       "file": "gordianiii2",
@@ -220,9 +200,9 @@
       "reference": "RIC V 927",
       "provenance": "Ex. JAZ Numismatics"
     },       
-    "constantiusi": {
+    "constantiusi1": {
       "emperor": "Constantius I Chlorus",
-      "file": "constantiusi",
+      "file": "constantiusi1",
       "material": "AE",
       "denomination": "Follis",
       "year": "297 - 299 A.D.",
