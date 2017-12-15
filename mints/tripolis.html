@@ -51,7 +51,7 @@ w3.includeHTML();
             '    </span>' +
             '  </a>' +
             '</div>';
-          if (mnt === "Alexandria") {
+          if (mnt === "Tripolis") {
             document.getElementById(key).appendChild(card);
           }
         }
@@ -63,11 +63,11 @@ w3.includeHTML();
 
 </script>
 
-<p class="coin-title">Alexandria Mint</p>
+<p class="coin-title">Tripolis Mint</p>
+<hr class="style-one">
 <div id="map"></div>
-
 <script type="text/javascript">
-  var coors = { "lat" : "31.2001" , "long" : "29.9187" };
+  var coors = { "lat" : "34.433333" , "long" : "35.85" };
   
   function MakeControl(controlDiv, label) {
   
@@ -126,6 +126,7 @@ w3.includeHTML();
   google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QTRDUOZDE2oGpBYseQJuNpwAN7-fWbM&callback=myMap"></script>
+<hr class="style-one">
 
 <div id="roman_imperial" class></div>
 <div id="roman_provincial" class></div>

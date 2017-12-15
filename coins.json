@@ -200,6 +200,26 @@
       "reference": "RIC V 3",
       "provenance": "Ex. Ken Dorney"
     },       
+    "probus1": {
+      "emperor": "Probus",
+      "file": "probus1",
+      "material": "BI",
+      "denomination": "Antoninianus",
+      "year": "276 - 282 A.D.",
+      "mint": "Tripolis",
+      "officina": "N/A",
+      "emission": null,
+      "weight": "3.50g",
+      "diameter": "24.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP C M AVR PROBVS P F AVG",
+      "reverse_legend": "CLEMENTIA TEMP",
+      "exergue": "*//XXI",      
+      "obverse_desc": "Bust of Probus, radiate, draped, right or bust of Probus, radiate, draped, cuirassed, right",
+      "reverse_desc": "Probus, standing right, holding sceptre, receiving globe from Jupiter, standing left, holding sceptre",
+      "reference": "RIC V 927",
+      "provenance": "Ex. JAZ Numismatics"
+    },       
     "constantiusi": {
       "emperor": "Constantius I Chlorus",
       "file": "constantiusi",
