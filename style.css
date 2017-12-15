@@ -368,6 +368,7 @@ li a {
 }
 
 hr.style-one {
+  height: 10px;
   overflow: visible; /* For IE */
   padding: 0;
   border: none;
@@ -389,6 +390,7 @@ hr.style-one:after {
 }
 
 hr.style-two {
+  height: 10px;
   overflow: visible; /* For IE */
   padding: 0;
   border: none;
@@ -410,6 +412,7 @@ hr.style-two:after {
 }
 
 hr.style-three {
+  height: 10px;
   overflow: visible; /* For IE */
   padding: 0;
   border: none;
@@ -419,6 +422,7 @@ hr.style-three {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
+
 hr.style-three:after {
   content: '\274A';
   display: inline-block;
@@ -427,6 +431,18 @@ hr.style-three:after {
   font-size: 1.5em;
   padding: 0 0.25em;
   background: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+hr.style-four {
+  height: 10px;
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  width: 512px;
+  border-top: medium double #333;
+  color: grey;
+  text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
 
