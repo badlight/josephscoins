@@ -373,19 +373,19 @@ hr.style-one {
   border-top: 1px solid grey;
   color: grey;
   text-align: center;
-  width: 750px;
-  margin-top: 25px; 
-  margin-bottom:-25px;
+  width: 512px;
+  margin-top: 15px; 
+  margin-bottom:-15px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 hr.style-one:after {
   content: '\205C';
-  display: inline-block;
-  position: relative;
-  top: -1em;
-  font-size: 2em;
-  padding: 0 0.25em;
-  background: white;
+  display: inline;
+  font-size: 1em;
+  padding: 0 0.5em;
+  background-color: white;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .aligned {
