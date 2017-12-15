@@ -368,23 +368,65 @@ li a {
 }
 
 hr.style-one {
+  overflow: visible; /* For IE */
   padding: 0;
   border: none;
-  border-top: 1px solid grey;
+  width: 512px;
+  border-top: medium double #333;
   color: grey;
   text-align: center;
-  width: 512px;
-  margin-top: 15px; 
-  margin-bottom:-15px;
+  font-family: "Times New Roman", Times, serif;
+}
+hr.style-one:after {
+  content: '\2626';
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
   font-family: "Times New Roman", Times, serif;
 }
 
-hr.style-one:after {
-  content: '\205C';
-  display: inline;
-  font-size: 1em;
-  padding: 0 0.5em;
-  background-color: white;
+hr.style-two {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  width: 512px;
+  border-top: medium double #333;
+  color: grey;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+hr.style-two:after {
+  content: '\2627';
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+hr.style-three {
+  overflow: visible; /* For IE */
+  padding: 0;
+  border: none;
+  width: 512px;
+  border-top: medium double #333;
+  color: grey;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+hr.style-three:after {
+  content: '\274A';
+  display: inline-block;
+  position: relative;
+  top: -0.7em;
+  font-size: 1.5em;
+  padding: 0 0.25em;
+  background: white;
   font-family: "Times New Roman", Times, serif;
 }
 
