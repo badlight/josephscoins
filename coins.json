@@ -902,6 +902,26 @@
     }
   },
   "roman_provincial": {
+    "nero1": {
+      "emperor": "Nero",
+      "file": "nero1",
+      "material": "AE",
+      "denomination": "21",
+      "year": "41 - 54 A.D.",
+      "mint": "Antioch",
+      "officina": null,
+      "emission": null,
+      "weight": "7.20g",
+      "diameter": "21.0mm",
+      "axis": "12H",
+      "obverse_legend": "IM NER CLAV CAESAR",
+      "reverse_legend": "S C",
+      "exergue": null,      
+      "obverse_desc": "Laureate head right",
+      "reverse_desc": "Large S C within wreath",
+      "reference": "RPC I 4297",
+      "provenance": "Ex. JAZ Numismatics, Ex. JWT (Jack) Secret Saturnalia 2017"
+    },
     "antoninuspius": {
       "emperor": "Antoninus Pius",
       "file": "antoninuspius2",
