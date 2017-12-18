@@ -22,24 +22,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['roman_imperial']['nero1'].emperor;
-      var title = coins['roman_imperial']['nero1'].file
-      var mat = coins['roman_imperial']['nero1'].material;
-      var denom = coins['roman_imperial']['nero1'].denomination;
-      var date = coins['roman_imperial']['nero1'].year;
-      var mnt = coins['roman_imperial']['nero1'].mint;
-      var off = coins['roman_imperial']['nero1'].officina;
-      var em = coins['roman_imperial']['nero1'].emission;
-      var wt = coins['roman_imperial']['nero1'].weight;
-      var diam = coins['roman_imperial']['nero1'].diameter;
-      var ax = coins['roman_imperial']['nero1'].axis;
-      var obv = coins['roman_imperial']['nero1'].obverse_legend;
-      var rev = coins['roman_imperial']['nero1'].reverse_legend;
-      var ex = coins['roman_imperial']['nero1'].exergue;
-      var obvd = coins['roman_imperial']['nero1'].obverse_desc;
-      var revd = coins['roman_imperial']['nero1'].reverse_desc; 
-      var ref = coins['roman_imperial']['nero1'].reference;
-      var prov = coins['roman_imperial']['nero1'].provenance;
+      var imp = coins['roman_provincial']['nero1'].emperor;
+      var title = coins['roman_provincial']['nero1'].file
+      var mat = coins['roman_provincial']['nero1'].material;
+      var denom = coins['roman_provincial']['nero1'].denomination;
+      var date = coins['roman_provincial']['nero1'].year;
+      var mnt = coins['roman_provincial']['nero1'].mint;
+      var off = coins['roman_provincial']['nero1'].officina;
+      var em = coins['roman_provincial']['nero1'].emission;
+      var wt = coins['roman_provincial']['nero1'].weight;
+      var diam = coins['roman_provincial']['nero1'].diameter;
+      var ax = coins['roman_provincial']['nero1'].axis;
+      var obv = coins['roman_provincial']['nero1'].obverse_legend;
+      var rev = coins['roman_provincial']['nero1'].reverse_legend;
+      var ex = coins['roman_provincial']['nero1'].exergue;
+      var obvd = coins['roman_provincial']['nero1'].obverse_desc;
+      var revd = coins['roman_provincial']['nero1'].reverse_desc; 
+      var ref = coins['roman_provincial']['nero1'].reference;
+      var prov = coins['roman_provincial']['nero1'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -66,7 +66,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('roman_imperial').appendChild(card);
+      document.getElementById('roman_provincial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       
@@ -101,7 +101,7 @@
 
 </script>
 
-<div id="roman_imperial" class></div>
+<div id="roman_provincial" class></div>
 
 </body>
 </html>
