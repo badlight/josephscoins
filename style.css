@@ -41,30 +41,30 @@ em {
 }
 
 .coin {
+  position: relative;
   vertical-align: top;
   display: inline-block;
   text-align: center;
   width: 256px;
-  background-color: #EAEAEA;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0x;
   border: 1px solid grey !important;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
-  -webkit-transition: background-color 0.1s ease-out;
-  -moz-transition: background-color 0.1s ease-out;
-  -o-transition: background-color 0.1s ease-out;
-  transition: background-color 0.1s ease-out;
-  overflow:hidden;
+
+}
+.coin:hover .overlay{
+  opacity: 0.7;
 }
 
-.coin:hover {
-  background-color: #DFDFDF;
-  -webkit-transition: background-color 0.25s ease-out;
-  -moz-transition: background-color 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #000000;
 }
 
 .coin_page {
@@ -110,6 +110,11 @@ em {
   font-style: italic;
   font-size: 15px;
   padding-bottom: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .caption-subtitle2 {
@@ -117,6 +122,11 @@ em {
   color: grey;
   font-style: italic;
   font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .coin-title {
