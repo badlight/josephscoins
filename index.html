@@ -27,14 +27,13 @@ w3.includeHTML();
   
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
+
       for (var key in coins) {
         for (var coin in coins[key]) {
           var imp = coins[key][coin].emperor;
           var title = coins[key][coin].file
           var mat = coins[key][coin].material;
           var denom = coins[key][coin].denomination;
-          var year = coins[key][coin].year;
-          var ref = coins[key][coin].reference;
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
@@ -43,16 +42,14 @@ w3.includeHTML();
             '<div  class="coin">' +
             '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
             '    <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
-            '    <div class="overlay">' +
-            '      <div class="caption-title">' +
-            '        <span>' + imp + '</span></div>' +
-            '      <div class="caption-subtitle">' +
-            '        <span>' + mat + ' ' + denom + '</span>' +
-            '        <span>' + year + '</span>' +
-            '        <span>' + ref + '</span></div>' +
-            '    </div>' +
+            '    <span class="caption-title">' +
+            '      ' + imp + '</br>' +
+            '      <span class="caption-subtitle">' +
+            '        ' + mat + ' ' + denom +
+            '      </span>' +
+            '    </span>' +
             '  </a>' +
-            '</div>' +
+            '</div>';
           document.getElementById(key).appendChild(card);
         }
       }
@@ -60,6 +57,7 @@ w3.includeHTML();
   };
   xhttp.open("GET", "coins.json", true);
   xhttp.send();
+
 </script>
 
 <p class="coin-title">Roman Imperial</p>
