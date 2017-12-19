@@ -98,16 +98,10 @@ em {
   margin-bottom: 25px
 }
 
-span.caption-title {
+.caption-title {
   display: block;
   color: grey;
   font-size: 18px;
-  background: rgba(0,0,0,0.5);
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 256px;
 }
 
 .caption-subtitle {
@@ -116,12 +110,6 @@ span.caption-title {
   font-style: italic;
   font-size: 15px;
   padding-bottom: 10px;
-  background: rgba(0,0,0,0.5);
-  cursor: pointer;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 256px;
 }
 
 .caption-subtitle2 {
