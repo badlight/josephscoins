@@ -220,26 +220,6 @@
       "reference": "RIC VI Cyzicus 11a",
       "provenance": "Ex. Cayón Subastas 42 Lot 2592"
     },    
-    "constantiusi2": {
-      "emperor": "Constantius I Chlorus",
-      "file": "constantiusi2",
-      "material": "AE",
-      "denomination": "Follis",
-      "year": "298 - 299 A.D.",
-      "mint": "Carthage",
-      "officina": "3rd",
-      "emission": null,
-      "weight": "8.21g",
-      "diameter": "28.0mm",
-      "axis": "6H",
-      "obverse_legend": "CONSTANTIVS NOB CAES",
-      "reverse_legend": "SALVIS AVGG ET CAESS AVCTA KART",
-      "exergue": "-/-//Γ",      
-      "obverse_desc": "Head of Constantius Chlorus, laureate, right",
-      "reverse_desc": "Carthage, wearing long robe, standing front, head left, holding fruits in both hands",
-      "reference": "RIC VI Carthage 28a",
-      "provenance": "Ex. Budgies-Beak eBay 2017"
-    },    
     "diocletian": {
       "emperor": "Diocletian",
       "file": "diocletian",
