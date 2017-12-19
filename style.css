@@ -98,7 +98,7 @@ em {
   margin-bottom: 25px
 }
 
-span.caption-title {
+.caption-title {
   display: block;
   color: grey;
   font-size: 18px;
@@ -111,6 +111,7 @@ span.caption-title {
   font-size: 15px;
   padding-bottom: 10px;
 }
+
 .caption-subtitle2 {
   display: block;
   color: grey;
