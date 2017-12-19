@@ -104,7 +104,7 @@ em {
   color: white;
   font-size: 16px;
   position: relative;
-  top: 30%;
+  top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -115,7 +115,7 @@ em {
   color: white;
   font-size: 14px;
   position: relative;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
