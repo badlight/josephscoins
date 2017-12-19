@@ -100,7 +100,8 @@ em {
 
 .caption-title {
   display: block;
-  color: grey;
+  font-style: bold;
+  color: white;
   font-size: 18px;
   position: absolute;
   top: 50%;
@@ -111,8 +112,7 @@ em {
 
 .caption-subtitle {
   display: block;
-  color: grey;
-  font-style: italic;
+  color: white;
   font-size: 15px;
   padding-bottom: 10px;
   position: absolute;
