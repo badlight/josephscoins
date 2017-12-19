@@ -98,10 +98,16 @@ em {
   margin-bottom: 25px
 }
 
-.caption-title {
+span.caption-title {
   display: block;
   color: grey;
   font-size: 18px;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 256px;
 }
 
 .caption-subtitle {
@@ -110,6 +116,24 @@ em {
   font-style: italic;
   font-size: 15px;
   padding-bottom: 10px;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 256px;
+}
+
+span.caption-title span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+span.caption-subtitle span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .caption-subtitle2 {
