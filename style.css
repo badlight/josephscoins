@@ -51,7 +51,7 @@ em {
 
 }
 .coin:hover .overlay{
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .overlay {
@@ -119,6 +119,20 @@ em {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.caption-title-big {
+  display: block;
+  color: grey;
+  font-size: 18px;
+}
+
+.caption-subtitle-big {
+  display: block;
+  color: grey;
+  font-style: italic;
+  font-size: 15px;
+  padding-bottom: 10px;
 }
 
 .caption-subtitle2 {
