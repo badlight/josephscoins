@@ -41,14 +41,18 @@ w3.includeHTML();
           card.className = 'card';
           card.innerHTML =
             '<div  class="coin">' +
-            '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
-            '    <img src="../images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
-            '    <span class="caption-title">' +
-            '      ' + imp + '</br>' +
-            '      <span class="caption-subtitle">' +
-            '        ' + mat + ' ' + denom +
-            '      </span>' +
-            '    </span>' +
+            '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
+            '    <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
+            '    <div class="overlay">' +
+            '      <div class="caption-title">' +
+            '        <span>' + imp + '</span>' +
+            '      </div>' +
+            '      </br><div class="caption-subtitle">' +
+            '        <span>' + mat + ' ' + denom + '</span><br>' +
+            '        <span>' + year + '</span><br>' +
+            '        <span>' + ref + '</span>' +
+            '      </div>' +
+            '    </div>' +
             '  </a>' +
             '</div>';
           if (denom === "Quarter-Follis") {
