@@ -136,6 +136,36 @@ span.caption-subtitle span {
   vertical-align: middle;
 }
 
+span.caption-title {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+span.caption-subtitle {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 150px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+
+.coin:hover span.text-content {
+  opacity: 1;
+}
+
 .caption-subtitle2 {
   display: block;
   color: grey;
