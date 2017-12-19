@@ -67,6 +67,26 @@ em {
   transition: background-color 0.25s ease-out;
 }
 
+.coin:hover .overlay {
+  opacity: 0.5;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+  background-color: #000000;
+}
+
 .coin_page {
   padding-bottom: 25px;
   vertical-align: top;
@@ -110,6 +130,11 @@ em {
   font-style: italic;
   font-size: 15px;
   padding-bottom: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .caption-subtitle2 {
@@ -117,6 +142,11 @@ em {
   color: grey;
   font-style: italic;
   font-size: 22px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .coin-title {
