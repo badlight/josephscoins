@@ -28,9 +28,9 @@ em {
 
 .pic {
   border-bottom: 1px solid grey;
-  width: 256px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
+  width: 100%;
+  display: block;
+  height: auto;
 }
 
 .big_pic{
@@ -102,6 +102,11 @@ em {
   display: block;
   color: grey;
   font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .caption-subtitle {
