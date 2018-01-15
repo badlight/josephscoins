@@ -200,6 +200,26 @@
       "reference": "RIC V 927",
       "provenance": "Ex. JAZ Numismatics 2017"
     },       
+    "constantiusi3": {
+      "emperor": "Constantius I Chlorus",
+      "file": "constantiusi3",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "296 - 297 A.D.",
+      "mint": "Rome",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "10.57g",
+      "diameter": "27.0mm",
+      "axis": "12H",
+      "obverse_legend": "CONSTANTIVS NOB CAES",
+      "reverse_legend": "GENIO POPV-LI ROMANI",
+      "exergue": "R/-//Γ",      
+      "obverse_desc": "Head of Constantius Chlorus, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
+      "reference": "RIC VI Rome 66a",
+      "provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 693 "
+    },    
     "constantiusi1": {
       "emperor": "Constantius I Chlorus",
       "file": "constantiusi1",
@@ -459,6 +479,26 @@
       "reverse_desc": "Sol, chlamys hanging behind (sometimes flying out), standing right, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 335a",
       "provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 342"
+    },     
+    "constantinei16": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei16",
+      "material": "AE",
+      "denomination": "Half-Follis",
+      "year": "312 - 313 A.D.",
+      "mint": "Rome",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "2.93g",
+      "diameter": "19.0mm",
+      "axis": "6H",
+      "obverse_legend": "FL VAL CONSTANTINVS AVG",
+      "reverse_legend": "VIRT EXE-RCIT GALL",
+      "exergue": "X/VI//RT",      
+      "obverse_desc": "Bust of Constantine I, radiate, draped, cuirassed, right, seen from behind",
+      "reverse_desc": "Virtus, draped, standing left, sometimes looking right, leaning on reversed spear with right hand and holding parazonium in left hand",
+      "reference": "RIC VI Rome 360",
+      "provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 703"
     },     
     "liciniusi1": {
       "emperor": "Licinius I",
