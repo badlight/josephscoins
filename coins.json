@@ -420,6 +420,26 @@
       "reference": "RIC VI Rome 323a",
       "provenance": "Ex. ValiantKnight (Jeff) 2017"
     },     
+    "constantinei17": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei17",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "312 - 313 A.D.",
+      "mint": "Rome",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "3.00g",
+      "diameter": "20.0mm",
+      "axis": "12H",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "SOLI INVICTO COMITI",
+      "exergue": "-/-//RT",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
+      "reference": "RIC VI Rome 323a",
+      "provenance": "Ex. Carpe Diem Numismatics 2018"
+    },     
     "constantinei11": {
       "emperor": "Constantine the Great",
       "file": "constantinei11",
@@ -719,6 +739,26 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 97",
       "provenance": "Ex. Carpe Diem Nvmismatics 2017"
+    },     
+    "liciniusi4": {
+      "emperor": "Licinius I",
+      "file": "liciniusi4",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "321 - 323 A.D.",
+      "mint": "Antioch",
+      "officina": "7th",
+      "emission": null,
+      "weight": "3.45g",
+      "diameter": "19.0mm",
+      "axis": "12H",
+      "obverse_legend": "IMP C VAL LICIN LICINIVS P F AVG",
+      "reverse_legend": "IOVI CONS-ERVATORI",
+      "exergue": "-/(X on IIΓ)//SMANTZ",      
+      "obverse_desc": "Bust of Licinius, radiate, draped, cuirassed, right",
+      "reverse_desc": "Jupiter, nude, chlamys draped across left shoulder, standing left, holding Victory on globe in right hand and leaning on sceptre with left hand; to left, eagle with wreath; to right, captive",
+      "reference": "RIC VII Rome 97",
+      "provenance": "Ex. Carpe Diem Nvmismatics 2018"
     },     
     "constantinei2": { 
       "emperor": "Constantine the Great",
