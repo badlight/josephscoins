@@ -1084,6 +1084,27 @@
       "reference": "SBCV 533",
       "provenance": "Ex. Arnoldoe Collection, Ex. JAZ Numismatics Auction 114 Lot 9"
     },
+    "anonymous1": {
+      "emperor": "Basil II & COnstantine VIII",
+      "file": "anonymous1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "976 - 1025 A.D.",
+      "mint": "Constantinople",
+      "officina": null,
+      "emission": null,
+      "weight": "7.93g",
+      "diameter": "28.0mm",
+      "axis": "6H",
+      "obverse_legend": "+ЄMMANOVHΛ/IC - XC",
+      "reverse_legend": "+IҺSЧS/XRISTЧS/ЬASILЄЧ/ЬASILЄ",
+      "exergue": "Type A3",      
+      "obverse_desc": "Facing bust of Christ Pantokrator",
+      "reverse_desc": "Legend in four lines; decoration above and belo",
+      "reference": "SBCV 1818",
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 894"
+    },
+    
     "anonymous3": {
       "emperor": "Romanus III",
       "file": "anonymous3",
