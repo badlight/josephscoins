@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Joseph's diocletian2</title>
+  <title>Joseph's Diocletian</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -22,24 +22,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['roman_imperial']['diocletian2'].emperor;
-      var title = coins['roman_imperial']['diocletian2'].file
-      var mat = coins['roman_imperial']['diocletian2'].material;
-      var denom = coins['roman_imperial']['diocletian2'].denomination;
-      var date = coins['roman_imperial']['diocletian2'].year;
-      var mnt = coins['roman_imperial']['diocletian2'].mint;
-      var off = coins['roman_imperial']['diocletian2'].officina;
-      var em = coins['roman_imperial']['diocletian2'].emission;
-      var wt = coins['roman_imperial']['diocletian2'].weight;
-      var diam = coins['roman_imperial']['diocletian2'].diameter;
-      var ax = coins['roman_imperial']['diocletian2'].axis;
-      var obv = coins['roman_imperial']['diocletian2'].obverse_legend;
-      var rev = coins['roman_imperial']['diocletian2'].reverse_legend;
-      var ex = coins['roman_imperial']['diocletian2'].exergue;
-      var obvd = coins['roman_imperial']['diocletian2'].obverse_desc;
-      var revd = coins['roman_imperial']['diocletian2'].reverse_desc; 
-      var ref = coins['roman_imperial']['diocletian2'].reference;
-      var prov = coins['roman_imperial']['diocletian2'].provenance;
+      var imp = coins['roman_provincial']['diocletian2'].emperor;
+      var title = coins['roman_provincial']['diocletian2'].file
+      var mat = coins['roman_provincial']['diocletian2'].material;
+      var denom = coins['roman_provincial']['diocletian2'].denomination;
+      var date = coins['roman_provincial']['diocletian2'].year;
+      var mnt = coins['roman_provincial']['diocletian2'].mint;
+      var off = coins['roman_provincial']['diocletian2'].officina;
+      var em = coins['roman_provincial']['diocletian2'].emission;
+      var wt = coins['roman_provincial']['diocletian2'].weight;
+      var diam = coins['roman_provincial']['diocletian2'].diameter;
+      var ax = coins['roman_provincial']['diocletian2'].axis;
+      var obv = coins['roman_provincial']['diocletian2'].obverse_legend;
+      var rev = coins['roman_provincial']['diocletian2'].reverse_legend;
+      var ex = coins['roman_provincial']['diocletian2'].exergue;
+      var obvd = coins['roman_provincial']['diocletian2'].obverse_desc;
+      var revd = coins['roman_provincial']['diocletian2'].reverse_desc; 
+      var ref = coins['roman_provincial']['diocletian2'].reference;
+      var prov = coins['roman_provincial']['diocletian2'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -67,7 +67,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('roman_imperial').appendChild(card);
+      document.getElementById('roman_provincial').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       
@@ -102,7 +102,7 @@
 
 </script>
 
-<div id="roman_imperial" class></div>
+<div id="roman_provincial" class></div>
 
 </body>
 </html>
