@@ -22,24 +22,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['roman_imperial']['constantinevii1'].emperor;
-      var title = coins['roman_imperial']['constantinevii1'].file
-      var mat = coins['roman_imperial']['constantinevii1'].material;
-      var denom = coins['roman_imperial']['constantinevii1'].denomination;
-      var date = coins['roman_imperial']['constantinevii1'].year;
-      var mnt = coins['roman_imperial']['constantinevii1'].mint;
-      var off = coins['roman_imperial']['constantinevii1'].officina;
-      var em = coins['roman_imperial']['constantinevii1'].emission;
-      var wt = coins['roman_imperial']['constantinevii1'].weight;
-      var diam = coins['roman_imperial']['constantinevii1'].diameter;
-      var ax = coins['roman_imperial']['constantinevii1'].axis;
-      var obv = coins['roman_imperial']['constantinevii1'].obverse_legend;
-      var rev = coins['roman_imperial']['constantinevii1'].reverse_legend;
-      var ex = coins['roman_imperial']['constantinevii1'].exergue;
-      var obvd = coins['roman_imperial']['constantinevii1'].obverse_desc;
-      var revd = coins['roman_imperial']['constantinevii1'].reverse_desc; 
-      var ref = coins['roman_imperial']['constantinevii1'].reference;
-      var prov = coins['roman_imperial']['constantinevii1'].provenance;
+      var imp = coins['byzantine']['constantinevii1'].emperor;
+      var title = coins['byzantine']['constantinevii1'].file
+      var mat = coins['byzantine']['constantinevii1'].material;
+      var denom = coins['byzantine']['constantinevii1'].denomination;
+      var date = coins['byzantine']['constantinevii1'].year;
+      var mnt = coins['byzantine']['constantinevii1'].mint;
+      var off = coins['byzantine']['constantinevii1'].officina;
+      var em = coins['byzantine']['constantinevii1'].emission;
+      var wt = coins['byzantine']['constantinevii1'].weight;
+      var diam = coins['byzantine']['constantinevii1'].diameter;
+      var ax = coins['byzantine']['constantinevii1'].axis;
+      var obv = coins['byzantine']['constantinevii1'].obverse_legend;
+      var rev = coins['byzantine']['constantinevii1'].reverse_legend;
+      var ex = coins['byzantine']['constantinevii1'].exergue;
+      var obvd = coins['byzantine']['constantinevii1'].obverse_desc;
+      var revd = coins['byzantine']['constantinevii1'].reverse_desc; 
+      var ref = coins['byzantine']['constantinevii1'].reference;
+      var prov = coins['byzantine']['constantinevii1'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -67,7 +67,7 @@
         '    </span>' +
         '  </span>' +
         '</div>';
-      document.getElementById('roman_imperial').appendChild(card);
+      document.getElementById('byzantine').appendChild(card);
       // Get the modal
       var modal = document.getElementById('myModal');
       
@@ -102,7 +102,7 @@
 
 </script>
 
-<div id="roman_imperial" class></div>
+<div id="byzantine" class></div>
 
 </body>
 </html>
