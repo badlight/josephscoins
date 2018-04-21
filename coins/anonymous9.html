@@ -35,7 +35,8 @@
       var ax = coins['byzantine']['anonymous9'].axis;
       var obv = coins['byzantine']['anonymous9'].obverse_legend;
       var rev = coins['byzantine']['anonymous9'].reverse_legend;
-      var ex = coins['byzantine']['anonymous9'].exergue;
+      var cl = coins['byzantine']['anonymous9'].class;
+      var typ = coins['byzantine']['anonymous9'].type;
       var obvd = coins['byzantine']['anonymous9'].obverse_desc;
       var revd = coins['byzantine']['anonymous9'].reverse_desc; 
       var ref = coins['byzantine']['anonymous9'].reference;
@@ -60,7 +61,11 @@
         '    <span class="description">' +
         '      <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
         '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-        '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+        '      <p class="aligned"><strong>Class:</strong> ' + cl + '<p>' +
+        '      <p class="aligned"><strong>Type:</strong> ' + typ + '<p>' +
+        '      <p class="aligned"><strong>Exergue:</strong> <img src="anonymous/' + typ + 'R.gif"><p>' +
+        '      <p class="aligned"><strong>Nimbus:</strong> <img src="anonymous/' + typ + 'N.gif"><p>' +
+        '      <p class="aligned"><strong>Book:</strong> <img src="anonymous/' + typ + 'B.gif"></br><p>' +
         '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
        '      <hr class="marginated">' +
         '      <strong>Reference:</strong> ' + ref +
