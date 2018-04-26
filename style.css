@@ -97,8 +97,8 @@ em {
   color: red;
   font-size: 16px;
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 5%;
+  right: 5%;
   width: 100px; 
   text-align: right;
 }

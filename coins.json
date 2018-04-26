@@ -165,7 +165,8 @@
       "obverse_desc": "Radiate and cuirassed bust right, from the front",
       "reverse_desc": "Sol standing right, radiate, nude but for cloak over shoulders, raising branch in right, bow in left, left foot on captive",
       "reference": "RIC V 64",
-      "provenance": "Ex. Forvm Ancient Coins 2016"
+      "provenance": "Ex. Forvm Ancient Coins 2016",
+      "code": ""
     },   
     "ulpiaseverina": {
       "emperor": "Ulpia Severina",
@@ -185,7 +186,8 @@
       "obverse_desc": "Bust of Severina, diademed, draped, on crescent, right",
       "reverse_desc": "Aurelian, standing right or left, clasping hand of Severina, standing right or left",
       "reference": "RIC V 3",
-      "provenance": "Ex. Ken Dorney 2017"
+      "provenance": "Ex. Ken Dorney 2017",
+      "code": ""
     },       
     "probus1": {
       "emperor": "Probus",
@@ -205,7 +207,8 @@
       "obverse_desc": "Bust of Probus, radiate, draped, right or bust of Probus, radiate, draped, cuirassed, right",
       "reverse_desc": "Probus, standing right, holding sceptre, receiving globe from Jupiter, standing left, holding sceptre",
       "reference": "RIC V 927",
-      "provenance": "Ex. JAZ Numismatics 2017"
+      "provenance": "Ex. JAZ Numismatics 2017",
+      "code": ""
     },       
     "constantiusi3": {
       "emperor": "Constantius I Chlorus",
@@ -246,7 +249,8 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Cyzicus 11a",
-      "provenance": "Ex. Cayón Subastas 42 Lot 2592"
+      "provenance": "Ex. Cayón Subastas 42 Lot 2592",
+      "code": ""
     },    
     "constantiusi2": {
       "emperor": "Constantius I Chlorus",
@@ -434,7 +438,8 @@
       "obverse_desc": "Head of Maximinus Daia, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding head of Serapis in right hand and cornucopiae in left hand",
       "reference": "RIC VI Alexandria 157b",
-      "provenance": "Ex. Eng Collection, Ex. JAZ Numismatics Auction 108 Lot 6"
+      "provenance": "Ex. Eng Collection, Ex. JAZ Numismatics Auction 108 Lot 6",
+      "code": ""
     },     
     "constantinei1": {
       "emperor": "Constantine the Great",
@@ -475,7 +480,8 @@
       "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
       "reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 323a",
-      "provenance": "Ex. Carpe Diem Numismatics 2018"
+      "provenance": "Ex. Carpe Diem Numismatics 2018",
+      "code": "NFGA"
     },     
     "constantinei20": {
       "emperor": "Constantine the Great",
@@ -495,7 +501,8 @@
       "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
       "reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 323a",
-      "provenance": "Ex. ValiantKnight (Jeff) 2017"
+      "provenance": "Ex. FSR Bargain Bin 2018",
+      "code": "DLPM"
     },     
     "constantinei17": {
       "emperor": "Constantine the Great",
@@ -515,7 +522,8 @@
       "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
       "reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 323a",
-      "provenance": "Ex. Carpe Diem Numismatics 2018"
+      "provenance": "Ex. Carpe Diem Numismatics 2018",
+      "code": "GWT6"
     },     
     "constantinei11": {
       "emperor": "Constantine the Great",
