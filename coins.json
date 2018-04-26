@@ -18,7 +18,8 @@
       "obverse_desc": "Bust of Hadrian, laureate, draped, cuirassed, facing right",
       "reverse_desc": "Salus seated left, feeding serpent, who is wrapped around an altar, out of patera with right hand",
       "reference": "RIC II 137C",
-      "provenance": "Ex. Romae Aeternae Numismatics 2016"
+      "provenance": "Ex. Romae Aeternae Numismatics 2016",
+      "code": "WK25"
     },      
     "septimiusseverus1": {
       "emperor": "Septimius Severus",
@@ -38,7 +39,8 @@
       "obverse_desc": "Head of Septimius Severus, laureate, right",
       "reverse_desc": "Virtus, helmeted, draped, standing left, holding spear in right hand and parazonium in left hand",
       "reference": "RIC IV Septimius Severus 431",
-      "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 442"
+      "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 442",
+      "code": "KQTH"
     },
     "septimiusseverus2": {
       "emperor": "Septimius Severus",
@@ -58,7 +60,8 @@
       "obverse_desc": "Bust of Septimius Severus, laureate, facing right",
       "reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
       "reference": "RIC IV Septimius Severus 295",
-      "provenance": "Ex. Forvm Ancient Coins 2016"
+      "provenance": "Ex. Forvm Ancient Coins 2016",
+      "code": "KUQW"
     },
     "gordianiii2": {
       "emperor": "Gordian III",
@@ -78,7 +81,8 @@
       "obverse_desc": "Bust of Gordian III, radiate, draped, cuirassed, facing right",
       "reverse_desc": "Virtus, helmeted, in military attire, standing front, head left, holding branch in right hand and spear in left hand; against right side, shield resting",
       "reference": "RIC IV 39",
-      "provenance": "Ex. Ancient Numismatic Enterprise 2017"
+      "provenance": "Ex. Ancient Numismatic Enterprise 2017",
+      "code": "3DER"
     },   
     "valeriani": {
       "emperor": "Valerian I",
@@ -98,7 +102,8 @@
       "obverse_desc": "Bust of Valerian, radiate, draped, facing right",
       "reverse_desc": "Fides, draped, standing left, holding two ensigns",
       "reference": "RIC V 89",
-      "provenance": "Ex. Forvm Ancient Coins 2017"
+      "provenance": "Ex. Forvm Ancient Coins 2017",
+      "code": "C3FD"
     },         
     "postumus": {
       "emperor": "Postumus",
@@ -118,7 +123,8 @@
       "obverse_desc": "Bust of Postumus, radiate, draped, right, or bust of Postumus, radiate, draped, cuirassed, right",
       "reverse_desc": "Minerva, helmeted, draped, running left, holding olive-branch in right hand and spear and shield in left hand",
       "reference": "RIC V Postumus 74",
-      "provenance": "Ex. Aeternitas Numismatics 2017"
+      "provenance": "Ex. Aeternitas Numismatics 2017",
+      "code": "K3CD"
     },         
     "victorinus2": {
       "emperor": "Victorinus",
@@ -138,7 +144,8 @@
       "obverse_desc": "Bust of Victorinus, radiate, draped, right, or bust of Victorinus, radiate, draped, cuirassed, facing right",
       "reverse_desc": "Sol, walking left, raising right hand and holding whip in left hand",
       "reference": "RIC V 114",
-      "provenance": "Ex. Art Ancient Ltd., Ex. <a href=\"south_petherton_hoard.html\">South Petherton Hoard</a>"
+      "provenance": "Ex. Art Ancient Ltd., Ex. <a href=\"south_petherton_hoard.html\">South Petherton Hoard</a>",
+      "code": "5X9Z"
     },         
     "aurelian": {
       "emperor": "Aurelian",
@@ -218,7 +225,8 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
       "reference": "RIC VI Rome 66a",
-      "provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 693 "
+      "provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 693",
+      "code": "4B2T"
     },    
     "constantiusi1": {
       "emperor": "Constantius I Chlorus",
@@ -258,7 +266,8 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right",
       "reverse_desc": "Carthage, wearing long robe, standing front, head left, holding fruits in both hands",
       "reference": "RIC VI Carthage 28a",
-      "provenance": "Ex. Budgies-Beak eBay 2017"
+      "provenance": "Ex. Budgies-Beak eBay 2017",
+      "code": "U2ET"
     },    
     "diocletian": {
       "emperor": "Diocletian",
@@ -278,7 +287,8 @@
       "obverse_desc": "Head of Diocletian, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Antioch 52a",
-      "provenance": "Ex. Wayne Miller, 1991, Valentinian (Warren) 2017"
+      "provenance": "Ex. Wayne Miller, 1991, Valentinian (Warren) 2017",
+      "code": "TDXF"
     },
     "galerius": {
       "emperor": "Galerius",
@@ -298,7 +308,8 @@
       "obverse_desc": "Head of Galerius, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and holding cornucopiae in left hand; liquid sometimes flowing from patera",
       "reference": "RIC VI Alexandria 33b",
-      "provenance": "Ex. FSR Coin Bargain Bin 2017"
+      "provenance": "Ex. FSR Coin Bargain Bin 2017",
+      "code": "AEL4"
     },
     "maximian2": {
       "emperor": "Maximian",
@@ -318,7 +329,8 @@
       "obverse_desc": "Head of Maximian, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Antioch 58b",
-      "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 600"
+      "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 600",
+      "code": "ZZVN"
     },    
     "maximian3": {
       "emperor": "Maximian",
@@ -338,7 +350,8 @@
       "obverse_desc": "Head of Maximian, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
       "reference": "RIC VI Siscia 146",
-      "provenance": "Ex. JAZ Numismatics Auction 110 Lot 19"
+      "provenance": "Ex. JAZ Numismatics Auction 110 Lot 19",
+      "code": "7FEW"
     },    
     "maximian1": {
       "emperor": "Maximian",

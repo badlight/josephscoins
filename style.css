@@ -91,6 +91,18 @@ em {
   margin-bottom: 25px
 }
 
+.code {
+  display: block;
+  font-style: bold;
+  color: red;
+  font-size: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px; 
+  text-align: right;
+}
+
 .caption-title {
   display: block;
   font-style: bold;
