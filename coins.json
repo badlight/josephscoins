@@ -711,7 +711,7 @@
       "obverse_desc": "Bust of Licinius, laureate, draped, cuirassed, right",
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 29",
-      "provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 317"
+      "provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 317",
       "code": ""
     },     
     "liciniusi2": {
@@ -1005,7 +1005,8 @@
       "obverse_desc": "Type: Bust of Constantine I, rosette-diademed, draped, cuirassed, right",
       "reverse_desc": "Victory, winged, draped, seated left on cippus, head right, holding palm in each hand; before her, trophy; at foot of trophy, kneeling captive, head turned, being spurned by Victory",
       "reference": "RIC VII Constantinople 35",
-      "provenance": "Ex. FSR Coin Bargain Bin 2017"
+      "provenance": "Ex. FSR Coin Bargain Bin 2017",
+      "code": ""
     },     
     "commem4": {
       "emperor": "Constantinople Commemorative",
@@ -1025,7 +1026,8 @@
       "obverse_desc": "Bust of Constantinopolis, laureate, helmeted, wearing imperial cloak, left, holding reversed spear in right hand",
       "reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
       "reference": "RIC VII Lugdunum 246",
-      "provenance": "Ex. YOC (Pete)"
+      "provenance": "Ex. YOC (Pete)",
+      "code": "JWDZ"
     },     
     "commem3": {
       "emperor": "Rome Commemorative",
@@ -1045,7 +1047,8 @@
       "obverse_desc": "Bust of Roma, helmeted, wearing imperial cloak, left",
       "reverse_desc": "She-wolf, standing left, suckling twins; above, two stars with palm branch left in between",
       "reference": "RIC VII Arelate 362",
-      "provenance": "Ex. YOC (Pete)"
+      "provenance": "Ex. YOC (Pete)",
+      "code": "M84G"
     },     
     "commem2": {
       "emperor": "Rome Commemorative",
@@ -1065,7 +1068,8 @@
       "obverse_desc": "Bust of Roma, helmeted, wearing imperial cloak, left",
       "reverse_desc": "She-wolf, standing left, suckling twins; above, two stars",
       "reference": "RIC VII Treveri 542",
-      "provenance": "Ex. YOC (Pete)"
+      "provenance": "Ex. YOC (Pete)",
+      "code": "5QWU" 
     },     
     "commem1": {
       "emperor": "Constantinople Commemorative",
@@ -1085,7 +1089,8 @@
       "obverse_desc": "Bust of Constantinopolis, laureate, helmeted, wearing imperial cloak, left, holding reversed spear in right hand",
       "reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
       "reference": "RIC VII Aquileia 123",
-      "provenance": "Ex. YOC (Pete)"
+      "provenance": "Ex. YOC (Pete)",
+      "code": "DP6A"
     },     
     "constantiusii1": {
       "emperor": "Constantius II",
@@ -1105,7 +1110,8 @@
       "obverse_desc": "Bust of Constantius II, pearl-diademed, draped, cuirassed, right",
       "reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing cap, facing soldier, extending right arm",
       "reference": "RIC VIII Antioch 132",
-      "provenance": "Ex. Dr. Busso Peus Nachf E-Auktion 420 Teil 2, Lot 6360"
+      "provenance": "Ex. Dr. Busso Peus Nachf E-Auktion 420 Teil 2, Lot 6360",
+      "code": ""
     },     
     "julianii": {
       "emperor": "Julian II the Apostate",
@@ -1125,7 +1131,8 @@
       "obverse_desc": "Bust of Julian, pearl-diademed, draped, cuirassed, right",
       "reverse_desc": "Bull, standing right, head front; above, two stars",
       "reference": "RIC VIII Antioch 216",
-      "provenance": "Ex. CNG Auction 406 Lot 797"
+      "provenance": "Ex. CNG Auction 406 Lot 797",
+      "code": "RPUP"
     },     
     "valentiniani2": {
       "emperor": "Valentinian I",
@@ -1145,7 +1152,8 @@
       "obverse_desc": "Bust of Valentinian I, pearl-diademed, draped and cuirassed, right",
       "reverse_desc": "Victory advancing left, holding wreath and palm",
       "reference": "RIC IX Siscia 15A",
-      "provenance": "Ex. FSR Coin Bargain Bin 2017"
+      "provenance": "Ex. FSR Coin Bargain Bin 2017",
+      "code": "6GQ5"
     },
     "valensi": {
       "emperor": "Valens",
@@ -1165,7 +1173,8 @@
       "obverse_desc": " of Valens, pearl-diademed, draped and cuirassed, right",
       "reverse_desc": "Victory advancing left, holding wreath and palm",
       "reference": "RIC IX Siscia 15B",
-      "provenance": "Ex. FSR Coin Bargain Bin 2017"
+      "provenance": "Ex. FSR Coin Bargain Bin 2017",
+      "code": "8A74"
     },
     "aeliaflaccilla": {
       "emperor": "Aelia Flaccilla",
@@ -1185,7 +1194,8 @@
       "obverse_desc": "Bust of Aelia Flaccilla, with elaborate head-dress, draped, necklace, and mantle",
       "reverse_desc": "Emperor, head right, standing facing, arms folded on breast",
       "reference": "RIC IX Constantinople 82",
-      "provenance": "Ex. Aegean Numismatics"
+      "provenance": "Ex. Aegean Numismatics",
+      "code": ""
     },
     "theodosiusi": {
       "emperor": "Theodosius I",
@@ -1205,7 +1215,8 @@
       "obverse_desc": "Bust of Theodosius I, pearl-diademed, draped and cuirassed, right",
       "reverse_desc": "Emperor, head right, standing facing, holding standard and globe",
       "reference": "RIC IX Cyzicus 27A",
-      "provenance": "Ex. Cayon Subastas 42 Lot 2697"
+      "provenance": "Ex. Cayon Subastas 42 Lot 2697",
+      "code": ""
     }
   },
   "roman_provincial": {
@@ -1227,7 +1238,8 @@
       "obverse_desc": "Laureate head right",
       "reverse_desc": "Large S C within wreath",
       "reference": "RPC I 4297",
-      "provenance": "Ex. JAZ Numismatics Auction 111 Lot 3, Ex. JWT (Jack) Secret Saturnalia 2017"
+      "provenance": "Ex. JAZ Numismatics Auction 111 Lot 3, Ex. JWT (Jack) Secret Saturnalia 2017",
+      "code": ""
     },
     "antoninuspius": {
       "emperor": "Antoninus Pius",
@@ -1247,7 +1259,8 @@
       "obverse_desc": "Bust of Antoninus Pius, laureate, facing right",
       "reverse_desc": "Serapis enthroned left within distyle temple, Kerberos at his feet, pediment decorated with disk, date across field",
       "reference": "Köln 1486, Dattari 3057",
-      "provenance": "Ex. Robert L. Grover Collection, Art Institute of Chicago (Gemini XIII, 6 April 2017), lot 463 (part of), Ex. CNG Auction 401 Lot 323"
+      "provenance": "Ex. Robert L. Grover Collection, Art Institute of Chicago (Gemini XIII, 6 April 2017), lot 463 (part of), Ex. CNG Auction 401 Lot 323",
+      "code": ""
     },
     "diocletian2": {
       "emperor": "Diocletian",
@@ -1267,7 +1280,8 @@
       "obverse_desc": "Bust of Diocletian, laureate, cuirassed right",
       "reverse_desc": "Dikaiosyne standing left holding scales & cornucopia",
       "reference": "Milne 4770",
-      "provenance": "Ex. FSRCoin Bargain List, March 2018"
+      "provenance": "Ex. FSRCoin Bargain List, March 2018",
+      "code": ""
     }
   },
   "byzantine": {
