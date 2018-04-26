@@ -859,7 +859,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 78",
       "provenance": "Ex. Carpe Diem Nvmismatics 2017",
-      "code" "VU2H"
+      "code": "VU2H"
     },     
     "constantinei24": {
       "emperor": "Constantine the Great",
@@ -1303,7 +1303,8 @@
       "obverse_desc": "Diademed, draped, and cuirassed bust right",
       "reverse_desc": "Large M with star either side, cross above",
       "reference": "SBCV 15",
-      "provenance": "Ex. FSRCoin Bargain List, March 2018"
+      "provenance": "Ex. FSRCoin Bargain List, March 2018",
+      "code": "MZJK"
     },
     "anastasius2": {
       "emperor": "Anastasius",
@@ -1323,7 +1324,8 @@
       "obverse_desc": "Diademed, draped, and cuirassed bust right",
       "reverse_desc": "Large K, long cross to left, Δ Officina to the right",
       "reference": "SBCV 25",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": ""
     },
     "justiniani1": {
       "emperor": "Justinian the Great",
@@ -1343,7 +1345,8 @@
       "obverse_desc": "Helmeted and cuirassed bust of Justinian I facing, holding globus cruciger and shield decorated with horseman motif; cross to right",
       "reverse_desc": "Large M; A/N/N/O - X/II/II (R.Y. 14) across field, cross above, A below",
       "reference": "SBCV 201",
-      "provenance": "Ex. Numismatik Naumann Auction 60 Lot 593"
+      "provenance": "Ex. Numismatik Naumann Auction 60 Lot 593",
+      "code": "X3FE"
     },
     "justiniani2": {
       "emperor": "Justinian the Great",
@@ -1363,7 +1366,8 @@
       "obverse_desc": "Helmeted and cuirassed bust of Justinian I facing, holding globus cruciger and shield decorated with horseman motif; cross to right",
       "reverse_desc": "Large M; A/N/N/O - X/ЧI (R.Y. 16) across field, cross above, B below",
       "reference": "SBCV 163",
-      "provenance": "Ex. Ancient Treasures eBay 2018"
+      "provenance": "Ex. Ancient Treasures eBay 2018",
+      "code": "TJ4F"
     },
     "justiniani4": {
       "emperor": "Justinian the Great",
@@ -1383,7 +1387,8 @@
       "obverse_desc": "Helmeted and cuirassed bust of Justinian I facing, holding globus cruciger and shield decorated with horseman motif; cross to right",
       "reverse_desc": "Large M; A/N/N/O - X/X/II (R.Y. 16) across field, cross above, A below",
       "reference": "SBCV 163",
-      "provenance": "Ex. Agora Auctions Sale 73, Lot 313"
+      "provenance": "Ex. Agora Auctions Sale 73, Lot 313",
+      "code": ""
     },
     "justiniani5": {
       "emperor": "Justinian the Great",
@@ -1403,7 +1408,8 @@
       "obverse_desc": "Helmeted and cuirassed bust of Justinian I facing, holding globus cruciger and shield decorated with horseman motif; cross to right",
       "reverse_desc": "Large M; A/N/N/O - X/X/X (R.Y. 30) across field, cross above, Γ below",
       "reference": "SBCV 163",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018",
+      "code": ""
     },
     "justinii1": {
       "emperor": "Justin II",
@@ -1423,7 +1429,8 @@
       "obverse_desc": "Nimbate figures of Justin and Sophia seated facing on double throne, holding globus cruciger and cruciform scepter, respectively",
       "reverse_desc": "Large M; A/N/N/O - Ϛ (R.Y. 6) across field, Christogram above, Γ below",
       "reference": "SBCV 360",
-      "provenance": "Ex. FSR Auction 104, Lot 438"
+      "provenance": "Ex. FSR Auction 104, Lot 438",
+      "code": "HE3S"
     },
     "maurice2": {
       "emperor": "Maurice Tiberius",
@@ -1443,7 +1450,8 @@
       "obverse_desc": "Helmeted and cuirassed bust facing, holding cross on globe and shield",
       "reverse_desc": "Large M between A/N/N/O and Ϛ/II (R.Y. 8), cross above, A below",
       "reference": "SBCV 494",
-      "provenance": "Ex. Quant.Geek 2018, Ex. CNG Coins Auction 416, Lot 702 (Part of)"
+      "provenance": "Ex. Quant.Geek 2018, Ex. CNG Coins Auction 416, Lot 702 (Part of)",
+      "code": ""
     },
     "maurice1": {
       "emperor": "Maurice Tiberius",
@@ -1463,7 +1471,8 @@
       "obverse_desc": "Bust facing, crown with trefoil ornament, consular robes, mappa in right, eagle tipped scepter in left",
       "reverse_desc": "Large M between A/N/N/O and X/IIII (R.Y. 14), cross above, A below",
       "reference": "SBCV 533",
-      "provenance": "Ex. Arnoldoe Collection, Ex. JAZ Numismatics Auction 114 Lot 9"
+      "provenance": "Ex. Arnoldoe Collection, Ex. JAZ Numismatics Auction 114 Lot 9",
+      "code": ""
     },
     "phocas2": {
       "emperor": "Phocas",
@@ -1483,7 +1492,8 @@
       "obverse_desc": "Crowned bust facing, wearing consular robes, holding mappa and cruciform scepter",
       "reverse_desc": "Large XXXX, ANNO on top, and dated II/II (R.Y. 4)",
       "reference": "SBCV 640",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018",
+      "code": "U"
     },
     "phocas1": {
       "emperor": "Phocas",
@@ -1503,7 +1513,8 @@
       "obverse_desc": "Crowned bust facing, wearing consular robes, holding mappa and cruciform scepter",
       "reverse_desc": "Large XXXX, ANNO on top, and dated Ϛ (R.Y. 6)",
       "reference": "SBCV 640",
-      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1613"
+      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1613",
+      "code": "UQPS"
     },
     "heraclius2": {
       "emperor": "Heraclius",
@@ -1523,7 +1534,8 @@
       "obverse_desc": "Helmeted and cuirassed facing bust, holding globus cruciger and shield",
       "reverse_desc": "Large M between A/N/N/O and III (R.Y. 3), cross above, B below",
       "reference": "SBCV 839",
-      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1620"
+      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1620",
+      "code": "JQQA"
     },
     "heraclius3": {
       "emperor": "Heraclius",
@@ -1543,7 +1555,8 @@
       "obverse_desc": "Helmeted and cuirassed facing bust, holding globus cruciger and shield",
       "reverse_desc": "Large M between A/N/N/O and III (R.Y. 3), cross above, A below",
       "reference": "SBCV 805",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": ""
     },
     "heraclius1": {
       "emperor": "Heraclius & Heraclius Constantine",
@@ -1563,7 +1576,8 @@
       "obverse_desc": "Crowned and draped facing busts of Heraclius and Heraclius Constantine, each holding globus cruciger, cross between",
       "reverse_desc": "Large M between A/N/N/O and ЧI/II (R.Y. 8), cross above, B below",
       "reference": "SBCV 824",
-      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1622"
+      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1622",
+      "code": "N7YF"
     },
     "constantinevii1": {
       "emperor": "Constantine VII Porphyrogenitus",
@@ -1583,7 +1597,8 @@
       "obverse_desc": "Crowned facing bust of Constantine VII with short beard facing, wearing vertical loros and holding akakaia and globus cruciger",
       "reverse_desc": "Legend in 4 lines",
       "reference": "SBCV 1761",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018",
+      "code": "5ER3"
     },
      "constantinevii2": {
       "emperor": "Constantine VII Porphyrogenitus",
@@ -1603,7 +1618,8 @@
       "obverse_desc": "Crowned facing bust of Constantine VII with short beard facing, wearing vertical loros and holding akakaia and globus cruciger",
       "reverse_desc": "Legend in 4 lines",
       "reference": "SBCV 1761",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018",
+      "code": ""
     },
    "romanusi1": {
       "emperor": "Romanos I Lekapenos",
@@ -1623,7 +1639,8 @@
       "obverse_desc": "Half-length, crowned facing bust of Romanus I, holding transverse trefoil-tipped labarum sceptre and globus cruciger",
       "reverse_desc": "Legend in 4 lines",
       "reference": "SBCV 1760",
-      "provenance": "Ex. FSR Auction 104, Lot 445"
+      "provenance": "Ex. FSR Auction 104, Lot 445",
+      "code": "6LX3"
     },
    "nicephorusii1": {
       "emperor": "Nikephoros II Phokas",
@@ -1643,7 +1660,8 @@
       "obverse_desc": "Emperor, crowned bust facing with short beard, wearing loros and additional jewelled robe, holding cross-topped sceptre and trefoil on globe",
       "reverse_desc": "Legend in 4 lines",
       "reference": "SBCV 1783",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018",
+      "code": ""
     },
     "anonymous5": {
       "emperor": "Basil II & Constantine VIII",
@@ -1664,7 +1682,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; ornament above and below",
       "reference": "SBCV 1813",
-      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1654"
+      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1654",
+      "code": "9SSF"
     },
     "anonymous7": {
       "emperor": "Basil II & Constantine VIII",
@@ -1685,7 +1704,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; ornament above and below",
       "reference": "SBCV 1813",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "5AQ5"
     },
     "anonymous1": {
       "emperor": "Basil II & Constantine VIII",
@@ -1706,7 +1726,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 894"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 894",
+      "code": "X3FK"
     },
     "anonymous2": {
       "emperor": "Basil II & Constantine VIII",
@@ -1727,7 +1748,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018",
+      "code": "UBAT"
     },
     "anonymous4": {
       "emperor": "Basil II & Constantine VIII",
@@ -1748,7 +1770,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018", 
+      "code": "TCXY"
     },
     "anonymous6": {
       "emperor": "Basil II & Constantine VIII",
@@ -1769,7 +1792,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
-      "provenance": "Ex. Savoca eBay 2018"
+      "provenance": "Ex. Savoca eBay 2018",
+      "code": "KSR6"
     },
     "anonymous8": {
       "emperor": "Basil II & Constantine VIII",
@@ -1790,7 +1814,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
-      "provenance": "Ex. Numismatik-Naumann Auction 64, Lot 830 (part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 64, Lot 830 (part of)",
+      "code": "CSZ9"
     },
     "anonymous9": {
       "emperor": "Basil II & Constantine VIII",
@@ -1811,7 +1836,8 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
-      "provenance": "Ex. Solidus-Numismatik Chance Auction 28, Lot 2439 (part of)"
+      "provenance": "Ex. Solidus-Numismatik Chance Auction 28, Lot 2439 (part of)",
+      "code": ""
     },
     "anonymous3": {
       "emperor": "Romanos III",
@@ -1831,7 +1857,8 @@
       "obverse_desc": "Nimbate bust of Christ facing, square in each limb of cross; wearing pallium and collobium and holding book of Gospels",
       "reverse_desc": "Legend in three lines divided by limbs of cross with dot at each extremity on three-stepped base",
       "reference": "SBCV 1823",
-      "provenance": "Ex. Marc R. Breitsprecher 2018"
+      "provenance": "Ex. Marc R. Breitsprecher 2018",
+      "code": "TFHB"
     },
     "constantinex1": {
       "emperor": "Constantine X Ducas",
@@ -1851,7 +1878,8 @@
       "obverse_desc": "Christ standing facing on footstool, wearing nimbus and holding Gospels",
       "reverse_desc": "Eudocia on left, wearing loros with kite-shaped lower panel and crown with cross and pendilia, Constantine on right, wearing loros and crown with cross and pendilia, both standing facing, holding labarum with cross-piece on shaft between them, standing on base and three steps, each places one hand on heart",
       "reference": "SBCV 1853",
-      "provenance": "Ex. Augustus Coins (Valentinian) 2018"
+      "provenance": "Ex. Augustus Coins (Valentinian) 2018",
+      "code": ""
     },
     "alexiusi1": {
       "emperor": "Alexius I Comnenus",
@@ -1871,7 +1899,8 @@
       "obverse_desc": "Bust of Christ, nimbate, seated facing, holding book of Gospels",
       "reverse_desc": "Crowned bust of Alexius facing, wearing jewelled chlamys, holding cross-tipped sceptre and cross on globe",
       "reference": "SBCV 1918",
-      "provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 768"
+      "provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 768",
+      "code": "4XFE"
     },
     "manueli1": {
       "emperor": "Manuel I Comnenus",
@@ -1891,7 +1920,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in right field",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "ZSX9"
     },
     "manueli2": {
       "emperor": "Manuel I Comnenus",
@@ -1911,7 +1941,8 @@
       "obverse_desc": "The Virgin enthroned facing, nimbate, wearing pallium and maphorium, holding nimbate head of infant Jesus in lap",
       "reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
       "reference": "SBCV 1965",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "AJM7"
     },
     "manueli3": {
       "emperor": "Manuel I Comnenus",
@@ -1931,7 +1962,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in right field",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "9FYY"
     },
     "manueli4": {
       "emperor": "Manuel I Comnenus",
@@ -1951,7 +1983,8 @@
       "obverse_desc": "The Virgin enthroned facing, nimbate, wearing pallium and maphorium, holding nimbate head of infant Jesus in lap",
       "reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
       "reference": "SBCV 1965",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "MLYN"
     },
     "manueli5": {
       "emperor": "Manuel I Comnenus",
@@ -1971,7 +2004,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "MGMA"
     },
     "manueli6": {
       "emperor": "Manuel I Comnenus",
@@ -1991,7 +2025,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in both fields",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "V2HR"
     },
     "manueli7": {
       "emperor": "Manuel I Comnenus",
@@ -2011,7 +2046,8 @@
       "obverse_desc": "The Virgin enthroned facing, nimbate, wearing pallium and maphorium, holding nimbate head of infant Jesus in lap",
       "reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
       "reference": "SBCV 1965",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "HW5U" 
     },
     "manueli8": {
       "emperor": "Manuel I Comnenus",
@@ -2031,7 +2067,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in both fields",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "4WGF"
     },
     "manueli9": {
       "emperor": "Manuel I Comnenus",
@@ -2051,7 +2088,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in both fields",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "SK9Z"
     },
     "manueli10": {
       "emperor": "Manuel I Comnenus",
@@ -2071,7 +2109,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in both fields",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "UEM2"
     },
     "manueli11": {
       "emperor": "Manuel I Comnenus",
@@ -2091,7 +2130,8 @@
       "obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in both fields",
       "reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
       "reference": "SBCV 1966",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "9T8R"
     },
     "andronicusi1": {
       "emperor": "Andronicus I Comnenus",
@@ -2111,7 +2151,8 @@
       "obverse_desc": "The Virgin Mary standing facing on dais, holding bust of Holy Infant on breast",
       "reverse_desc": "Andronicus standing facing, holding akakia and globus cruciger, and being crowned by Christ to right",
       "reference": "SBCV 1985",
-      "provenance": "Ex. Numismatik-Naumann Auctionm 62, Lot 906"
+      "provenance": "Ex. Numismatik-Naumann Auctionm 62, Lot 906",
+      "code": "DMHA"
     },
     "isaacii1": {
       "emperor": "Isaac II Angelus",
@@ -2131,7 +2172,8 @@
       "obverse_desc": "Mary, nimbate, seated facing, holding before her the nimbate head of infant Christ facing left",
       "reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
       "reference": "SBCV 2003",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "FPUW"
     },
     "isaacii2": {
       "emperor": "Isaac II Angelus",
@@ -2151,7 +2193,8 @@
       "obverse_desc": "Mary, nimbate, seated facing, holding before her the nimbate head of infant Christ facing left",
       "reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
       "reference": "SBCV 2003",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "C4NK"
     },
     "isaacii3": {
       "emperor": "Isaac II Angelus",
@@ -2171,7 +2214,8 @@
       "obverse_desc": "Mary, nimbate, seated facing, holding before her the nimbate head of infant Christ facing left",
       "reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
       "reference": "SBCV 2003",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "V2JD"
     },
     "isaacii4": {
       "emperor": "Isaac II Angelus",
@@ -2191,7 +2235,8 @@
       "obverse_desc": "Mary, nimbate, seated facing, holding before her the nimbate head of infant Christ facing left",
       "reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
       "reference": "SBCV 2003",
-      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)"
+      "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "code": "6A4K"
     },
     "alexiusiii1": {
       "emperor": "Alexius III Angelus",
@@ -2211,7 +2256,8 @@
       "obverse_desc": "Christ, nimbate, bust facing, right hand raised, holding scroll in left",
       "reverse_desc": "Alexius, crowned, wearing loros, on left, holding labarum, St. Constantine, nimbate, wearing loros, bearded, on right, holding labarum and holding cross on globe between them",
       "reference": "SBCV 2011",
-      "provenance": "Ex. CNG Coins Auction 418, Lot 517"
+      "provenance": "Ex. CNG Coins Auction 418, Lot 517",
+      "code": "M3AQ"
     }
   }
 }
