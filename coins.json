@@ -371,7 +371,8 @@
       "obverse_desc": "Bust of Maximian, laureate, wearing imperial mantle, right, holding olive branch in right hand and mappa in left hand",
       "reverse_desc": "Providentia, draped, standing right, extending right hand to Quies; Quies, draped, standing left, holding branch in right hand and leaning on sceptre with left hand; in left field, S; in right field, F",
       "reference": "RIC VI Heraclea 27b",
-      "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398"
+      "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398",
+      "code": "VAZA"
     },    
     "maximinusii2": {
       "emperor": "Maximinus II Daia",
@@ -391,7 +392,8 @@
       "obverse_desc": "Head of Maximinus Daia, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Nicomedia 40",
-      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1476"
+      "provenance": "Ex. Savoca 5th Blue Auction, Lot 1476",
+      "code": "YV55"
     },    
     "constantinei3": {
       "emperor": "Constantine the Great",
@@ -411,7 +413,8 @@
       "obverse_desc": "Bust of Constantine I, laureate, cuirassed, right",
       "reverse_desc": "Sol, chlamys draped over left shoulder, standing left (or standing front, head left), raising right hand and holding globe in left hand",
       "reference": "RIC VI Treveri 873",
-      "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 410"
+      "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 410",
+      "code": "ST6D"
     },     
     "maximinusii": {
       "emperor": "Maximinus II Daia",
@@ -451,7 +454,8 @@
       "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
       "reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 323a",
-      "provenance": "Ex. ValiantKnight (Jeff) 2017"
+      "provenance": "Ex. ValiantKnight (Jeff) 2017",
+      "code": "KJTP"
     },     
     "constantinei19": {
       "emperor": "Constantine the Great",
