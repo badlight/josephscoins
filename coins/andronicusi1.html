@@ -39,6 +39,7 @@
       var obvd = coins['byzantine']['andronicusi1'].obverse_desc;
       var revd = coins['byzantine']['andronicusi1'].reverse_desc; 
       var ref = coins['byzantine']['andronicusi1'].reference;
+      var code = coins['byzantine']['andronicusi1'].code;
       var prov = coins['byzantine']['andronicusi1'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
@@ -51,6 +52,9 @@
         '    <span class="close">X</span>' +
         '    <img class="modal-content" id="img01">' +
         '    <div id="caption"></div>' +
+        '  </div>' +
+        '  <div class="code">' + 
+        '    <span>' + codenum + '</span>' + 
         '  </div>' +
         '  <span class="caption-title-big">' +
         '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
