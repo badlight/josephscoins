@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Joseph's Latin Occupation Coin</title>
+  <title>Joseph's Constantine V Kopronymos</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -22,24 +22,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['byzantine']['latin1'].emperor;
-      var title = coins['byzantine']['latin1'].file
-      var mat = coins['byzantine']['latin1'].material;
-      var denom = coins['byzantine']['latin1'].denomination;
-      var date = coins['byzantine']['latin1'].year;
-      var mnt = coins['byzantine']['latin1'].mint;
-      var off = coins['byzantine']['latin1'].officina;
-      var em = coins['byzantine']['latin1'].emission;
-      var wt = coins['byzantine']['latin1'].weight;
-      var diam = coins['byzantine']['latin1'].diameter;
-      var ax = coins['byzantine']['latin1'].axis;
-      var obv = coins['byzantine']['latin1'].obverse_legend;
-      var rev = coins['byzantine']['latin1'].reverse_legend;
-      var ex = coins['byzantine']['latin1'].exergue;
-      var obvd = coins['byzantine']['latin1'].obverse_desc;
-      var revd = coins['byzantine']['latin1'].reverse_desc; 
-      var ref = coins['byzantine']['latin1'].reference;
-      var prov = coins['byzantine']['latin1'].provenance;
+      var imp = coins['byzantine']['constantinev1'].emperor;
+      var title = coins['byzantine']['constantinev1'].file
+      var mat = coins['byzantine']['constantinev1'].material;
+      var denom = coins['byzantine']['constantinev1'].denomination;
+      var date = coins['byzantine']['constantinev1'].year;
+      var mnt = coins['byzantine']['constantinev1'].mint;
+      var off = coins['byzantine']['constantinev1'].officina;
+      var em = coins['byzantine']['constantinev1'].emission;
+      var wt = coins['byzantine']['constantinev1'].weight;
+      var diam = coins['byzantine']['constantinev1'].diameter;
+      var ax = coins['byzantine']['constantinev1'].axis;
+      var obv = coins['byzantine']['constantinev1'].obverse_legend;
+      var rev = coins['byzantine']['constantinev1'].reverse_legend;
+      var ex = coins['byzantine']['constantinev1'].exergue;
+      var obvd = coins['byzantine']['constantinev1'].obverse_desc;
+      var revd = coins['byzantine']['constantinev1'].reverse_desc; 
+      var ref = coins['byzantine']['constantinev1'].reference;
+      var prov = coins['byzantine']['constantinev1'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -60,7 +60,7 @@
         '    <span class="description">' +
         '      <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
         '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-        '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '<p>' +
+        '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
         '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
        '      <hr class="marginated">' +
         '      <strong>Reference:</strong> ' + ref +

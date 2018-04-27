@@ -1579,6 +1579,27 @@
       "provenance": "Ex. Savoca 5th Blue Auction, Lot 1622",
       "code": "N7YF"
     },
+    "constantinev1": {
+      "emperor": "Constantine V Kopronymos",
+      "file": "constantinev1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "757 - 775 A.D.",
+      "mint": "Syracuse",
+      "officina": null,
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "6H",
+      "obverse_legend": "ΛЄωN",
+      "reverse_legend": "N/ΔECΠ",
+      "exergue": null,      
+      "obverse_desc": "Crowned facing busts of Constantine and Leo IV, each wearing chlamys and holding akakia; cross between",
+      "reverse_desc": "Crowned figure of Leo III standing facing, wearing chlamys and holding cross potent",
+      "reference": "SBCV 1569",
+      "provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2433 (Part of)",
+      "code": ""
+    },
    "constantinevii3": {
       "emperor": "Constantine VII Porphyrogenitus",
       "file": "constantinevii3",
