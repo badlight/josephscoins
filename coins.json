@@ -1579,6 +1579,27 @@
       "provenance": "Ex. Savoca 5th Blue Auction, Lot 1622",
       "code": "N7YF"
     },
+    "constansii1": {
+      "emperor": "Constans II",
+      "file": "constansii1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "659 - 668 A.D.",
+      "mint": "Syracuse",
+      "officina": null,
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "6H",
+      "obverse_legend": "DN hERACLIЧS P P AVG",
+      "reverse_legend": "TKw monogram",
+      "exergue": "SCL",      
+      "obverse_desc": "Constans, holding long cross, and Constantine IV, holding globus cruciger, standing facing",
+      "reverse_desc": "Large M; monogram above, Heraclius and Tiberius standing facing to left and right, respectively",
+      "reference": "SBCV 1110",
+      "provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2433 (Part of)",
+      "code": ""
+    },
     "constantinev1": {
       "emperor": "Constantine V Kopronymos",
       "file": "constantinev1",
