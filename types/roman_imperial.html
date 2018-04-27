@@ -35,6 +35,7 @@ w3.includeHTML();
         var denom = coins['roman_imperial'][coin].denomination;
         var year = coins['roman_imperial'][coin].year;
         var ref= coins['roman_imperial'][coin].reference;
+        var codenum = coins['roman_imperial'][coin].code;
         var card = document.createElement('div');
         card.style.display = "inline-block";
         card.style.padding = "10px";
@@ -44,6 +45,9 @@ w3.includeHTML();
             '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
             '    <img src="../images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '    <div class="overlay">' +
+            '      <div class="code">' + 
+            '        <span>' + codenum + '</span>' + 
+            '      </div>' +
             '      <div class="caption-title">' +
             '        <span>' + imp + '</span>' +
             '      </div>' +

@@ -35,6 +35,7 @@ w3.includeHTML();
         var denom = coins['byzantine'][coin].denomination;
         var year = coins['byzantine'][coin].year;
         var ref= coins['byzantine'][coin].reference;
+        var codenum = coins['byzantine'][coin].code;
         var card = document.createElement('div');
         card.style.display = "inline-block";
         card.style.padding = "10px";
@@ -44,6 +45,9 @@ w3.includeHTML();
             '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
             '    <img src="../images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '    <div class="overlay">' +
+            '      <div class="code">' + 
+            '        <span>' + codenum + '</span>' + 
+            '      </div>' +
             '      <div class="caption-title">' +
             '        <span>' + imp + '</span>' +
             '      </div>' +
