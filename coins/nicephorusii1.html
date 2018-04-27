@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+  <title>Joseph's Anonymous</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Joseph's Ancient Coins</h1>
+
+<ul>
+  <li><a class="inactive" href="../index.html">Home</a></li>
+  <li><a class="active" href="#coin">Coin</a></li>
+  <li><a class="inactive" href="#contact">Contact</a></li>
+  <li><a class="inactive" href="#about">About</a></li>
+</ul>
+
+<script type='text/javascript'>  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
+
+      var imp = coins['byzantine']['nicephorusii1'].emperor;
+      var title = coins['byzantine']['nicephorusii1'].file
+      var mat = coins['byzantine']['nicephorusii1'].material;
+      var denom = coins['byzantine']['nicephorusii1'].denomination;
+      var date = coins['byzantine']['nicephorusii1'].year;
+      var mnt = coins['byzantine']['nicephorusii1'].mint;
+      var off = coins['byzantine']['nicephorusii1'].officina;
+      var em = coins['byzantine']['nicephorusii1'].emission;
+      var wt = coins['byzantine']['nicephorusii1'].weight;
+      var diam = coins['byzantine']['nicephorusii1'].diameter;
+      var ax = coins['byzantine']['nicephorusii1'].axis;
+      var obv = coins['byzantine']['nicephorusii1'].obverse_legend;
+      var rev = coins['byzantine']['nicephorusii1'].reverse_legend;
+      var cl = coins['byzantine']['nicephorusii1'].class;
+      var typ = coins['byzantine']['nicephorusii1'].type;
+      var obvd = coins['byzantine']['nicephorusii1'].obverse_desc;
+      var revd = coins['byzantine']['nicephorusii1'].reverse_desc; 
+      var ref = coins['byzantine']['nicephorusii1'].reference;
+      var prov = coins['byzantine']['nicephorusii1'].provenance;
+      var card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML =
+        '<p class="coin-title">' + imp + '</p>' +
+        '<p class="coin-subtitle">' + mat + ' ' + denom + '</p>' +
+        '<div class="coin_page">' +
+        '  <img id="myImg" src="../images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+        '  <div id="myModal" class="modal">' +
+        '    <span class="close">X</span>' +
+        '    <img class="modal-content" id="img01">' +
+        '    <div id="caption"></div>' +
+        '  </div>' +
+        '  <span class="caption-title-big">' +
+        '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina</br>' +
+        '    <span class="caption-subtitle2">' +
+        '      ' + wt +', ' + diam + ', ' + ax +
+        '    </span>' +
+        '    <span class="description">' +
+        '      <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
+        '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
+        '      <p class="aligned"><strong>Class:</strong> ' + cl + '<p>' +
+        '      <p class="aligned"><strong>Type:</strong> ' + typ + '<p>' +
+        '      <p class="aligned"><strong>Ornament:</strong> <img src="anonymous/' + typ + 'R.gif"><p>' +
+        '      <p class="aligned"><strong>Nimbus:</strong> <img src="anonymous/' + typ + 'N.gif"><p>' +
+        '      <p class="aligned"><strong>Book:</strong> <img src="anonymous/' + typ + 'B.gif"></br><p>' +
+        '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+       '      <hr class="marginated">' +
+        '      <strong>Reference:</strong> ' + ref +
+        '    </span>' +
+        '  </span>' +
+        '</div>';
+      document.getElementById('byzantine').appendChild(card);
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById('myImg');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function(){
+          modal.style.display = "block";
+          modalImg.src = this.src;
+          captionText.innerHTML = this.alt;
+      }
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+      
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }     
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
+
+</script>
+
+<div id="byzantine" class></div>
+
+</body>
+</html>
