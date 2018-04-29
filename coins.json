@@ -1546,17 +1546,17 @@
       "mint": "Constantinople",
       "officina": "1st",
       "emission": null,
-      "weight": "TBDg",
-      "diameter": "TBD.0mm",
-      "axis": "6H",
+      "weight": "10.16g",
+      "diameter": "29.5mm",
+      "axis": "7H",
       "obverse_legend": "[DD NN hЄRACLIVS ЄT hЄRA CONST P P AV]",
       "reverse_legend": "-",
       "exergue": "CON",      
-      "obverse_desc": "Helmeted and cuirassed facing bust, holding globus cruciger and shield",
+      "obverse_desc": "Heraclius, on left, and Heraclius Constantine, on right, standing facing, each holding globus cruciger",
       "reverse_desc": "Large M between A/N/N/O and III (R.Y. 3), cross above, A below",
       "reference": "SBCV 805",
       "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-      "code": ""
+      "code": "4TR9"
     },
     "heraclius1": {
       "emperor": "Heraclius & Heraclius Constantine",
@@ -1932,8 +1932,8 @@
       "mint": "Constantinople",
       "officina": null,
       "emission": null,
-      "weight": "TBDg",
-      "diameter": "30.0mm",
+      "weight": "11.10g",
+      "diameter": "29.8mm",
       "axis": "6H",
       "obverse_legend": "[+ЄMMANOVHΛ/IC - XC]",
       "reverse_legend": "[+KWNT ΔK] ЄV[ΔK AVΓO]",
@@ -1942,7 +1942,7 @@
       "reverse_desc": "Eudocia on left, wearing loros with kite-shaped lower panel and crown with cross and pendilia, Constantine on right, wearing loros and crown with cross and pendilia, both standing facing, holding labarum with cross-piece on shaft between them, standing on base and three steps, each places one hand on heart",
       "reference": "SBCV 1853",
       "provenance": "Ex. Augustus Coins (Valentinian) 2018",
-      "code": ""
+      "code": "D47K"
     },
     "alexiusi1": {
       "emperor": "Alexius I Comnenus",
