@@ -187,7 +187,7 @@
       "reverse_desc": "Aurelian, standing right or left, clasping hand of Severina, standing right or left",
       "reference": "RIC V 3",
       "provenance": "Ex. Ken Dorney 2017",
-      "code": ""
+      "code": "VWQX"
     },       
     "probus1": {
       "emperor": "Probus",
@@ -196,7 +196,7 @@
       "denomination": "Antoninianus",
       "year": "276 - 282 A.D.",
       "mint": "Tripolis",
-      "officina": "N/A",
+      "officina": null,
       "emission": null,
       "weight": "3.50g",
       "diameter": "24.0mm",
@@ -208,7 +208,7 @@
       "reverse_desc": "Probus, standing right, holding sceptre, receiving globe from Jupiter, standing left, holding sceptre",
       "reference": "RIC V 927",
       "provenance": "Ex. JAZ Numismatics 2017",
-      "code": ""
+      "code": "QJVM"
     },       
     "constantiusi3": {
       "emperor": "Constantius I Chlorus",
@@ -343,7 +343,7 @@
       "denomination": "Quarter-Follis",
       "year": "305 A.D.",
       "mint": "Siscia",
-      "officina": "N/A",
+      "officina": null,
       "emission": null,
       "weight": "2.1g",
       "diameter": "20.0mm",
@@ -434,12 +434,12 @@
       "axis": "6H",
       "obverse_legend": "IMP C GAL VAL MAXIMINVS P F AVG",
       "reverse_legend": "GENIO - AVGVSTI",
-      "exergue": "N/A//ALE",      
+      "exergue": "N/Δ//ALE",      
       "obverse_desc": "Head of Maximinus Daia, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding head of Serapis in right hand and cornucopiae in left hand",
       "reference": "RIC VI Alexandria 157b",
       "provenance": "Ex. Eng Collection, Ex. JAZ Numismatics Auction 108 Lot 6",
-      "code": ""
+      "code": "CAG8"
     },     
     "constantinei1": {
       "emperor": "Constantine the Great",
@@ -586,7 +586,7 @@
       "reverse_desc": "Sol, chlamys hanging behind (sometimes flying out), standing right, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 335a",
       "provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 342",
-      "code": ""
+      "code": "3KVW"
     },     
     "constantinei16": {
       "emperor": "Constantine the Great",
@@ -649,7 +649,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 22",
       "provenance": "Ex. Wolf (Ancient & US Coins LLC), Chicago ANA 2013, Valentinian (Warren) 2017",
-      "code": ""
+      "code": "7YM2"
     },     
     "constantinei4": {
       "emperor": "Constantine the Great",
@@ -691,7 +691,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 27",
       "provenance": "Ex. Aegean Numismatics 2017",
-      "code": ""
+      "code": "BRBL"
     },     
     "liciniusi3": {
       "emperor": "Licinius I",
@@ -712,7 +712,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 29",
       "provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 317",
-      "code": ""
+      "code": "XMXH"
     },     
     "liciniusi2": {
       "emperor": "Licinius I",
@@ -985,7 +985,7 @@
       "reverse_desc": "Victory, winged, draped, seated left on cippus, head right, holding palm in each hand; before her, trophy; at foot of trophy, kneeling captive, head turned, being spurned by Victory",
       "reference": "RIC VII Constantinople 35",
       "provenance": "Ex. Agora Auctions 67 Lot 322",
-      "code": ""
+      "code": "MXY4"
     },     
     "constantinei7": { 
       "emperor": "Constantine the Great",
@@ -1111,7 +1111,7 @@
       "reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing cap, facing soldier, extending right arm",
       "reference": "RIC VIII Antioch 132",
       "provenance": "Ex. Dr. Busso Peus Nachf E-Auktion 420 Teil 2, Lot 6360",
-      "code": ""
+      "code": "9QLA"
     },     
     "julianii": {
       "emperor": "Julian II the Apostate",
@@ -1141,7 +1141,7 @@
       "denomination": "Centenionalis",
       "year": "367 - 375 A.D.",
       "mint": "Siscia",
-      "officina": "N/A",
+      "officina": null,
       "emission": null,
       "weight": "2.13g",
       "diameter": "18.0mm",
@@ -1162,7 +1162,7 @@
       "denomination": "Centenionalis",
       "year": "367 - 375 A.D.",
       "mint": "Siscia",
-      "officina": "N/A",
+      "officina": null,
       "emission": null,
       "weight": "2.43g",
       "diameter": "17.0mm",
