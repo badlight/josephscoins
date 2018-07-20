@@ -37,6 +37,7 @@ w3.includeHTML();
           var year = coins[key][coin].year;
           var ref= coins[key][coin].reference;
           var mnt = coins[key][coin].mint; 
+          var subcol = coins[key][coin].sub_collection; 
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
@@ -57,7 +58,7 @@ w3.includeHTML();
             '    </div>' +
             '  </a>' +
             '</div>';          
-          if (sub_collection === "Rome Sol") {
+          if (subcol === "Rome Sol") {
             document.getElementById(key).appendChild(card);
           }
         }
