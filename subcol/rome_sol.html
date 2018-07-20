@@ -2,14 +2,15 @@
 <html>
 <head>
   <title>Joseph's Ancient Coins</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
   <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
 <h1>Joseph's Ancient Coins</h1>
 
 <ul>
-  <li><a class="inactive-null" href="">N/A</a></li>
+  <li><a class="inactive" href="../index.html">Home</a></li>
+  <li><a class="active" href="">Sub-Collection</a></li>
   <li><a class="inactive" href="">Contact</a></li>
   <li><a class="inactive" href="">About</a></li>
 </ul>
@@ -18,8 +19,6 @@
 <script>
 w3.includeHTML();
 </script>
-
-<li><a href="/josephscoins/subcol/rome_sol.html">Rome Sol Sub-Collection</a></li>
 
 <script type='text/javascript'>  
   var xhttp = new XMLHttpRequest();
@@ -36,20 +35,17 @@ w3.includeHTML();
           var mat = coins[key][coin].material;
           var denom = coins[key][coin].denomination;
           var year = coins[key][coin].year;
-          var ref = coins[key][coin].reference;
-          var codenum = coins[key][coin].code;
+          var ref= coins[key][coin].reference;
+          var mnt = coins[key][coin].mint; 
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
             '<div  class="coin">' +
-            '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
-            '    <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
+            '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+            '    <img src="../images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '    <div class="overlay">' +
-            '      <div class="code">' + 
-            '        <span>' + codenum + '</span>' + 
-            '      </div>' +
             '      <div class="caption-title">' +
             '        <span>' + imp + '</span>' +
             '      </div>' +
@@ -60,28 +56,23 @@ w3.includeHTML();
             '      </div>' +
             '    </div>' +
             '  </a>' +
-            '</div>';
-          document.getElementById(key).appendChild(card);
+            '</div>';          
+          if (sub_collection === "Rome Sol") {
+            document.getElementById(key).appendChild(card);
+          }
         }
       }
     }
   };
-  xhttp.open("GET", "coins.json", true);
+  xhttp.open("GET", "../coins.json", true);
   xhttp.send();
 
 </script>
 
-<p class="coin-title">Roman Imperial</p>
-<hr class="style-two">
+<p class="coin-title">Rome Sol Sub-Collection</p>
+<hr class="style-four">
+
 <div id="roman_imperial" class></div>
-
-<p class="coin-title">Roman Provincial</p>
-<hr class="style-three">
-<div id="roman_provincial" class></div>
-
-<p class="coin-title">Byzantine</p>
-<hr class="style-one">
-<div id="byzantine" class></div>
 
 </body>
 </html>
