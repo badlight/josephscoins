@@ -58,8 +58,10 @@ w3.includeHTML();
             '    </div>' +
             '  </a>' +
             '</div>';          
-          if (subcol === "Sol Mints") {
-            document.getElementById(key).appendChild(card);
+          for (i = 0; i < subcol.length; i++) {
+            if (subcol[i] === "Rome Sol") {
+              document.getElementById(key).appendChild(card);
+            }
           }
         }
       }
