@@ -852,11 +852,8 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 33",
       "provenance": "Ex. FORVM Ancient Coins 2018, Ex. Martin Maridvnvm Collection",
-      "sub_collection": {
-        "Rome Sol",
-        "Sol Mints",
-      },
-     "code": ""
+      "sub_collection": ["Rome Sol","Sol Mints"]
+      "code": ""
     },         
     "constantinei22": {
       "emperor": "Constantine the Great",
