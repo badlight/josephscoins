@@ -58,10 +58,11 @@ w3.includeHTML();
             '    </div>' +
             '  </a>' +
             '</div>';          
-          var i;
-          for (i = 0; i < subcol.length; i++) {
-            if (subcol[i] === "Rome Sol") {
-              document.getElementById(key).appendChild(card);
+          if(typeof subcol !=="undefined") {
+            for (i = 0; i < subcol.length; i++) {
+              if (subcol[i] == "Rome Sol") {
+                document.getElementById(key).appendChild(card);
+              }
             }
           }
         }
