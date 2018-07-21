@@ -460,6 +460,7 @@
       "reverse_desc": "Sol, chlamys draped over left shoulder, standing left (or standing front, head left), raising right hand and holding globe in left hand",
       "reference": "RIC VI Treveri 873",
       "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 410",
+      "sub_collection": "Sol Mints",
       "code": "ST6D"
     },     
     "maximinusii": {
@@ -675,6 +676,7 @@
       "reverse_desc": "Sol, chlamys flying out, standing front, head left, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Ostia 89",
       "provenance": "Ex. Navi eBay 2018",
+      "sub_collection": "Sol Mints",
       "code": "FS56"
     },     
     "liciniusi1": {
@@ -850,7 +852,10 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 33",
       "provenance": "Ex. FORVM Ancient Coins 2018, Ex. Martin Maridvnvm Collection",
-      "sub_collection": "Rome Sol",
+      "sub_collection": {
+        "Rome Sol",
+        "Sol Mints"
+      },
      "code": ""
     },         
     "constantinei22": {
@@ -894,6 +899,7 @@
       "reverse_desc": "Sol, radiate, standing left, chlamys draped across left shoulder, raising right hand and holding globe in left hand",
       "reference": "RIC VII Lugdunum 53",
       "provenance": "Ex. FSR Coin Bargain Bin 2017",
+      "sub_collection": "Sol Mints",
       "code": ""
     },     
     "constantinei8": {
@@ -1024,6 +1030,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Ticinum 68",
       "provenance": "Ex. FSR Auction 104, Lot 398",
+      "sub_collection": "Sol Mints",
       "code": "4FXH"
     },         
     "liciniusi4": {
