@@ -1914,6 +1914,7 @@
       "reverse_desc": "Legend in four lines",
       "reference": "SBCV 1793",
       "provenance": "Ex. Savoca eBay 2018",
+      "sub_collection": ["Anonymous Class A"],
       "code": ""
     },
     "anonymous5": {
@@ -1936,6 +1937,7 @@
       "reverse_desc": "Legend in four lines; ornament above and below",
       "reference": "SBCV 1813",
       "provenance": "Ex. Savoca 5th Blue Auction, Lot 1654",
+      "sub_collection": ["Anonymous Class A"],
       "code": "9SSF"
     },
     "anonymous7": {
@@ -1958,6 +1960,7 @@
       "reverse_desc": "Legend in four lines; ornament above and below",
       "reference": "SBCV 1813",
       "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "sub_collection": ["Anonymous Class A"],
       "code": "5AQ5"
     },
     "anonymous10": {
@@ -1980,6 +1983,7 @@
       "reverse_desc": "Legend in four lines; ornament above and below",
       "reference": "SBCV 1813",
       "provenance": "Ex. Savoca Blue Auction 7, Lot 1792",
+      "sub_collection": ["Anonymous Class A"],
       "code": ""
     },
     "anonymous1": {
@@ -2002,6 +2006,7 @@
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
       "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 894",
+      "sub_collection": ["Anonymous Class A"],
       "code": "X3FK"
     },
     "anonymous2": {
@@ -2024,6 +2029,7 @@
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
       "provenance": "Ex. Savoca eBay 2018",
+      "sub_collection": ["Anonymous Class A"],
       "code": "UBAT"
     },
     "anonymous4": {
@@ -2046,6 +2052,7 @@
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
       "provenance": "Ex. Savoca eBay 2018", 
+      "sub_collection": ["Anonymous Class A"],
       "code": "TCXY"
     },
     "anonymous6": {
@@ -2068,6 +2075,7 @@
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
       "provenance": "Ex. Savoca eBay 2018",
+      "sub_collection": ["Anonymous Class A"],
       "code": "KSR6"
     },
     "anonymous8": {
@@ -2090,6 +2098,7 @@
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
       "provenance": "Ex. Numismatik-Naumann Auction 64, Lot 830 (part of)",
+      "sub_collection": ["Anonymous Class A"],
       "code": "CSZ9"
     },
     "anonymous9": {
@@ -2111,6 +2120,7 @@
       "obverse_desc": "Facing bust of Christ Pantokrator",
       "reverse_desc": "Legend in four lines; decoration above and below",
       "reference": "SBCV 1818",
+      "sub_collection": ["Anonymous Class A"],
       "provenance": "Ex. Solidus-Numismatik Chance Auction 28, Lot 2439 (part of)",
       "code": "MTQ4"
     },
