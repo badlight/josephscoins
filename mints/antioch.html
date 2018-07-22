@@ -93,7 +93,7 @@ w3.includeHTML();
     var myCenter = new google.maps.LatLng(coors.lat, coors.long);
     var impMapType = new google.maps.ImageMapType({
       getTileUrl: function(coord, zoom) {
-      return "http://pelagios.org/tilesets/imperium/" + zoom + "/" + coord.x + "/" + coord  .y + ".png";
+      return "https://pelagios.org/tilesets/imperium/" + zoom + "/" + coord.x + "/" + coord  .y + ".png";
     },
     tileSize: new google.maps.Size(256, 256),
     isPng: true,
@@ -129,7 +129,7 @@ w3.includeHTML();
     var newDiv = new MakeControl(divName, divLabel);
     map.controls[controlText[1]].push(divName);
   }
-  google.maps.event.addDomListener(window, 'load', initialize);
+  new google.maps.event.addDomListener(window, 'load', initialize);
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA9QTRDUOZDE2oGpBYseQJuNpwAN7-fWbM&callback=myMap"></script>
 <hr class="style-four">
