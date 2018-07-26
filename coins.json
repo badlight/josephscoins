@@ -698,7 +698,7 @@
       "reverse_desc": "Sol standing left, holding chlamys across shoulder; raising right hand and holding globe in left",
       "reference": "RIC VII Ticinum 9",
       "provenance": "Ex. Carpe Diem Nvmismatics 2018",
-      "sub_collection": [""],
+      "sub_collection": null,
       "code": ""
     },     
     "constantinei26": {
@@ -1138,7 +1138,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing right, facing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Arelate 63",
       "provenance": "Ex. Carpe Diem Numismatics 2018",
-      "sub_collection": ["Rome Sol", "Sol Mints"],
+      "sub_collection": ["Rome Sol"],
       "code": ""
     },         
     "constantinei6": {
