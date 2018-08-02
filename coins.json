@@ -463,6 +463,27 @@
       "sub_collection": ["Sol Mints"],
       "code": "ST6D"
     },     
+    "maxentius1": {
+      "emperor": "Maxentius",
+      "file": "maxentius1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "307 - 312 A.D.",
+      "mint": "Ostia",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "5.45g",
+      "diameter": "24.0mm",
+      "axis": "12H",
+      "obverse_legend": "IMP C MAXENTIUS P F AVG",
+      "reverse_legend": "AETE-RNITAS-AUGN",
+      "exergue": "-/-//MOSTT",      
+      "obverse_desc": "Head of Maxentius, laureate, right",
+      "reverse_desc": "Castor and Pollux standing facing one another, each leaning on scepter and holding bridle of horse",
+      "reference": "RIC VI Ostia 35",
+      "provenance": "Ex. CNG Auction 425, Lot 550, Ex. WRG Collection, Ex. William Porter, July 1991",
+      "code": ""
+    },     
     "maximinusii": {
       "emperor": "Maximinus II Daia",
       "file": "maximinusii",
