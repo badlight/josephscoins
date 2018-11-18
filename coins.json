@@ -526,6 +526,27 @@
       "provenance": "Ex. Eng Collection, Ex. JAZ Numismatics Auction 108 Lot 6",
       "code": "CAG8"
     },     
+    "maximinusii3": {
+      "emperor": "Maximinus II Daia",
+      "file": "maximinusii3",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "312 A.D.",
+      "mint": "Nicomedia",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "6H",
+      "obverse_legend": "IMP C GAL VAL MAXIMINVS P F AVG",
+      "reverse_legend": "GENIO A-VGVSTI",
+      "exergue": "-/Γ//SMN",      
+      "obverse_desc": "Head of Maximinus Daia, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand; to left, altar",
+      "reference": "RIC VI Nicomedia 71a",
+      "provenance": "Ex. Busso Nachf Store 2018",
+      "code": ""
+    },     
     "constantinei1": {
       "emperor": "Constantine the Great",
       "file": "constantinei1",
