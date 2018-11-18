@@ -210,6 +210,27 @@
       "provenance": "Ex. JAZ Numismatics 2017",
       "code": "QJVM"
     },       
+    "probus2": {
+      "emperor": "Probus",
+      "file": "probus2",
+      "material": "AE",
+      "denomination": "Antoninianus",
+      "year": "276 - 282 A.D.",
+      "mint": "Ticinum",
+      "officina": "1st",
+      "emission": null,
+      "weight": "3.18g",
+      "diameter": "22.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP C PROBVS AVG",
+      "reverse_legend": "CONCORD MILIT",
+      "exergue": "E/*//PXXI",      
+      "obverse_desc": "Bust of Probus, radiate, wearing imperial mantle, left, holding sceptre surmounted by eagle in right hand",
+      "reverse_desc": "Concordia, draped, standing left, holding ensign in each hand",
+      "reference": "RIC V Probus 480",
+      "provenance": "Ex. Savoca Blue Auction 10, Lot 1850",
+      "code": ""
+    },       
     "carausius1": {
       "emperor": "Carausius",
       "file": "carausius1",
@@ -1960,7 +1981,7 @@
       "provenance": "Ex. JAZ Numismatics Auction 111 Lot 3, Ex. JWT (Jack) Secret Saturnalia 2017",
       "code": ""
     },
-    "antoninuspius": {
+    "antoninuspius2": {
       "emperor": "Antoninus Pius",
       "file": "antoninuspius2",
       "material": "AE",
