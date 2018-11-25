@@ -336,6 +336,27 @@
       "provenance": "Ex. Wayne Miller, 1991, Valentinian (Warren) 2017",
       "code": "TDXF"
     },
+    "constantiusi5": {
+      "emperor": "Constantius I Chlorus",
+      "file": "constantiusi5",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "300 - 301 A.D.",
+      "mint": "Antioch",
+      "officina": "2nd",
+      "emission": null,
+      "weight": "9.57g",
+      "diameter": "25.0mm",
+      "axis": "12H",
+      "obverse_legend": "FL VAL CONSTANTIVS NOB CAES",
+      "reverse_legend": "GENIO POPV-LI ROMANI",
+      "exergue": "K/(B on V)//ANT",      
+      "obverse_desc": "Head of Constantius Chlorus, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
+      "reference": "RIC VI Antioch 55a",
+      "provenance": "Ex. Savoca Blue 10th Auction, Lot 1878",
+      "code": ""
+    },
     "constantiusi4": {
       "emperor": "Constantius I Chlorus",
       "file": "constantiusi4",
@@ -2382,7 +2403,28 @@
       "provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2433 (Part of)",
       "code": "TMYF"
     },
-   "constantinevii3": {
+   "leovi1": {
+      "emperor": "Leo VI the Wise",
+      "file": "leovi1",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "886 - 912 A.D.",
+      "mint": "Constantinople",
+      "officina": null,
+      "emission": null,
+      "weight": "7.72g",
+      "diameter": "28.0mm",
+      "axis": "6H",
+      "obverse_legend": "+LЄOҺ bASILЄVS ROM'",
+      "reverse_legend": "+LЄOҺ/ЄҺ ΘЄΟ bΑ/SILЄVS R/OmЄΟnҺ",
+      "exergue": "-",      
+      "obverse_desc": "Bust of Leo VI facing, with short beard, wearing crown ornamented with cross and chlamys, holding akakia in his left hand",
+      "reverse_desc": "Legend in 4 lines",
+      "reference": "SBCV 1729",
+      "provenance": "Ex. Leu Numismatik Web Auction 5, Lot 1307",
+      "code": ""
+    },
+    "constantinevii3": {
       "emperor": "Constantine VII Porphyrogenitus",
       "file": "constantinevii3",
       "material": "AE",
@@ -2626,6 +2668,29 @@
       "sub_collection": ["Class A"],
       "code": "TCXY"
     },
+    "anonymous12": {
+      "emperor": "Basil II & Constantine VIII",
+      "file": "anonymous12",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "1023 - 1028 A.D.",
+      "mint": "Constantinople",
+      "officina": null,
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "6H",
+      "obverse_legend": "+ЄMMANOVHΛ/IC - XC",
+      "reverse_legend": "+IҺSЧS/XRISTЧS/ЬASILЄЧ/ЬASILЄ",
+      "class": "A3",      
+      "type": "24",      
+      "obverse_desc": "Facing bust of Christ Pantokrator",
+      "reverse_desc": "Legend in four lines; decoration above and below",
+      "reference": "SBCV 1818",
+      "provenance": "Ex. Savoca eBay 2018", 
+      "sub_collection": ["Class A"],
+      "code": ""
+    },
     "anonymous6": {
       "emperor": "Basil II & Constantine VIII",
       "file": "anonymous6",
@@ -2716,9 +2781,9 @@
       "provenance": "Ex. Marc R. Breitsprecher 2018",
       "code": "TFHB"
     },
-    "anonymous3": {
+    "anonymous13": {
       "emperor": "Romanos III",
-      "file": "anonymous3",
+      "file": "anonymous13",
       "material": "AE",
       "denomination": "Follis",
       "year": "1028 - 1034 A.D.",

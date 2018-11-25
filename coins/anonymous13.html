@@ -22,25 +22,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['byzantine']['anonymous12'].emperor;
-      var title = coins['byzantine']['anonymous12'].file
-      var mat = coins['byzantine']['anonymous12'].material;
-      var denom = coins['byzantine']['anonymous12'].denomination;
-      var date = coins['byzantine']['anonymous12'].year;
-      var mnt = coins['byzantine']['anonymous12'].mint;
-      var off = coins['byzantine']['anonymous12'].officina;
-      var em = coins['byzantine']['anonymous12'].emission;
-      var wt = coins['byzantine']['anonymous12'].weight;
-      var diam = coins['byzantine']['anonymous12'].diameter;
-      var ax = coins['byzantine']['anonymous12'].axis;
-      var obv = coins['byzantine']['anonymous12'].obverse_legend;
-      var rev = coins['byzantine']['anonymous12'].reverse_legend;
-      var cl = coins['byzantine']['anonymous12'].class;
-      var typ = coins['byzantine']['anonymous12'].type;
-      var obvd = coins['byzantine']['anonymous12'].obverse_desc;
-      var revd = coins['byzantine']['anonymous12'].reverse_desc; 
-      var ref = coins['byzantine']['anonymous12'].reference;
-      var prov = coins['byzantine']['anonymous12'].provenance;
+      var imp = coins['byzantine']['anonymous13'].emperor;
+      var title = coins['byzantine']['anonymous13'].file
+      var mat = coins['byzantine']['anonymous13'].material;
+      var denom = coins['byzantine']['anonymous13'].denomination;
+      var date = coins['byzantine']['anonymous13'].year;
+      var mnt = coins['byzantine']['anonymous13'].mint;
+      var off = coins['byzantine']['anonymous13'].officina;
+      var em = coins['byzantine']['anonymous13'].emission;
+      var wt = coins['byzantine']['anonymous13'].weight;
+      var diam = coins['byzantine']['anonymous13'].diameter;
+      var ax = coins['byzantine']['anonymous13'].axis;
+      var obv = coins['byzantine']['anonymous13'].obverse_legend;
+      var rev = coins['byzantine']['anonymous13'].reverse_legend;
+      var ex = coins['byzantine']['anonymous13'].exergue;
+      var obvd = coins['byzantine']['anonymous13'].obverse_desc;
+      var revd = coins['byzantine']['anonymous13'].reverse_desc; 
+      var ref = coins['byzantine']['anonymous13'].reference;
+      var prov = coins['byzantine']['anonymous13'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -61,11 +60,7 @@
         '    <span class="description">' +
         '      <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
         '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-        '      <p class="aligned"><strong>Class:</strong> ' + cl + '<p>' +
-        '      <p class="aligned"><strong>Type:</strong> ' + typ + '<p>' +
-        '      <p class="aligned"><strong>Ornament:</strong> <img src="anonymous/' + typ + 'R.gif"><p>' +
-        '      <p class="aligned"><strong>Nimbus:</strong> <img src="anonymous/' + typ + 'N.gif"><p>' +
-        '      <p class="aligned"><strong>Book:</strong> <img src="anonymous/' + typ + 'B.gif"></br><p>' +
+        '      <p class="aligned"><strong>Class:</strong> ' + ex + '</br><p>' +
         '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
        '      <hr class="marginated">' +
         '      <strong>Reference:</strong> ' + ref +
