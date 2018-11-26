@@ -504,6 +504,27 @@
       "provenance": "Ex. Savoca 5th Blue Auction, Lot 1476",
       "code": "YV55"
     },    
+    "galerius3": {
+      "emperor": "Galerius",
+      "file": "galerius3",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "307 A.D.",
+      "mint": "Heraclea",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "8.62g",
+      "diameter": "27.0mm",
+      "axis": "12H",
+      "obverse_legend": "IMP C GAL VAL MAXIMIANVS P F AVG",
+      "reverse_legend": "GENIO POPV-L-I ROMANI",
+      "exergue": "-/-//HTΓ",      
+      "obverse_desc": "Head of Galerius, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
+      "reference": "RIC VI Heraclea 33",
+      "provenance": "Ex. Harlan J. Berk 2018",
+      "code": ""
+    },    
     "constantinei51": {
       "emperor": "Constantine the Great",
       "file": "constantinei51",
