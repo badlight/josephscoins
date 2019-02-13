@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>Joseph's Maximian</title>
+  <title>Joseph's Probus</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -22,24 +22,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['roman_imperial']['maximian3'].emperor;
-      var title = coins['roman_imperial']['maximian3'].file
-      var mat = coins['roman_imperial']['maximian3'].material;
-      var denom = coins['roman_imperial']['maximian3'].denomination;
-      var date = coins['roman_imperial']['maximian3'].year;
-      var mnt = coins['roman_imperial']['maximian3'].mint;
-      var off = coins['roman_imperial']['maximian3'].officina;
-      var em = coins['roman_imperial']['maximian3'].emission;
-      var wt = coins['roman_imperial']['maximian3'].weight;
-      var diam = coins['roman_imperial']['maximian3'].diameter;
-      var ax = coins['roman_imperial']['maximian3'].axis;
-      var obv = coins['roman_imperial']['maximian3'].obverse_legend;
-      var rev = coins['roman_imperial']['maximian3'].reverse_legend;
-      var ex = coins['roman_imperial']['maximian3'].exergue;
-      var obvd = coins['roman_imperial']['maximian3'].obverse_desc;
-      var revd = coins['roman_imperial']['maximian3'].reverse_desc; 
-      var ref = coins['roman_imperial']['maximian3'].reference;
-      var prov = coins['roman_imperial']['maximian3'].provenance;
+      var imp = coins['roman_imperial']['probus4'].emperor;
+      var title = coins['roman_imperial']['probus4'].file
+      var mat = coins['roman_imperial']['probus4'].material;
+      var denom = coins['roman_imperial']['probus4'].denomination;
+      var date = coins['roman_imperial']['probus4'].year;
+      var mnt = coins['roman_imperial']['probus4'].mint;
+      var off = coins['roman_imperial']['probus4'].officina;
+      var em = coins['roman_imperial']['probus4'].emission;
+      var wt = coins['roman_imperial']['probus4'].weight;
+      var diam = coins['roman_imperial']['probus4'].diameter;
+      var ax = coins['roman_imperial']['probus4'].axis;
+      var obv = coins['roman_imperial']['probus4'].obverse_legend;
+      var rev = coins['roman_imperial']['probus4'].reverse_legend;
+      var ex = coins['roman_imperial']['probus4'].exergue;
+      var obvd = coins['roman_imperial']['probus4'].obverse_desc;
+      var revd = coins['roman_imperial']['probus4'].reverse_desc; 
+      var ref = coins['roman_imperial']['probus4'].reference;
+      var prov = coins['roman_imperial']['probus4'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -62,7 +62,7 @@
         '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
         '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
         '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
-       '      <hr class="marginated">' +
+        '      <hr class="marginated">' +
         '      <strong>Reference:</strong> ' + ref +
         '    </span>' +
         '  </span>' +
