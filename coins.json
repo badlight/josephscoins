@@ -147,6 +147,27 @@
       "provenance": "Ex. Aeternitas Numismatics 2017",
       "code": "K3CD"
     },         
+    "gallienus2": {
+      "emperor": "Gallienus",
+      "file": "gallienus2",
+      "material": "BI",
+      "denomination": "Antoninianus",
+      "year": "260 - 268 A.D.",
+      "mint": "Rome",
+      "officina": null,
+      "emission": null",
+      "weight": "4.57g",
+      "diameter": "23.65mm",
+      "axis": "6H",
+      "obverse_legend": "GALLIENVS AVG",
+      "reverse_legend": "IOVI CONS AVG",
+      "exergue": "ς",     
+      "obverse_desc": "Head of Gallienus, radiate, right",
+      "reverse_desc": "Goat, walking right",
+      "reference": "RIC V Gallienus 207",
+      "provenance": "Ex. Marc R. Breitsprecher 2018",
+      "code": ""
+    },         
     "gallienus1": {
       "emperor": "Gallienus",
       "file": "gallienus1",
