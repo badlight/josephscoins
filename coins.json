@@ -271,7 +271,30 @@
       "reverse_desc": "Concordia, draped, standing left, holding ensign in each hand",
       "reference": "RIC V Probus 480",
       "provenance": "Ex. Savoca Blue Auction 10, Lot 1850",
+      "sub_collection": ["EQVITI"],
       "code": "WQDV"
+    },       
+    "probus5": {
+      "emperor": "Probus",
+      "file": "probus5",
+      "material": "AE",
+      "denomination": "Antoninianus",
+      "year": "276 - 282 A.D.",
+      "mint": "Ticinum",
+      "officina": "5th",
+      "emission": null,
+      "weight": "3.46g",
+      "diameter": "22.40mm",
+      "axis": "6H",
+      "obverse_legend": "IMP C PROBVS P F AVG",
+      "reverse_legend": "PROVIDENT AVG",
+      "exergue": "Q/-//SXXI",      
+      "obverse_desc": "Bust of Probus, radiate, wearing imperial mantle, left, holding sceptre surmounted by eagle in right hand",
+      "reverse_desc": "Providentia, draped, standing left, holding globe in right hand and sceptre in left hand",
+      "reference": "RIC V Probus 489",
+      "provenance": "Ex. Gate West Coins 2019, Ex. 3w-Bank",
+      "sub_collection": ["EQVITI"],
+      "code": ""
     },       
     "probus3": {
       "emperor": "Probus",
@@ -292,6 +315,7 @@
       "reverse_desc": "Mars, helmeted, in military attire, walking left, holding olive-branch in right hand and spear and shield in left hand",
       "reference": "RIC V Probus 508",
       "provenance": "Ex. Frank S. Robinson Auction 107, Lot 336",
+      "sub_collection": ["EQVITI"],
       "code": ""
     },       
     "probus4": {
@@ -1072,7 +1096,7 @@
       "reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
       "reference": "RIC VI Rome 323a",
       "provenance": "Ex. ValiantKnight (Jeff) 2017",
-      "sub_collection": ["Rome Sol"],
+      "sub_collection": ["Rome Sol, Clashed Dies"],
       "code": "KJTP"
     },     
     "constantinei19": {
@@ -1276,7 +1300,7 @@
       "material": "AE",
       "denomination": "Follis",
       "year": "312 - 313 A.D.",
-      "mint": "Osta",
+      "mint": "Ostia",
       "officina": "1st",
       "emission": null,
       "weight": "4.50g",
@@ -1291,6 +1315,27 @@
       "provenance": "Ex. Navi eBay 2018",
       "sub_collection": ["Sol Mints"],
       "code": "FS56"
+    },     
+    "constantinei60": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei60",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "312 - 313 A.D.",
+      "mint": "London",
+      "officina": "1st",
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "6H",
+      "obverse_legend": "IMP CONSTANTINVS P AVG",
+      "reverse_legend": "SOLI INV-IC-TO COMITI",
+      "exergue": "*/-//PLN",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, chlamys draped over left shoulder, standing left, raising right hand and holding up globe with left hand",
+      "reference": "RIC VI Londinium 282",
+      "provenance": "Ex. FSR Bargain Bin 2019",
+      "code": ""
     },     
     "constantinei37": {
       "emperor": "Constantine the Great",
@@ -1837,7 +1882,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Rome 40",
       "provenance": "Ex. FSRCoin Bargain List, March 2018",
-      "sub_collection": ["Rome Sol"],
+      "sub_collection": ["Rome Sol, Clashed Dies"],
       "code": "8GSC"
     },     
     "constantinei48": {
@@ -1925,6 +1970,28 @@
       "reverse_desc": "Sol, radiate, standing left, chlamys draped across left shoulder, raising right hand and holding globe in left hand",
       "reference": "RIC VII Lugdunum 33",
       "provenance": "Ex. Carpe Diem Numismatics 2018",
+      "sub_collection": [""],
+      "code": ""
+    },         
+    "constantinei61": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei61",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "315 - 316 A.D.",
+      "mint": "Lugdunum",
+      "officina": "1st",
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "6H",
+      "obverse_legend": "IMP CONSTANTINVS AVG",
+      "reverse_legend": "SOLI INVIC-TO COMITI",
+      "exergue": "TF/*//PLG",      
+      "obverse_desc": "Bust of Constantine I, laureate, cuirassed, right",
+      "reverse_desc": "Sol, radiate, standing left, chlamys draped across left shoulder, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Lugdunum 34",
+      "provenance": "Ex. FSR Bargain Bin 2019",
       "sub_collection": [""],
       "code": ""
     },         
@@ -2035,6 +2102,7 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing right, head left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Arelate 84",
       "provenance": "Ex. Savoca eBay 2018",
+      "sub_collection": ["Clashed Dies"],
       "code": ""
     },     
     "constantinei36": {
@@ -2291,11 +2359,34 @@
       "axis": "12H",
       "obverse_legend": "IMP CONSTANTINVS AVG",
       "reverse_legend": "VICT LAETAE PRINC PERP",
-      "exergue": "ϵSIS",      
+      "exergue": "-/-//ϵSIS",      
       "obverse_desc": "Cuirassed bust left, wearing crested helmet decorated with two large stars and vine scroll, holding spear over right shoulder",
       "reverse_desc": "Two Victories standing facing one another, holding shield inscribed VOT/PR in two lines over decorated altar",
       "reference": "RIC VII Siscia 49",
       "provenance": "Ex. CNG Coin Shop February, 2018",
+      "sub_collection": ["VLPP"],
+      "code": ""
+    },          
+    "constantinei62": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei62",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "319 A.D.",
+      "mint": "Arelate",
+      "officina": "3rd",
+      "emission": null,
+      "weight": "2.90g",
+      "diameter": "17.0mm",
+      "axis": "12H",
+      "obverse_legend": "IMP CONSTAN-TINVS AVG",
+      "reverse_legend": "VICTORIAE LAETAE PRINC PERP",
+      "exergue": "-/-//TARL",      
+      "obverse_desc": "Bust of Constantine I, wearing high-crested helmet, cuirassed, left, spear across right shoulder",
+      "reverse_desc": "Two Victories, winged, draped, facing each other, holding a shield inscribed VOT/PR supported by a column",
+      "reference": "RIC VII Arelate 192",
+      "provenance": "Ex. Victors Imperial Coins 2019",
+      "sub_collection": ["VLPP"],
       "code": ""
     },          
     "liciniusi4": {
@@ -2359,6 +2450,7 @@
       "reverse_desc": "Laurel wreath enclosing VOT X",
       "reference": "RIC VII Trier 433",
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 271, Ex. Severus Alexander Collection",
+      "sub_collection": ["Clashed Dies"],
       "code": ""
     },       
     "constantinei54": {
@@ -2527,6 +2619,27 @@
       "reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing cap, facing soldier, extending right arm",
       "reference": "RIC VIII Antioch 132",
       "provenance": "Ex. Savoca eBay 2018",
+      "code": ""
+    },     
+    "constantiusii4": {
+      "emperor": "Constantius II",
+      "file": "constantiusii4",
+      "material": "AE",
+      "denomination": "Siliqua",
+      "year": "353 - 355 A.D.",
+      "mint": "Arelate",
+      "officina": "2nd",
+      "emission": null,
+      "weight": "2.18g",
+      "diameter": "19.0mm",
+      "axis": "11H",
+      "obverse_legend": "D N CONSTAN-TIVS P F AVG",
+      "reverse_legend": "VOTIS/XXX/MVLTIS/XXXX within a wreath",
+      "exergue": "-/-//SCON",      
+      "obverse_desc": "Bust of Constantius II, pearl-diademed, draped, cuirassed, right",
+      "reverse_desc": "-",
+      "reference": "RIC VIII Arelate 207",
+      "provenance": "Ex. CNG eAuction 440, Lot 521, Ex. 1887 East Harptree, Somerset Hoard (IRBCH 1424)",
       "code": ""
     },     
     "constantiusii3": {
@@ -2930,6 +3043,7 @@
       "reverse_desc": "Large XXXX, ANNO on top, and dated II/I (R.Y. 3)",
       "reference": "SBCV 640",
       "provenance": "Ex. Saint Paul Antiques Auction 17, Lot 647",
+      "sub_collection": ["overstrike"],
       "code": ""
     },
     "phocas1": {
@@ -2972,6 +3086,7 @@
       "reverse_desc": "Large M between A/N/N/O and III (R.Y. 3), cross above, B below",
       "reference": "SBCV 839",
       "provenance": "Ex. Savoca 5th Blue Auction, Lot 1620",
+      "sub_collection": ["overstrike"],
       "code": "JQQA"
     },
     "heraclius3": {
@@ -2993,6 +3108,7 @@
       "reverse_desc": "Large M between A/N/N/O and III (R.Y. 3), cross above, A below",
       "reference": "SBCV 805",
       "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+      "sub_collection": ["overstrike"],
       "code": "4TR9"
     },
     "heraclius4": {
@@ -3014,6 +3130,7 @@
       "reverse_desc": "Large M between A/N/N/O and III (R.Y. 3), cross above, B below",
       "reference": "SBCV 805",
       "provenance": "Ex. Savoca eBay 2018",
+      "sub_collection": ["overstrike"],
       "code": ""
     },
     "heraclius1": {
@@ -3035,6 +3152,7 @@
       "reverse_desc": "Large M between A/N/N/O and ЧI/II (R.Y. 8), cross above, B below",
       "reference": "SBCV 824",
       "provenance": "Ex. Savoca 5th Blue Auction, Lot 1622",
+      "sub_collection": ["overstrike"],
       "code": "N7YF"
     },
     "heraclius5": {
@@ -3056,6 +3174,7 @@
       "reverse_desc": "SCLs within circular punch",
       "reference": "SBCV 883",
       "provenance": "Ex. Frank S. Robinson Auction 107, Lot 415",
+      "sub_collection": ["overstrike"],
       "code": ""
     },
     "constansii1": {
@@ -3225,6 +3344,7 @@
       "reference": "SBCV 1793",
       "provenance": "Ex. Savoca eBay 2018",
       "sub_collection": ["Class A"],
+      "sub_collection": ["overstrike"],
       "code": ""
     },
     "anonymous5": {
@@ -3317,6 +3437,7 @@
       "reference": "SBCV 1818",
       "provenance": "Ex. Numismatik-Naumann Auction 62, Lot 894",
       "sub_collection": ["Class A"],
+      "sub_collection": ["overstrike"],
       "code": "X3FK"
     },
     "anonymous2": {
@@ -3518,6 +3639,7 @@
       "reverse_desc": "Eudocia on left, wearing loros with kite-shaped lower panel and crown with cross and pendilia, Constantine on right, wearing loros and crown with cross and pendilia, both standing facing, holding labarum with cross-piece on shaft between them, standing on base and three steps, each places one hand on heart",
       "reference": "SBCV 1853",
       "provenance": "Ex. Augustus Coins (Valentinian) 2018",
+      "sub_collection": ["overstrike"],
       "code": "D47K"
     },
     "alexiusi1": {
