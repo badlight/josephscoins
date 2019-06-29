@@ -21,6 +21,27 @@
       "provenance": "Ex. Romae Aeternae Numismatics 2016",
       "code": "WK25"
     },      
+    "septimiusseverus3": {
+      "emperor": "Septimius Severus",
+      "file": "septimiusseverus3",
+      "material": "AR",
+      "denomination": "Denarius",
+      "year": "194 - 195 A.D.",
+      "mint": "Emesa",
+      "officina": null,
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Am",
+      "axis": "N/AH",
+      "obverse_legend": "IMP CAE L SEP SEV PERT AVG COS II",
+      "reverse_legend": "VICTOR AVG",
+      "exergue": null,      
+      "obverse_desc": "Head of Septimius Severus, laureate, right",
+      "reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
+      "reference": "RIC IV Septimius Severus 425",
+      "provenance": "Ex. Doug Smith Collection, Ex. John Anthony 2019",
+      "code": ""
+    },
     "septimiusseverus1": {
       "emperor": "Septimius Severus",
       "file": "septimiusseverus1",
