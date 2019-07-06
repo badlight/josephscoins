@@ -31,12 +31,15 @@
 function execute(int){	
   console.log(int);
   switch(int) {
-	case 'imp':
-		var val = 'roman_imperial';
-	case 'pro':
-		var val = 'roman_provincial';
-	case 'byz':
-		var val = 'byzantine';
+	case "imp":
+		val = "roman_imperial'";
+		break;
+	case "pro":
+		val = "roman_provincial";
+		break;
+	case "byz":
+		val = "byzantine";
+		break;
   }
   console.log(val);
   
@@ -93,16 +96,19 @@ function execute(int){
     '<p class="coin-title">Roman Imperial</p>' +
 	'<hr class="style-two">' +
 	'<div id="roman_imperial" class></div>';
+    break;
   case 'roman_provincial':
     document.getElementById("contents").innerHTML = 
 	'<p class="coin-title">Roman Provincial</p>' +
 	'<hr class="style-three">' +
 	'<div id="roman_provincial" class></div>';
+    break;
   case 'byzantine':
     document.getElementById("contents").innerHTML = 
 	'<p class="coin-title">Byzantine</p>' +
 	'<hr class="style-one">' +
 	'<div id="byzantine" class></div>';
+    break;
 	}
 };
 </script>
