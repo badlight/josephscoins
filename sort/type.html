@@ -3,26 +3,6 @@
 <head>
   <title>Joseph's Ancient Coins</title>
   <link rel="stylesheet" href="../style.css">
-</head>
-<body>
-<h1>Joseph's Ancient Coins</h1>
-
-<ul>
-  <li><a class="active" href="/josephscoins/index.html">Home</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Sort</a>
-    <div class="dropdown-content">
-      <a href="/josephscoins/sort/type.html">By Type</a>
-      <a href="/josephscoins/sort/mint.html">By Mint</a>
-      <a href="/josephscoins/sort/subcol.html">By Sub-Collection</a>
-    </div>
-  </li>
-</ul>
-
-<input type="button" value="roman_imperial" onclick="execute(this.value)">
-<input type="button" value="roman_provincial" onclick="execute(this.value)">
-<input type="button" value="byzantine" onclick="execute(this.value)">
-
 <script type='text/javascript'> 
 function execute(val){
   document.getElementById('contents').innerHTML = "";
@@ -98,6 +78,26 @@ function execute(val){
 	'</div>';
 	break;
 }
+
+</head>
+<body>
+<h1>Joseph's Ancient Coins</h1>
+
+<ul>
+  <li><a class="active" href="/josephscoins/index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sort</a>
+    <div class="dropdown-content">
+      <a href="/josephscoins/sort/type.html">By Type</a>
+      <a href="/josephscoins/sort/mint.html">By Mint</a>
+      <a href="/josephscoins/sort/subcol.html">By Sub-Collection</a>
+    </div>
+  </li>
+</ul>
+
+<input type="button" value="roman_imperial" onclick="execute(this.value)">
+<input type="button" value="roman_provincial" onclick="execute(this.value)">
+<input type="button" value="byzantine" onclick="execute(this.value)">
 
 </script>
 </body>
