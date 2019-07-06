@@ -19,15 +19,9 @@
   </li>
 </ul>
 
-<input type="button" value="Roman Imperial" id="roman_imperial">
-<input type="button" value="Roman Provincial" id="roman_provincial">
-<input type="button" value="Byzantine" id="byzantine">
-
-<script type='text/javascript'>
-document.getElementById("roman_imperial").addEventListener("click", execute(this.id), false);
-document.getElementById("roman_provincial").addEventListener("click", execute(this.id), false);
-document.getElementById("byzantine").addEventListener("click", execute(this.id), false);
-</script>
+<button value="Roman Imperial" id="roman_imperial" onclick="execute(this.id)">
+<button value="Roman Provincial" id="roman_provincial" onclick="execute(this.id)">
+<button value="Byzantine" id="byzantine" onclick="execute(this.id)">
 
 <script type='text/javascript'> 
 function execute(val){
