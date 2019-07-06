@@ -19,7 +19,14 @@
   </li>
 </ul>
 
-<script type='text/javascript'>  
+<input type="Roman Imperial" value="roman_imperial" onclick="execute(this.value)">
+<input type="Roman Provincial" value="roman_provincial" onclick="execute(this.value)">
+<input type="Byzantine" value="byzantine" onclick="execute(this.value)">
+
+<script type='text/javascript'> 
+function execute(val){
+  document.getElementById('contents').innerHTML = "";
+	
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
@@ -27,20 +34,19 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      for (var key in coins) {
-        for (var coin in coins[key]) {
-          var imp = coins[key][coin].emperor;
-          var title = coins[key][coin].file
-          var mat = coins[key][coin].material;
-          var denom = coins[key][coin].denomination;
-          var year = coins[key][coin].year;
-          var ref = coins[key][coin].reference;
-          var codenum = coins[key][coin].code;
-          var card = document.createElement('div');
-          card.style.display = "inline-block";
-          card.style.padding = "10px";
-          card.className = 'card';
-          card.innerHTML =
+      for (var coin in coins[val]) {
+        var imp = coins[val][coin].emperor;
+        var title = coins[val][coin].file
+        var mat = coins[val][coin].material;
+        var denom = coins[val][coin].denomination;
+        var year = coins[val][coin].year;
+        var ref = coins[val][coin].reference;
+        var codenum = coins[val][coin].code;
+        var card = document.createElement('div');
+        card.style.display = "inline-block";
+        card.style.padding = "10px";
+        card.className = 'card';
+        card.innerHTML =
             '<div  class="coin">' +
             '  <a href="./coins/' + title + '.html" style="text-decoration:none">' +
             '    <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
@@ -59,27 +65,40 @@
             '    </div>' +
             '  </a>' +
             '</div>';
-          document.getElementById(key).appendChild(card);
-        }
+        document.getElementById(val).appendChild(card);
       }
     }
   };
   xhttp.open("GET", "coins.json", true);
   xhttp.send();
+  
+  switch(val) {
+  case 'roman_imperial':
+    document.getElementById('contents').innerHTML = 
+    '<div id="contents">' + 
+    '<p class="coin-title">Roman Imperial</p>' +
+	'<hr class="style-two">' +
+	'<div id="roman_imperial" class></div>' +
+	'</div>';
+	break;
+  case 'roman_provincial':
+    document.getElementById('contents').innerHTML = 
+    '<div id="contents">' + 
+	'<p class="coin-title">Roman Provincial</p>' +
+	'<hr class="style-three">' +
+	'<div id="roman_provincial" class></div>' +
+	'</div>';
+	break;
+  case 'byzantine':
+    document.getElementById('contents').innerHTML = 
+    '<div id="contents">' + 
+	'<p class="coin-title">Byzantine</p>' +
+	'<hr class="style-one">' +
+	'<div id="byzantine" class></div>' +
+	'</div>';
+	break;
+}
 
 </script>
-
-<p class="coin-title">Roman Imperial</p>
-<hr class="style-two">
-<div id="roman_imperial" class></div>
-
-<p class="coin-title">Roman Provincial</p>
-<hr class="style-three">
-<div id="roman_provincial" class></div>
-
-<p class="coin-title">Byzantine</p>
-<hr class="style-one">
-<div id="byzantine" class></div>
-
 </body>
 </html>
