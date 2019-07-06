@@ -25,8 +25,6 @@
 <button id="byzantine" onclick="execute(this.id)">Byzantine</button>
 </div>
 
-<div id="contents"></div>
-
 <script type='text/javascript'> 
 function execute(val){	
   var xhttp = new XMLHttpRequest();
@@ -74,32 +72,26 @@ function execute(val){
   xhttp.open("GET", "../coins.json", true);
   xhttp.send();
   
-  document.getElementById("contents").innerHTML = "";
+  //document.getElementById("contents").innerHTML = "";
  
   switch(val) {
   case 'roman_imperial':
     document.getElementById("contents").innerHTML = 
-    '<div id="contents">' + 
     '<p class="coin-title">Roman Imperial</p>' +
 	'<hr class="style-two">' +
 	'<div id="roman_imperial" class></div>' +
-	'</div>';
 	break;
   case 'roman_provincial':
     document.getElementById("contents").innerHTML = 
-    '<div id="contents">' + 
 	'<p class="coin-title">Roman Provincial</p>' +
 	'<hr class="style-three">' +
 	'<div id="roman_provincial" class></div>' +
-	'</div>';
 	break;
   case 'byzantine':
     document.getElementById("contents").innerHTML = 
-    '<div id="contents">' + 
 	'<p class="coin-title">Byzantine</p>' +
 	'<hr class="style-one">' +
 	'<div id="byzantine" class></div>' +
-	'</div>';
 	break;
 	}
 };
