@@ -713,6 +713,7 @@
       "obverse_desc": "Bust of Maximian, laureate, wearing imperial mantle, right, holding olive branch in right hand and mappa in left hand",
       "reverse_desc": "Providentia, draped, standing right, extending right hand to Quies; Quies, draped, standing left, holding branch in right hand and leaning on sceptre with left hand; in left field, S; in right field, F",
       "reference": "RIC VI Heraclea 27b",
+	  "sub_collection": ["Post-Abdication Folles"],
       "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398",
       "code": "VAZA"
     },    
@@ -755,6 +756,7 @@
       "obverse_desc": "Bust of Diocletian, laureate, wearing imperial mantle, right, holding olive branch in right hand and mappa in left hand",
       "reverse_desc": "Providentia, draped, standing right, extending right hand to Quies; Quies, draped, standing left, holding branch in right hand and leaning on sceptre with left hand; in left field, S; in right field, F next to officina letter",
       "reference": "RIC VI Serdica 15a",
+	  "sub_collection": ["Post-Abdication Folles"],
       "provenance": "Ex. CNG Coins Electronic Auction 422, Lot 601",
       "code": "SPLA"
     },
@@ -797,6 +799,7 @@
       "obverse_desc": "Laureate bust in Imperial mantle holding mappa in right hand and olive branch in left hand",
       "reverse_desc": "Providentia standing left, and extending hand to personification of Quies, standing right, holding olive branch and leaning on sceptre",
       "reference": "RIC VI London 76b, Cloke & Toone 4.01.003 (R)",
+	  "sub_collection": ["Post-Abdication Folles"],
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 147, Ex. James Pickering Romano-Britannic Collection",
       "code": "29WE"
     },          
