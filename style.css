@@ -4,7 +4,7 @@
 
 h1 {
   text-align: center;
-  color:  grey;
+  color:  #333;
   font-size: 50px;
 }
 
@@ -149,7 +149,7 @@ em {
 
 .coin-title {
   font-size: 30px;
-  color: grey;
+  color: #333;
 }
 
 .coin-subtitle {
@@ -404,7 +404,7 @@ hr.style-one {
   border: none;
   width: 512px;
   border-top: medium double #333;
-  color: grey;
+  color: #333;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
@@ -426,7 +426,7 @@ hr.style-two {
   border: none;
   width: 512px;
   border-top: medium double #333;
-  color: grey;
+  color: #333;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
@@ -448,7 +448,7 @@ hr.style-three {
   border: none;
   width: 512px;
   border-top: medium double #333;
-  color: grey;
+  color: #333;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
