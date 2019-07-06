@@ -20,16 +20,26 @@
 </ul>
 
 <div id="buttons">
-<button class="roman_imperial" onclick="execute(this.class)">Roman Imperial</button>
-<button class="roman_provincial" onclick="execute(this.class)">Roman Provincial</button>
-<button class="byzantine" onclick="execute(this.class)">Byzantine</button>
+<button id="imp" onclick="execute(this.id)">Roman Imperial</button>
+<button id="pro" onclick="execute(this.id)">Roman Provincial</button>
+<button id="byz" onclick="execute(this.id)">Byzantine</button>
 </div>
 
 <div id="contents"></div>
 
 <script type='text/javascript'> 
-function execute(val){	
-  console.log(val)
+function execute(int){	
+  console.log(int);
+  switch(int) {
+	case 'imp':
+		var val = 'roman_imperial';
+	case 'pro':
+		var val = 'roman_provincial';
+	case 'byz':
+		var val = 'byzantine';
+  }
+  console.log(val);
+  
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function(){
     if (this.readyState == 4 && this.status == 200) {
