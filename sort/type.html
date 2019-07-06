@@ -20,10 +20,12 @@
 </ul>
 
 <div id="buttons">
-<button id="roman_imperial" onclick="execute(this.id)">Roman Imperial</button>
-<button id="roman_provincial" onclick="execute(this.id)">Roman Provincial</button>
-<button id="byzantine" onclick="execute(this.id)">Byzantine</button>
+<button value="roman_imperial" onclick="execute(this.value)">Roman Imperial</button>
+<button value="roman_provincial" onclick="execute(this.value)">Roman Provincial</button>
+<button value="byzantine" onclick="execute(this.value)">Byzantine</button>
 </div>
+
+<div id="contents"></div>
 
 <script type='text/javascript'> 
 function execute(val){	
@@ -72,7 +74,7 @@ function execute(val){
   xhttp.open("GET", "../coins.json", true);
   xhttp.send();
   
-  //document.getElementById("contents").innerHTML = "";
+  document.getElementById("contents").innerHTML = "";
  
   switch(val) {
   case 'roman_imperial':
