@@ -528,8 +528,8 @@ hr.style-four {
 
 .dropdown {
   background-color: #DFDFDF;
-  pointer-events: none;
-  cursor: default;
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
