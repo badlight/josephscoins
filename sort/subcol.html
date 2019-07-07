@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <title>Joseph's Ancient Coins</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Joseph's Ancient Coins</h1>
+
+<ul>
+  <li><a class="active" href="/josephscoins/index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sort</a>
+    <div class="dropdown-content">
+      <a href="/josephscoins/sort/type.html">By Type</a>
+      <a href="/josephscoins/sort/mint.html">By Mint</a>
+      <a href="/josephscoins/sort/subcol.html">By Sub-Collection</a>
+    </div>
+  </li>
+</ul>
+
+<div id="buttons">
+<button id="Anonymous Folles" onclick="execute(this.id)">Anonymous Folles</button>
+<button id="Clashed Dies" onclick="execute(this.id)">Clashed Dies</button>
+<button id="Ticinum EQVITI" onclick="execute(this.id)">Ticinum EQVITI</button>
+<button id="Overstrikes" onclick="execute(this.id)">Overstrikes</button>
+<button id="Rome Mint Sol" onclick="execute(this.id)">Rome Mint Sol</button>
+<button id="Constantine Sol Mint Set" onclick="execute(this.id)">Constantine Sol Mint Set</button>
+<button id="Constantine VLPP" onclick="execute(this.id)">Constantine VLPP</button>
+<button id="Post-Abdication Folles" onclick="execute(this.id)">Post-Abdication Folles</button>
+</div>
+
+<div id="contents">
+	<p class="coin-title">Choose a Sub-Collection</p>
+</div>
+
+<script type='text/javascript'> 
+function execute(val){	
+  console.log(val);
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
+      
+	  for (var key in coins) {
+        for (var coin in coins[key]) {
+          var imp = coins[key][coin].emperor;
+          var title = coins[key][coin].file
+          var mat = coins[key][coin].material;
+          var denom = coins[key][coin].denomination;
+          var year = coins[key][coin].year;
+          var ref = coins[key][coin].reference;
+          var codenum = coins[key][coin].code;
+          var mnt = coins[key][coin].mint; 
+		  var subcol = coins[key][coin].sub_collection; 
+          var card = document.createElement('div');
+          card.style.display = "inline-block";
+          card.style.padding = "10px";
+          card.className = 'card';
+          card.innerHTML =
+              '<div  class="coin">' +
+              '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+              '    <img src="../images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
+              '    <div class="overlay">' +
+              '      <div class="code">' + 
+              '        <span>' + codenum + '</span>' + 
+              '      </div>' +
+              '      <div class="caption-title">' +
+              '        <span>' + imp + '</span>' +
+              '      </div>' +
+              '      </br><div class="caption-subtitle">' +
+              '        <span>' + mat + ' ' + denom + '</span><br>' +
+              '        <span>' + year + '</span><br>' +
+              '        <span>' + ref + '</span>' +
+              '      </div>' +
+              '    </div>' +
+              '  </a>' +
+              '</div>';
+          if(typeof subcol !=="undefined") {
+            for (i = 0; i < subcol.length; i++) {
+              if (subcol[i] == val) {
+                document.getElementById(key).appendChild(card);
+              }
+            }
+          }
+        }
+	  }
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
+  
+  document.getElementById("contents").innerHTML = "";
+ 
+  document.getElementById("contents").innerHTML = 
+	'<p class="coin-title">' + val + ' Sub-Collection</p>' +
+	'<hr class="style-four">' +
+	'<div id="roman_imperial" class></div>' +
+	'<div id="roman_provincial" class></div>' +
+	'<div id="byzantine" class></div>';
+};
+</script>
+</body>
+</html>

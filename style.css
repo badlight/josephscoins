@@ -4,7 +4,7 @@
 
 h1 {
   text-align: center;
-  color:  grey;
+  color:  #333;
   font-size: 50px;
 }
 
@@ -149,7 +149,7 @@ em {
 
 .coin-title {
   font-size: 30px;
-  color: grey;
+  color: #333;
 }
 
 .coin-subtitle {
@@ -164,52 +164,70 @@ em {
 }
 
 ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #EAEAEA;
-    text-align: center;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 12px 0 rgba(0,0,0,0.19);
 }
 
 li {
-    display: inline;
+  display: inline;
 }
 
-li a {
-    display: inline-block;
-    color: grey;
-    text-align: center;
-    padding: 7px 8px;
-    text-decoration: none;
-}
-
-.inactive {
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   -webkit-transition: background-color 0.1s ease-out;
   -moz-transition: background-color 0.1s ease-out;
   -o-transition: background-color 0.1s ease-out;
   transition: background-color 0.1s ease-out;
 }
 
-.inactive:hover {
-  background-color: #DFDFDF;
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
   -webkit-transition: background-color 0.25s ease-out;
   -moz-transition: background-color 0.25s ease-out;
   -o-transition: background-color 0.25s ease-out;
   transition: background-color 0.25s ease-out;
 }
 
-.active {
-  background-color: #DFDFDF;
-  pointer-events: none;
-  cursor: default;
+li.dropdown {
+  display: inline-block;
 }
 
-.inactive-null {
-  pointer-events: none;
-  cursor: default;
-  color: white;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  -webkit-transition: background-color 0.1s ease-out;
+  -moz-transition: background-color 0.1s ease-out;
+  -o-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+
+  }
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 .cool-link {
@@ -351,50 +369,6 @@ li a {
     to { opacity: 0;}
 }
 
-.button {
-  background-color: #EAEAEA;
-  border: 1px solid grey;
-  color: grey;
-  padding: 10px 32px; 
-  margin-top: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  -webkit-transition: background-color 0.1s ease-out;
-  -moz-transition: background-color 0.1s ease-out;
-  -o-transition: background-color 0.1s ease-out;
-  transition: background-color 0.1s ease-out;
-}
-
-.button-null {
-  background-color: #DFDFDF;
-  border: 1px solid grey;
-  color: grey;
-  padding: 10px 32px; 
-  margin-top: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-  pointer-events: none;
-  cursor: default;
-}
-
-.button:hover {
-  background-color: #DFDFDF;
-  -webkit-transition: background-color 0.25s ease-out;
-  -moz-transition: background-color 0.25s ease-out;
-  -o-transition: background-color 0.25s ease-out;
-  transition: background-color 0.25s ease-out;
-}
-
 hr.style-one {
   height: 10px;
   overflow: visible; /* For IE */
@@ -402,7 +376,7 @@ hr.style-one {
   border: none;
   width: 512px;
   border-top: medium double #333;
-  color: grey;
+  color: #333;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
@@ -424,7 +398,7 @@ hr.style-two {
   border: none;
   width: 512px;
   border-top: medium double #333;
-  color: grey;
+  color: #333;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
@@ -446,7 +420,7 @@ hr.style-three {
   border: none;
   width: 512px;
   border-top: medium double #333;
-  color: grey;
+  color: #333;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
@@ -524,54 +498,6 @@ hr.style-four {
   text-align: justify; 
   margin-left: 50px;
   margin-right: 50px;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  background-color: #EAEAEA;
-  border: 1px solid grey;
-  color: grey;
-  padding: 10px 32px; 
-  margin-top: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  text-align: left;
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: grey;
-    min-width: 160px;
-    margin-left: -33px;
-    margin-top: 10px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: lightgrey;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-  background-color: #DFDFDF;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
 }
 
 #map {

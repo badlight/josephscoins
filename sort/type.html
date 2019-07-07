@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+  <title>Joseph's Ancient Coins</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>Joseph's Ancient Coins</h1>
+
+<ul>
+  <li><a class="active" href="/josephscoins/index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Sort</a>
+    <div class="dropdown-content">
+      <a href="/josephscoins/sort/type.html">By Type</a>
+      <a href="/josephscoins/sort/mint.html">By Mint</a>
+      <a href="/josephscoins/sort/subcol.html">By Sub-Collection</a>
+    </div>
+  </li>
+</ul>
+
+<div id="buttons">
+<button id="imp" onclick="execute(this.id)">Roman Imperial</button>
+<button id="pro" onclick="execute(this.id)">Roman Provincial</button>
+<button id="byz" onclick="execute(this.id)">Byzantine</button>
+</div>
+
+<div id="contents">
+	<p class="coin-title">Choose a Type</p>
+</div>
+
+<script type='text/javascript'> 
+function execute(int){	
+  console.log(int);
+  switch(int) {
+	case "imp":
+		val = "roman_imperial";
+		break;
+	case "pro":
+		val = "roman_provincial";
+		break;
+	case "byz":
+		val = "byzantine";
+		break;
+  }
+  console.log(val);
+  
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function(){
+    if (this.readyState == 4 && this.status == 200) {
+  
+      var response = JSON.parse(xhttp.responseText);
+      var coins = response; 
+
+      for (var coin in coins[val]) {
+        var imp = coins[val][coin].emperor;
+        var title = coins[val][coin].file
+        var mat = coins[val][coin].material;
+        var denom = coins[val][coin].denomination;
+        var year = coins[val][coin].year;
+        var ref = coins[val][coin].reference;
+        var codenum = coins[val][coin].code;
+        var card = document.createElement('div');
+        card.style.display = "inline-block";
+        card.style.padding = "10px";
+        card.className = 'card';
+        card.innerHTML =
+            '<div  class="coin">' +
+            '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+            '    <img src="../images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
+            '    <div class="overlay">' +
+            '      <div class="code">' + 
+            '        <span>' + codenum + '</span>' + 
+            '      </div>' +
+            '      <div class="caption-title">' +
+            '        <span>' + imp + '</span>' +
+            '      </div>' +
+            '      </br><div class="caption-subtitle">' +
+            '        <span>' + mat + ' ' + denom + '</span><br>' +
+            '        <span>' + year + '</span><br>' +
+            '        <span>' + ref + '</span>' +
+            '      </div>' +
+            '    </div>' +
+            '  </a>' +
+            '</div>';
+        document.getElementById(val).appendChild(card);
+      }
+    }
+  };
+  xhttp.open("GET", "../coins.json", true);
+  xhttp.send();
+  
+  document.getElementById("contents").innerHTML = "";
+ 
+  switch(val) {
+  case 'roman_imperial':
+    document.getElementById("contents").innerHTML = 
+    '<p class="coin-title">Roman Imperial</p>' +
+	'<hr class="style-two">' +
+	'<div id="roman_imperial" class></div>';
+    break;
+  case 'roman_provincial':
+    document.getElementById("contents").innerHTML = 
+	'<p class="coin-title">Roman Provincial</p>' +
+	'<hr class="style-three">' +
+	'<div id="roman_provincial" class></div>';
+    break;
+  case 'byzantine':
+    document.getElementById("contents").innerHTML = 
+	'<p class="coin-title">Byzantine</p>' +
+	'<hr class="style-one">' +
+	'<div id="byzantine" class></div>';
+    break;
+	}
+};
+</script>
+</body>
+</html>
