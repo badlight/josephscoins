@@ -234,7 +234,7 @@ li.dropdown {
   background-color: #333;
   border: 2px;
   color: white;
-  padding: 14px 16px;
+  padding: 16px 25px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -247,15 +247,7 @@ li.dropdown {
 }
 
 .button:hover {
-  background-color: #333;
-  border: 2px;
-  color: white;
-  padding: 14px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
+  background-color: red;
   -webkit-transition: background-color 0.25s ease-out;
   -moz-transition: background-color 0.25s ease-out;
   -o-transition: background-color 0.25s ease-out;
