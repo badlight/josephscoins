@@ -156,7 +156,7 @@ em {
   font-size: 22px;
   font-style: italic;
   margin-top: -30px;
-  color: grey;
+  color: red;
 }
 
 .description {
@@ -235,6 +235,7 @@ li.dropdown {
   border: 2px;
   color: white;
   padding: 16px 25px;
+  font-family: 'Crimson Text', serif;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -282,7 +283,7 @@ li.dropdown {
   margin: auto;
   text-align: center;
   width: 762.5px;
-  background-color: darkgrey;
+  background-color: #333;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
