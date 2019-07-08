@@ -156,7 +156,7 @@ em {
   font-size: 22px;
   font-style: italic;
   margin-top: -30px;
-  color: grey;
+  color: red;
 }
 
 .description {
@@ -230,6 +230,36 @@ li.dropdown {
   display: block;
 }
 
+.button {
+  background-color: #333;
+  border: 2px;
+  color: white;
+  padding: 16px 25px;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition: background-color 0.1s ease-out;
+  -moz-transition: background-color 0.1s ease-out;
+  -o-transition: background-color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
+}
+
+.panel {
+  padding-top: 25px; 
+}
+
+.button:hover {
+  background-color: red;
+  -webkit-transition: background-color 0.25s ease-out;
+  -moz-transition: background-color 0.25s ease-out;
+  -o-transition: background-color 0.25s ease-out;
+  transition: background-color 0.25s ease-out;
+}
+
 .cool-link {
   text-decoration: none;
   color: grey;
@@ -254,7 +284,7 @@ li.dropdown {
   margin: auto;
   text-align: center;
   width: 762.5px;
-  background-color: darkgrey;
+  background-color: #333;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 25px;
