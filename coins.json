@@ -2537,6 +2537,27 @@
       "provenance": "Ex. YOC (Pete)",
       "code": "DP6A"
     },     
+    "constantiusii6": {
+      "emperor": "Constantius II",
+      "file": "constantiusii6",
+      "material": "AE",
+      "denomination": "Maiorina",
+      "year": "350 - 355 A.D.",
+      "mint": "Thessaloniki",
+      "officina": "4th",
+      "emission": null,
+      "weight": "4.40g",
+      "diameter": "25.0mm",
+      "axis": "12H",
+      "obverse_legend": "D N CONSTAN-TIVS P F AVG",
+      "reverse_legend": "FEL TEMP RE-PARATIO",
+      "exergue": "A/-//TSΔ",      
+      "obverse_desc": "Bust of Constantius II, pearl-diademed, draped, cuirassed, right; A behind bust",
+      "reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing a pointed cap, sitting right, raising both hands",
+      "reference": "RIC VIII Thessalonica 123",
+      "provenance": "Ex. Glenn Simonel eBay 2019",
+      "code": ""
+    },     
     "constantiusii1": {
       "emperor": "Constantius II",
       "file": "constantiusii1",
