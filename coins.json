@@ -1647,6 +1647,28 @@
       "sub_collection": ["Rome Mint Sol","Constantine Sol Mint Set"],
       "code": "S3LL"
     },         
+    "constantinei7": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei7",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "315 A.D.",
+      "mint": "Rome",
+      "officina": "1st",
+      "emission": null,
+      "weight": "3.47g",
+      "diameter": "21.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "SOLI INV-I-CTO COMITI",
+      "exergue": "S/F//RP",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Rome 33",
+      "provenance": "Ex. eBay 2019",
+      "sub_collection": ["Rome Mint Sol"],
+      "code": ""
+    },         
     "constantinei22": {
       "emperor": "Constantine the Great",
       "file": "constantinei22",
