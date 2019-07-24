@@ -930,7 +930,6 @@
       "reverse_desc": "Sol, chlamys falling from left shoulder, standing left, raising right hand and holding up globe with left hand",
       "reference": "RIC VI London 121a, Cloke & Toone 6.02.010",
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 153, Ex. James Pickering Romano-Britannic Collection, Ex. York Coins",
-      "sub_collection": ["Constantine Sol Mint Set"],
       "code": "HDFW"
     },          
     "constantinei3": {
@@ -1977,6 +1976,28 @@
       "sub_collection": ["Constantine Sol Mint Set"],
       "code": ""
     },     
+    "constantinei16": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei16",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "316 A.D.",
+      "mint": "Rome",
+      "officina": "1st",
+      "emission": null,
+      "weight": "3.40g",
+      "diameter": "22.0mm",
+      "axis": "6H",
+      "obverse_legend": "CONSTANTINVS P AVG",
+      "reverse_legend": "SOLI INVIC-TO COMITI",
+      "exergue": "S/P//MLN",      
+      "obverse_desc": "Bust of Constantine I, laureate, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
+      "reference": "RIC VII Londinium 56",
+      "provenance": "Ex. Victor Clark 2019",
+      "sub_collection": ["Constantine Sol Mint Set"],
+      "code": ""
+    },     
     "constantinei8": {
       "emperor": "Constantine the Great",
       "file": "constantinei8",
@@ -2062,6 +2083,28 @@
       "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
       "reference": "RIC VII Treveri 105",
       "provenance": "Ex. Savoca eBay 2018",
+      "code": ""
+    },     
+    "constantinei29": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei29",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "316 - 317 A.D.",
+      "mint": "Rome",
+      "officina": "1st",
+      "emission": null,
+      "weight": "3.10g",
+      "diameter": "20.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "SOLI INV-I-CTO COMITI",
+      "exergue": "-/-//RP",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding Victory on globe in left hand; to left, captive wearing Phrygian cap",
+      "reference": "RIC VII Rome 52",
+      "provenance": "Ex. Victor Clark 2019",
+      "sub_collection": ["Rome Mint Sol"],
       "code": ""
     },     
     "constantinei42": {
