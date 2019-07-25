@@ -2602,6 +2602,27 @@
       "provenance": "Ex. YOC (Pete)",
       "code": "DP6A"
     },     
+    "constantiusii7": {
+      "emperor": "Constantius II",
+      "file": "constantiusii7",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "347 - 348 A.D.",
+      "mint": "Antioch",
+      "officina": "8th",
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "6H",
+      "obverse_legend": "D N CONSTAN-TIVS P F AVG",
+      "reverse_legend": "VOT/XX/MVLT/XXX",
+      "exergue": "-/-//SMANH",      
+      "obverse_desc": "Head of Constantius II, pearl-diademed, right",
+      "reverse_desc": "Legend within a wreath",
+      "reference": "RIC VIII Antioch 113",
+      "provenance": "Ex. FSR Auction 109, Lot 358",
+      "code": ""
+    },     
     "constansi1": {
       "emperor": "Constans I",
       "file": "constansi1",
