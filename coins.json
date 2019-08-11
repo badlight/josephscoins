@@ -1341,6 +1341,27 @@
       "provenance": "Ex. Carpe Diem Nvmismatics 2018",
       "code": ""
     },     
+    "constantinei29": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei29",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "313 A.D.",
+      "mint": "Rome",
+      "officina": "2nd",
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "N/AH",
+      "obverse_legend": "IMP CONSTANTINVS P F AVG",
+      "reverse_legend": "MARTI CO-NSERVATORI",
+      "exergue": "R/F//RS",      
+      "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
+      "reverse_desc": "rs, helmeted, draped, cuirassed, standing right, holding reversed spear in right hand and resting left hand on shield",
+      "reference": "RIC VII Rome 6",
+      "provenance": "Ex. eBay 2019",
+      "code": ""
+    },     
     "constantinei26": {
       "emperor": "Constantine the Great",
       "file": "constantinei26",
@@ -3208,8 +3229,8 @@
       "mint": "Syracuse",
       "officina": null,
       "emission": null,
-      "weight": "3.87g",
-      "diameter": "20.4mm",
+      "weight": "4.07g",
+      "diameter": "27.8mm",
       "axis": "6H",
       "obverse_legend": "-",
       "reverse_legend": "TKw monogram",
@@ -3217,8 +3238,8 @@
       "obverse_desc": "Constans, holding long cross, and Constantine IV, holding globus cruciger, standing facing",
       "reverse_desc": "Large M; monogram above, Heraclius and Tiberius standing facing to left and right, respectively",
       "reference": "SBCV 1110",
-      "provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2433 (Part of)",
-      "code": "SXF9"
+      "provenance": "Ex. Agora Auction 84, Lot 284",
+      "code": ""
     },
     "constantinev1": {
       "emperor": "Constantine V Kopronymos",
