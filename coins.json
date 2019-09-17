@@ -4050,6 +4050,27 @@
       "provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 768",
       "code": "4XFE"
     },
+    "johnii1": {
+      "emperor": "John II Comnenus",
+      "file": "johnii1",
+      "material": "AE",
+      "denomination": "Half Tetarteron",
+      "year": "1118 - 1143 A.D.",
+      "mint": "Thessaloniki",
+      "officina": null,
+      "emission": null,
+      "weight": "2.72g",
+      "diameter": "17.0mm",
+      "axis": "6H",
+      "obverse_legend": "IC-XC",
+      "reverse_legend": "IW DECPOT",
+      "exergue": null,      
+      "obverse_desc": "Christ nimbate, standing facing on footstool, wearing pallium and colobium, holding book of gospels, both hands at front",
+      "reverse_desc": "Crowned bust of John facing, wearing jewelled chlamys, holding labarum and cross on globe",
+      "reference": "SBCV 1954",
+      "provenance": "Ex. Rudnik Numismatics 2019",
+      "code": ""
+    },
     "manueli1": {
       "emperor": "Manuel I Comnenus",
       "file": "manueli1",
