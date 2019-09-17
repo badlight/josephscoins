@@ -16,24 +16,24 @@
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
 
-      var imp = coins['roman_provincial']['antoninuspius'].emperor;
-      var title = coins['roman_provincial']['antoninuspius'].file
-      var mat = coins['roman_provincial']['antoninuspius'].material;
-      var denom = coins['roman_provincial']['antoninuspius'].denomination;
-      var date = coins['roman_provincial']['antoninuspius'].year;
-      var mnt = coins['roman_provincial']['antoninuspius'].mint;
-      var off = coins['roman_provincial']['antoninuspius'].officina;
-      var em = coins['roman_provincial']['antoninuspius'].emission;
-      var wt = coins['roman_provincial']['antoninuspius'].weight;
-      var diam = coins['roman_provincial']['antoninuspius'].diameter;
-      var ax = coins['roman_provincial']['antoninuspius'].axis;
-      var obv = coins['roman_provincial']['antoninuspius'].obverse_legend;
-      var rev = coins['roman_provincial']['antoninuspius'].reverse_legend;
-      var ex = coins['roman_provincial']['antoninuspius'].exergue;
-      var obvd = coins['roman_provincial']['antoninuspius'].obverse_desc;
-      var revd = coins['roman_provincial']['antoninuspius'].reverse_desc; 
-      var ref = coins['roman_provincial']['antoninuspius'].reference;
-      var prov = coins['roman_provincial']['antoninuspius'].provenance;
+      var imp = coins['roman_provincial']['antoninuspius2'].emperor;
+      var title = coins['roman_provincial']['antoninuspius2'].file
+      var mat = coins['roman_provincial']['antoninuspius2'].material;
+      var denom = coins['roman_provincial']['antoninuspius2'].denomination;
+      var date = coins['roman_provincial']['antoninuspius2'].year;
+      var mnt = coins['roman_provincial']['antoninuspius2'].mint;
+      var off = coins['roman_provincial']['antoninuspius2'].officina;
+      var em = coins['roman_provincial']['antoninuspius2'].emission;
+      var wt = coins['roman_provincial']['antoninuspius2'].weight;
+      var diam = coins['roman_provincial']['antoninuspius2'].diameter;
+      var ax = coins['roman_provincial']['antoninuspius2'].axis;
+      var obv = coins['roman_provincial']['antoninuspius2'].obverse_legend;
+      var rev = coins['roman_provincial']['antoninuspius2'].reverse_legend;
+      var ex = coins['roman_provincial']['antoninuspius2'].exergue;
+      var obvd = coins['roman_provincial']['antoninuspius2'].obverse_desc;
+      var revd = coins['roman_provincial']['antoninuspius2'].reverse_desc; 
+      var ref = coins['roman_provincial']['antoninuspius2'].reference;
+      var prov = coins['roman_provincial']['antoninuspius2'].provenance;
       var card = document.createElement('div');
       card.className = 'card';
       card.innerHTML =
@@ -47,14 +47,14 @@
         '    <div id="caption"></div>' +
         '  </div>' +
         '  <span class="caption-title-big">' +
-        '    ' + date + ', ' + mnt + ' Mint</br>' +
+        '    ' + date + ', ' + mnt + ' Mint, ' + off + ' Officina, ' + em + ' Emission</br>' +
         '    <span class="caption-subtitle2">' +
         '      ' + wt +', ' + diam + ', ' + ax +
         '    </span>' +
         '    <span class="description">' +
-        '      <p class="aligned"><strong>Obverse:</strong><span style="font-family: \'Noto Sans Coptic\', \'Crimson Text\', serif" > ' + obv + ',</span></br><em>' + obvd + '</em></p>' +
+        '      <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
         '      <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-        '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br></p>' +
+        '      <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
         '      <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
         '      <hr class="marginated">' +
         '      <strong>Reference:</strong> ' + ref +
