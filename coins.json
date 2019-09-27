@@ -318,6 +318,28 @@
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 126, Ex. James Pickering Romano-Britannic Collection",
       "code": "SVCC"
     },       
+    "constantiusi3": {
+      "emperor": "Constantius I Chlorus",
+      "file": "constantiusi3",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "294 - 296 A.D.",
+      "mint": "Lugdunum",
+      "officina": null,
+      "emission": null,
+      "weight": "N/Ag",
+      "diameter": "N/Amm",
+      "axis": "N/AH",
+      "obverse_legend": "FL VAL CONSTANTIVS NOB C",
+      "reverse_legend": "GENIO POPV–LI ROMANI",
+      "exergue": "-/-//-",      
+      "obverse_desc": "Head of Constantius Chlorus, laureate, right",
+      "reverse_desc": "Genius standing, facing left, head surmounted by a modius, naked except for chlamys over left shoulder, holding patera in right hand and cornucopia in left arm",
+      "reference": "RIC VI Lugdunum 17a",
+	  "sub_collection": ["Invasion Coinage"],
+      "provenance": "Ex. eBay 2019",
+      "code": ""
+    },       
     "galerius4": {
       "emperor": "Galerius",
       "file": "galerius4",
