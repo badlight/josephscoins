@@ -357,7 +357,7 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right",
       "reverse_desc": "Genius standing, facing left, head surmounted by a modius, naked except for chlamys over left shoulder, holding patera in right hand and cornucopia in left arm",
       "reference": "RIC VI Lugdunum 17a",
-	  "sub_collection": ["Invasion Coinage"],
+      "sub_collection": ["Invasion Coinage", "Tetrarchy Mints"],
       "provenance": "Ex. eBay 2019",
       "code": ""
     },       
@@ -401,6 +401,7 @@
       "obverse_desc": "Laureate, truncated, bare neck bust right",
       "reverse_desc": "Genius standing, facing left, head surmounted by a modius, naked except for chlamys over left shoulder, holding patera in right hand and cornucopia in left arm",
       "reference": "RIC VI Londinium 1a, Cloke & Toone 1.01.001 (R)",
+      "sub_collection": ["Tetrarchy Mints"],
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 128, Ex. James Pickering Romano-Britannic Collection",
       "code": "RYYW"
     },       
@@ -443,6 +444,7 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Heraclea 18a",
+      "sub_collection": ["Tetrarchy Mints"],
       "provenance": "Ex. Budges-Beak eBay 2019",
       "code": ""
     },    
@@ -590,6 +592,7 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right; ties divergent",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Alexandria 27a",
+      "sub_collection": ["Tetrarchy Mints"],
       "provenance": "Ex. Incitatus Coins 2019",
       "code": ""
     },    
@@ -611,6 +614,7 @@
       "obverse_desc": "Head of Galerius, laureate, right",
       "reverse_desc": "Africa, wearing elephant-skin head-dress, draped, standing front, head left, holding standard in right hand and tusk in left hand; to left, lion with captured bull",
       "reference": "RIC VI Carthage 26b",
+      "sub_collection": ["Tetrarchy Mints"],
       "provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 204",
       "code": ""
     },    
@@ -779,6 +783,7 @@
       "obverse_desc": "Head of Galerius, laureate, right",
       "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
       "reference": "RIC VI Antioch 57b",
+      "sub_collection": ["Tetrarchy Mints"],
       "provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 214",
       "code": ""
     },
@@ -800,6 +805,7 @@
       "obverse_desc": "Head of Constantius Chlorus, laureate, right",
       "reverse_desc": "Moneta, draped, standing left, holding scales in right hand and cornucopiae in left hand",
       "reference": "RIC VI Rome 112a",
+      "sub_collection": ["Tetrarchy Mints"],
       "provenance": "Ex. Forum Ancient Coins 2019",
       "code": ""
     },          

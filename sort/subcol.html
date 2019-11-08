@@ -29,6 +29,7 @@
 <button class="button" id="Constantine VLPP" onclick="execute(this.id)">Constantine VLPP</button>
 <button class="button" id="Post-Abdication Folles" onclick="execute(this.id)">Post-Abdication Folles</button>
 <button class="button" id="Invasion Coinage" onclick="execute(this.id)">Invasion Coinage</button>
+<button class="button" id="Tetrarchy Mints" onclick="execute(this.id)">Tetrarchy Mints</button>
 </div>
 
 <div id="contents">
@@ -55,7 +56,7 @@ function execute(val){
           var ref = coins[key][coin].reference;
           var codenum = coins[key][coin].code;
           var mnt = coins[key][coin].mint; 
-		  var subcol = coins[key][coin].sub_collection; 
+          var subcol = coins[key][coin].sub_collection; 
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
