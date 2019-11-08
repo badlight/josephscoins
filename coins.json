@@ -953,6 +953,28 @@
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 147, Ex. James Pickering Romano-Britannic Collection",
       "code": "29WE"
     },          
+    "constantinei37": {
+      "emperor": "Constantine the Great",
+      "file": "constantinei37",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "306 - 307 A.D.",
+      "mint": "Antioch",
+      "officina": null,
+      "emission": null,
+      "weight": "10.40g",
+      "diameter": "26.0mm",
+      "axis": "6H",
+      "obverse_legend": "FL VAL CONSTANTINVS NOB CAES",
+      "reverse_legend": "GENIO POPV-LI ROMANI",
+      "exergue": "-/A//ANT:",      
+      "obverse_desc": "Laureate head right",
+      "reverse_desc": "Genius standing left, modius on head, naked but for chlamys over left shoulder, liquors flowing from patera in right hand, cornucopiae in left",
+      "reference": "Not in RIC",
+      "sub_collection": [""],
+      "provenance": "Ex. Budgies-Beak eBay 2019",
+      "code": ""
+    },          
     "galerius3": {
       "emperor": "Galerius",
       "file": "galerius3",
