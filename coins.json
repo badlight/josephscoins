@@ -2716,7 +2716,7 @@
       "code": ""
     },       
     "constantiusii10": { 
-      "emperor": "Constantine the Great",
+      "emperor": "Constantius II",
       "file": "constantiusii10",
       "material": "AE",
       "denomination": "Follis",
@@ -2797,6 +2797,27 @@
       "reverse_desc": "Camp gate with two turrets; star above",
       "reference": "RIC VII Siscia 217",
       "provenance": "Ex. CNG Auction 262, Lot 394, Ex. Elliott-Kent Collection",
+      "code": ""
+    },     
+    "constantiusii11": {
+      "emperor": "Constantius II",
+      "file": "constantiusii11",
+      "material": "AE",
+      "denomination": "Half-Follis",
+      "year": "330 - 331 A.D.",
+      "mint": "Arelate",
+      "officina": "2nd",
+      "emission": null,
+      "weight": "2.39g",
+      "diameter": "17.0mm",
+      "axis": "12H",
+      "obverse_legend": "FL IVL CONSTANTIVS NOB C",
+      "reverse_legend": "GLOR-IA EXERC-ITVS",
+      "exergue": "*//SCONST",      
+      "obverse_desc": "Bust of Constantius II, laureate, draped, cuirassed, right",
+      "reverse_desc": "Two soldiers, helmeted, draped, cuirassed, standing facing each other, each holding spear in outer hand and resting inner hand on shield; between them, two standards",
+      "reference": "RIC VII Arelate 347",
+      "provenance": "Ex. Ancient & Medieval Coins Canada Auction 2, Lot 257, Ex. TheRed Collection",
       "code": ""
     },     
     "commem4": {
