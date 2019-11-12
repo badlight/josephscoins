@@ -55,7 +55,7 @@ function execute(int){
       for (var coin in coins[val]) {
         var imp = coins[val][coin].emperor;
         var title = coins[val][coin].file
-        var folder = file.replace(/[0-9]/g, '');
+        var folder = title.replace(/[0-9]/g, '');
         var mat = coins[val][coin].material;
         var denom = coins[val][coin].denomination;
         var year = coins[val][coin].year;
