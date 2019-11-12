@@ -60,6 +60,7 @@ function execute(val){
         for (var coin in coins[key]) {
           var imp = coins[key][coin].emperor;
           var title = coins[key][coin].file
+          var folder = file.replace(/[0-9]/g, '');
           var mat = coins[key][coin].material;
           var denom = coins[key][coin].denomination;
           var year = coins[key][coin].year;
@@ -72,7 +73,7 @@ function execute(val){
           card.className = 'card';
           card.innerHTML =
               '<div  class="coin">' +
-              '  <a href="../coins/' + title + '.html" style="text-decoration:none">' +
+              '  <a href="../coins/' + folder + '/' + title + '.html" style="text-decoration:none">' +
               '    <img src="../images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
               '    <div class="overlay">' +
               '      <div class="code">' + 
