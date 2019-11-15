@@ -448,6 +448,27 @@
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 130, Ex. James Pickering Romano-Britannic Collection, Ex. York Coins",
       "code": "G8HQ"
     },       
+    "diocletian7": {
+      "emperor": "Diocletian",
+      "file": "diocletian7",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "296 - 303 A.D.",
+      "mint": "London",
+      "officina": null,
+      "emission": null,
+      "weight": "9.49g",
+      "diameter": "26.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP C DIOCLETIANVS P F AVG",
+      "reverse_legend": "GENIO POPV–LI ROMANI",
+      "exergue": "-/-//-",      
+      "obverse_desc": "Laureate and cuirassed bust right",
+      "reverse_desc": "Genius standing, facing left, head surmounted by a modius, naked except for chlamys over left shoulder, holding patera in right hand and cornucopia in left arm",
+      "reference": "RIC VI Londinium 6a, Cloke & Toone 2.01.003",
+      "provenance": "Ex. CNG Electronic Auction 456, Lot 488",
+      "code": ""
+    },       
     "maximian5": {
       "emperor": "Maximian",
       "file": "maximian5",
