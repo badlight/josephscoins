@@ -1,4 +1,4 @@
-{
+num{
   "roman_imperial": {
     "hadrian": {
       "emperor": "Hadrian",
@@ -383,6 +383,28 @@
       "sub_collection": ["Tetrarchy Mints"],
       "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 128, Ex. James Pickering Romano-Britannic Collection",
       "code": "RYYW"
+    },       
+    "diocletian8": {
+      "emperor": "Diocletian",
+      "file": "diocletian8",
+      "material": "AE",
+      "denomination": "Follis",
+      "year": "296 A.D.",
+      "mint": "Siscia",
+      "officina": null,
+      "emission": null,
+      "weight": "9.57",
+      "diameter": "27.0mm",
+      "axis": "6H",
+      "obverse_legend": "IMP C DIOCLETIANVS P F AVG",
+      "reverse_legend": "GENIO POPV–L-I ROMANI",
+      "exergue": "-/B//*SIS",      
+      "obverse_desc": "Head of Diocletian, laureate, right",
+      "reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
+      "reference": "RIC VI Siscia 95a",
+      "sub_collection": ["Tetrarchy Mints"],
+      "provenance": "Ex. eBay 2019",
+      "code": ""
     },       
     "maximian3": {
       "emperor": "Maximian",
