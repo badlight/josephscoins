@@ -956,12 +956,12 @@
       "obverse_legend": "MAXIMINVS NOB CAES",
       "reverse_legend": "SAC MON VRB AVGG ET CAESS NN",
       "exergue": "-/*//RQ",      
-      "obverse_desc": "Bust of Maximian, laureate, wearing imperial mantle, right, holding olive branch in right hand and mappa in left hand",
-      "reverse_desc": "Providentia, draped, standing right, extending right hand to Quies; Quies, draped, standing left, holding branch in right hand and leaning on sceptre with left hand; in left field, S; in right field, F",
-      "reference": "RIC VI Heraclea 27b",
-      "sub_collection": ["Post-Abdication Folles"],
-      "provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398",
-      "code": "VAZA"
+      "obverse_desc": "Head of Maximinus Daia, laureate, right",
+      "reverse_desc": "Moneta, draped, standing left, holding scales in right hand and cornucopiae in left hand",
+      "reference": "RIC VI Rome 123b",
+      "sub_collection": ["CNG Lot"],
+      "provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)",
+      "code": ""
     },    
     "maximian1": {
       "emperor": "Maximian",
