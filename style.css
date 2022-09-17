@@ -133,38 +133,31 @@ em {
 .caption-title-big {
   display: block;
   color: grey;
-  font-size: 18px;
+  font-size: 14px;
 }
 
-.caption-subtitle-big {
-  display: block;
-  color: grey;
-  font-style: italic;
-  font-size: 15px;
-  padding-bottom: 10px;
-}
 
 .caption-subtitle2 {
   display: block;
   color: grey;
   font-style: italic;
-  font-size: 22px;
+  font-size: 12px;
 }
 
 .coin-title {
-  font-size: 30px;
+  font-size: 18px;
   color: #333;
 }
 
 .coin-subtitle {
-  font-size: 22px;
+  font-size: 16px;
   font-style: italic;
   margin-top: -30px;
   color: red;
 }
 
 .description {
-  font-size: 20px;
+  font-size: 12px;
 }
 
 ul {
