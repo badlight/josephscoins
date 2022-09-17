@@ -146,12 +146,9 @@ em {
 .coin-title {
   font-size: 18px;
   color: #333;
-}
-
-.coin-subtitle {
-  font-size: 16px;
-  margin-top: -30px;
-  color: red;
+  text-align: justify; 
+  margin-left: 50px;
+  margin-right: 50px;
 }
 
 .description {
