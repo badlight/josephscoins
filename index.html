@@ -27,30 +27,86 @@
           var year = coins[key][coin].year;
           var ref = coins[key][coin].reference;
           var codenum = coins[key][coin].code;
-          var card = document.createElement('div');
+		  var date = coins[key][coin].year;
+          var mnt = coins[key][coin].mint;
+          var off = coins[key][coin].officina;
+          var em = coins[key][coin].emission;
+          var wt = coins[key][coin].weight;
+          var diam = coins[key][coin].diameter;
+          var ax = coins[key][coin].axis;
+          var obv = coins[key][coin].obverse_legend;
+          var rev = coins[key][coin].reverse_legend;
+          var ex = coins[key][coin].exergue;
+          var obvd = coins[key][coin].obverse_desc;
+          var revd = coins[key][coin].reverse_desc; 
+          var prov = coins[key][coin].provenance;
           card.style.display = "inline-block";
           card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
-            '<div  class="coin">' +
-            '  <a href="./coins/' + folder + '/' + title + '.html" style="text-decoration:none">' +
-            '    <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
-            '    <div class="overlay">' +
-            '      <div class="code">' + 
-            '        <span>' + codenum + '</span>' + 
+		    '<div id="myModal" class="modal">' + 
+            '  <div  class="coin">' +
+            '    <a data-toggle="modal" data-target="#myModal">' +
+            '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
+            '      <div class="overlay">' +
+            '        <div class="code">' + 
+            '          <span>' + codenum + '</span>' + 
+            '        </div>' +
+            '        <div class="caption-title">' +
+            '          <span>' + imp + '</span>' +
+            '        </div>' +
+            '        </br><div class="caption-subtitle">' +
+            '          <span>' + mat + ' ' + denom + '</span><br>' +
+            '          <span>' + year + '</span><br>' +
+            '          <span>' + ref + '</span>' +
+            '        </div>' +
             '      </div>' +
-            '      <div class="caption-title">' +
-            '        <span>' + imp + '</span>' +
-            '      </div>' +
-            '      </br><div class="caption-subtitle">' +
-            '        <span>' + mat + ' ' + denom + '</span><br>' +
-            '        <span>' + year + '</span><br>' +
-            '        <span>' + ref + '</span>' +
-            '      </div>' +
-            '    </div>' +
-            '  </a>' +
-            '</div>';
+            '    </a>' +
+            '  </div>' +
+            '  <div class="modal-content">' + 
+            '    <span class="close">&times;</span>' + 
+			'	   <p></em></p>' + 
+			'	   <div class="coin_page">' +
+			'        <img id="myImg" src="../../images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+			'        <span class="description">' +
+			'          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
+			'          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
+			'          <p class="aligned"><strong>Weight:</strong> ' + wt + ', <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
+			'          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
+			'          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
+			'          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+			'          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+			'          <hr class="marginated">' +
+			'          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
+			'        </span>' + 
+			'      </div>' + 
+			'  </div>;
           document.getElementById(key).appendChild(card);
+		  
+		  // Get the modal
+		  var modal = document.getElementById("myModal");
+
+		  // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+
+          var img = document.getElementById('myImg');
+		  img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+		  }
+
+		  // When the user clicks on <span> (x), close the modal
+          span.onclick = function() {
+            modal.style.display = "none";
+          }
+
+          // When the user clicks anywhere outside of the modal, close it
+          window.onclick = function(event) {
+            if (event.target == modal) {
+              modal.style.display = "none";
+            }
+          }
         }
       }
     }
