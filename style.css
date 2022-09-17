@@ -13,7 +13,7 @@ h1 {
 }
 
 body {
-  text-align: left;
+  text-align: center;
   font-family: 'Verdana';
   font-size: 12px;
   background-color: white;
@@ -72,7 +72,7 @@ em {
   padding-bottom: 25px;
   vertical-align: top;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   width: 762.5px;
   background-color: #EAEAEA;
   border: 1px solid grey !important;
