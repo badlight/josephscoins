@@ -14,7 +14,7 @@ h1 {
 
 body {
   text-align: center;
-  font-family: 'Formata';
+  font-family: 'Verdana';
   font-size: 22px;
   background-color: white;
   color: black;
@@ -232,7 +232,7 @@ li.dropdown {
   border: 2px;
   color: white;
   padding: 16px 25px;
-  font-family: 'Crimson Text', serif;
+  font-family: 'Verdana';
   font-size: 16px;
   text-align: center;
   text-decoration: none;
@@ -405,7 +405,7 @@ hr.style-one {
   border-top: medium double #333;
   color: #333;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 hr.style-one:after {
   content: '\2626';
@@ -415,7 +415,7 @@ hr.style-one:after {
   font-size: 1.5em;
   padding: 0 0.25em;
   background: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-two {
@@ -427,7 +427,7 @@ hr.style-two {
   border-top: medium double #333;
   color: #333;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 hr.style-two:after {
   content: '\2627';
@@ -437,7 +437,7 @@ hr.style-two:after {
   font-size: 1.5em;
   padding: 0 0.25em;
   background: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-three {
@@ -449,7 +449,7 @@ hr.style-three {
   border-top: medium double #333;
   color: #333;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-three:after {
@@ -460,7 +460,7 @@ hr.style-three:after {
   font-size: 1.5em;
   padding: 0 0.25em;
   background: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-five {
@@ -472,7 +472,7 @@ hr.style-five {
   border-top: medium double #333;
   color: grey;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-five:after {
@@ -483,7 +483,7 @@ hr.style-five:after {
   font-size: 1.5em;
   padding: 0 0.25em;
   background: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-six {
@@ -495,7 +495,7 @@ hr.style-six {
   border-top: medium double #333;
   color: grey;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-six:after {
@@ -506,7 +506,7 @@ hr.style-six:after {
   font-size: 1.5em;
   padding: 0 0.25em;
   background: white;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 hr.style-four {
@@ -518,7 +518,7 @@ hr.style-four {
   border-top: medium double #333;
   color: grey;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Verdana";
 }
 
 .aligned {
