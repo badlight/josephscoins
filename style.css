@@ -38,7 +38,7 @@ em {
 
 .big_pic{
   border-bottom: 1px solid grey;
-  width: 762.5px;
+  width: 500px;
 }
 
 .coin {
@@ -73,7 +73,7 @@ em {
   vertical-align: top;
   display: inline-block;
   text-align: left;
-  width: 762.5px;
+  width: 500px;
   background-color: #EAEAEA;
   border: 1px solid grey !important;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -85,7 +85,7 @@ em {
   vertical-align: top;
   margin: auto;
   text-align: center;
-  width: 762.5px;
+  width: 500px;
   background-color: #EAEAEA;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -275,7 +275,7 @@ li.dropdown {
   vertical-align: top;
   margin: auto;
   text-align: center;
-  width: 762.5px;
+  width: 500px;
   background-color: #333;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
