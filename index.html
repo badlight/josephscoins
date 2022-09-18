@@ -16,7 +16,9 @@
   
       var response = JSON.parse(xhttp.responseText);
       var coins = response; 
-
+	
+	  var modalNum = 0; 
+	  
       for (var key in coins) {
         for (var coin in coins[key]) {
           var imp = coins[key][coin].emperor;
@@ -77,30 +79,32 @@
 			'    </div>' +
 			'  </div>';			
           document.getElementById(key).appendChild(card);
+		  
+		  var modals[modalNum] = document.getElementbyId(title + 'Modal')
+		  modalNum++; 
         }
       }
 		  
-	  // Get the modal
-	  var modals = document.getElementsByClassName("modal");
 	  // Get the image and insert it inside the modal - use its "alt" text as a caption
-	  var imgs = document.getElementsByClassName("coin");
+	  var img = document.getElementById("septimiusseverus3Img");
+	  img.onclick = function(){
+	  modal[1].style.display = "block";
+	  }
 	  
-	  for (i=0; i<length.imgs; i++){
-		img = imgs[i]
-		modal = modals[i];
-		img.onclick = function(){
-			modal.style.display = "block";
-		}
+	  // Get the image and insert it inside the modal - use its "alt" text as a caption
+	  var img2 = document.getElementById("hadrianImg");
+	  img2.onclick = function(){
+	  modal[0].style.display = "block";
 	  }
 	  
 	  // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
-        for (i=0; i<length.modals; i++) {
-			modal = modals[i]; 
-			if (event.target == modal) {
-				modal.style.display = "none";
-			}
-		}
+        if (event.target == modal[0]) {
+          modal.style.display = "none";
+        }
+        if (event.target == modal[1]) {
+          modal2.style.display = "none";
+        }
       }     
 	};
   };
