@@ -91,9 +91,10 @@
 		  }
 		  
 		  function hideModals() {
-			modals.forEach(m => {
-			  m.classList.remove('visible');
-			}); 
+			for (i = 0; i < modals.length; i++) { 
+			  modal = modals[i];
+			  modal.classList.remove('visible');
+			}; 
 	      }
 		  
 		  for (i = 0; i < imgs.length; i++) { 
