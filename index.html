@@ -45,7 +45,7 @@
           card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
-            '  <div class="coin">' +
+            '  <div class="coin" id="' + title + 'Image">' +
             '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '      <div class="overlay" unselectable="on">' +
             '        <div class="code">' + 
@@ -58,7 +58,7 @@
             '          <span>' + ref + '</span>' +
             '        </div>' +
             '      </div>' +
-			'  <div id="myModal" class="modal">' +
+			'  <div id="' + title + 'Modal" class="modal">' +
             '    <span class="close">&times;</span>' + 
             '    <div class="modal-content">' +  
 			'	   <div class="coin_page">' +
@@ -82,7 +82,7 @@
       }
 		  
 		  // Get the modal
-		  var modal = document.getElementById('myModal');
+		  var modals = document.getElementsByClassName('modal');
 		  var imgs = document.getElementsByClassName('coin');
 		  
 		  for (var i = 0; i < imgs.length; i++) {
