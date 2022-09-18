@@ -45,7 +45,7 @@
           card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
-            '  <div class="coin" id="img">' +
+            '  <div class="coin">' +
             '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '      <div class="overlay" unselectable="on">' +
             '        <div class="code">' + 
@@ -58,7 +58,7 @@
             '          <span>' + ref + '</span>' +
             '        </div>' +
             '      </div>' +
-			'  <div id="' + title + 'Modal" class="modal">' +
+			'  <div id="myModal" class="modal">' +
             '    <span class="close">&times;</span>' + 
             '    <div class="modal-content">' +  
 			'	   <div class="coin_page">' +
@@ -81,25 +81,21 @@
         }
       }
 		  
-		  // Get the modals
-		  var modals = document.querySelectorAll('.modal');
-
-		  // Get the <span> element that closes the modal
-          var spans = document.getElementsByClassName("close");
-
-		  var imgs = document.getElementById("img");
+		  // Get the modal
+		  var modal = document.getElementById('myModal');
+		  var imgs = document.getElementsByClassName('coin');
+		  
 		  for (var i = 0; i < imgs.length; i++) {
+			var img = imgs[i];
 			img.onclick = function(){
-				modal.style.display = "block"; }
+			  modal.style.display = "block"; }
 		  }
 
-		  // When the user clicks on <span> (x), close the modal
-          for (var i = 0; i < spans.length; i++) {
-			spans[i].onclick = function() {
-			  for (var index in modals) {
-				if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-			  }            
-			}
+		  // Get the <span> element that closes the modal
+          var span = document.getElementsByClassName("close")[0];
+		  
+		  span.onclick = function() {
+			 modal.style.display = "none";    
           }
 
           // When the user clicks anywhere outside of the modal, close it
