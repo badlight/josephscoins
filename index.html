@@ -45,8 +45,8 @@
           card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
-            '  <div  class="coin">' +
-            '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
+            '  <div class="coin">' +
+            '      <img id="myImg" src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '      <div class="overlay">' +
             '        <div class="code">' + 
             '          <span>' + codenum + '</span>' + 
@@ -64,7 +64,7 @@
             '    <span class="close">&times;</span>' + 
             '    <div class="modal-content">' +  
 			'	   <div class="coin_page">' +
-			'        <img id="myImg" src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+			'        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
 			'        <span class="description">' +
 			'          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
 			'          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
