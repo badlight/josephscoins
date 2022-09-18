@@ -45,7 +45,7 @@
           card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
-            '  <div class="coin" id="' + title + 'Img">' +
+            '  <div class="coin" id="img">' +
             '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '      <div class="overlay" unselectable="on">' +
             '        <div class="code">' + 
@@ -78,34 +78,39 @@
 			'    </div>' +
 			'  </div>';			
           document.getElementById(key).appendChild(card);
+        }
+      }
 		  
-		  // Get the modal
-		  var myModal = title + 'Modal'
-		  var modal[key][coin] = document.getElementById(myModal);
+		  // Get the modals
+		  var modals = document.querySelectorAll('.modal');
 
 		  // Get the <span> element that closes the modal
-          var span[key][coin] = document.getElementsByClassName("close");
+          var spans = document.getElementsByClassName("close");
 
-          var modalImg = title + 'Img'
-		  var img = document.getElementById(modalImg);
-		  img.onclick = function(){
-            modal[key][coin].style.display = "block";
-            modalImg.src = this.src;
+		  var imgs = document.getElementById("img");
+		  for (var i = 0, i < imgs.length; i++) {
+			img.onclick = function(){
+				modal.style.display = "block"; }
 		  }
 
 		  // When the user clicks on <span> (x), close the modal
-          span[key][coin].onclick = function() {
-            modal[key][coin].style.display = "none";
+          for (var i = 0; i < spans.length; i++) {
+			spans[i].onclick = function() {
+			  for (var index in modals) {
+				if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+			  }            
+			}
           }
 
           // When the user clicks anywhere outside of the modal, close it
           window.onclick = function(event) {
-            if (event.target == modal) {
-              modal[key][coin].style.display = "none";
-            }
-          }
-        }
-      }
+			if (event.target.classList.contains('modal')) {
+			  for (var index in modals) {
+				if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+			  }            
+			}
+          }	  
+	  
     }
   };
   xhttp.open("GET", "coins.json", true);
