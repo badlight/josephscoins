@@ -88,7 +88,7 @@
 	  // Get the image and insert it inside the modal - use its "alt" text as a caption
 	  var img = document.getElementById("septimiusseverus3Img");
 	  img.onclick = function(){
-	  modal.style.display = "block";
+		modal[0].style.display = "block";
 	  }
 	  
 	  // Get the modal
@@ -97,14 +97,16 @@
 	  // Get the image and insert it inside the modal - use its "alt" text as a caption
 	  var img2 = document.getElementById("hadrianImg");
 	  img2.onclick = function(){
-	  modal2.style.display = "block";
+		modal[1].style.display = "block";
 	  }
 	  
 	  // When the user clicks anywhere outside of the modal, close it
-	  if (event.target.classList.contains('modal')) {
-		for (var index in modals) {
-			if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-		}	 
+	  window.onclick = function(event) {
+		if (event.target.contains('modal')) {
+			for (var index in modals) {
+				if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+			}	 
+		}
 	  }
 	};
   };
