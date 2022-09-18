@@ -85,32 +85,28 @@
 		  var modals = document.getElementsByClassName('modal');
 		  var imgs = document.getElementsByClassName('coin');
 		  
-		  for (var i = 0; i < imgs.length; i++) {
-			var img = imgs[i];
-			img.onclick = function(){
-			  modals[i].style.display = "block"; }
+		  function showModal(id) { 
+			let m = document.getElementbyId(id);
+			m.classList.add('visible');
 		  }
-
-		  // Get the <span> element that closes the modal
-          var spans = document.getElementsByClassName("close");
 		  
-		  for (var i = 0; i < spans.length; i++) { 
-			var span = spans[i];
-			span.onclick = function() {
-				modal.style.display = "none";    
-			}
-		  }
-
-          // When the user clicks anywhere outside of the modal, close it
-          window.onclick = function(event) {
-			if (event.target.classList.contains('modal')) {
-			  for (var index in modals) {
-				if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-			  }            
-			}
-          }	  
-	  
-    }
+		  function hideModals() {
+			models.forEach(m => {
+			  m.classList.remove('visible');
+			}); 
+	      }
+		  
+		  imgs.forEach(b => {
+			b.addEventListener('click', event => {
+				hideModals();
+				showModal(b.dataset.modal);
+			});
+		   }); 
+		   
+		   models.forEach(m => {
+			let x = m.querySelector('.close')
+			x.addEventListener('click', hideModals);
+		   });
   };
   xhttp.open("GET", "coins.json", true);
   xhttp.send();
