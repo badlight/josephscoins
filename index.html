@@ -88,15 +88,18 @@
 		  for (var i = 0; i < imgs.length; i++) {
 			var img = imgs[i];
 			img.onclick = function(){
-			  modal.style.display = "block"; }
+			  modals[i].style.display = "block"; }
 		  }
 
 		  // Get the <span> element that closes the modal
-          var span = document.getElementsByClassName("close")[0];
+          var spans = document.getElementsByClassName("close");
 		  
-		  span.onclick = function() {
-			 modal.style.display = "none";    
-          }
+		  for (var i = 0; i < spans.length; i++) { 
+			var span = spans[i];
+			span.onclick = function() {
+				modal.style.display = "none";    
+			}
+		  }
 
           // When the user clicks anywhere outside of the modal, close it
           window.onclick = function(event) {
