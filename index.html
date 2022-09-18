@@ -59,7 +59,6 @@
             '        </div>' +
             '      </div>' +
 			'  <div id="' + title + 'Modal" class="modal">' +
-            '    <span class="close">&times;</span>' + 
             '    <div class="modal-content">' +  
 			'	   <div class="coin_page">' +
 			'        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
@@ -89,18 +88,19 @@
 	  modal.style.display = "block";
 	  }
 	  
-	  // Get the <span> element that closes the modal
-	  var span = document.getElementsByClassName("close");
-	  
-	  // When the user clicks on <span> (x), close the modal
-	  span.onclick = function() {
-		modal.style.display = "none";
+	  // Get the modal
+	  var modal2 = document.getElementById("hadrianModal");
+	  // Get the image and insert it inside the modal - use its "alt" text as a caption
+	  var img2 = document.getElementById("hadrianImg");
+	  img2.onclick = function(){
+	  modal2.style.display = "block";
 	  }
 	  
 	  // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
           if (event.target == modal) {
               modal.style.display = "none";
+              modal2.style.display = "none";
           }
       }     
 	};
