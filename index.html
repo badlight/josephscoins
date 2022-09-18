@@ -45,7 +45,6 @@
           card.style.padding = "10px";
           card.className = 'card';
           card.innerHTML =
-		    //'<div id="myModal" class="modal">' + 
             '  <div  class="coin">' +
             '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
             '      <div class="overlay">' +
@@ -61,10 +60,9 @@
             '          <span>' + ref + '</span>' +
             '        </div>' +
             '      </div>' +
-            //'  </div>' +
-            '  <div class="modal-content">' + 
+			'  <div id="myModal" class="modal">
             '    <span class="close">&times;</span>' + 
-			'	   <p></em></p>' + 
+            '    <div class="modal-content">' +  
 			'	   <div class="coin_page">' +
 			'        <img id="myImg" src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
 			'        <span class="description">' +
@@ -79,7 +77,8 @@
 			'          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
 			'        </span>' + 
 			'      </div>' + 
-			'  </div>';
+			'    </div>' +
+			'  </div>';			
           document.getElementById(key).appendChild(card);
 		  
 		  // Get the modal
