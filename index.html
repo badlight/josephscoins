@@ -81,34 +81,22 @@
         }
       }
 		  
-		  // Get the modal
-		  var modals = document.getElementsByClassName('modal');
-		  var imgs = document.getElementsByClassName('coin');
-		  
-		  function showModal(id) { 
-			id.style.display = "block";
-		  }
-		  
-		  function hideModals() {
-			for (i = 0; i < modals.length; i++) { 
-			  modal = modals[i];
-			  modal.classList.remove('visible');
-			}; 
-	      }
-		  
-		  for (i = 0; i < imgs.length; i++) { 
-			img = imgs[i];
-			img.addEventListener('click', event => {
-				hideModals();
-				showModal(img.dataset.modal);
-			});
-		   }; 
-		   
-		  for (i = 0; i < modals.length; i++) { 
-			modal = modals[i]; 
-			let x = modal.querySelector('.close')
-			x.addEventListener('click', hideModals);
-		  };
+	  // Get the modal
+	  var modal = document.getElementById("hadrianModel");
+	  
+	  // Get the image and insert it inside the modal - use its "alt" text as a caption
+	  var img = document.getElementById("hadrianImg");
+	  img.onclick = function(){
+	  modal.style.display = "block";
+	  }
+	  
+	  // Get the <span> element that closes the modal
+	  var span = document.getElementsByClassName("close")[0];
+	  
+	  // When the user clicks on <span> (x), close the modal
+	  span.onclick = function() {
+		modal.style.display = "none";
+	  }
 	};
   };
   xhttp.open("GET", "coins.json", true);
