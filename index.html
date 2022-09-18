@@ -58,7 +58,7 @@
             '          <span>' + ref + '</span>' +
             '        </div>' +
             '      </div>' +
-			'  <div id="myModal" class="modal">' +
+			'  <div id="' + title + 'Modal" class="modal">' +
             '    <span class="close">&times;</span>' + 
             '    <div class="modal-content">' +  
 			'	   <div class="coin_page">' +
@@ -80,7 +80,8 @@
           document.getElementById(key).appendChild(card);
 		  
 		  // Get the modal
-		  var modal = document.getElementById("myModal");
+		  var myModal = title + 'Modal'
+		  var modal = document.getElementById(myModal);
 
 		  // Get the <span> element that closes the modal
           var span = document.getElementsByClassName("close")[0];
