@@ -81,29 +81,26 @@
       }
 		  
 	  // Get the modal
-	  var modal = document.getElementById("septimiusseverus3Modal");
+	  var modals = document.getElementsByClassName("modal");
 	  // Get the image and insert it inside the modal - use its "alt" text as a caption
-	  var img = document.getElementById("septimiusseverus3Img");
-	  img.onclick = function(){
-	  modal.style.display = "block";
-	  }
+	  var imgs = document.getElementsByClassName("coin");
 	  
-	  // Get the modal
-	  var modal2 = document.getElementById("hadrianModal");
-	  // Get the image and insert it inside the modal - use its "alt" text as a caption
-	  var img2 = document.getElementById("hadrianImg");
-	  img2.onclick = function(){
-	  modal2.style.display = "block";
+	  for (i=0; i<length.imgs; i++){
+		img = imgs[i]
+		modal = modals[i];
+		img.onclick = function(){
+			modal.style.display = "block";
+		}
 	  }
 	  
 	  // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
-        if (event.target == modal2) {
-          modal2.style.display = "none";
-        }
+        for (i=0; i<length.modals; i++) {
+			modal = modals[i]; 
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
       }     
 	};
   };
