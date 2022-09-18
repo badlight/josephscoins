@@ -82,14 +82,15 @@
       }
 	  
 	  var modals = document.querySelectorAll('modal'); 
-	  var imgs = document.querySelectorAll('coin'); 
-	 
-	  for (i=0; i<imgs.length; i++){
-		img = imgs[i]; 
+	  
+	  //var imgs = document.querySelectorAll('coin'); 
+	  var img = document.getElementById("hadrianImg"); 
+	  //for (i=0; i<imgs.length; i++){
+		//img = imgs[i]; 
 		img.onclick = function(){
-			modals[i].style.display = "block";
+			modals[0].style.display = "block";
 		}
-	  }
+	  //}
 	  // When the user clicks anywhere outside of the modal, close it
       window.onclick = function(event) {
         for (i=0; i<modals.length;i++) {
