@@ -96,17 +96,19 @@
 			}); 
 	      }
 		  
-		  imgs.forEach(b => {
-			b.addEventListener('click', event => {
+		  for (i = 0; i < imgs.length; i++) { 
+			img = imgs[i];
+			img.addEventListener('click', event => {
 				hideModals();
 				showModal(b.dataset.modal);
 			});
-		   }); 
+		   }; 
 		   
-		   models.forEach(m => {
-			let x = m.querySelector('.close')
+		  for (i = 0; i < modals.length; i++) { 
+			modal = modals[i]; 
+			let x = modal.querySelector('.close')
 			x.addEventListener('click', hideModals);
-		   });
+		  };
 	};
   };
   xhttp.open("GET", "coins.json", true);
