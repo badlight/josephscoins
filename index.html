@@ -102,9 +102,10 @@
 	  
 	  // When the user clicks anywhere outside of the modal, close it
 	  if (event.target.classList.contains('modal')) {
-      for (var index in modals) {
-        if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
-      } 
+		for (var index in modals) {
+			if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
+		}	 
+	  }
 	};
   };
   xhttp.open("GET", "coins.json", true);
