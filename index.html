@@ -82,11 +82,17 @@
       }
 		  
 	  // Get the modal
-	  var modal = document.getElementById("hadrianModal");
+	  var modal1 = document.getElementById("hadrianModal");
+	  var modal2 = document.getElementById("alexius1Modal");
 	  
 	  // Get the image and insert it inside the modal - use its "alt" text as a caption
-	  var img = document.getElementById("hadrianImg");
-	  img.onclick = function(){
+	  var img1 = document.getElementById("hadrianImg");
+	  var img2 = document.getElementById("alexius1Img"); 
+	  img1.onclick = function(){
+	  modal.style.display = "block";
+	  }
+	  
+	  img2.onclick = function(){
 	  modal.style.display = "block";
 	  }
 	  
