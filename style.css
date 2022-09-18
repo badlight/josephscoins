@@ -111,24 +111,12 @@ em {
   text-align: right;
 }
 
-.caption-title {
-  display: block;
-  font-style: bold;
-  color: white;
-  font-size: 16px;
-  position: relative;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-}
-
 .caption-subtitle {
   display: block;
   color: white;
-  font-size: 14px;
-  position: relative;
-  top: 20%;
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
