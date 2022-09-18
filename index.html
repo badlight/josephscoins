@@ -85,7 +85,8 @@
 		  // Get the <span> element that closes the modal
           var span = document.getElementsByClassName("close")[0];
 
-          var img = document.getElementById('' + title + 'Img');
+          var modalImg = title + 'Img'
+		  var img = document.getElementById(modalImg);
 		  img.onclick = function(){
             modal.style.display = "block";
             modalImg.src = this.src;
