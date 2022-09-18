@@ -80,9 +80,10 @@
           document.getElementById(key).appendChild(card);
         }
       }
-		  
+	  
+	  var modals = document.querySelectorAll('modal'); 
 	  // Get the modal
-	  var modal = document.getElementById("septimiusseverus3Modal");
+	  var modal = modals[0];
 	  // Get the image and insert it inside the modal - use its "alt" text as a caption
 	  var img = document.getElementById("septimiusseverus3Img");
 	  img.onclick = function(){
@@ -90,7 +91,7 @@
 	  }
 	  
 	  // Get the modal
-	  var modal2 = document.getElementById("hadrianModal");
+	  var modal2 = modals[1];
 	  // Get the image and insert it inside the modal - use its "alt" text as a caption
 	  var img2 = document.getElementById("hadrianImg");
 	  img2.onclick = function(){
