@@ -93,9 +93,13 @@
 	  var modals = document.querySelectorAll('.modal'); 
 	  var imgs = document.querySelectorAll('.coin');
 	  
+	  var img = [];
+	  var modal = [];
 	  for (i=0;i<imgs.length;i++){
-		imgs[i].onclick = function(){
-			modals[i].style.display = "block";}
+		img[i] = imgs[i];
+		modal[i] = modals[i]; 
+		img[i].onclick = function(){
+			modal[i].style.display = "block";}
 	  }
 	  
 	  // When the user clicks anywhere outside of the modal, close it
