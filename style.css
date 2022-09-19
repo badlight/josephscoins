@@ -103,12 +103,36 @@ em {
   display: block;
   font-style: bold;
   color: red;
-  font-size: 16px;
+  font-size: 12px;
   position: absolute;
   bottom: 5%;
   right: 5%;
   width: 100px; 
   text-align: right;
+}
+
+.stock-green {
+  display: block;
+  font-style: bold;
+  color: green;
+  font-size: 20px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 50px; 
+  text-align: left;
+}
+
+.stock-red {
+  display: block;
+  font-style: bold;
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 50px; 
+  text-align: left;
 }
 
 .caption-subtitle {
