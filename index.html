@@ -93,18 +93,18 @@
 	  var modals = document.querySelectorAll('.modal'); 
 	  var imgs = document.querySelectorAll('.coin');
 	  
-	  for (i=0;i<imgs.length;i++){
-		imgs[i].onclick = function(){
-			modals[i].style.display = "block";}
-	  }
+	  //for (i=0;i<imgs.length;i++){
+		//imgs[i].onclick = function(){
+			//modals[i].style.display = "block";}
+	  //}
 	  
 	  // When the user clicks anywhere outside of the modal, close it
-	  window.onclick = function(event) {
-		for (i=0;i<imgs.length;i++){ 
-		if (event.target == modals[i]) {
-			modals[i].style.display = "block";
-		}
-	  }}
+	  //window.onclick = function(event) {
+		//for (i=0;i<imgs.length;i++){ 
+		//if (event.target == modals[i]) {
+			//modals[i].style.display = "block";
+		//}
+	  //}}
 	};
   };
   xhttp.open("GET", "coins.json", true);
