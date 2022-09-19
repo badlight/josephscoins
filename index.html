@@ -53,14 +53,6 @@
             '        <div class="code">' + 
             '          <span>' + codenum + '</span>' + 
             '        </div>' +
-			//if (stck !== null) {
-			//'		 <div class="stock-green">' + 
-			//'			<span>' + • + '</span>' + 
-			//'		 </div>' + } 
-			//if (stck == null) {
-			//'		 <div class="stock-red">' + 
-			//'			<span>' + • + '</span>' + 
-			//'		 </div>' + } 
             '        <div class="caption-subtitle">' +
             '          <span>' + imp + '</span></br>' +
             '          <span>' + mat + ' ' + denom + '</span><br>' +
@@ -70,6 +62,7 @@
             '      </div>' +
 			'  <div id="' + title + 'Modal" class="modal">' +
             '    <div class="modal-content">' +  
+			'	   <span onclick="document.getElementbyId(' + title + 'Modal\').stlyle.display=\'none\'" class="close">&times;</span>
 			'	   <div class="coin_page">' +
 			'        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
 			'        <span class="description">' +
@@ -98,14 +91,6 @@
 		imgs[i].onclick = function(){
 			modals[i].style.display = "block";}
 	  }
-	  
-	  // When the user clicks anywhere outside of the modal, close it
-	  //window.onclick = function(event) {
-		//for (i=0;i<imgs.length;i++){ 
-		//if (event.target == modals[i]) {
-			//modals[i].style.display = "block";
-		//}
-	  //}}
 	};
   };
   xhttp.open("GET", "coins.json", true);
