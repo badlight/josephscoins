@@ -83,14 +83,7 @@
           document.getElementById(key).appendChild(card);
         }
       }
-	  
-	  var modals = document.querySelectorAll('.modal'); 
-	  var imgs = document.querySelectorAll('.coin');
-	  
-	  function onClick(element) {
-  		document.querySelector("modal").style.display = "block";
-	  }
-	};
+    };
   };
   xhttp.open("GET", "coins.json", true);
   xhttp.send();
@@ -109,5 +102,15 @@
 <hr class="style-one">
 <div id="byzantine" class></div>
 
+<script type='text/javascript'>
+  var modals = document.querySelectorAll('.modal');
+  var imgs = document.querySelectorAll('.card'); 
+
+  for(let i = 0; i < imgs.length; i++){
+    imgs[i].onclick = function(){
+      modal.style.display = "block";
+    }
+  }
+</script>
 </body>
 </html>
