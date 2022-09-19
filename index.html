@@ -93,12 +93,10 @@
     }
   }
 	 
-  for(let i =0; i< imgs.length; i++){
-    modals[i].addEventListener("click", function(e) {
-	  if(e.target.className === 'close') {
-	    this.style.display = "none";
-      }
-    }, false);
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      this.style.display = "none";
+    }
   }
   };
   xhttp.open("GET", "coins.json", true);
