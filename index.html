@@ -60,7 +60,7 @@
             '          <span>' + ref + '</span>' +
             '        </div>' +
             '      </div>' +
-			'  <div id="' + title + 'Modal" class="modal">' +
+	    '  <div id="' + title + 'Modal" class="modal">' +
             '    <div class="modal-content">' +  
 			'	   <span onclick="document.getElementbyClassName("modal").style.display=\'none\'" class="close">&times;</span>' +
 			'	   <div class="coin_page">' +
@@ -86,11 +86,12 @@
 	  var modals = document.querySelectorAll('.modal'); 
 	  var imgs = document.querySelectorAll('.coin');
 	  
-	  for (i=0;i<imgs.length;i++){		
-		imgs[i].onclick = function(){
-			var modals = document.querySelectorAll('.modal'); 
-			var imgs = document.querySelectorAll('.coin');
-			modals[i].style.display = "block";}
+	  for (var i = 0; i < imgs.length; i++) {
+  		var thisImg = imgs[i];
+  		thisBtn.addEventListener("click", function(){
+    			var modal = modals[i];
+    			modal.style.display = "block";
+		}, false);
 	  }
 	};
   };
