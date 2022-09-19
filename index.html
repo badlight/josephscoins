@@ -85,7 +85,7 @@
     };
   var modals = document.querySelectorAll('.modal');
   var imgs = document.querySelectorAll('.card'); 
-  var spans = document.querySelectorAll('.close');
+  //var spans = document.querySelectorAll('.close');
 	  
   for(let i = 0; i < imgs.length; i++){
     imgs[i].onclick = function(){
@@ -94,8 +94,10 @@
   }
 	 
   for(let i =0; i< imgs.length; i++){
-    spans[i].onclick = function() {
-	  modals[i].style.display = "none";
+    modal[i].addEventListener("click", function(e) {
+	  if(e.target.className === 'close') {
+	    this.style.display = "none";
+      }
     }
   }
   };
