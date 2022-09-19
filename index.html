@@ -89,26 +89,6 @@
           document.getElementById(key).appendChild(card);
         }
       }
-	  
-	  var modals = document.querySelectorAll('.modal'); 
-	  var imgs = document.querySelectorAll('.coin');
-	  
-	  var img = [];
-	  var modal = [];
-	  for (i=0;i<imgs.length;i++){
-		img[i] = imgs[i];
-		modal[i] = modals[i]; 
-		img[i].onclick = function(){
-			modal[i].style.display = "block";}
-	  }
-	  
-	  // When the user clicks anywhere outside of the modal, close it
-	  window.onclick = function(event) {
-		for (i=0;i<imgs.length;i++){ 
-		if (event.target == modals[i]) {
-			modals[i].style.display = "block";
-		}
-	  }}
 	};
   };
   xhttp.open("GET", "coins.json", true);
@@ -128,5 +108,26 @@
 <hr class="style-one">
 <div id="byzantine" class></div>
 
+<script type='text/javascript'>
+	  var modals = document.querySelectorAll('.modal'); 
+	  var imgs = document.querySelectorAll('.coin');
+	  
+	  var img = [];
+	  var modal = [];
+	  for (i=0;i<imgs.length;i++){
+		img[i] = imgs[i];
+		modal[i] = modals[i]; 
+		img[i].onclick = function(){
+			modal[i].style.display = "block";}
+	  }
+	  
+	  // When the user clicks anywhere outside of the modal, close it
+	  window.onclick = function(event) {
+		for (i=0;i<imgs.length;i++){ 
+		if (event.target == modals[i]) {
+			modals[i].style.display = "block";
+		}
+	  }}
+</script>
 </body>
 </html>
