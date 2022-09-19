@@ -42,9 +42,10 @@
           var revd = coins[key][coin].reverse_desc; 
           var prov = coins[key][coin].provenance;
           //var stck = coins[key][coin].stock;
-		  var card = document.createElement('div');
+          var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
+	  card.onclick = "onClick(this)";
           card.className = 'card';
           card.innerHTML =
             '  <div class="coin" id="' + title + 'Img">' +
@@ -62,23 +63,23 @@
             '      </div>' +
 	    '  <div id="' + title + 'Modal" class="modal">' +
             '    <div class="modal-content">' +  
-			'	   <span onclick="document.getElementbyClassName("modal").style.display=\'none\'" class="close">&times;</span>' +
-			'	   <div class="coin_page">' +
-			'        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
-			'        <span class="description">' +
-			'          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
-			'          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
-			'          <p class="aligned"><strong>Weight:</strong> ' + wt + ', <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
-			'          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
-			'          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-			'          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
-			'          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
-			'          <hr class="marginated">' +
-			'          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
-			'        </span>' + 
-			'      </div>' + 
-			'    </div>' +
-			'  </div>';			
+	    '	   <span onclick="document.getElementbyClassName("modal").style.display=\'none\'" class="close">&times;</span>' +
+	    '	   <div class="coin_page">' +
+	    '        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+	    '        <span class="description">' +
+	    '          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
+	    '          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
+            '          <p class="aligned"><strong>Weight:</strong> ' + wt + ', <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
+	    '          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
+	    '          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
+	    '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+	    '          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+	    '          <hr class="marginated">' +
+	    '          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
+	    '        </span>' + 
+	    '      </div>' + 
+	    '    </div>' +
+	    '  </div>';			
           document.getElementById(key).appendChild(card);
         }
       }
@@ -86,12 +87,8 @@
 	  var modals = document.querySelectorAll('.modal'); 
 	  var imgs = document.querySelectorAll('.coin');
 	  
-	  for (var i = 0; i < imgs.length; i++) {
-  		var thisImg = imgs[i];
-  		thisImg.addEventListener("click", function(){
-    			var modal = modals[i];
-    			modal.style.display = "block";
-		}, false);
+	  function onClick(element) {
+  		document.querySelector("modal").style.display = "block";
 	  }
 	};
   };
