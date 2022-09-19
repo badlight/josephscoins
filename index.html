@@ -63,7 +63,7 @@
             '      </div>' +
 	    '  <div id="' + title + 'Modal" class="modal">' +
             '    <div class="modal-content">' +  
-	    '	   <span onclick="document.getElementbyClassName("modal").style.display=\'none\'" class="close">&times;</span>' +
+	    '	   <span class="close">&times;</span>' +
 	    '	   <div class="coin_page">' +
 	    '        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
 	    '        <span class="description">' +
@@ -86,11 +86,18 @@
     };
   var modals = document.querySelectorAll('.modal');
   var imgs = document.querySelectorAll('.card'); 
-
+  var spans = document.getElementsByClassName("close");
+	  
   for(let i = 0; i < imgs.length; i++){
     imgs[i].onclick = function(){
       modals[i].style.display = "block";
     }
+  }
+	 
+  for(let i =0; i< imgs.length; i++){
+    spans[i].onclick = function() {
+  	modals[i].style.display = "none";
+     }
   }
   };
   xhttp.open("GET", "coins.json", true);
