@@ -344,7 +344,6 @@ li.dropdown {
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 1000px;
 }
 
 /* Caption of Modal Image */
