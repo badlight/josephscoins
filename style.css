@@ -53,6 +53,7 @@ em {
 }
 .coin:hover .overlay{
   opacity: 0.75;
+  cursor: pointer;
 }
 
 .overlay {
