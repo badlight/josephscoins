@@ -41,7 +41,7 @@
           var obvd = coins[key][coin].obverse_desc;
           var revd = coins[key][coin].reverse_desc; 
           var prov = coins[key][coin].provenance;
-          var stck = coins[key][coin].stock;
+          //var stck = coins[key][coin].stock;
 		  var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
@@ -53,14 +53,14 @@
             '        <div class="code">' + 
             '          <span>' + codenum + '</span>' + 
             '        </div>' +
-			if (stck !== null) {
-			'		 <div class="stock-green">' + 
-			'			<span>' + • + '</span>' + 
-			'		 </div>' + } 
-			if (stck == null) {
-			'		 <div class="stock-red">' + 
-			'			<span>' + • + '</span>' + 
-			'		 </div>' + } 
+			//if (stck !== null) {
+			//'		 <div class="stock-green">' + 
+			//'			<span>' + • + '</span>' + 
+			//'		 </div>' + } 
+			//if (stck == null) {
+			//'		 <div class="stock-red">' + 
+			//'			<span>' + • + '</span>' + 
+			//'		 </div>' + } 
             '        <div class="caption-subtitle">' +
             '          <span>' + imp + '</span></br>' +
             '          <span>' + mat + ' ' + denom + '</span><br>' +
