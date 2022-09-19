@@ -45,7 +45,6 @@
           var card = document.createElement('div');
           card.style.display = "inline-block";
           card.style.padding = "10px";
-	  card.onclick = "onClick(this)";
           card.className = 'card';
           card.innerHTML =
             '  <div class="coin" id="' + title + 'Img">' +
@@ -61,25 +60,25 @@
             '          <span>' + ref + '</span>' +
             '        </div>' +
             '      </div>' +
-	    '  <div id="' + title + 'Modal" class="modal">' +
+	        '  <div id="' + title + 'Modal" class="modal">' +
             '    <div class="modal-content">' +  
-	    '	   <span class="close">&times;</span>' +
-	    '	   <div class="coin_page">' +
-	    '        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
-	    '        <span class="description">' +
-	    '          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
-	    '          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
+	        '	   <span class="close">&times;</span>' +
+	        '	   <div class="coin_page">' +
+	        '        <img src="./images/' + title + '/' + title + '.jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+	        '        <span class="description">' +
+	        '          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
+	        '          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
             '          <p class="aligned"><strong>Weight:</strong> ' + wt + ', <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
-	    '          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
-	    '          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-	    '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
-	    '          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
-	    '          <hr class="marginated">' +
-	    '          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
-	    '        </span>' + 
-	    '      </div>' + 
-	    '    </div>' +
-	    '  </div>';			
+	        '          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
+	        '          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
+	        '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+	        '          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+	        '          <hr class="marginated">' +
+	        '          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
+	        '        </span>' + 
+	        '      </div>' + 
+	        '    </div>' +
+	        '  </div>';			
           document.getElementById(key).appendChild(card);
         }
       }
@@ -96,8 +95,8 @@
 	 
   for(let i =0; i< imgs.length; i++){
     spans[i].onclick = function() {
-  	modals[i].style.display = "none";
-     }
+	  modals[i].style.display = "none";
+    }
   }
   };
   xhttp.open("GET", "coins.json", true);
