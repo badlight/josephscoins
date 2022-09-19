@@ -80,6 +80,11 @@
           document.getElementById(key).appendChild(card);
         }
       }
+	};
+  };
+  xhttp.open("GET", "coins.json", true);
+  xhttp.send();
+
 	  
 	  var modals = document.querySelectorAll('.modal'); 
 	  // Get the modal
@@ -102,17 +107,12 @@
 	  
 	  // When the user clicks anywhere outside of the modal, close it
 	  window.onclick = function(event) {
-		if (event.target.contains('modal')) {
+		if (event.target.classList.contains('modal')) {
 			for (var index in modals) {
 				if (typeof modals[index].style !== 'undefined') modals[index].style.display = "none";    
 			}	 
 		}
 	  }
-	};
-  };
-  xhttp.open("GET", "coins.json", true);
-  xhttp.send();
-
 </script>
 
 <p class="coin-title">Roman Imperial</p>
