@@ -86,10 +86,10 @@
 	  var modals = document.querySelectorAll('.modal'); 
 	  var imgs = document.querySelectorAll('.coin');
 	  
-	  for (i=0;i<imgs.length;i++){
-	    var modals = document.querySelectorAll('.modal'); 
-		var imgs = document.querySelectorAll('.coin');		
+	  for (i=0;i<imgs.length;i++){		
 		imgs[i].onclick = function(){
+			var modals = document.querySelectorAll('.modal'); 
+			var imgs = document.querySelectorAll('.coin');
 			modals[i].style.display = "block";}
 	  }
 	};
