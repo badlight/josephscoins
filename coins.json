@@ -44,6 +44,7 @@
 					"reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
 					"reference": "RIC IV Septimius Severus 425",
 					"provenance": "Ex. Doug Smith Collection, Ex. John Anthony 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -115,6 +116,7 @@
 					"reverse_desc": "Goat, walking right",
 					"reference": "RIC V Gallienus 207",
 					"provenance": "Ex. Marc R. Breitsprecher 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -138,6 +140,7 @@
 					"reverse_desc": "Hippocamp or capricorn, right",
 					"reference": "RIC V Gallienus 245",
 					"provenance": "Ex. CNG Electronic Auction 436, Lot 688, Ex. William Whetstone Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -240,6 +243,7 @@
 						"Tetrarchy Mints"
 					],
 					"provenance": "Ex. eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -293,6 +297,7 @@
 						"Tetrarchy Mints"
 					],
 					"provenance": "Ex. Leu Numismatik Web Auction 10, Lot 1515, Ex. Tetrarchy Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -346,6 +351,7 @@
 						"Tetrarchy Mints"
 					],
 					"provenance": "Ex. Budges-Beak eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -370,6 +376,7 @@
 					"reference": "RIC VI Londinium 6a, Cloke & Toone 2.01.003",
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 130, Ex. James Pickering Romano-Britannic Collection, Ex. York Coins",
 					"code": "G8HQ",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -393,6 +400,7 @@
 					"reverse_desc": "Genius standing, facing left, head surmounted by a modius, naked except for chlamys over left shoulder, holding patera in right hand and cornucopia in left arm",
 					"reference": "RIC VI Londinium 6a, Cloke & Toone 2.01.003",
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 488",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -515,6 +523,7 @@
 						"Tetrarchy Mints"
 					],
 					"provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 204",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -538,6 +547,7 @@
 					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
 					"reference": "RIC VI Antioch 50b",
 					"provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 211",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -612,6 +622,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -659,6 +670,7 @@
 					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
 					"reference": "RIC VI Antioch 55a",
 					"provenance": "Ex. Forum Ancient Coins 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -682,6 +694,7 @@
 					"reverse_desc": "Moneta standing front, head to left, holding scales in her right hand and cornucopiae in her left",
 					"reference": "RIC VI Treveri 433b",
 					"provenance": "Ex. Leu Numismatik Web Auction 10, Lot 1555, Ex. Tetrarchy Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -729,6 +742,7 @@
 					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
 					"reference": "RIC VI Antioch 56b",
 					"provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 213",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -755,6 +769,7 @@
 						"Tetrarchy Mints"
 					],
 					"provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 214",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -781,6 +796,7 @@
 						"Tetrarchy Mints"
 					],
 					"provenance": "Ex. Forum Ancient Coins 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -903,6 +919,8 @@
 					"reverse_desc": "Genius standing left, holding patera and cornucopia",
 					"reference": "RIC VI Londinium 52a, Cloke & Toone 4.02.010",
 					"provenance": "Ex. CNG Electronic Auction 457, Lot 456, Ex. Northwest Collection"
+					"code": null,
+					"stock": null
 				}
 			},{
 				"maximian6": {
@@ -955,6 +973,7 @@
 						"Post-Abdication Folles"
 					],
 					"provenance": "Ex. CNG Electronic Auction 457, Lot 442, Ex. Northwest Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -978,6 +997,7 @@
 					"reverse_desc": "Genius standing left, modius on head, naked but for chlamys over left shoulder, liquors flowing from patera in right hand, cornucopiae in left",
 					"reference": "Not in RIC",
 					"provenance": "Ex. Budgies-Beak eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1025,7 +1045,8 @@
 					"reverse_desc": "Genius standing left, holding patera in right hand with liquid flowing from it, cornucopia in left",
 					"reference": "RIC VI Alexandria 72",
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 265, Ex. Severus Alexander Collection, Ex. Dattari Collection",
-					"code": "N66S"
+					"code": "N66S",
+					"stocK": null
 				}
 			},{
 				"constantinei53": {
@@ -1075,6 +1096,7 @@
 						"Constantine Sol Mint Set"
 					],
 					"provenance": "Ex. York Coins 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1098,6 +1120,7 @@
 					"reverse_desc": "Sol, chlamys falling from left shoulder, standing left, raising right hand and holding up globe with left hand",
 					"reference": "RIC VI Londinium 121a, Cloke & Toone 6.02.010",
 					"provenance": "Ex. MRBCoins 2019, Ex. Little Ormes Head Hoard (1873)",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1148,6 +1171,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1198,6 +1222,8 @@
 					"reverse_desc": "Bust of Sol, radiate, draped, right seen from behind",
 					"reference": "RIC VI Treveri 890",
 					"provenance": "Ex. Frank S. Robinson, Auction 107 Lot 369"
+					"code": null,
+					"stock": null
 				}
 			},{
 				"maximinusii4": {
@@ -1223,6 +1249,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 457, Lot 751 (part of), Ex. Forum Ancient Coins",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1304,6 +1331,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Marc R. Breitsprecher 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1327,6 +1355,7 @@
 					"reverse_desc": "Legionary eagle, standing left, between two vexilla; vexilla to left surmounted by right hand; vexilla to right surmounted by wreath; flag on eagle and sometimes on one vexillum",
 					"reference": "RIC VI Ostia 94",
 					"provenance": "Ex. Marc R. Breitsprecher 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1398,6 +1427,7 @@
 					"reverse_desc": "Legionary eagle, standing front or right, between two vexilla",
 					"reference": "RIC VI Rome 350a",
 					"provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 228",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1475,6 +1505,7 @@
 					"reverse_desc": "Mars, helmeted, draped, cuirassed, standing right, holding reversed spear in right hand and resting left hand on shield",
 					"reference": "RIC VII Rome 6",
 					"provenance": "Ex. eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1498,6 +1529,7 @@
 					"reverse_desc": "Mars, helmeted, draped, cuirassed, cloak spread, standing right, holding reversed vertical spear in right hand and resting left hand on shield",
 					"reference": "RIC VII Treveri 53",
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 2, Lot 239, Ex. TheRed Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1521,6 +1553,7 @@
 					"reverse_desc": "Sol, chlamys draped over left shoulder, standing left, raising right hand and holding up globe with left hand",
 					"reference": "RIC VI Londinium 279, Cloke & Toone N/A",
 					"provenance": "Ex. FSR Auction 110, Lot 330",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1544,6 +1577,7 @@
 					"reverse_desc": "Sol, chlamys draped over left shoulder, standing left, raising right hand and holding up globe with left hand",
 					"reference": "RIC VI Londinium 282, Cloke & Toone 8.01.009",
 					"provenance": "Ex. FSR Bargain Bin 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1567,6 +1601,7 @@
 					"reverse_desc": "Genius, wearing modius, chlamys draped across left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
 					"reference": "RIC VII Cyzicus 2",
 					"provenance": "Ex. Victor Clark 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1590,6 +1625,7 @@
 					"reverse_desc": "Jupiter, nude, chlamys draped across left shoulder, standing left, holding Victory on globe in right hand and leaning on sceptre with left hand; to left, eagle holding wreath",
 					"reference": "RIC VII Nicomedia 13",
 					"provenance": "Ex. Savoca Blue Auction 18, Lot 1947",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1616,6 +1652,7 @@
 						"Constantine Sol Mint Set"
 					],
 					"provenance": "Ex. Paul Munro-Walker, Ex. Victor Clark 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1696,6 +1733,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Romae Aeternae Numismatics 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1831,6 +1869,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -1993,6 +2032,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Carpe Diem Numismatics 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2016,6 +2056,7 @@
 					"reverse_desc": "Sol, radiate, standing left, chlamys draped across left shoulder, raising right hand and holding globe in left hand",
 					"reference": "RIC VII Lugdunum 34",
 					"provenance": "Ex. FSR Bargain Bin 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2042,6 +2083,7 @@
 						"Constantine Sol Mint Set"
 					],
 					"provenance": "Ex. Savoca Blue Auction 9, Lot 1835",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2068,6 +2110,7 @@
 						"Constantine Sol Mint Set"
 					],
 					"provenance": "Ex. Carpe Diem Numismatics 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2094,6 +2137,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Carpe Diem Numismatics 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2148,6 +2192,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2174,6 +2219,7 @@
 						"Clashed Dies"
 					],
 					"provenance": "Ex. Savoca eBay 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2200,6 +2246,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Victor Clark 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2226,6 +2273,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Romae Aeternae Numismatics 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2252,6 +2300,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2332,6 +2381,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2382,6 +2432,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Carpe Diem Numismatics 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2408,6 +2459,7 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Carpe Diem Numismatics 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2434,6 +2486,7 @@
 						"Constantine VLPP"
 					],
 					"provenance": "Ex. CNG Coin Shop February, 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2460,6 +2513,7 @@
 						"Constantine VLPP"
 					],
 					"provenance": "Ex. Mike Vosper 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2486,6 +2540,7 @@
 						"Constantine VLPP"
 					],
 					"provenance": "Ex. Victors Imperial Coins 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2512,6 +2567,7 @@
 						"Constantine VLPP"
 					],
 					"provenance": "Ex. Forum (2019), Ex. Beast Coins VLPP Collection, Ex. Forum (2003), Ex. Aiello Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2535,6 +2591,7 @@
 					"reverse_desc": "VOT/X within a laurel wreath",
 					"reference": "RIC VII Siscia 182",
 					"provenance": "Ex. Frank S. Robinson Auction 107, Lot 381",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2561,6 +2618,7 @@
 						"Clashed Dies"
 					],
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 271, Ex. Severus Alexander Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2584,6 +2642,7 @@
 					"reverse_desc": "Victory, winged, draped, advancing right, holding trophy in right hand and pushing seated captive with left hand",
 					"reference": "RIC VII Treveri 435",
 					"provenance": "Ex. Marc R. Breitsprecher Coins 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2610,6 +2669,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2633,6 +2693,7 @@
 					"reverse_desc": "Camp gate with two turrets, without doors; star above",
 					"reference": "RIC VII Treveri 480",
 					"provenance": "Ex. Mike Vosper 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2656,6 +2717,7 @@
 					"reverse_desc": "Camp gate with two turrets, without doors; star above",
 					"reference": "RIC VII Treveri 479",
 					"provenance": "Ex. Toronto Coin Expo October 2019, Ex. George Cook",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2703,6 +2765,7 @@
 					"reverse_desc": "Two soldiers, helmeted, draped, cuirassed, standing facing each other, each holding spear in outer hand and resting inner hand on shield; between them, two standards",
 					"reference": "RIC VII Arelate 347",
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 2, Lot 257, Ex. TheRed Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2750,6 +2813,7 @@
 					"reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
 					"reference": "RIC VII Thessalonica 188246",
 					"provenance": "Ex. Victor's Imperial Coins 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2821,6 +2885,7 @@
 					"reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
 					"reference": "RIC VII Treveri 548",
 					"provenance": "Ex. Marc R. Breitsprecher Coins 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2891,6 +2956,8 @@
 					"reverse_desc": "Constantius II, draped, cuirassed, standing left on galley, holding phoenix on globe in right hand and standard with Chi-Rho on banner in left hand; steering the ship, seated Victory",
 					"reference": "RIC VIII Rome 115",
 					"provenance": "Ex. London Ancient Coins 2019"
+					"code": null,
+					"stock": null
 				}
 			},{
 				"constansi1": {
@@ -2913,6 +2980,7 @@
 					"reverse_desc": "Constans, draped, cuirassed, standing left on galley, holding phoenix on globe in right hand and standard with Chi-Rho on banner in left hand; steering the ship, seated Victory",
 					"reference": "RIC VIII Antioch 124",
 					"provenance": "Ex. Victor Clark 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2936,6 +3004,8 @@
 					"reverse_desc": "Constans, draped, cuirassed, standing left on galley, holding phoenix on globe in right hand and standard with Chi-Rho on banner in left hand; steering the ship, seated Victory",
 					"reference": "RIC VIII Rome 134",
 					"provenance": "Ex. eBay 2019"
+					"code": null,
+					"stock": null
 				}
 			},{
 				"decentius1": {
@@ -2961,6 +3031,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -2984,6 +3055,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing pointed cap, facing soldier, raising right arm",
 					"reference": "RIC VIII Cyzicus 93a",
 					"provenance": "Ex. Budgies-Beak eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3007,6 +3079,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing a pointed cap, sitting right, raising both hands",
 					"reference": "RIC VIII Thessalonica 123",
 					"provenance": "Ex. Glenn Simonel eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3054,6 +3127,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing cap, facing soldier, extending right arm",
 					"reference": "RIC VIII Antioch 132",
 					"provenance": "Ex. Savoca eBay 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3077,6 +3151,8 @@
 					"reverse_desc": "-",
 					"reference": "RIC VIII Arelate 207",
 					"provenance": "Ex. CNG eAuction 440, Lot 521, Ex. 1887 East Harptree, Somerset Hoard (IRBCH 1424)"
+					"code": null,
+					"stock": null
 				}
 			},{
 				"constantiusii3": {
@@ -3099,6 +3175,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman facing soldier, extending left arm",
 					"reference": "RIC VIII Rome 309",
 					"provenance": "Ex. RomanLode 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3197,6 +3274,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3220,6 +3298,7 @@
 					"reverse_desc": "Emperor, head right, standing facing, holding standard and globe",
 					"reference": "RIC IX Cyzicus 27A",
 					"provenance": "Ex. Cayon Subastas 42 Lot 2697",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3246,6 +3325,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins",
+					"code": null,
 					"stock": "yes"
 				}
 			}
@@ -3272,6 +3352,8 @@
 					"reverse_desc": "Large S C within wreath",
 					"reference": "RPC I 4297",
 					"provenance": "Ex. JAZ Numismatics Auction 111 Lot 3, Ex. JWT (Jack) Secret Saturnalia 2017"
+					"code": null,
+					"stock": null
 				}
 			},{
 				"antoninuspius2": {
@@ -3294,6 +3376,7 @@
 					"reverse_desc": "Serapis enthroned left within distyle temple, Kerberos at his feet, pediment decorated with disk, date across field",
 					"reference": "Köln 1486, Dattari 3057",
 					"provenance": "Ex. Robert L. Grover Collection, Art Institute of Chicago (Gemini XIII, 6 April 2017), lot 463 (part of), Ex. CNG Auction 401 Lot 323",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3317,6 +3400,7 @@
 					"reverse_desc": "Eagle standing right, wreath in beak, palm across shoulder, ETOVC S (year 6)",
 					"reference": "Dattari 5488",
 					"provenance": "Ex. Busso Nachf Store 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3340,6 +3424,7 @@
 					"reverse_desc": "Dikaiosyne standing left holding scales & cornucopia",
 					"reference": "Milne 4770",
 					"provenance": "Ex. FSRCoin Bargain List, March 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3363,6 +3448,7 @@
 					"reverse_desc": "Nike flying right holding wreath out in right hand, and a palm over shoulder in left hand",
 					"reference": "Milne 5031",
 					"provenance": "Ex. Frank S. Robinson Auction 107, Lot 352",
+					"code": null,
 					"stock": "yes"
 				}
 			}
@@ -3437,6 +3523,7 @@
 					"reverse_desc": "Large K, ANNO to left, cross above, regnal year to right",
 					"reference": "SBCV 208",
 					"provenance": "Ex. eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3460,6 +3547,7 @@
 					"reverse_desc": "Large M, star to left, cross above, star to right, Γ below",
 					"reference": "SBCV 217",
 					"provenance": "Ex. Augustus Coins 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3483,6 +3571,7 @@
 					"reverse_desc": "Large M, ANNO to left, cross above, regnal year to right, officina letter below",
 					"reference": "SBCV 218",
 					"provenance": "Ex. eBay 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3530,6 +3619,7 @@
 					"reverse_desc": "Large M; A/N/N/O - X/ЧI (R.Y. 16) across field, cross above, Є below",
 					"reference": "SBCV 163",
 					"provenance": "Ex. Nomos Obolos Auction 10, Lot 532",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3553,6 +3643,7 @@
 					"reverse_desc": "Large M; A/N/N/O - X/ς (R.Y. 16) across field, cross above, B below",
 					"reference": "SBCV 207",
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 2, Lot 277, Ex. Forum Ancient Coins",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3624,6 +3715,7 @@
 					"reverse_desc": "Large M between A/N/N/O and ϚI (R.Y. 7), cross above, B below",
 					"reference": "SBCV 494",
 					"provenance": "Ex. CNG Electronic Auction 457, Lot 513, Ex. Jack A. Frazer Collection, Ex. Ponterio 76 (1 August 1995), Lot 481",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3674,6 +3766,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Saint Paul Antiques Auction 17, Lot 647",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3754,6 +3847,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Savoca eBay 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3807,6 +3901,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Frank S. Robinson Auction 107, Lot 415",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3830,6 +3925,7 @@
 					"reverse_desc": "Large M; monogram above, Heraclius and Tiberius standing facing to left and right, respectively",
 					"reference": "SBCV 1110",
 					"provenance": "Ex. Agora Auction 84, Lot 284",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3853,6 +3949,7 @@
 					"reverse_desc": "Legend in 4 lines",
 					"reference": "SBCV 1729",
 					"provenance": "Ex. Leu Numismatik Web Auction 5, Lot 1307",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3900,6 +3997,7 @@
 					"reverse_desc": "Legend in 4 lines",
 					"reference": "SBCV 1782",
 					"provenance": "Ex. Savoca Blue Auction 7, Lot 1791",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -3983,6 +4081,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca Blue Auction 7, Lot 1792",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -4095,6 +4194,8 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca eBay 2018"
+					"code": null,
+					"stock": null
 				}
 			},{
 				"anonymous6": {
@@ -4149,6 +4250,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca London Blue Auction 1, Lot 1660",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -4204,6 +4306,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca London Blue Auction 1, Lot 1664",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -4257,6 +4360,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. CNG Auction 430, Lot 433; Ex. Anthony DiDonato Collection",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -4284,6 +4388,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Cody111111 eBay 2018",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
@@ -4358,6 +4463,7 @@
 					"reverse_desc": "Crowned bust of John facing, wearing jewelled chlamys, holding labarum and cross on globe",
 					"reference": "SBCV 1954",
 					"provenance": "Ex. Rudnik Numismatics 2019",
+					"code": null,
 					"stock": "yes"
 				}
 			},{
