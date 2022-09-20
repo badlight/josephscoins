@@ -19,29 +19,31 @@
 	
 	
       for (var key in coins) {
-        for (var coin in coins[key]) {
-          var imp = coins[key][coin].emperor;
-          var title = coins[key][coin].file;
+        var indexKey = 0; 
+		for (var coin in coins[key]) {
+          var indexCoin = 0;
+		  var imp = coins[indexKey][key][indexCoin][coin].emperor;
+          var title = coins[indexKey][key][indexCoin][coin].file;
           var folder = title.replace(/[0-9]/g, '');
-          var mat = coins[key][coin].material;
-          var denom = coins[key][coin].denomination;
-          var year = coins[key][coin].year;
-          var ref = coins[key][coin].reference;
-          var codenum = coins[key][coin].code;
-		  var date = coins[key][coin].year;
-          var mnt = coins[key][coin].mint;
-          var off = coins[key][coin].officina;
-          var em = coins[key][coin].emission;
-          var wt = coins[key][coin].weight;
-          var diam = coins[key][coin].diameter;
-          var ax = coins[key][coin].axis;
-          var obv = coins[key][coin].obverse_legend;
-          var rev = coins[key][coin].reverse_legend;
-          var ex = coins[key][coin].exergue;
-          var obvd = coins[key][coin].obverse_desc;
-          var revd = coins[key][coin].reverse_desc; 
-          var prov = coins[key][coin].provenance;
-          var stck = coins[key][coin].stock;
+          var mat = coins[indexKey][key][indexCoin][coin].material;
+          var denom = coins[indexKey][key][indexCoin][coin].denomination;
+          var year = coins[indexKey][key][indexCoin][coin].year;
+          var ref = coins[indexKey][key][indexCoin][coin].reference;
+          var codenum = coins[indexKey][key][indexCoin][coin].code;
+		  var date = coins[indexKey][key][indexCoin][coin].year;
+          var mnt = coins[indexKey][key][indexCoin][coin].mint;
+          var off = coins[indexKey][key][indexCoin][coin].officina;
+          var em = coins[indexKey][key][indexCoin][coin].emission;
+          var wt = coins[indexKey][key][indexCoin][coin].weight;
+          var diam = coins[indexKey][key][indexCoin][coin].diameter;
+          var ax = coins[indexKey][key][indexCoin][coin].axis;
+          var obv = coins[indexKey][key][indexCoin][coin].obverse_legend;
+          var rev = coins[indexKey][key][indexCoin][coin].reverse_legend;
+          var ex = coins[indexKey][key][indexCoin][coin].exergue;
+          var obvd = coins[indexKey][key][indexCoin][coin].obverse_desc;
+          var revd = coins[indexKey][key][indexCoin][coin].reverse_desc; 
+          var prov = coins[indexKey][key][indexCoin][coin].provenance;
+          var stck = coins[indexKey][key][indexCoin][coin].stock;
           if (stck == null) { 
 			var dot = "stock-red"; 
 		  } else { 
@@ -87,8 +89,10 @@
 	        '    </div>' +
 	        '  </div>';			
           document.getElementById(key).appendChild(card);
-        }
-      }
+          indexCoin++;
+		}
+        indexKey++;
+	  }
     };
   var modals = document.querySelectorAll('.modal');
   var imgs = document.querySelectorAll('.card'); 
