@@ -95,29 +95,6 @@
 					"stock": "yes"
 				}
 			},{
-				"valeriani": {
-					"emperor": "Valerian I",
-					"file": "valeriani",
-					"material": "BI",
-					"denomination": "Antoninianus",
-					"yearl": 253,
-					"yearh": 253,
-					"mint": "Rome",
-					"officina": null,
-					"emission": null,
-					"weight": 2.8,
-					"diameter": "22.2mm",
-					"axis": "6H",
-					"obverse_legend": "IMP C P LIC VALERIANVS AVG",
-					"reverse_legend": "FIDES MILITVM",
-					"exergue": null,
-					"obverse_desc": "Bust of Valerian, radiate, draped, facing right",
-					"reverse_desc": "Fides, draped, standing left, holding two ensigns",
-					"reference": "RIC V 89",
-					"provenance": "Ex. Forvm Ancient Coins 2017",
-					"code": "C3FD"
-				}
-			},{
 				"gallienus2": {
 					"emperor": "Gallienus",
 					"file": "gallienus2",
