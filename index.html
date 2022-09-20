@@ -18,80 +18,80 @@
       var coins = response; 
 	
 	
-      for (var key in coins) {
-        var indexKey = 0; 
-		for (var coin in coins[key]) {
-          var indexCoin = 0;
-		  var imp = coins[indexKey][key][indexCoin][coin].emperor;
-          var title = coins[indexKey][key][indexCoin][coin].file;
-          var folder = title.replace(/[0-9]/g, '');
-          var mat = coins[indexKey][key][indexCoin][coin].material;
-          var denom = coins[indexKey][key][indexCoin][coin].denomination;
-          var year = coins[indexKey][key][indexCoin][coin].year;
-          var ref = coins[indexKey][key][indexCoin][coin].reference;
-          var codenum = coins[indexKey][key][indexCoin][coin].code;
-		  var date = coins[indexKey][key][indexCoin][coin].year;
-          var mnt = coins[indexKey][key][indexCoin][coin].mint;
-          var off = coins[indexKey][key][indexCoin][coin].officina;
-          var em = coins[indexKey][key][indexCoin][coin].emission;
-          var wt = coins[indexKey][key][indexCoin][coin].weight;
-          var diam = coins[indexKey][key][indexCoin][coin].diameter;
-          var ax = coins[indexKey][key][indexCoin][coin].axis;
-          var obv = coins[indexKey][key][indexCoin][coin].obverse_legend;
-          var rev = coins[indexKey][key][indexCoin][coin].reverse_legend;
-          var ex = coins[indexKey][key][indexCoin][coin].exergue;
-          var obvd = coins[indexKey][key][indexCoin][coin].obverse_desc;
-          var revd = coins[indexKey][key][indexCoin][coin].reverse_desc; 
-          var prov = coins[indexKey][key][indexCoin][coin].provenance;
-          var stck = coins[indexKey][key][indexCoin][coin].stock;
-          if (stck == null) { 
-			var dot = "stock-red"; 
-		  } else { 
-			var dot = "stock-green"; 
-		  }
-		  var card = document.createElement('div');
-          card.style.display = "inline-block";
-          card.style.padding = "10px";
-          card.className = 'card';
-          card.innerHTML =
-		  '  <div class="coin" id="' + title + 'Img">' +
-            '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
-            '      <div class="overlay" unselectable="on">' +
-            '        <div class="code">' + 
-            '          <span>' + codenum + '</span>' + 
-            '        </div>' +
-            '        <div class="' + dot + '">' + 
-			'          <span>•</span>' + 
-			'        </div>' +
-			'        <div class="caption-subtitle">' +
-            '          <span>' + imp + '</span></br>' +
-            '          <span>' + mat + ' ' + denom + '</span><br>' +
-            '          <span>' + year + '</span><br>' +
-            '          <span>' + ref + '</span>' +
-            '        </div>' +
-            '      </div>' +
-	        '  <div id="' + title + 'Modal" class="modal">' +
-            '    <div class="modal-content">' +  
-	        '	   <div class="coin_page">' +
-	        '        <img src="./images/' + title + '/' + title + ' (Small).jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
-	        '        <span class="description">' +
-	        '          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
-	        '          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
-            '          <p class="aligned"><strong>Weight:</strong> ' + wt + ', <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
-	        '          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
-	        '          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-	        '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
-	        '          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
-	        '          <hr class="marginated">' +
-	        '          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
-	        '        </span>' + 
-	        '      </div>' + 
-	        '    </div>' +
-	        '  </div>';			
-          document.getElementById(key).appendChild(card);
-          indexCoin++;
+    for (var indexKey in key) { 
+	  for (var key in coins[indexKey]) {
+		for (var indexCoin in coins[indexKey][key]) {
+		  for (var coin in coins[indexKey][key][indexCoin]) {
+		    var imp = coins[indexKey][key][indexCoin][coin].emperor;
+            var title = coins[indexKey][key][indexCoin][coin].file;
+            var folder = title.replace(/[0-9]/g, '');
+            var mat = coins[indexKey][key][indexCoin][coin].material;
+            var denom = coins[indexKey][key][indexCoin][coin].denomination;
+            var year = coins[indexKey][key][indexCoin][coin].year;
+            var ref = coins[indexKey][key][indexCoin][coin].reference;
+            var codenum = coins[indexKey][key][indexCoin][coin].code;
+		    var date = coins[indexKey][key][indexCoin][coin].year;
+            var mnt = coins[indexKey][key][indexCoin][coin].mint;
+            var off = coins[indexKey][key][indexCoin][coin].officina;
+            var em = coins[indexKey][key][indexCoin][coin].emission;
+            var wt = coins[indexKey][key][indexCoin][coin].weight;
+            var diam = coins[indexKey][key][indexCoin][coin].diameter;
+            var ax = coins[indexKey][key][indexCoin][coin].axis;
+            var obv = coins[indexKey][key][indexCoin][coin].obverse_legend;
+            var rev = coins[indexKey][key][indexCoin][coin].reverse_legend;
+            var ex = coins[indexKey][key][indexCoin][coin].exergue;
+            var obvd = coins[indexKey][key][indexCoin][coin].obverse_desc;
+            var revd = coins[indexKey][key][indexCoin][coin].reverse_desc; 
+            var prov = coins[indexKey][key][indexCoin][coin].provenance;
+            var stck = coins[indexKey][key][indexCoin][coin].stock;
+            if (stck == null) { 
+			  var dot = "stock-red"; 
+		    } else { 
+			  var dot = "stock-green"; 
+		    }
+		    var card = document.createElement('div');
+            card.style.display = "inline-block";
+            card.style.padding = "10px";
+            card.className = 'card';
+            card.innerHTML =
+		    '  <div class="coin" id="' + title + 'Img">' +
+              '      <img src="./images/' + title + '/' + title + ' (Small).jpg" class="pic"/>' +
+              '      <div class="overlay" unselectable="on">' +
+              '        <div class="code">' + 
+              '          <span>' + codenum + '</span>' + 
+              '        </div>' +
+              '        <div class="' + dot + '">' + 
+			  '          <span>•</span>' + 
+			  '        </div>' +
+			  '        <div class="caption-subtitle">' +
+              '          <span>' + imp + '</span></br>' +
+              '          <span>' + mat + ' ' + denom + '</span><br>' +
+              '          <span>' + year + '</span><br>' +
+              '          <span>' + ref + '</span>' +
+              '        </div>' +
+              '      </div>' +
+	          '  <div id="' + title + 'Modal" class="modal">' +
+              '    <div class="modal-content">' +  
+	          '	   <div class="coin_page">' +
+	          '        <img src="./images/' + title + '/' + title + ' (Small).jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
+	          '        <span class="description">' +
+	          '          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
+	          '          <p class="aligned"><strong>Minted:</strong> ' + date + ', at the ' + mnt + ' Mint</em></p>' + 
+              '          <p class="aligned"><strong>Weight:</strong> ' + wt + ', <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
+	          '          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
+	          '          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
+	          '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+	          '          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+	          '          <hr class="marginated">' +
+	          '          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
+	          '        </span>' + 
+	          '      </div>' + 
+	          '    </div>' +
+	          '  </div>';			
+            document.getElementById(key).appendChild(card);
+			}
+		  }	
 		}
-        indexKey++;
 	  }
     };
   var modals = document.querySelectorAll('.modal');
