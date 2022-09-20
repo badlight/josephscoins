@@ -118,29 +118,6 @@
 					"code": "C3FD"
 				}
 			},{
-				"postumus": {
-					"emperor": "Postumus",
-					"file": "postumus",
-					"material": "BI",
-					"denomination": "Antoninianus",
-					"yearl": 260,
-					"yearh": 269,
-					"mint": "Lugdunum",
-					"officina": null,
-					"emission": null,
-					"weight": 3.6,
-					"diameter": "19.0mm",
-					"axis": "6H",
-					"obverse_legend": "IMP C POSTVMVS P F AVG",
-					"reverse_legend": "MINER FAVTR",
-					"exergue": null,
-					"obverse_desc": "Bust of Postumus, radiate, draped, right, or bust of Postumus, radiate, draped, cuirassed, right",
-					"reverse_desc": "Minerva, helmeted, draped, running left, holding olive-branch in right hand and spear and shield in left hand",
-					"reference": "RIC V Postumus 74",
-					"provenance": "Ex. Aeternitas Numismatics 2017",
-					"code": "K3CD"
-				}
-			},{
 				"gallienus2": {
 					"emperor": "Gallienus",
 					"file": "gallienus2",
@@ -187,29 +164,6 @@
 					"stock": "yes"
 				}
 			},{
-				"victorinus2": {
-					"emperor": "Victorinus",
-					"file": "victorinus2",
-					"material": "AE",
-					"denomination": "Antoninianus",
-					"yearl": 269,
-					"yearh": 271,
-					"mint": "Cologne",
-					"officina": null,
-					"emission": null,
-					"weight": 2.7,
-					"diameter": "21.0mm",
-					"axis": "12H",
-					"obverse_legend": "IMP C VICTORINVS P F AVG",
-					"reverse_legend": "INVICTVS",
-					"exergue": null,
-					"obverse_desc": "Bust of Victorinus, radiate, draped, right, or bust of Victorinus, radiate, draped, cuirassed, facing right",
-					"reverse_desc": "Sol, walking left, raising right hand and holding whip in left hand",
-					"reference": "RIC V 114",
-					"provenance": "Ex. Art Ancient Ltd., Ex. <a href=\"south_petherton_hoard.html\">South Petherton Hoard</a>",
-					"code": "5X9Z"
-				}
-			},{
 				"probus1": {
 					"emperor": "Probus",
 					"file": "probus1",
@@ -232,56 +186,6 @@
 					"provenance": "Ex. JAZ Numismatics 2017",
 					"code": "QJVM",
 					"stock": "yes"
-				}
-			},{
-				"probus3": {
-					"emperor": "Probus",
-					"file": "probus3",
-					"material": "AE",
-					"denomination": "Antoninianus",
-					"yearl": 276,
-					"yearh": 282,
-					"mint": "Ticinum",
-					"officina": "4th",
-					"emission": null,
-					"weight": 4.15,
-					"diameter": "23.5mm",
-					"axis": "12H",
-					"obverse_legend": "IMP C PROBVS AVG",
-					"reverse_legend": "MARTI PACIF",
-					"exergue": "I/-//QXXI",
-					"obverse_desc": "Bust of Probus, radiate, wearing imperial mantle, left, holding sceptre surmounted by eagle in right hand",
-					"reverse_desc": "Mars, helmeted, in military attire, walking left, holding olive-branch in right hand and spear and shield in left hand",
-					"reference": "RIC V Probus 508",
-					"sub_collection": [
-						"Ticinum EQVITI"
-					],
-					"provenance": "Ex. Frank S. Robinson Auction 107, Lot 336"
-				}
-			},{
-				"probus4": {
-					"emperor": "Probus",
-					"file": "probus4",
-					"material": "AE",
-					"denomination": "Antoninianus",
-					"yearl": 276,
-					"yearh": 282,
-					"mint": "Ticinum",
-					"officina": "4th",
-					"emission": null,
-					"weight": 3.93,
-					"diameter": "25.0mm",
-					"axis": "6H",
-					"obverse_legend": "VIRTVS PROBI AVG",
-					"reverse_legend": "MARTI PACIF",
-					"exergue": "I/-//QXXI",
-					"obverse_desc": "Bust of Probus, helmeted, radiate, cuirassed, left, holding spear in right hand and shield in left hand",
-					"reverse_desc": "Mars, helmeted, in military attire, walking left, holding olive-branch in right hand and spear and shield in left hand",
-					"reference": "RIC V Probus 509",
-					"sub_collection": [
-						"Ticinum EQVITI"
-					],
-					"provenance": "Ex. Secret Saturnalia 2018"
 				}
 			},{
 				"carausius1": {
@@ -442,53 +346,6 @@
 					"stock": "yes"
 				}
 			},{
-				"diocletian8": {
-					"emperor": "Diocletian",
-					"file": "diocletian8",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 296,
-					"yearh": 296,
-					"mint": "Siscia",
-					"officina": null,
-					"emission": null,
-					"weight": 9.57,
-					"diameter": "27.0mm",
-					"axis": "6H",
-					"obverse_legend": "IMP C DIOCLETIANVS P F AVG",
-					"reverse_legend": "GENIO POPV–L-I ROMANI",
-					"exergue": "-/B//✱SIS",
-					"obverse_desc": "Head of Diocletian, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
-					"reference": "RIC VI Siscia 95a",
-					"sub_collection": [
-						"Tetrarchy Mints"
-					],
-					"provenance": "Ex. eBay 2019"
-				}
-			},{
-				"maximian3": {
-					"emperor": "Maximian",
-					"file": "maximian3",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 296,
-					"yearh": 297,
-					"mint": "Heraclea",
-					"officina": "5th",
-					"emission": null,
-					"weight": 10.35,
-					"diameter": "27.0mm",
-					"axis": "12H",
-					"obverse_legend": "IMP C M A MAXIMIANVS P F AVG",
-					"reverse_legend": "GENIO POPV-L-I ROMANI",
-					"exergue": "-/-//HT∈",
-					"obverse_desc": "Head of Maximian, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
-					"reference": "RIC VI Heraclea 17b",
-					"provenance": "Ex. Frank S. Robinson Auction 107, Lot 349"
-				}
-			},{
 				"constantiusi8": {
 					"emperor": "Constantius I Chlorus",
 					"file": "constantiusi8",
@@ -513,56 +370,6 @@
 					],
 					"provenance": "Ex. Budges-Beak eBay 2019",
 					"stock": "yes"
-				}
-			},{
-				"galerius10": {
-					"emperor": "Galerius",
-					"file": "galerius10",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 296,
-					"yearh": 297,
-					"mint": "Rome",
-					"officina": "7th",
-					"emission": null,
-					"weight": 9.46,
-					"diameter": "27.6mm",
-					"axis": "6H",
-					"obverse_legend": "GAL VAL MAXIMIANVS NOB C",
-					"reverse_legend": "GENIO POP-VLI ROMANI",
-					"exergue": "R/-//ϵ",
-					"obverse_desc": "Head of Galerius, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
-					"reference": "RIC VI Rome 66b",
-					"sub_collection": [
-						"CNG Lot"
-					],
-					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins"
-				}
-			},{
-				"galerius9": {
-					"emperor": "Galerius",
-					"file": "galerius9",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 296,
-					"yearh": 297,
-					"mint": "Rome",
-					"officina": "7th",
-					"emission": null,
-					"weight": 9.83,
-					"diameter": "27.4mm",
-					"axis": "6H",
-					"obverse_legend": "MAXIMIANVS NOB CAES",
-					"reverse_legend": "GENIO POPV-LI ROMANI",
-					"exergue": "R/-//Z",
-					"obverse_desc": "Head of Galerius, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
-					"reference": "RIC VI Rome 67b",
-					"sub_collection": [
-						"CNG Lot"
-					],
-					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins"
 				}
 			},{
 				"diocletian6": {
@@ -636,28 +443,6 @@
 					"stock": "yes"
 				}
 			},{
-				"constantiusi11": {
-					"emperor": "Constantius I Chlorus",
-					"file": "constantiusi11",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 296,
-					"yearh": 303,
-					"mint": "London",
-					"officina": null,
-					"emission": null,
-					"weight": 7.99,
-					"diameter": "26.5mm",
-					"axis": "6H",
-					"obverse_legend": "FL VAL CONSTANTIVS NOB C",
-					"reverse_legend": "GENIO POPV-LI ROMANI",
-					"exergue": "-/-//-",
-					"obverse_desc": "Bust of Constantius Chlorus, laureate, cuirassed, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
-					"reference": "RIC VI Londinium 14a, Cloke & Toone 2.01.010",
-					"provenance": "Ex. FSR Auction 110, Lot 317"
-				}
-			},{
 				"constantiusi4": {
 					"emperor": "Constantius I Chlorus",
 					"file": "constantiusi4",
@@ -728,31 +513,6 @@
 					"provenance": "Ex. Shick Coins 2018",
 					"code": "9XR9",
 					"stock": "yes"
-				}
-			},{
-				"constantiusi7": {
-					"emperor": "Constantius I Chlorus",
-					"file": "constantiusi7",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 297,
-					"yearh": 298,
-					"mint": "Alexandria",
-					"officina": "3rd",
-					"emission": null,
-					"weight": 10.4,
-					"diameter": "27.0mm",
-					"axis": "6H",
-					"obverse_legend": "FL VAL CONSTANTIVS NOB CAES",
-					"reverse_legend": "GENIO POPV-L-I ROMANI",
-					"exergue": "-/Γ//ALE",
-					"obverse_desc": "Head of Constantius Chlorus, laureate, right; ties divergent",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
-					"reference": "RIC VI Alexandria 27a",
-					"sub_collection": [
-						"Tetrarchy Mints"
-					],
-					"provenance": "Ex. Incitatus Coins 2019"
 				}
 			},{
 				"galerius7": {
@@ -1095,31 +855,6 @@
 					"stock": "yes"
 				}
 			},{
-				"maximinusii5": {
-					"emperor": "Maximinus II Daia",
-					"file": "maximinusii5",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 305,
-					"yearh": 305,
-					"mint": "Rome",
-					"officina": "4th",
-					"emission": null,
-					"weight": 10.61,
-					"diameter": "28.0mm",
-					"axis": "6H",
-					"obverse_legend": "MAXIMINVS NOB CAES",
-					"reverse_legend": "SAC MON VRB AVGG ET CAESS NN",
-					"exergue": "-/✱//RQ",
-					"obverse_desc": "Head of Maximinus Daia, laureate, right",
-					"reverse_desc": "Moneta, draped, standing left, holding scales in right hand and cornucopiae in left hand",
-					"reference": "RIC VI Rome 123b",
-					"sub_collection": [
-						"CNG Lot"
-					],
-					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)"
-				}
-			},{
 				"maximian1": {
 					"emperor": "Maximian",
 					"file": "maximian1",
@@ -1145,32 +880,6 @@
 					"provenance": "Ex. Frank S. Robinson, Auction 101 Lot 398",
 					"code": "VAZA",
 					"stock": "yes"
-				}
-			},{
-				"diocletian3": {
-					"emperor": "Diocletian",
-					"file": "diocletian3",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 305,
-					"yearh": 306,
-					"mint": "Serdica",
-					"officina": "3rd",
-					"emission": null,
-					"weight": 9.89,
-					"diameter": "27.0mm",
-					"axis": "6H",
-					"obverse_legend": "D N DIOCLETIANO FELICISSIMO SEN AVG",
-					"reverse_legend": "PROVIDENTIA DEORVM QVIES AVGG",
-					"exergue": "-/Γ//•SM•SD•",
-					"obverse_desc": "Bust of Diocletian, laureate, wearing imperial mantle, right, holding olive branch in right hand and mappa in left hand",
-					"reverse_desc": "Providentia, draped, standing right, extending right hand to Quies; Quies, draped, standing left, holding branch in right hand and leaning on sceptre with left hand; in left field, S; in right field, F next to officina letter",
-					"reference": "RIC VI Serdica 15a",
-					"sub_collection": [
-						"Post-Abdication Folles"
-					],
-					"provenance": "Ex. CNG Coins Electronic Auction 422, Lot 601",
-					"code": "SPLA"
 				}
 			},{
 				"maximinusii2": {
@@ -1293,29 +1002,6 @@
 					"reference": "Not in RIC",
 					"provenance": "Ex. Budgies-Beak eBay 2019",
 					"stock": "yes"
-				}
-			},{
-				"galerius3": {
-					"emperor": "Galerius",
-					"file": "galerius3",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 307,
-					"yearh": 307,
-					"mint": "Heraclea",
-					"officina": "3rd",
-					"emission": null,
-					"weight": 8.62,
-					"diameter": "27.0mm",
-					"axis": "12H",
-					"obverse_legend": "IMP C GAL VAL MAXIMIANVS P F AVG",
-					"reverse_legend": "GENIO POPV-L-I ROMANI",
-					"exergue": "-/-//HTΓ",
-					"obverse_desc": "Head of Galerius, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
-					"reference": "RIC VI Heraclea 33",
-					"provenance": "Ex. Harlan J. Berk 2018",
-					"code": "Y994"
 				}
 			},{
 				"maximian7": {
@@ -1488,31 +1174,6 @@
 					"stock": "yes"
 				}
 			},{
-				"maximinusii6": {
-					"emperor": "Maximinus II Daia",
-					"file": "maximinusii6",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 310,
-					"yearh": 311,
-					"mint": "Antioch",
-					"officina": null,
-					"emission": null,
-					"weight": 7.04,
-					"diameter": "22.6mm",
-					"axis": "12H",
-					"obverse_legend": "IMP C GAL VAL MAXIMINVS P F AVG",
-					"reverse_legend": "GENIO EX-ERCITVS",
-					"exergue": "(crescent on altar)/∈//ANT",
-					"obverse_desc": "Head of Maximinus Daia, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
-					"reference": "RIC VI Antioch 147c",
-					"sub_collection": [
-						"CNG Lot"
-					],
-					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins"
-				}
-			},{
 				"constantinei3": {
 					"emperor": "Constantine the Great",
 					"file": "constantinei3",
@@ -1562,29 +1223,6 @@
 					"provenance": "Ex. Frank S. Robinson, Auction 107 Lot 369"
 				}
 			},{
-				"maxentius1": {
-					"emperor": "Maxentius",
-					"file": "maxentius1",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 307,
-					"yearh": 312,
-					"mint": "Ostia",
-					"officina": "3rd",
-					"emission": null,
-					"weight": 5.45,
-					"diameter": "24.0mm",
-					"axis": "12H",
-					"obverse_legend": "IMP C MAXENTIUS P F AVG",
-					"reverse_legend": "AETE-RNITAS-AUGN",
-					"exergue": "-/-//MOSTT",
-					"obverse_desc": "Head of Maxentius, laureate, right",
-					"reverse_desc": "Castor and Pollux standing facing one another, each leaning on scepter and holding bridle of horse",
-					"reference": "RIC VI Ostia 35",
-					"provenance": "Ex. CNG Auction 425, Lot 550, Ex. WRG Collection, Ex. William Porter, July 1991",
-					"code": "4YV2"
-				}
-			},{
 				"maximinusii4": {
 					"emperor": "Maximinus II Daia",
 					"file": "maximinusii4",
@@ -1609,52 +1247,6 @@
 					],
 					"provenance": "Ex. CNG Electronic Auction 457, Lot 751 (part of), Ex. Forum Ancient Coins",
 					"stock": "yes"
-				}
-			},{
-				"maximinusii": {
-					"emperor": "Maximinus II Daia",
-					"file": "maximinusii",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 312,
-					"yearh": 312,
-					"mint": "Alexandria",
-					"officina": "1st",
-					"emission": null,
-					"weight": 5,
-					"diameter": "21.0mm",
-					"axis": "6H",
-					"obverse_legend": "IMP C GAL VAL MAXIMINVS P F AVG",
-					"reverse_legend": "GENIO - AVGVSTI",
-					"exergue": "N/Δ//ALE",
-					"obverse_desc": "Head of Maximinus Daia, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding head of Serapis in right hand and cornucopiae in left hand",
-					"reference": "RIC VI Alexandria 157b",
-					"provenance": "Ex. Eng Collection, Ex. JAZ Numismatics Auction 108 Lot 6",
-					"code": "CAG8"
-				}
-			},{
-				"maximinusii3": {
-					"emperor": "Maximinus II Daia",
-					"file": "maximinusii3",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 312,
-					"yearh": 312,
-					"mint": "Nicomedia",
-					"officina": "3rd",
-					"emission": null,
-					"weight": 4.73,
-					"diameter": "23.1mm",
-					"axis": "6H",
-					"obverse_legend": "IMP C GAL VAL MAXIMINVS P F AVG",
-					"reverse_legend": "GENIO A-VGVSTI",
-					"exergue": "-/Γ//SMN",
-					"obverse_desc": "Head of Maximinus Daia, laureate, right",
-					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand; to left, altar",
-					"reference": "RIC VI Nicomedia 71a",
-					"provenance": "Ex. Busso Nachf Store 2018",
-					"code": "XD8H"
 				}
 			},{
 				"constantinei1": {
@@ -1709,33 +1301,7 @@
 					],
 					"provenance": "Ex. Carpe Diem Numismatics 2018",
 					"code": "NFGA",
-					"stock": "yes"
-				}
-			},{
-				"constantinei20": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei20",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 312,
-					"yearh": 313,
-					"mint": "Rome",
-					"officina": "2nd",
-					"emission": null,
-					"weight": 3.14,
-					"diameter": "19.0mm",
-					"axis": "12H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INVICTO COMITI",
-					"exergue": "-/-//RS",
-					"obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol, chlamys hanging behind, standing left, raising right hand and holding up globe in left hand",
-					"reference": "RIC VI Rome 323a",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. FSR Bargain Bin 2018",
-					"code": "DLPM"
+					"stock": null
 				}
 			},{
 				"constantinei57": {
@@ -1881,33 +1447,8 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 342",
-					"code": "3KVW"
-				}
-			},{
-				"constantinei39": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei39",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 312,
-					"yearh": 313,
-					"mint": "Rome",
-					"officina": "3rd",
-					"emission": null,
-					"weight": 3.71,
-					"diameter": "23.3mm",
-					"axis": "12H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "-/-//RT",
-					"obverse_desc": "Bust of Constantine I, laureate, cuirassed, right",
-					"reverse_desc": "Sol, chlamys hanging behind, standing right, raising right hand and holding up globe in left hand",
-					"reference": "RIC VI Rome 336a",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. Carpe Diem Numismatics 2018",
-					"code": "ZKLX"
+					"code": "3KVW",
+					"stock": "yes"
 				}
 			},{
 				"constantinei18": {
@@ -2029,85 +1570,6 @@
 					"stock": "yes"
 				}
 			},{
-				"constantinei26": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei26",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 313,
-					"yearh": 314,
-					"mint": "Rome",
-					"officina": "1st",
-					"emission": null,
-					"weight": 2.8,
-					"diameter": "20.2mm",
-					"axis": "6H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI IN-V-ICTO COMITI",
-					"exergue": "R/F//R✱P",
-					"obverse_desc": "Bust of Constantine, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol standing left, chlamys across left shoulder, holding globe and raising right hand",
-					"reference": "RIC VII Rome 19",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
-					"code": "JAQT"
-				}
-			},{
-				"constantinei27": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei27",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 313,
-					"yearh": 314,
-					"mint": "Rome",
-					"officina": "2nd",
-					"emission": null,
-					"weight": 4.05,
-					"diameter": "20.6mm",
-					"axis": "12H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "R/F//R✱S",
-					"obverse_desc": "Bust of Constantine, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol standing left, chlamys across left shoulder, holding globe and raising right hand",
-					"reference": "RIC VII Rome 19",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
-					"code": "Y2XU"
-				}
-			},{
-				"constantinei28": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei28",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 313,
-					"yearh": 314,
-					"mint": "Rome",
-					"officina": "3rd",
-					"emission": null,
-					"weight": 3.36,
-					"diameter": "20.9mm",
-					"axis": "12H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "R/F//R✱T",
-					"obverse_desc": "Bust of Constantine, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol standing left, chlamys across left shoulder, holding globe and raising right hand",
-					"reference": "RIC VII Rome 19",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
-					"code": "7YV8",
-					"stock": "yes"
-				}
-			},{
 				"liciniusi11": {
 					"emperor": "Licinius I",
 					"file": "liciniusi11",
@@ -2178,32 +1640,6 @@
 					],
 					"provenance": "Ex. Paul Munro-Walker, Ex. Victor Clark 2019",
 					"stock": "yes"
-				}
-			},{
-				"constantinei30": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei30",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 314,
-					"yearh": 314,
-					"mint": "Rome",
-					"officina": "4th",
-					"emission": null,
-					"weight": 3.61,
-					"diameter": "21.8mm",
-					"axis": "12H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "R/F//R✱P",
-					"obverse_desc": "Bust of Constantine, laureate, cuirassed, right",
-					"reverse_desc": "Sol, radiate, chlamys draped over left shoulder, standing left, raising right hand and holding globe in left hand",
-					"reference": "RIC VII Rome 20",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
-					"code": "BYPT"
 				}
 			},{
 				"liciniusi1": {
@@ -2391,7 +1827,8 @@
 						"Constantine Sol Mint Set"
 					],
 					"provenance": "Ex. FORVM Ancient Coins 2018, Ex. Martin Maridvnvm Collection",
-					"code": "S3LL"
+					"code": "S3LL",
+					"stock": "yes"
 				}
 			},{
 				"constantinei7": {
@@ -2501,31 +1938,6 @@
 					"stock": "yes"
 				}
 			},{
-				"constantinei50": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei50",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 315,
-					"yearh": 315,
-					"mint": "Rome",
-					"officina": "1st",
-					"emission": null,
-					"weight": 3.55,
-					"diameter": "20.0mm",
-					"axis": "6H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "C/S//RP",
-					"obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
-					"reference": "RIC VII Rome 40",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. Carpe Diem Numismatics 2018"
-				}
-			},{
 				"constantinei14": {
 					"emperor": "Constantine the Great",
 					"file": "constantinei14",
@@ -2549,7 +1961,8 @@
 						"Rome Mint Sol"
 					],
 					"provenance": "Ex. Carpe Diem Numismatics 2017",
-					"code": "RKXV"
+					"code": "RKXV",
+					"stock": "yes"
 				}
 			},{
 				"constantinei21": {
@@ -2606,50 +2019,6 @@
 					"stock": "yes"
 				}
 			},{
-				"constantinei33": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei33",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 315,
-					"yearh": 316,
-					"mint": "Arelate",
-					"officina": "1st",
-					"emission": null,
-					"weight": 3.1,
-					"diameter": "20.3mm",
-					"axis": "6H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "-/F//PARL",
-					"obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing right, facing left, raising right hand and holding globe in left hand",
-					"reference": "RIC VII Arelate 63",
-					"provenance": "Ex. Carpe Diem Numismatics 2018"
-				}
-			},{
-				"constantinei49": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei49",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 315,
-					"yearh": 316,
-					"mint": "Lugdunum",
-					"officina": "1st",
-					"emission": null,
-					"weight": 3.35,
-					"diameter": "19mm",
-					"axis": "6H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INVIC-TO COMITI",
-					"exergue": "TF/✱//PLG",
-					"obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol, radiate, standing left, chlamys draped across left shoulder, raising right hand and holding globe in left hand",
-					"reference": "RIC VII Lugdunum 33",
-					"provenance": "Ex. Carpe Diem Numismatics 2018"
-				}
-			},{
 				"constantinei61": {
 					"emperor": "Constantine the Great",
 					"file": "constantinei61",
@@ -2695,7 +2064,8 @@
 					"sub_collection": [
 						"Constantine Sol Mint Set"
 					],
-					"provenance": "Ex. Savoca Blue Auction 9, Lot 1835"
+					"provenance": "Ex. Savoca Blue Auction 9, Lot 1835",
+					"stock": "yes"
 				}
 			},{
 				"constantinei47": {
@@ -2935,55 +2305,6 @@
 					"stock": "yes"
 				}
 			},{
-				"constantinei24": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei24",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 317,
-					"yearh": 317,
-					"mint": "Rome",
-					"officina": "4th",
-					"emission": null,
-					"weight": 3.85,
-					"diameter": "19.0mm",
-					"axis": "12H",
-					"obverse_legend": "IMP CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "A/-//RQ",
-					"obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
-					"reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
-					"reference": "RIC VII Rome 78",
-					"sub_collection": [
-						"Rome Mint Sol"
-					],
-					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
-					"code": "URR9"
-				}
-			},{
-				"constantinei9": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei9",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 317,
-					"yearh": 317,
-					"mint": "Treveri",
-					"officina": "2nd",
-					"emission": null,
-					"weight": 3.7,
-					"diameter": "20.0mm",
-					"axis": "12H",
-					"obverse_legend": "CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INVIC-TO COMITI",
-					"exergue": "T/F//BTR",
-					"obverse_desc": "Bust of Constantine I, laureate, cuirassed, right",
-					"reverse_desc": "Sol, radiate, chlamys spread, standing right, head left, raising right hand and holding globe in left hand",
-					"reference": "RIC VII Treveri 135",
-					"provenance": "Ex. Carpe Diem Nvmismatics 2017",
-					"code": "RXWB"
-				}
-			},{
 				"constantinei15": {
 					"emperor": "Constantine the Great",
 					"file": "constantinei15",
@@ -3217,54 +2538,6 @@
 					"stock": "yes"
 				}
 			},{
-				"liciniusii1": {
-					"emperor": "Licinius II",
-					"file": "liciniusii1",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 317,
-					"yearh": 320,
-					"mint": "Nicomedia",
-					"officina": "4th",
-					"emission": null,
-					"weight": 3.1,
-					"diameter": "20.0mm",
-					"axis": "12H",
-					"obverse_legend": "D N VAL LICIN LICINIVS NOB C",
-					"reverse_legend": "PROVIDEN-TIAE CAESS",
-					"exergue": "(palm branch left)/(• on Δ)//SMN",
-					"obverse_desc": "Bust of Licinius II, laureate, draped, cuirassed, right",
-					"reverse_desc": "Jupiter, nude, chlamys draped across left shoulder, standing left, holding Victory on globe in right hand and leaning on sceptre with left hand",
-					"reference": "RIC VII Rome 97",
-					"sub_collection": [
-						"CNG Lot"
-					],
-					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Classical Coins"
-				}
-			},{
-				"liciniusi4": {
-					"emperor": "Licinius I",
-					"file": "liciniusi4",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 321,
-					"yearh": 323,
-					"mint": "Antioch",
-					"officina": "7th",
-					"emission": null,
-					"weight": 3.45,
-					"diameter": "19.0mm",
-					"axis": "12H",
-					"obverse_legend": "IMP C VAL LICIN LICINIVS P F AVG",
-					"reverse_legend": "IOVI CONS-ERVATORI",
-					"exergue": "-/(X on IIΓ)//SMANTZ",
-					"obverse_desc": "Bust of Licinius, radiate, draped, cuirassed, right",
-					"reverse_desc": "Jupiter, nude, chlamys draped across left shoulder, standing left, holding Victory on globe in right hand and leaning on sceptre with left hand; to left, eagle with wreath; to right, captive",
-					"reference": "RIC VII Rome 97",
-					"provenance": "Ex. Carpe Diem Nvmismatics 2018",
-					"code": "AX6Z"
-				}
-			},{
 				"constantineii2": {
 					"emperor": "Constantine II",
 					"file": "constantineii2",
@@ -3431,28 +2704,6 @@
 					"provenance": "Ex. Agora Auctions 67 Lot 322",
 					"code": "MXY4",
 					"stock": "yes"
-				}
-			},{
-				"constantiusii5": {
-					"emperor": "Constantius II",
-					"file": "constantiusii5",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 328,
-					"yearh": 329,
-					"mint": "Siscia",
-					"officina": "4th",
-					"emission": null,
-					"weight": 3.22,
-					"diameter": "19.00mm",
-					"axis": "6H",
-					"obverse_legend": "FL IVL CONSTANTIVS NOB C",
-					"reverse_legend": "PROVIDEN-TIAE CAESS",
-					"exergue": "-/-//ΔSIS(two crescents)",
-					"obverse_desc": "Laureate, draped, and cuirassed bust left",
-					"reverse_desc": "Camp gate with two turrets; star above",
-					"reference": "RIC VII Siscia 217",
-					"provenance": "Ex. CNG Auction 262, Lot 394, Ex. Elliott-Kent Collection"
 				}
 			},{
 				"constantiusii11": {
@@ -3639,7 +2890,8 @@
 					"obverse_desc": "Head of Constantius II, pearl-diademed, right",
 					"reverse_desc": "Legend within a wreath",
 					"reference": "RIC VIII Antioch 113",
-					"provenance": "Ex. FSR Auction 109, Lot 358"
+					"provenance": "Ex. FSR Auction 109, Lot 358",
+					"stock": "yes"
 				}
 			},{
 				"constantiusii8": {
@@ -4448,29 +3700,6 @@
 					"stock": "yes"
 				}
 			},{
-				"phocas1": {
-					"emperor": "Phocas",
-					"file": "phocas1",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 607,
-					"yearh": 608,
-					"mint": "Constantinople",
-					"officina": "2nd",
-					"emission": null,
-					"weight": 12.08,
-					"diameter": "27.0mm",
-					"axis": "6H",
-					"obverse_legend": "DN FOCAS PЄRP AUC",
-					"reverse_legend": "-",
-					"exergue": "CONB",
-					"obverse_desc": "Crowned bust facing, wearing consular robes, holding mappa and cruciform scepter",
-					"reverse_desc": "Large XXXX, ANNO on top, and dated Ϛ (R.Y. 6)",
-					"reference": "SBCV 640",
-					"provenance": "Ex. Savoca 5th Blue Auction, Lot 1613",
-					"code": "UQPS"
-				}
-			},{
 				"heraclius2": {
 					"emperor": "Heraclius",
 					"file": "heraclius2",
@@ -4627,29 +3856,6 @@
 					"stock": "yes"
 				}
 			},{
-				"constantinev1": {
-					"emperor": "Constantine V Kopronymos",
-					"file": "constantinev1",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 757,
-					"yearh": 775,
-					"mint": "Syracuse",
-					"officina": null,
-					"emission": null,
-					"weight": 2.63,
-					"diameter": "18.66mm",
-					"axis": "6H",
-					"obverse_legend": "ΛЄωN",
-					"reverse_legend": "N/ΔECΠ",
-					"exergue": null,
-					"obverse_desc": "Crowned facing busts of Constantine and Leo IV, each wearing chlamys and holding akakia; cross between",
-					"reverse_desc": "Crowned figure of Leo III standing facing, wearing chlamys and holding cross potent",
-					"reference": "SBCV 1569",
-					"provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2433 (Part of)",
-					"code": "TMYF"
-				}
-			},{
 				"leovi1": {
 					"emperor": "Leo VI the Wise",
 					"file": "leovi1",
@@ -4671,29 +3877,6 @@
 					"reference": "SBCV 1729",
 					"provenance": "Ex. Leu Numismatik Web Auction 5, Lot 1307",
 					"stock": "yes"
-				}
-			},{
-				"constantinevii3": {
-					"emperor": "Constantine VII Porphyrogenitus",
-					"file": "constantinevii3",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 914,
-					"yearh": 919,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 6.17,
-					"diameter": "24.0mm",
-					"axis": "6H",
-					"obverse_legend": "☩COҺSTAҺT CЄ ZOH Ь'",
-					"reverse_legend": "☩COҺS/TAҺTIҺO'/CЄ ZOH ЬA/SILIS RO/MЄOҺ",
-					"exergue": "-",
-					"obverse_desc": "Crowned facing busts of Constantine and Zoe, holding patriarchal cross between",
-					"reverse_desc": "Legend in 5 lines",
-					"reference": "SBCV 1758",
-					"provenance": "Ex. Savoca eBay 2018",
-					"code": "3TRV"
 				}
 			},{
 				"romanusi1": {
@@ -5045,33 +4228,6 @@
 					],
 					"provenance": "Ex. Savoca London Blue Auction 1, Lot 1664",
 					"stock": "yes"
-				}
-			},{
-				"anonymous9": {
-					"emperor": "Basil II & Constantine VIII",
-					"file": "anonymous9",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 1023,
-					"yearh": 1028,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 7.86,
-					"diameter": "27.1mm",
-					"axis": "6H",
-					"obverse_legend": "☩ЄMMANOVHΛ/IC - XC",
-					"reverse_legend": "☩IҺSЧS/XRISTЧS/ЬASILЄЧ/ЬASILЄ",
-					"class": "A3",
-					"type": 47,
-					"obverse_desc": "Facing bust of Christ Pantokrator",
-					"reverse_desc": "Legend in four lines; decoration above and below",
-					"reference": "SBCV 1818",
-					"sub_collection": [
-						"Anonymous Folles"
-					],
-					"provenance": "Ex. Solidus-Numismatik Chance Auction 28, Lot 2439 (part of)",
-					"code": "MTQ4"
 				}
 			},{
 				"anonymous3": {
@@ -5612,29 +4768,6 @@
 					"stock": "yes"
 				}
 			},{
-				"isaacii5": {
-					"emperor": "Isaac II Angelus",
-					"file": "isaacii5",
-					"material": "BI",
-					"denomination": "Aspron Trachy",
-					"yearl": 1185,
-					"yearh": 1190,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 3.37,
-					"diameter": "27.8.0mm",
-					"axis": "6H",
-					"obverse_legend": "ΜΡ-ΘV",
-					"reverse_legend": "[I/CAA/KI/OC] ΔЄC/Π/O/T/H/C",
-					"exergue": null,
-					"obverse_desc": "Mary, nimbate, seated facing, holding before her the nimbate head of infant Christ facing left",
-					"reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
-					"reference": "SBCV 2003",
-					"provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2450 (Part of)",
-					"code": "M8D4"
-				}
-			},{
 				"alexiusiii1": {
 					"emperor": "Alexius III Angelos",
 					"file": "alexiusiii1",
@@ -5681,28 +4814,6 @@
 					"provenance": "Ex. Gert Boersema, April 2018",
 					"code": "BNLA",
 					"stock": "yes"
-				}
-			},{
-				"johniii1": {
-					"emperor": "John III Ducas",
-					"file": "johniii1",
-					"material": "AE",
-					"denomination": "Tetarteron",
-					"yearl": 1222,
-					"yearh": 1254,
-					"mint": "Magnesia",
-					"officina": null,
-					"emission": null,
-					"weight": 2.1,
-					"diameter": "20.0mm",
-					"axis": "6H",
-					"obverse_legend": "-",
-					"reverse_legend": "-",
-					"exergue": null,
-					"obverse_desc": "John, half length figure, standing facing, holding sceptre and patriarchal cross on globe",
-					"reverse_desc": "Cross within crescent",
-					"reference": "SBCV 2117",
-					"provenance": "Ex. Numismatik-Naumann Auction 65, Lot 835"
 				}
 			},{
 				"latin1": {
