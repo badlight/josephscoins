@@ -103,7 +103,7 @@ em {
 .code {
   display: block;
   font-style: bold;
-  color: red;
+  color: crimson;
   font-size: 12px;
   position: absolute;
   bottom: 5%;
@@ -115,7 +115,7 @@ em {
 .stock-green {
   display: block;
   font-style: bold;
-  color: green;
+  color: chartreuse;
   font-size: 20px;
   position: absolute;
   top: 5%;
