@@ -4492,7 +4492,7 @@
 				}
 			},{
 				"alexiusi1": {
-					"emperor": "Alexius I Comnenus",
+					"emperor": "Alexius I Komnenos",
 					"file": "alexiusi1",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4515,8 +4515,32 @@
 					"stock": "yes"
 				}
 			},{
+				"johnii2": {
+					"emperor": "John II Komnenos",
+					"file": "johnii2",
+					"material": "EL",
+					"denomination": "Trikephalon",
+					"yearl": 1118,
+					"yearh": 1122,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 4.05,
+					"diameter": "34.0mm",
+					"axis": "6H",
+					"obverse_legend": "IC-XC",
+					"reverse_legend": "IW DECPOTH Q GR WR IL",
+					"exergue": null,
+					"obverse_desc": "Christ Pantokrator enthroned facing",
+					"reverse_desc": "John and St. Georgius standing facing, holding patriarchal cross on small globe between them; dot below tablion of John’s chlamys",
+					"reference": "SBCV 1941",
+					"provenance": "Ex. CNG e-Auction 437, lot 542",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"johnii1": {
-					"emperor": "John II Comnenus",
+					"emperor": "John II Komnenos",
 					"file": "johnii1",
 					"material": "AE",
 					"denomination": "Half Tetarteron",
@@ -4540,7 +4564,7 @@
 				}
 			},{
 				"manueli1": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli1",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4564,7 +4588,7 @@
 				}
 			},{
 				"manueli2": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli2",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4588,7 +4612,7 @@
 				}
 			},{
 				"manueli3": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli3",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4612,7 +4636,7 @@
 				}
 			},{
 				"manueli4": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli4",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4636,7 +4660,7 @@
 				}
 			},{
 				"manueli5": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli5",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4660,7 +4684,7 @@
 				}
 			},{
 				"manueli6": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli6",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4684,7 +4708,7 @@
 				}
 			},{
 				"manueli7": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli7",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4708,7 +4732,7 @@
 				}
 			},{
 				"manueli8": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli8",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4732,7 +4756,7 @@
 				}
 			},{
 				"manueli9": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli9",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4756,7 +4780,7 @@
 				}
 			},{
 				"manueli10": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli10",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4780,7 +4804,7 @@
 				}
 			},{
 				"manueli12": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli12",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4804,7 +4828,7 @@
 				}
 			},{
 				"andronicusi1": {
-					"emperor": "Andronicus I Comnenus",
+					"emperor": "Andronicus I Komnenos",
 					"file": "andronicusi1",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
