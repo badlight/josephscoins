@@ -595,7 +595,7 @@
 					"obverse_desc": "Laureate head of Constantius I to right",
 					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
 					"reference": "RIC VI Antioch 51a",
-					"provenance": "Ex. From the collection of Dipl.-Ing. Adrian Lang, Ex. Rauch 90, 4 June 2012, 897, Ex. Leu Numismatik Web Auction 21, Lot 5245",
+					"provenance": "Ex. Dipl.-Ing. Adrian Lang, Ex. Rauch 90, 4 June 2012, 897, Ex. Leu Numismatik Web Auction 21, Lot 5245",
 					"code": null,
 					"stock": "yes"
 				}
@@ -3040,21 +3040,21 @@
 					"denomination": "Maiorina",
 					"yearl": 348,
 					"yearh": 350,
-					"mint": "Rome",
-					"officina": "6th",
+					"mint": "Aquileia",
+					"officina": "2nd",
 					"emission": null,
-					"weight": 6.05,
-					"diameter": "23.0mm",
-					"axis": "6H",
+					"weight": 4.91,
+					"diameter": "21.0mm",
+					"axis": "11H",
 					"obverse_legend": "D N CONSTA-NS P F AVG",
 					"reverse_legend": "FEL TEMP REPARATIO",
-					"exergue": "S/-//RS",
-					"obverse_desc": "Bust of Constans, laureate, rosette-diademed, draped, cuirassed, right",
-					"reverse_desc": "Constans, draped, cuirassed, standing left on galley, holding phoenix on globe in right hand and standard with Chi-Rho on banner in left hand; steering the ship, seated Victory",
-					"reference": "RIC VIII Rome 134",
-					"provenance": "Ex. eBay 2019",
+					"exergue": "-/-//AQS•",
+					"obverse_desc": "Pearl-diademed, draped and cuirassed bust of Constans to left, holding globe in his right hand",
+					"reverse_desc": "Soldier advancing right, head to left, holding inverted spear in his left hand and leading barbarian with his right from hut under tree",
+					"reference": "RIC VIII Aquileia 103",
+					"provenance": "Ex. Dipl.-Ing. Adrian Lang, Ex. Leu Numismatik Web Auction 21, Lot 5479",
 					"code": null,
-					"stock": null
+					"stock": "yes"
 				}
 			},{
 				"decentius1": {
