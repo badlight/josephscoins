@@ -301,6 +301,31 @@
 					"stock": "yes"
 				}
 			},{
+				"diocletian8": {
+					"emperor": "Diocletian",
+					"file": "diocletian8",
+					"material": "AE",
+					"denomination": "Follis",
+					"yearl": 295,
+					"yearh": 295,
+					"mint": "Alexandria",
+					"officina": "3rd",
+					"emission": null,
+					"weight": 9.76,
+					"diameter": "28.5mm",
+					"axis": "12H",
+					"obverse_legend": "IMP MAXIMIANVS AVG",
+					"reverse_legend": "GENIO POPV-L-I ROMANI",
+					"exergue": "(crescent)/Γ//ALE",
+					"obverse_desc": "Laureate head right, divergent laurel ties",
+					"reverse_desc": "The Genius of the Roman people, nude but for chlamys",
+					"reference": "RIC VI Alexandria 16a",
+					"sub_collection": null,
+					"provenance": "Ex. CNG Electronic Auction 457, Lot 751 (part of)",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"diocletian5": {
 					"emperor": "Diocletian",
 					"file": "diocletian5",
@@ -547,6 +572,30 @@
 					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
 					"reference": "RIC VI Antioch 50b",
 					"provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 211",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
+				"constantiusi7": {
+					"emperor": "Constantius I Chlorus",
+					"file": "constantiusi7",
+					"material": "AE",
+					"denomination": "Follis",
+					"yearl": 298,
+					"yearh": 298,
+					"mint": "Antioch",
+					"officina": "6th",
+					"emission": null,
+					"weight": 9.68,
+					"diameter": "28.0mm",
+					"axis": "12H",
+					"obverse_legend": "FL VAL CONSTANTIVS NOB CAES",
+					"reverse_legend": "GENIO POPV-L-I ROMANI",
+					"exergue": "(✱ on ✱)/(crescent on ς)//ANT",
+					"obverse_desc": "Laureate head of Constantius I to right",
+					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
+					"reference": "RIC VI Antioch 51a",
+					"provenance": "Ex. Dipl.-Ing. Adrian Lang, Ex. Rauch 90, 4 June 2012, 897, Ex. Leu Numismatik Web Auction 21, Lot 5245",
 					"code": null,
 					"stock": "yes"
 				}
@@ -2991,21 +3040,21 @@
 					"denomination": "Maiorina",
 					"yearl": 348,
 					"yearh": 350,
-					"mint": "Rome",
-					"officina": "6th",
+					"mint": "Aquileia",
+					"officina": "2nd",
 					"emission": null,
-					"weight": 6.05,
-					"diameter": "23.0mm",
-					"axis": "6H",
+					"weight": 4.91,
+					"diameter": "21.0mm",
+					"axis": "11H",
 					"obverse_legend": "D N CONSTA-NS P F AVG",
 					"reverse_legend": "FEL TEMP REPARATIO",
-					"exergue": "S/-//RS",
-					"obverse_desc": "Bust of Constans, laureate, rosette-diademed, draped, cuirassed, right",
-					"reverse_desc": "Constans, draped, cuirassed, standing left on galley, holding phoenix on globe in right hand and standard with Chi-Rho on banner in left hand; steering the ship, seated Victory",
-					"reference": "RIC VIII Rome 134",
-					"provenance": "Ex. eBay 2019",
+					"exergue": "-/-//AQS•",
+					"obverse_desc": "Pearl-diademed, draped and cuirassed bust of Constans to left, holding globe in his right hand",
+					"reverse_desc": "Soldier advancing right, head to left, holding inverted spear in his left hand and leading barbarian with his right from hut under tree",
+					"reference": "RIC VIII Aquileia 103",
+					"provenance": "Ex. Dipl.-Ing. Adrian Lang, Ex. Leu Numismatik Web Auction 21, Lot 5479",
 					"code": null,
-					"stock": null
+					"stock": "yes"
 				}
 			},{
 				"decentius1": {
@@ -4492,7 +4541,7 @@
 				}
 			},{
 				"alexiusi1": {
-					"emperor": "Alexius I Comnenus",
+					"emperor": "Alexius I Komnenos",
 					"file": "alexiusi1",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4515,8 +4564,32 @@
 					"stock": "yes"
 				}
 			},{
+				"johnii2": {
+					"emperor": "John II Komnenos",
+					"file": "johnii2",
+					"material": "EL",
+					"denomination": "Trikephalon",
+					"yearl": 1118,
+					"yearh": 1122,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 4.05,
+					"diameter": "34.0mm",
+					"axis": "6H",
+					"obverse_legend": "IC-XC",
+					"reverse_legend": "IW DECPOTH Q GR WR IL",
+					"exergue": null,
+					"obverse_desc": "Christ Pantokrator enthroned facing",
+					"reverse_desc": "John and St. Georgius standing facing, holding patriarchal cross on small globe between them; dot below tablion of John’s chlamys",
+					"reference": "SBCV 1941",
+					"provenance": "Ex. CNG e-Auction 437, lot 542",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"johnii1": {
-					"emperor": "John II Comnenus",
+					"emperor": "John II Komnenos",
 					"file": "johnii1",
 					"material": "AE",
 					"denomination": "Half Tetarteron",
@@ -4540,7 +4613,7 @@
 				}
 			},{
 				"manueli1": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli1",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4564,7 +4637,7 @@
 				}
 			},{
 				"manueli2": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli2",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4588,7 +4661,7 @@
 				}
 			},{
 				"manueli3": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli3",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4612,7 +4685,7 @@
 				}
 			},{
 				"manueli4": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli4",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4636,7 +4709,7 @@
 				}
 			},{
 				"manueli5": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli5",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4660,7 +4733,7 @@
 				}
 			},{
 				"manueli6": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli6",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4684,7 +4757,7 @@
 				}
 			},{
 				"manueli7": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli7",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4708,7 +4781,7 @@
 				}
 			},{
 				"manueli8": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli8",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4732,7 +4805,7 @@
 				}
 			},{
 				"manueli9": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli9",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4756,7 +4829,7 @@
 				}
 			},{
 				"manueli10": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli10",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4780,7 +4853,7 @@
 				}
 			},{
 				"manueli12": {
-					"emperor": "Manuel I Comnenus",
+					"emperor": "Manuel I Komnenos",
 					"file": "manueli12",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
@@ -4804,7 +4877,7 @@
 				}
 			},{
 				"andronicusi1": {
-					"emperor": "Andronicus I Comnenus",
+					"emperor": "Andronicus I Komnenos",
 					"file": "andronicusi1",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
