@@ -301,6 +301,31 @@
 					"stock": "yes"
 				}
 			},{
+				"diocletian8": {
+					"emperor": "Diocletian",
+					"file": "diocletian8",
+					"material": "AE",
+					"denomination": "Follis",
+					"yearl": 295,
+					"yearh": 295,
+					"mint": "Alexandria",
+					"officina": "3rd",
+					"emission": null,
+					"weight": 9.76,
+					"diameter": "28.5mm",
+					"axis": "12H",
+					"obverse_legend": "IMP MAXIMIANVS AVG",
+					"reverse_legend": "GENIO POPV-L-I ROMANI",
+					"exergue": "(crescent)/Γ//ALE",
+					"obverse_desc": "Laureate head right, divergent laurel ties",
+					"reverse_desc": "The Genius of the Roman people, nude but for chlamys",
+					"reference": "RIC VI Alexandria 16a",
+					"sub_collection": null,
+					"provenance": "Ex. CNG Electronic Auction 457, Lot 751 (part of)",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"diocletian5": {
 					"emperor": "Diocletian",
 					"file": "diocletian5",
