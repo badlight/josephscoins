@@ -3953,6 +3953,30 @@
 					"stock": "yes"
 				}
 			},{
+				"constansii2": {
+					"emperor": "Constans II",
+					"file": "constansii2",
+					"material": "AE",
+					"denomination": "Follis",
+					"yearl": 641,
+					"yearh": 646,
+					"mint": "Constantinople",
+					"officina": "2nd",
+					"emission": null,
+					"weight": 4.32,
+					"diameter": "21.0mm",
+					"axis": "6H",
+					"obverse_legend": "DN CONSTANTINVS PP AVG",
+					"reverse_legend": "VICTORIA AVGU B",
+					"exergue": "CONOB",
+					"obverse_desc": "Crowned, draped, and cuirassed bust facing, holding globus cruciger",
+					"reverse_desc": "Cross potent set upon three steps",
+					"reference": "SBCV 938",
+					"provenance": "Ex. Seaby Inventory, Ex. CNG e-Auction 522, lot 634",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"constansii1": {
 					"emperor": "Constans II",
 					"file": "constansii1",
