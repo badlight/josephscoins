@@ -3503,6 +3503,30 @@
 					"stock": "yes"
 				}
 			},{
+				"justiniani6": {
+					"emperor": "Justinian the Great",
+					"file": "justiniani6",
+					"material": "AE",
+					"denomination": "Follis",
+					"yearl": 536,
+					"yearh": 539,
+					"mint": "Antioch",
+					"officina": "3rd",
+					"emission": null,
+					"weight": 17.56,
+					"diameter": "29.0mm",
+					"axis": "6H",
+					"obverse_legend": "D N IVSTINIANVS PP AVG",
+					"reverse_legend": "-",
+					"exergue": "ϴYΠOΛS",
+					"obverse_desc": "Emperor, pearl diademed, draped, cuirassed bust right",
+					"reverse_desc": "Large M, star to left, cross above, star to right, Γ below",
+					"reference": "SBCV 217",
+					"provenance": "Ex. Augustus Coins 2018",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"justiniani7": {
 					"emperor": "Justinian the Great",
 					"file": "justiniani7",
@@ -3527,26 +3551,26 @@
 					"stock": "yes"
 				}
 			},{
-				"justiniani6": {
+				"justiniani8": {
 					"emperor": "Justinian the Great",
-					"file": "justiniani6",
+					"file": "justiniani8",
 					"material": "AE",
 					"denomination": "Follis",
-					"yearl": 536,
+					"yearl": 538,
 					"yearh": 539,
-					"mint": "Antioch",
-					"officina": "3rd",
+					"mint": "Nicomedia",
+					"officina": "1st",
 					"emission": null,
-					"weight": 17.56,
-					"diameter": "29.0mm",
+					"weight": 21.94,
+					"diameter": "43.0mm",
 					"axis": "6H",
 					"obverse_legend": "D N IVSTINIANVS PP AVG",
 					"reverse_legend": "-",
-					"exergue": "ϴYΠOΛS",
-					"obverse_desc": "Emperor, pearl diademed, draped, cuirassed bust right",
-					"reverse_desc": "Large M, star to left, cross above, star to right, Γ below",
-					"reference": "SBCV 217",
-					"provenance": "Ex. Augustus Coins 2018",
+					"exergue": "NIK",
+					"obverse_desc": "Emperor, helmeted and cuirassed bust facing, holding cross on globe and shield with horseman motif, cross to right",
+					"reverse_desc": "Large M, ANNO to left, cross above, regnal year to right, officina letter below",
+					"reference": "SBCV 201",
+					"provenance": "Ex. Todd Hansen Collection, Ex. Classical Numismatic Group 47, lot 2105, Ex. CNG e-Auction 499, Lot 448",
 					"code": null,
 					"stock": "yes"
 				}
