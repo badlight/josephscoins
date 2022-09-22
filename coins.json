@@ -576,6 +576,30 @@
 					"stock": "yes"
 				}
 			},{
+				"constantiusi7": {
+					"emperor": "Constantius I Chlorus",
+					"file": "constantiusi7",
+					"material": "AE",
+					"denomination": "Follis",
+					"yearl": 298,
+					"yearh": 298,
+					"mint": "Antioch",
+					"officina": "6th",
+					"emission": null,
+					"weight": 9.68,
+					"diameter": "28.0mm",
+					"axis": "12H",
+					"obverse_legend": "FL VAL CONSTANTIVS NOB CAES",
+					"reverse_legend": "GENIO POPV-L-I ROMANI",
+					"exergue": "(✱ on ✱)/(crescent on ς)//ANT",
+					"obverse_desc": "Laureate head of Constantius I to right",
+					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, pouring liquid from patera in right hand and holding cornucopiae in left hand",
+					"reference": "RIC VI Antioch 51a",
+					"provenance": "Ex. From the collection of Dipl.-Ing. Adrian Lang, Ex. Rauch 90, 4 June 2012, 897, Ex. Leu Numismatik Web Auction 21, Lot 5245",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"constantiusi2": {
 					"emperor": "Constantius I Chlorus",
 					"file": "constantiusi2",
