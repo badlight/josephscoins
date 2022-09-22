@@ -29,7 +29,12 @@
             var denom = coins[indexKey][key][indexCoin][coin].denomination;
             var yearl = coins[indexKey][key][indexCoin][coin].yearl;
 			var yearh = coins[indexKey][key][indexCoin][coin].yearh;
-            var ref = coins[indexKey][key][indexCoin][coin].reference;
+            if (yearl == yearh) { 
+			  var date = yearl; 
+			} else { 
+			  var date = yearl + ' - ' + yearh;
+			}
+			var ref = coins[indexKey][key][indexCoin][coin].reference;
             var codenum = coins[indexKey][key][indexCoin][coin].code;
             var mnt = coins[indexKey][key][indexCoin][coin].mint;
             var off = coins[indexKey][key][indexCoin][coin].officina;
@@ -66,7 +71,7 @@
 			  '        <div class="caption-subtitle">' +
               '          <span>' + imp + '</span></br>' +
               '          <span>' + mat + ' ' + denom + '</span><br>' +
-              '          <span>' + yearl + ' - ' + yearh + ' AD'  + '</span><br>' +
+              '          <span>' + + ' AD'  + '</span><br>' +
               '          <span>' + ref + '</span>' +
               '        </div>' +
               '      </div>' +
@@ -76,8 +81,8 @@
 	          '        <img src="./images/' + title + '/' + title + ' (Small).jpg" alt="' + imp + ', ' + mat + ' ' + denom + '" class="big_pic"/>' +
 	          '        <span class="description">' +
 	          '          <p class="aligned"><strong> ' + imp + ' ' + mat + ' ' + denom + '</strong></em></p>' + 
-	          '          <p class="aligned"><strong>Minted:</strong> ' + yearl + ' - ' + yearh + ' AD'  + ', at the ' + mnt + ' Mint</em></p>' + 
-              '          <p class="aligned"><strong>Weight:</strong> ' + wt + ', <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
+	          '          <p class="aligned"><strong>Minted:</strong> ' + date + ' AD'  + ', at the ' + mnt + ' Mint</em></p>' + 
+              '          <p class="aligned"><strong>Weight:</strong> ' + wt + 'g, <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
 	          '          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
 	          '          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
 	          '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
