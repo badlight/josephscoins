@@ -3479,6 +3479,30 @@
 					"stock": "yes"
 				}
 			},{
+				"anastasius3": {
+					"emperor": "Anastasius",
+					"file": "anastasius3",
+					"material": "AE",
+					"denomination": "Solidus",
+					"yearl": 492,
+					"yearh": 507,
+					"mint": "Constantinople",
+					"officina": "8th",
+					"emission": null,
+					"weight": 4.40,
+					"diameter": "22.0mm",
+					"axis": "6H",
+					"obverse_legend": "D N ANASTASIVS P P AVG",
+					"reverse_legend": "VICTORIA AVGGG H",
+					"exergue": "CONOB",
+					"obverse_desc": "Helmeted and cuirassed bust facing slightly right, holding spear over shoulder in right hand, shield over left shoulder",
+					"reverse_desc": "Victory standing left, holding long, jeweled cross in right hand; star in right field",
+					"reference": "SBCV 3",
+					"provenance": "Ex. CNG e-Auction 505, lot 523",
+					"code": null,
+					"stock": "yes"
+				}
+			},{
 				"anastasius2": {
 					"emperor": "Anastasius",
 					"file": "anastasius2",
