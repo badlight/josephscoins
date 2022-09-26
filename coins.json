@@ -4530,7 +4530,7 @@
 					"reverse_legend": "[☩KWNT ΔK] ЄV[ΔK AVΓO]",
 					"exergue": "-",
 					"obverse_desc": "Christ standing facing on footstool, wearing nimbus and holding Gospels",
-					"reverse_desc": "###############################################################################################################################################################################################################################################################",
+					"reverse_desc": "Eudocia on left, wearing loros with kite-shaped lower panel and crown with cross and pendilia, Constantine on right, wearing loros and crown with cross and pendilia, both standing facing, holding labarum with cross-piece on shaft between them, standing on base and three steps, each places one hand on heart",
 					"reference": "SBCV 1853",
 					"sub_collection": [
 						"Overstrikes"
@@ -4538,6 +4538,31 @@
 					"provenance": "Ex. Augustus Coins (Valentinian) 2018",
 					"code": "D47K",
 					"stock": "yes"
+				}
+			},{
+				"constantinex2": {
+					"emperor": "Constantine X Ducas",
+					"file": "constantinex2",
+					"material": "OB",
+					"denomination": "Histamenon Nomisma",
+					"yearl": 1065,
+					"yearh": 1067,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 4.35,
+					"diameter": "28.8mm",
+					"axis": "6H",
+					"obverse_legend": "☩IhS XIS REX REGNANTInM",
+					"reverse_legend": "☩KWN RACL' [O DOVKAC]",
+					"exergue": null,
+					"obverse_desc": "hrist seated on curved-backed throne, holding book of Gospels and raising right hand",
+					"reverse_desc": "Constantine, bearded, wears a saccos and loros, and holding cross on globe in left hand, standing on left, being crowned by Mary, nimbate, wearing pallium and maphorium",
+					"reference": "SBCV 1848",
+					"sub_collection": null,
+					"provenance": "Ex. CNG e-Auction 522, lot 642",
+					"code": null,
+					"stock": "no"
 				}
 			},{
 				"alexiusi1": {
