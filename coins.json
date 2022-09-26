@@ -3531,8 +3531,8 @@
 				"anastasius3": {
 					"emperor": "Anastasius",
 					"file": "anastasius3",
-					"material": "AE",
-					"denomination": "Solidus",
+					"material": "OB",
+					"denomination": "Nomisma",
 					"yearl": 492,
 					"yearh": 507,
 					"mint": "Constantinople",
@@ -4005,8 +4005,8 @@
 				"constansii2": {
 					"emperor": "Constans II",
 					"file": "constansii2",
-					"material": "AE",
-					"denomination": "Follis",
+					"material": "OB",
+					"denomination": "Nomisma",
 					"yearl": 641,
 					"yearh": 646,
 					"mint": "Constantinople",
@@ -4562,7 +4562,7 @@
 					"sub_collection": null,
 					"provenance": "Ex. CNG e-Auction 522, lot 642",
 					"code": null,
-					"stock": "no"
+					"stock": null
 				}
 			},{
 				"alexiusi1": {
