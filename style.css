@@ -38,7 +38,7 @@ em {
 
 .big_pic{
   border-bottom: 1px solid grey;
-  width: 500px;
+  max-width: 500px;
 }
 
 .coin {
