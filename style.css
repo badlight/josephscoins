@@ -320,7 +320,6 @@ li.dropdown {
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    z-index: 1; /* Sit on top */
     position: fixed; /* Stay in place */
 	left: 50%;
 	top: 50%
