@@ -321,13 +321,11 @@ li.dropdown {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-	left: 50%;
-	top: 50%;
     padding-top: 100px; /* Location of the box */
-    /*left: 0;
+    left: 0;
 	right: 0;
     top: 0;
-	bottom: 0;*/
+	bottom: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
