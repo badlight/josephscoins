@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url(//fonts.googleapis.com/earlyaccess/notosanscoptic.css);
 
+@font-face {
+    font-family: 'athena_rubyregular';
+    src: url('fonts/athenaruby_b018-webfont.eot');
+    src: url('fonts/athenaruby_b018-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/athenaruby_b018-webfont.woff2') format('woff2'),
+         url('fonts/athenaruby_b018-webfont.woff') format('woff'),
+         url('fonts/athenaruby_b018-webfont.ttf') format('truetype'),
+         url('fonts/athenaruby_b018-webfont.svg#athena_rubyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
   height: 102%;
 }
@@ -14,7 +27,7 @@ h1 {
 
 body {
   text-align: center;
-  font-family: 'Verdana';
+  font-family: 'athena_rubyregular';
   font-size: 12px;
   background-color: white;
   color: black;
