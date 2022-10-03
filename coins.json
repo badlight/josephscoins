@@ -4579,7 +4579,7 @@
 					"diameter": "28.0mm",
 					"axis": "6H",
 					"obverse_legend": "IC-XC",
-					"reverse_legend": "ALEZIW ΔECΠT-TWKOMNN",
+					"reverse_legend": "ALEXIW ΔECΠT-TWKOMNN",
 					"exergue": null,
 					"obverse_desc": "Bust of Christ, nimbate, seated facing, holding book of Gospels",
 					"reverse_desc": "Crowned bust of Alexius facing, wearing jewelled chlamys, holding cross-tipped sceptre and cross on globe",
@@ -4587,6 +4587,30 @@
 					"provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 768",
 					"code": "4XFE",
 					"stock": "yes"
+				}
+			},{
+				"alexiusi2": {
+					"emperor": "Alexius I Komnenos",
+					"file": "alexiusi2",
+					"material": "OB",
+					"denomination": "Hyperpyron",
+					"yearl": 1092,
+					"yearh": 1118,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 4.28,
+					"diameter": "31.0mm",
+					"axis": "6H",
+					"obverse_legend": "IC-XC",
+					"reverse_legend": "A LE XIW DEC PO TH",
+					"exergue": null,
+					"obverse_desc": "Christ Pantokrator enthroned facing, raising hand in benediction and holding Gospels",
+					"reverse_desc": "Alexius standing facing, holding labarum and globus cruciger; manus Dei above, pellet on shaft, six pellets in loros end",
+					"reference": "SBCV 1913",
+					"provenance": "Ex. CNG e-Auction 523, lot 756",
+					"code": null,
+					"stock": null
 				}
 			},{
 				"johnii2": {
