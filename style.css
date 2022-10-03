@@ -27,7 +27,7 @@ h1 {
 
 body {
   text-align: center;
-  font-family: 'athena_rubyregular';
+  font-family: 'Verdana';
   font-size: 12px;
   background-color: white;
   color: black;
@@ -551,6 +551,10 @@ hr.style-four {
   text-align: justify; 
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.greek { 
+  font-family: 'athena_rubyregular';
 }
 
 #map {
