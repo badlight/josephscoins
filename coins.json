@@ -4562,7 +4562,7 @@
 					"sub_collection": null,
 					"provenance": "Ex. CNG e-Auction 522, lot 642",
 					"code": null,
-					"stock": null
+					"stock": "yes"
 				}
 			},{
 				"alexiusi1": {
@@ -4610,7 +4610,7 @@
 					"reference": "SBCV 1913",
 					"provenance": "Ex. CNG e-Auction 523, lot 756",
 					"code": null,
-					"stock": null
+					"stock": "yes"
 				}
 			},{
 				"johnii2": {
