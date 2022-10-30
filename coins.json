@@ -4661,27 +4661,51 @@
 					"stock": "yes"
 				}
 			},{
-				"manueli1": {
+				"manueli11": {
 					"emperor": "Manuel I Komnenos",
-					"file": "manueli1",
+					"file": "manueli11",
+					"material": "EL",
+					"denomination": "Trikephalon",
+					"yearl": 1143,
+					"yearh": 1152,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 3.92,
+					"diameter": "33.5mm",
+					"axis": "6H",
+					"obverse_legend": "IC-XC",
+					"reverse_legend": "MANYHΛ ΔECΠOTH / MΘV",
+					"exergue": null,
+					"obverse_desc": "O / ЄM/MA - N૪/HΛ Nimbate bust of Christ facing, wearing tunic and pallium, raising his right hand in benediction and scroll in his left",
+					"reverse_desc": "The Theotokos standing facing, crowning Manuel to left, holding labarum-tipped scepter and anexikakia.",
+					"reference": "SBCV 1957",
+					"provenance": "Ex. CNG e-Auction 525, Lot 1503",
+					"code": null,
+					"stock": null
+				}
+			},{
+				"manueli12": {
+					"emperor": "Manuel I Komnenos",
+					"file": "manueli12",
 					"material": "BI",
 					"denomination": "Aspron Trachy",
-					"yearl": 1167,
-					"yearh": 1180,
+					"yearl": 1152,
+					"yearh": 1160,
 					"mint": "Constantinople",
 					"officina": null,
 					"emission": null,
 					"weight": 4.34,
-					"diameter": "30.0mm",
+					"diameter": "32.0mm",
 					"axis": "6H",
-					"obverse_legend": "IC-XC",
-					"reverse_legend": "MANYHΛ ΔECΠOT",
+					"obverse_legend": "MP-ΘV",
+					"reverse_legend": "MANYHΛ ΔECΠOTHC",
 					"exergue": null,
-					"obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in right field",
-					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
-					"reference": "SBCV 1966",
-					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "ZSX9",
+					"obverse_desc": "The Virgin enthroned facing, nimbate, wearing pallium and maphorium, holding nimbate head of infant Jesus in lap",
+					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
+					"reference": "SBCV 1965",
+					"provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2450 (Part of)",
+					"code": "2VSG",
 					"stock": "yes"
 				}
 			},{
@@ -4709,30 +4733,6 @@
 					"stock": "yes"
 				}
 			},{
-				"manueli3": {
-					"emperor": "Manuel I Komnenos",
-					"file": "manueli3",
-					"material": "BI",
-					"denomination": "Aspron Trachy",
-					"yearl": 1167,
-					"yearh": 1180,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 2.85,
-					"diameter": "26.0mm",
-					"axis": "6H",
-					"obverse_legend": "IC-XC",
-					"reverse_legend": "MAN[YHΛ ΔECΠOT]",
-					"exergue": null,
-					"obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in right field",
-					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
-					"reference": "SBCV 1966",
-					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "9FYY",
-					"stock": "yes"
-				}
-			},{
 				"manueli4": {
 					"emperor": "Manuel I Komnenos",
 					"file": "manueli4",
@@ -4754,6 +4754,78 @@
 					"reference": "SBCV 1965",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
 					"code": "MLYN",
+					"stock": "yes"
+				}
+			},{
+				"manueli7": {
+					"emperor": "Manuel I Komnenos",
+					"file": "manueli7",
+					"material": "BI",
+					"denomination": "Aspron Trachy",
+					"yearl": 1152,
+					"yearh": 1160,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 3.9,
+					"diameter": "30.0mm",
+					"axis": "6H",
+					"obverse_legend": "MP-ΘV",
+					"reverse_legend": "MANYHΛ ΔECΠOTHC",
+					"exergue": null,
+					"obverse_desc": "The Virgin enthroned facing, nimbate, wearing pallium and maphorium, holding nimbate head of infant Jesus in lap",
+					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
+					"reference": "SBCV 1965",
+					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+					"code": "HW5U",
+					"stock": "yes"
+				}
+			},{
+				"manueli1": {
+					"emperor": "Manuel I Komnenos",
+					"file": "manueli1",
+					"material": "BI",
+					"denomination": "Aspron Trachy",
+					"yearl": 1167,
+					"yearh": 1180,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 4.34,
+					"diameter": "30.0mm",
+					"axis": "6H",
+					"obverse_legend": "IC-XC",
+					"reverse_legend": "MANYHΛ ΔECΠOT",
+					"exergue": null,
+					"obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in right field",
+					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
+					"reference": "SBCV 1966",
+					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+					"code": "ZSX9",
+					"stock": "yes"
+				}
+			},{
+				"manueli3": {
+					"emperor": "Manuel I Komnenos",
+					"file": "manueli3",
+					"material": "BI",
+					"denomination": "Aspron Trachy",
+					"yearl": 1167,
+					"yearh": 1180,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 2.85,
+					"diameter": "26.0mm",
+					"axis": "6H",
+					"obverse_legend": "IC-XC",
+					"reverse_legend": "MAN[YHΛ ΔECΠOT]",
+					"exergue": null,
+					"obverse_desc": "Christ, bearded, seated facing on throne without back, wearing nimbus crown, pallium and colobium, book of gospels in left hand. Star in right field",
+					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
+					"reference": "SBCV 1966",
+					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
+					"code": "9FYY",
 					"stock": "yes"
 				}
 			},{
@@ -4802,30 +4874,6 @@
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
 					"code": "V2HR",
-					"stock": "yes"
-				}
-			},{
-				"manueli7": {
-					"emperor": "Manuel I Komnenos",
-					"file": "manueli7",
-					"material": "BI",
-					"denomination": "Aspron Trachy",
-					"yearl": 1152,
-					"yearh": 1160,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 3.9,
-					"diameter": "30.0mm",
-					"axis": "6H",
-					"obverse_legend": "MP-ΘV",
-					"reverse_legend": "MANYHΛ ΔECΠOTHC",
-					"exergue": null,
-					"obverse_desc": "The Virgin enthroned facing, nimbate, wearing pallium and maphorium, holding nimbate head of infant Jesus in lap",
-					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
-					"reference": "SBCV 1965",
-					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "HW5U",
 					"stock": "yes"
 				}
 			},{
@@ -4898,30 +4946,6 @@
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
 					"code": "UEM2",
-					"stock": "yes"
-				}
-			},{
-				"manueli12": {
-					"emperor": "Manuel I Komnenos",
-					"file": "manueli12",
-					"material": "BI",
-					"denomination": "Aspron Trachy",
-					"yearl": 1152,
-					"yearh": 1160,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 4.34,
-					"diameter": "32.0mm",
-					"axis": "6H",
-					"obverse_legend": "MP-ΘV",
-					"reverse_legend": "MANYHΛ ΔECΠOTHC",
-					"exergue": null,
-					"obverse_desc": "The Virgin enthroned facing, nimbate, wearing pallium and maphorium, holding nimbate head of infant Jesus in lap",
-					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
-					"reference": "SBCV 1965",
-					"provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2450 (Part of)",
-					"code": "2VSG",
 					"stock": "yes"
 				}
 			},{
