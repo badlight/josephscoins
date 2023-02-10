@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css?family=Indie+Flower');
 @import url(//fonts.googleapis.com/earlyaccess/notosanscoptic.css);
 
+@font-face {
+    font-family: 'athena_rubyregular';
+    src: url('fonts/athenaruby_b018-webfont.eot');
+    src: url('fonts/athenaruby_b018-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/athenaruby_b018-webfont.woff2') format('woff2'),
+         url('fonts/athenaruby_b018-webfont.woff') format('woff'),
+         url('fonts/athenaruby_b018-webfont.ttf') format('truetype'),
+         url('fonts/athenaruby_b018-webfont.svg#athena_rubyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 html {
   height: 102%;
 }
@@ -321,7 +334,6 @@ li.dropdown {
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
     padding-top: 100px; /* Location of the box */
     left: 0;
 	right: 0;
@@ -539,6 +551,10 @@ hr.style-four {
   text-align: justify; 
   margin-left: 50px;
   margin-right: 50px;
+}
+
+.greek { 
+  font-family: 'athena_rubyregular';
 }
 
 #map {
