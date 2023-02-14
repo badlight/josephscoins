@@ -4661,6 +4661,30 @@
 					"stock": "yes"
 				}
 			},{
+				"manueli13": {
+					"emperor": "Manuel I Komnenos",
+					"file": "manueli13",
+					"material": "AV",
+					"denomination": "Hyperpyron",
+					"yearl": 1152,
+					"yearh": 1160,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 4.35,
+					"diameter": "31.5mm",
+					"axis": "6H",
+					"obverse_legend": "+KE ROHQEI",
+					"reverse_legend": "MANYHΛ ΔECΠOTHC; TW-POR-FV-POG-NH-T",
+					"exergue": null,
+					"obverse_desc": "IC-XC to left and right; Facing bust of beardless Christ Pantokrator; nimbus with one pellet in each double-lined arm",
+					"reverse_desc": "Manuel standing facing, holding labarum and and patriarchal globus cruciger; manus Dei above; three jewels on collar",
+					"reference": "SBCV 1956",
+					"provenance": "Ex. CNG e-Auction 532, Lot 706",
+					"code": null,
+					"stock": null
+				}
+			},{
 				"manueli11": {
 					"emperor": "Manuel I Komnenos",
 					"file": "manueli11",
@@ -4682,7 +4706,7 @@
 					"reference": "SBCV 1957",
 					"provenance": "Ex. CNG e-Auction 525, Lot 1503",
 					"code": null,
-					"stock": null
+					"stock": "yes"
 				}
 			},{
 				"manueli12": {
