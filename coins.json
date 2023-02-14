@@ -4971,6 +4971,29 @@
 					"provenance": "Ex. Numismatik-Naumann Auctionm 62, Lot 906",
 					"code": "DMHA",
 					"stock": "yes"
+			},{
+				"andronicusi2": {
+					"emperor": "Andronicus I Komnenos",
+					"file": "andronicusi2",
+					"material": "BI",
+					"denomination": "Aspron Trachy",
+					"yearl": 1183,
+					"yearh": 1185,
+					"mint": "Constantinople",
+					"officina": null,
+					"emission": null,
+					"weight": 4.36,
+					"diameter": "30.0mm",
+					"axis": "6H",
+					"obverse_legend": "MP-ΘV",
+					"reverse_legend": "ANΔPONIKOC ΔЄCΠOTHC / IC - XC",
+					"exergue": null,
+					"obverse_desc": "The Virgin Mary standing facing on dais, holding bust of Holy Infant on breast",
+					"reverse_desc": "Andronicus standing facing, holding akakia and globus cruciger, and being crowned by Christ to right",
+					"reference": "SBCV 1985",
+					"provenance": "Ex. Leu Numismatik Web Auction 24, Lot 3552",
+					"code": null,
+					"stock": "yes"
 				}
 			},{
 				"isaacii1": {
