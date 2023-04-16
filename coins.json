@@ -473,7 +473,7 @@
 					"reverse_desc": "Genius, wearing modius, nude, chlamys draped over left shoulder, standing left, holding patera in right hand and cornucopiae in left hand",
 					"reference": "RIC VI Londinium 14a, Cloke & Toone 2.01.010",
 					"provenance": "Ex. Roma Numismatics E-Live Auction 2, Lot 1028",
-					"code": "$400$400",
+					"code": "$400",
 					"stock": "yes"
 				}
 			},{
@@ -2763,7 +2763,7 @@
 					"reverse_desc": "Two soldiers, helmeted, draped, cuirassed, standing facing each other, each holding spear in outer hand and resting inner hand on shield; between them, two standards",
 					"reference": "RIC VII Arelate 347",
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 2, Lot 257, Ex. TheRed Collection",
-					"code": "$65",
+					"code": "$65 ",
 					"stock": "yes"
 				}
 			},{
@@ -2787,7 +2787,7 @@
 					"reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
 					"reference": "RIC VII Lugdunum 246",
 					"provenance": "Ex. YOC (Pete)",
-					"code": "JWDZ",
+					"code": "$200",
 					"stock": "yes"
 				}
 			},{
@@ -2811,7 +2811,7 @@
 					"reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
 					"reference": "RIC VII Thessalonica 188246",
 					"provenance": "Ex. Victor's Imperial Coins 2019",
-					"code": null,
+					"code": "$85",
 					"stock": "yes"
 				}
 			},{
@@ -2835,7 +2835,7 @@
 					"reverse_desc": "She-wolf, standing left, suckling twins; above, two stars with palm branch left in between",
 					"reference": "RIC VII Arelate 362",
 					"provenance": "Ex. YOC (Pete)",
-					"code": "M84G",
+					"code": "$250",
 					"stock": "yes"
 				}
 			},{
@@ -2859,7 +2859,7 @@
 					"reverse_desc": "She-wolf, standing left, suckling twins; above, two stars",
 					"reference": "RIC VII Treveri 542",
 					"provenance": "Ex. YOC (Pete)",
-					"code": "5QWU",
+					"code": "$185",
 					"stock": "yes"
 				}
 			},{
@@ -2883,7 +2883,7 @@
 					"reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
 					"reference": "RIC VII Treveri 548",
 					"provenance": "Ex. Marc R. Breitsprecher Coins 2019",
-					"code": null,
+					"code": "$90",
 					"stock": "yes"
 				}
 			},{
@@ -2907,7 +2907,7 @@
 					"reverse_desc": "Victory, winged, draped, standing left on prow, holding spear in right hand and shield in left hand",
 					"reference": "RIC VII Aquileia 123",
 					"provenance": "Ex. YOC (Pete)",
-					"code": "DP6A",
+					"code": "$115",
 					"stock": "yes"
 				}
 			},{
@@ -2931,31 +2931,8 @@
 					"reverse_desc": "Legend within a wreath",
 					"reference": "RIC VIII Antioch 113",
 					"provenance": "Ex. FSR Auction 109, Lot 358",
+					"code": "$125",
 					"stock": "yes"
-				}
-			},{
-				"constantiusii8": {
-					"emperor": "Constantius II",
-					"file": "constantiusii8",
-					"material": "AE",
-					"denomination": "Maiorina",
-					"yearl": 348,
-					"yearh": 350,
-					"mint": "Rome",
-					"officina": "2nd",
-					"emission": null,
-					"weight": 5.15,
-					"diameter": "24.0mm",
-					"axis": "12H",
-					"obverse_legend": "D N CONSTAN-TIVS P F AVG",
-					"reverse_legend": "FEL TEMP REPARATIO",
-					"exergue": "B/-//RB",
-					"obverse_desc": "Bust of Constantius II, pearl-diademed, draped, cuirassed, right",
-					"reverse_desc": "Constantius II, draped, cuirassed, standing left on galley, holding phoenix on globe in right hand and standard with Chi-Rho on banner in left hand; steering the ship, seated Victory",
-					"reference": "RIC VIII Rome 115",
-					"provenance": "Ex. London Ancient Coins 2019",
-					"code": null,
-					"stock": null
 				}
 			},{
 				"constansi1": {
@@ -2978,7 +2955,7 @@
 					"reverse_desc": "Constans, draped, cuirassed, standing left on galley, holding phoenix on globe in right hand and standard with Chi-Rho on banner in left hand; steering the ship, seated Victory",
 					"reference": "RIC VIII Antioch 124",
 					"provenance": "Ex. Victor Clark 2019",
-					"code": null,
+					"code": "$225",
 					"stock": "yes"
 				}
 			},{
@@ -3002,7 +2979,7 @@
 					"reverse_desc": "Soldier advancing right, head to left, holding inverted spear in his left hand and leading barbarian with his right from hut under tree",
 					"reference": "RIC VIII Aquileia 103",
 					"provenance": "Ex. Dipl.-Ing. Adrian Lang, Ex. Leu Numismatik Web Auction 21, Lot 5479",
-					"code": null,
+					"code": "$195",
 					"stock": "yes"
 				}
 			},{
@@ -3029,7 +3006,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)",
-					"code": null,
+					"code": "$130",
 					"stock": "yes"
 				}
 			},{
@@ -3053,7 +3030,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing pointed cap, facing soldier, raising right arm",
 					"reference": "RIC VIII Cyzicus 93a",
 					"provenance": "Ex. Budgies-Beak eBay 2019",
-					"code": null,
+					"code": "$85",
 					"stock": "yes"
 				}
 			},{
@@ -3077,7 +3054,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing a pointed cap, sitting right, raising both hands",
 					"reference": "RIC VIII Thessalonica 123",
 					"provenance": "Ex. Glenn Simonel eBay 2019",
-					"code": null,
+					"code": "$75",
 					"stock": "yes"
 				}
 			},{
@@ -3101,7 +3078,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing cap, facing soldier, extending right arm",
 					"reference": "RIC VIII Antioch 132",
 					"provenance": "Ex. Dr. Busso Peus Nachf E-Auktion 420 Teil 2, Lot 6360",
-					"code": "9QLA",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3125,7 +3102,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman wearing cap, facing soldier, extending right arm",
 					"reference": "RIC VIII Antioch 132",
 					"provenance": "Ex. Savoca eBay 2018",
-					"code": null,
+					"code": "$135",
 					"stock": "yes"
 				}
 			},{
@@ -3149,7 +3126,7 @@
 					"reverse_desc": "-",
 					"reference": "RIC VIII Arelate 207",
 					"provenance": "Ex. CNG eAuction 440, Lot 521, Ex. 1887 East Harptree, Somerset Hoard (IRBCH 1424)",
-					"code": null,
+					"code": "$550",
 					"stock": "yes"
 				}
 			},{
@@ -3173,7 +3150,7 @@
 					"reverse_desc": "Soldier, helmeted, draped, cuirassed, advancing left, spearing fallen horseman with right hand and wearing shield on left arm; shield on ground to right; horseman facing soldier, extending left arm",
 					"reference": "RIC VIII Rome 309",
 					"provenance": "Ex. RomanLode 2019",
-					"code": null,
+					"code": "$95",
 					"stock": "yes"
 				}
 			},{
@@ -3197,7 +3174,7 @@
 					"reverse_desc": "Bull, standing right, head front; above, two stars",
 					"reference": "RIC VIII Antioch 216",
 					"provenance": "Ex. CNG Auction 406 Lot 797",
-					"code": "RPUP",
+					"code": "$395",
 					"stock": "yes"
 				}
 			},{
@@ -3221,7 +3198,7 @@
 					"reverse_desc": "Victory advancing left, holding wreath and palm",
 					"reference": "RIC IX Siscia 15A",
 					"provenance": "Ex. FSR Coin Bargain Bin 2017",
-					"code": "6GQ5",
+					"code": "$50",
 					"stock": "yes"
 				}
 			},{
@@ -3245,7 +3222,7 @@
 					"reverse_desc": "Victory advancing left, holding wreath and palm",
 					"reference": "RIC IX Siscia 15B",
 					"provenance": "Ex. FSR Coin Bargain Bin 2017",
-					"code": "8A74",
+					"code": "$50",
 					"stock": "yes"
 				}
 			},{
@@ -3272,7 +3249,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins",
-					"code": null,
+					"code": "$85",
 					"stock": "yes"
 				}
 			},{
@@ -3296,7 +3273,7 @@
 					"reverse_desc": "Emperor, head right, standing facing, holding standard and globe",
 					"reference": "RIC IX Cyzicus 27A",
 					"provenance": "Ex. Cayon Subastas 42 Lot 2697",
-					"code": null,
+					"code": "$55",
 					"stock": "yes"
 				}
 			},{
@@ -3323,7 +3300,7 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of), Ex. Forum Ancient Coins",
-					"code": null,
+					"code": "$75",
 					"stock": "yes"
 				}
 			}
@@ -3350,7 +3327,7 @@
 					"reverse_desc": "Large S C within wreath",
 					"reference": "RPC I 4297",
 					"provenance": "Ex. JAZ Numismatics Auction 111 Lot 3, Ex. JWT (Jack) Secret Saturnalia 2017",
-					"code": null,
+					"code": "$65",
 					"stock": null
 				}
 			},{
@@ -3374,7 +3351,7 @@
 					"reverse_desc": "Serapis enthroned left within distyle temple, Kerberos at his feet, pediment decorated with disk, date across field",
 					"reference": "Köln 1486, Dattari 3057",
 					"provenance": "Ex. Robert L. Grover Collection, Art Institute of Chicago (Gemini XIII, 6 April 2017), lot 463 (part of), Ex. CNG Auction 401 Lot 323",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3398,7 +3375,7 @@
 					"reverse_desc": "Eagle standing right, wreath in beak, palm across shoulder, ETOVC S (year 6)",
 					"reference": "Dattari 5488",
 					"provenance": "Ex. Busso Nachf Store 2018",
-					"code": null,
+					"code": "$150",
 					"stock": "yes"
 				}
 			},{
@@ -3422,7 +3399,7 @@
 					"reverse_desc": "Dikaiosyne standing left holding scales & cornucopia",
 					"reference": "Milne 4770",
 					"provenance": "Ex. FSRCoin Bargain List, March 2018",
-					"code": null,
+					"code": "$75",
 					"stock": "yes"
 				}
 			},{
@@ -3446,7 +3423,7 @@
 					"reverse_desc": "Nike flying right holding wreath out in right hand, and a palm over shoulder in left hand",
 					"reference": "Milne 5031",
 					"provenance": "Ex. Frank S. Robinson Auction 107, Lot 352",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			}
@@ -3473,7 +3450,7 @@
 					"reverse_desc": "Large M with star either side, cross above",
 					"reference": "SBCV 15",
 					"provenance": "Ex. FSRCoin Bargain List, March 2018",
-					"code": "MZJK",
+					"code": "$100",
 					"stock": "yes"
 				}
 			},{
@@ -3497,7 +3474,7 @@
 					"reverse_desc": "Victory standing left, holding long, jeweled cross in right hand; star in right field",
 					"reference": "SBCV 3",
 					"provenance": "Ex. CNG e-Auction 505, lot 523",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3521,7 +3498,7 @@
 					"reverse_desc": "Large K, long cross to left, Δ Officina to the right",
 					"reference": "SBCV 25",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "CWSG",
+					"code": "$85",
 					"stock": "yes"
 				}
 			},{
@@ -3545,7 +3522,7 @@
 					"reverse_desc": "Large M, star to left, cross above, star to right, Γ below",
 					"reference": "SBCV 217",
 					"provenance": "Ex. Augustus Coins 2018",
-					"code": null,
+					"code": "$135",
 					"stock": "yes"
 				}
 			},{
@@ -3569,7 +3546,7 @@
 					"reverse_desc": "Large K, ANNO to left, cross above, regnal year to right",
 					"reference": "SBCV 208",
 					"provenance": "Ex. eBay 2019",
-					"code": null,
+					"code": "$95",
 					"stock": "yes"
 				}
 			},{
@@ -3593,7 +3570,7 @@
 					"reverse_desc": "Large M, ANNO to left, cross above, regnal year to right, officina letter below",
 					"reference": "SBCV 201",
 					"provenance": "Ex. Todd Hansen Collection, Ex. Classical Numismatic Group 47, lot 2105, Ex. CNG e-Auction 499, Lot 448",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3617,7 +3594,7 @@
 					"reverse_desc": "Large M, ANNO to left, cross above, regnal year to right, officina letter below",
 					"reference": "SBCV 218",
 					"provenance": "Ex. eBay 2019",
-					"code": null,
+					"code": "$100",
 					"stock": "yes"
 				}
 			},{
@@ -3641,7 +3618,7 @@
 					"reverse_desc": "Large M; A/N/N/O - X/II/II (R.Y. 14) across field, cross above, A below",
 					"reference": "SBCV 201",
 					"provenance": "Ex. Numismatik Naumann Auction 60 Lot 593",
-					"code": "X3FE",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3665,7 +3642,7 @@
 					"reverse_desc": "Large M; A/N/N/O - X/ЧI (R.Y. 16) across field, cross above, Є below",
 					"reference": "SBCV 163",
 					"provenance": "Ex. Nomos Obolos Auction 10, Lot 532",
-					"code": null,
+					"code": "$425",
 					"stock": "yes"
 				}
 			},{
@@ -3689,7 +3666,7 @@
 					"reverse_desc": "Large M; A/N/N/O - X/ς (R.Y. 16) across field, cross above, B below",
 					"reference": "SBCV 207",
 					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 2, Lot 277, Ex. Forum Ancient Coins",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3713,7 +3690,7 @@
 					"reverse_desc": "Large M; A/N/N/O - X/X/II (R.Y. 16) across field, cross above, A below",
 					"reference": "SBCV 163",
 					"provenance": "Ex. Agora Auctions Sale 73, Lot 313",
-					"code": "VWJ3",
+					"code": "$275",
 					"stock": "yes"
 				}
 			},{
@@ -3737,7 +3714,7 @@
 					"reverse_desc": "Large M; A/N/N/O - Ϛ (R.Y. 6) across field, Christogram above, Γ below",
 					"reference": "SBCV 360",
 					"provenance": "Ex. FSR Auction 104, Lot 438",
-					"code": "HE3S",
+					"code": "$195",
 					"stock": "yes"
 				}
 			},{
@@ -3761,7 +3738,7 @@
 					"reverse_desc": "Large M between A/N/N/O and ϚI (R.Y. 7), cross above, B below",
 					"reference": "SBCV 494",
 					"provenance": "Ex. CNG Electronic Auction 457, Lot 513, Ex. Jack A. Frazer Collection, Ex. Ponterio 76 (1 August 1995), Lot 481",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3785,7 +3762,7 @@
 					"reverse_desc": "Large M between A/N/N/O and X/IIII (R.Y. 14), cross above, A below",
 					"reference": "SBCV 533",
 					"provenance": "Ex. Arnoldoe Collection, Ex. JAZ Numismatics Auction 114 Lot 9",
-					"code": "6M7K",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3812,7 +3789,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Saint Paul Antiques Auction 17, Lot 647",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3839,7 +3816,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Savoca 5th Blue Auction, Lot 1620",
-					"code": "JQQA",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3866,7 +3843,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "4TR9",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3893,7 +3870,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Savoca eBay 2018",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3920,7 +3897,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Savoca 5th Blue Auction, Lot 1622",
-					"code": "N7YF",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3947,7 +3924,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Frank S. Robinson Auction 107, Lot 415",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3971,7 +3948,7 @@
 					"reverse_desc": "Cross potent set upon three steps",
 					"reference": "SBCV 938",
 					"provenance": "Ex. Seaby Inventory, Ex. CNG e-Auction 522, lot 634",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -3995,7 +3972,7 @@
 					"reverse_desc": "Large M; monogram above, Heraclius and Tiberius standing facing to left and right, respectively",
 					"reference": "SBCV 1110",
 					"provenance": "Ex. Agora Auction 84, Lot 284",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4019,7 +3996,7 @@
 					"reverse_desc": "Legend in 4 lines",
 					"reference": "SBCV 1729",
 					"provenance": "Ex. Leu Numismatik Web Auction 5, Lot 1307",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4043,7 +4020,7 @@
 					"reverse_desc": "Legend in 4 lines",
 					"reference": "SBCV 1760",
 					"provenance": "Ex. FSR Auction 104, Lot 445",
-					"code": "6LX3",
+					"code": "$295",
 					"stock": "yes"
 				}
 			},{
@@ -4067,7 +4044,7 @@
 					"reverse_desc": "Legend in 4 lines",
 					"reference": "SBCV 1782",
 					"provenance": "Ex. Savoca Blue Auction 7, Lot 1791",
-					"code": null,
+					"code": "$195",
 					"stock": "yes"
 				}
 			},{
@@ -4095,7 +4072,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca 5th Blue Auction, Lot 1654",
-					"code": "9SSF",
+					"code": "$175",
 					"stock": "yes"
 				}
 			},{
@@ -4123,7 +4100,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "5AQ5",
+					"code": "$150",
 					"stock": "yes"
 				}
 			},{
@@ -4151,7 +4128,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca Blue Auction 7, Lot 1792",
-					"code": null,
+					"code": "$215",
 					"stock": "yes"
 				}
 			},{
@@ -4180,7 +4157,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 894",
-					"code": "X3FK",
+					"code": "$375",
 					"stock": "yes"
 				}
 			},{
@@ -4208,7 +4185,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca eBay 2018",
-					"code": "UBAT",
+					"code": "$95",
 					"stock": "yes"
 				}
 			},{
@@ -4236,36 +4213,8 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca eBay 2018",
-					"code": "TCXY",
+					"code": "SOLD",
 					"stock": "yes"
-				}
-			},{
-				"anonymous12": {
-					"emperor": "Basil II & Constantine VIII",
-					"file": "anonymous12",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 1023,
-					"yearh": 1028,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 7.55,
-					"diameter": "25.6mm",
-					"axis": "6H",
-					"obverse_legend": "☩ЄMMANOVHΛ/IC - XC",
-					"reverse_legend": "☩IҺSЧS/XRISTЧS/ЬASILЄЧ/ЬASILЄ",
-					"class": "A3",
-					"type": 24,
-					"obverse_desc": "Facing bust of Christ Pantokrator",
-					"reverse_desc": "Legend in four lines; decoration above and below",
-					"reference": "SBCV 1818",
-					"sub_collection": [
-						"Anonymous Folles"
-					],
-					"provenance": "Ex. Savoca eBay 2018",
-					"code": null,
-					"stock": null
 				}
 			},{
 				"anonymous6": {
@@ -4292,7 +4241,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca eBay 2018",
-					"code": "KSR6",
+					"code": "$195",
 					"stock": "yes"
 				}
 			},{
@@ -4320,7 +4269,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca London Blue Auction 1, Lot 1660",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4348,7 +4297,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Numismatik-Naumann Auction 64, Lot 830 (part of)",
-					"code": "CSZ9",
+					"code": "$550",
 					"stock": "yes"
 				}
 			},{
@@ -4376,7 +4325,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Savoca London Blue Auction 1, Lot 1664",
-					"code": null,
+					"code": "$215",
 					"stock": "yes"
 				}
 			},{
@@ -4403,7 +4352,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. Marc R. Breitsprecher 2018",
-					"code": "TFHB",
+					"code": "$395",
 					"stock": "yes"
 				}
 			},{
@@ -4430,7 +4379,7 @@
 						"Anonymous Folles"
 					],
 					"provenance": "Ex. CNG Auction 430, Lot 433; Ex. Anthony DiDonato Collection",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4458,7 +4407,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Cody111111 eBay 2018",
-					"code": null,
+					"code": "$80",
 					"stock": "yes"
 				}
 			},{
@@ -4485,7 +4434,7 @@
 						"Overstrikes"
 					],
 					"provenance": "Ex. Augustus Coins (Valentinian) 2018",
-					"code": "D47K",
+					"code": "$75",
 					"stock": "yes"
 				}
 			},{
@@ -4510,31 +4459,7 @@
 					"reference": "SBCV 1848",
 					"sub_collection": null,
 					"provenance": "Ex. CNG e-Auction 522, lot 642",
-					"code": null,
-					"stock": "yes"
-				}
-			},{
-				"alexiusi1": {
-					"emperor": "Alexius I Komnenos",
-					"file": "alexiusi1",
-					"material": "BI",
-					"denomination": "Aspron Trachy",
-					"yearl": 1092,
-					"yearh": 1118,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 5.05,
-					"diameter": "28.0mm",
-					"axis": "6H",
-					"obverse_legend": "IC-XC",
-					"reverse_legend": "ALEXIW ΔECΠT-TWKOMNN",
-					"exergue": null,
-					"obverse_desc": "Bust of Christ, nimbate, seated facing, holding book of Gospels",
-					"reverse_desc": "Crowned bust of Alexius facing, wearing jewelled chlamys, holding cross-tipped sceptre and cross on globe",
-					"reference": "SBCV 1918",
-					"provenance": "Ex. Solidus Numismatik Online Auction 23, Lot 768",
-					"code": "4XFE",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4558,7 +4483,7 @@
 					"reverse_desc": "Alexius standing facing, holding labarum and globus cruciger; manus Dei above, pellet on shaft, six pellets in loros end",
 					"reference": "SBCV 1913",
 					"provenance": "Ex. CNG e-Auction 523, lot 756",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4606,7 +4531,7 @@
 					"reverse_desc": "Crowned bust of John facing, wearing jewelled chlamys, holding labarum and cross on globe",
 					"reference": "SBCV 1954",
 					"provenance": "Ex. Rudnik Numismatics 2019",
-					"code": null,
+					"code": "$70",
 					"stock": "yes"
 				}
 			},{
@@ -4630,7 +4555,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and and patriarchal globus cruciger; manus Dei above; three jewels on collar",
 					"reference": "SBCV 1956",
 					"provenance": "Ex. CNG e-Auction 532, Lot 706",
-					"code": null,
+					"code": "SOLD",
 					"stock": null
 				}
 			},{
@@ -4654,7 +4579,7 @@
 					"reverse_desc": "The Theotokos standing facing, crowning Manuel to left, holding labarum-tipped scepter and anexikakia.",
 					"reference": "SBCV 1957",
 					"provenance": "Ex. CNG e-Auction 525, Lot 1503",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4678,7 +4603,7 @@
 					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
 					"reference": "SBCV 1965",
 					"provenance": "Ex. Solidus Numismatik Chance Auction 28, Lot 2450 (Part of)",
-					"code": "2VSG",
+					"code": "$50",
 					"stock": "yes"
 				}
 			},{
@@ -4702,7 +4627,7 @@
 					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
 					"reference": "SBCV 1965",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "AJM7",
+					"code": "$75",
 					"stock": "yes"
 				}
 			},{
@@ -4726,7 +4651,7 @@
 					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
 					"reference": "SBCV 1965",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "MLYN",
+					"code": "$65",
 					"stock": "yes"
 				}
 			},{
@@ -4750,7 +4675,7 @@
 					"reverse_desc": "Manuel standing facing wearing divitision and chlamys, bearded and crowned, holding labarum and cross on globe",
 					"reference": "SBCV 1965",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "HW5U",
+					"code": "$50",
 					"stock": "yes"
 				}
 			},{
@@ -4774,7 +4699,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "ZSX9",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4798,7 +4723,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "9FYY",
+					"code": "$60",
 					"stock": "yes"
 				}
 			},{
@@ -4822,7 +4747,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "MGMA",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4846,7 +4771,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "V2HR",
+					"code": "$95",
 					"stock": "yes"
 				}
 			},{
@@ -4870,7 +4795,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "4WGF",
+					"code": "$60",
 					"stock": "yes"
 				}
 			},{
@@ -4894,7 +4819,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "SK9Z",
+					"code": "$80",
 					"stock": "yes"
 				}
 			},{
@@ -4918,7 +4843,7 @@
 					"reverse_desc": "Manuel standing facing, holding labarum and globus cruciger, being crowned by the Virgin Mary to right",
 					"reference": "SBCV 1966",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "UEM2",
+					"code": "$65",
 					"stock": "yes"
 				}
 			},{
@@ -4942,7 +4867,7 @@
 					"reverse_desc": "Andronicus standing facing, holding akakia and globus cruciger, and being crowned by Christ to right",
 					"reference": "SBCV 1985",
 					"provenance": "Ex. Numismatik-Naumann Auctionm 62, Lot 906",
-					"code": "DMHA",
+					"code": "$130",
 					"stock": "yes"
 				}
 			},{
@@ -4966,7 +4891,7 @@
 					"reverse_desc": "Andronicus standing facing, holding akakia and globus cruciger, and being crowned by Christ to right",
 					"reference": "SBCV 1985",
 					"provenance": "Ex. Leu Numismatik Web Auction 24, Lot 3552",
-					"code": null,
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -4990,7 +4915,7 @@
 					"reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
 					"reference": "SBCV 2003",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "FPUW",
+					"code": "$60",
 					"stock": "yes"
 				}
 			},{
@@ -5014,7 +4939,7 @@
 					"reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
 					"reference": "SBCV 2003",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "C4NK",
+					"code": "$55",
 					"stock": "yes"
 				}
 			},{
@@ -5038,7 +4963,7 @@
 					"reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
 					"reference": "SBCV 2003",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "V2JD",
+					"code": "$85",
 					"stock": "yes"
 				}
 			},{
@@ -5062,7 +4987,7 @@
 					"reverse_desc": "Isaac, standing facing on the left, crowned, wearing divitision, loros and sagion, and holding cross-headed sceptre and akakia, crowned by hand of God in upper right field",
 					"reference": "SBCV 2003",
 					"provenance": "Ex. Numismatik-Naumann Auction 62, Lot 1203 (Part of)",
-					"code": "6A4K",
+					"code": "$75",
 					"stock": "yes"
 				}
 			},{
@@ -5086,7 +5011,7 @@
 					"reverse_desc": "Alexius, crowned, wearing loros, on left, holding labarum, St. Constantine, nimbate, wearing loros, bearded, on right, holding labarum and holding cross on globe between them",
 					"reference": "SBCV 2011",
 					"provenance": "Ex. CNG Coins Auction 418, Lot 517",
-					"code": "M3AQ",
+					"code": "$275",
 					"stock": "yes"
 				}
 			},{
@@ -5110,7 +5035,7 @@
 					"reverse_desc": "Alexius, left, and St. Constantine, right, standing facing, holding between them globus cruciger",
 					"reference": "SBCV 2012",
 					"provenance": "Ex. Gert Boersema, April 2018",
-					"code": "BNLA",
+					"code": "$115",
 					"stock": "yes"
 				}
 			},{
@@ -5134,7 +5059,7 @@
 					"reverse_desc": "Archangel Michael standing facing, holding cross on globe",
 					"reference": "SBCV 2036",
 					"provenance": "Ex. Gert Boersema, April 2018",
-					"code": "XFPS",
+					"code": "$75",
 					"stock": "yes"
 				}
 			}
