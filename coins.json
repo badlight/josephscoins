@@ -20,7 +20,7 @@
 					"reverse_desc": "Salus seated left, feeding serpent, who is wrapped around an altar, out of patera with right hand",
 					"reference": "RIC II 137C",
 					"provenance": "Ex. Romae Aeternae Numismatics 2016",
-					"code": "$200",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -44,79 +44,7 @@
 					"reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
 					"reference": "RIC IV Septimius Severus 425",
 					"provenance": "Ex. Doug Smith Collection, Ex. John Anthony 2019",
-					"code": "$150",
-					"stock": "yes"
-				}
-			},{
-				"septimiusseverus1": {
-					"emperor": "Septimius Severus",
-					"file": "septimiusseverus1",
-					"material": "AR",
-					"denomination": "Denarius",
-					"yearl": 194,
-					"yearh": 195,
-					"mint": "Emesa",
-					"officina": null,
-					"emission": null,
-					"weight": 3.2,
-					"diameter": "18.0mm",
-					"axis": "11H",
-					"obverse_legend": "IMP CAE L SEP SEV PERT AVG COS II",
-					"reverse_legend": "VIRTVTE AVG",
-					"exergue": null,
-					"obverse_desc": "Head of Septimius Severus, laureate, right",
-					"reverse_desc": "Virtus, helmeted, draped, standing left, holding spear in right hand and parazonium in left hand",
-					"reference": "RIC IV Septimius Severus 431",
-					"provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 442",
-					"code": "$200",
-					"stock": "yes"
-				}
-			},{
-				"septimiusseverus2": {
-					"emperor": "Septimius Severus",
-					"file": "septimiusseverus2",
-					"material": "AR",
-					"denomination": "Denarius",
-					"yearl": 202,
-					"yearh": 210,
-					"mint": "Rome",
-					"officina": null,
-					"emission": null,
-					"weight": 2.84,
-					"diameter": "19.5mm",
-					"axis": "12H",
-					"obverse_legend": "SEVERVS PIVS AVG",
-					"reverse_legend": "VICT PART MAX",
-					"exergue": null,
-					"obverse_desc": "Bust of Septimius Severus, laureate, facing right",
-					"reverse_desc": "Victory, winged, draped, advancing left, holding wreath in extended right hand and palm sloped over left shoulder in left hand",
-					"reference": "RIC IV Septimius Severus 295",
-					"provenance": "Ex. Forvm Ancient Coins 2016",
-					"code": "$250",
-					"stock": "yes"
-				}
-			},{
-				"gallienus2": {
-					"emperor": "Gallienus",
-					"file": "gallienus2",
-					"material": "BI",
-					"denomination": "Antoninianus",
-					"yearl": 260,
-					"yearh": 268,
-					"mint": "Rome",
-					"officina": null,
-					"emission": null,
-					"weight": 4.57,
-					"diameter": "23.65mm",
-					"axis": "6H",
-					"obverse_legend": "GALLIENVS AVG",
-					"reverse_legend": "IOVI CONS AVG",
-					"exergue": "ς",
-					"obverse_desc": "Head of Gallienus, radiate, right",
-					"reverse_desc": "Goat, walking right",
-					"reference": "RIC V Gallienus 207",
-					"provenance": "Ex. Marc R. Breitsprecher 2018",
-					"code": "$125",
+					"code": "SOLD",
 					"stock": "yes"
 				}
 			},{
@@ -141,54 +69,6 @@
 					"reference": "RIC V Gallienus 245",
 					"provenance": "Ex. CNG Electronic Auction 436, Lot 688, Ex. William Whetstone Collection",
 					"code": "$180",
-					"stock": "yes"
-				}
-			},{
-				"probus1": {
-					"emperor": "Probus",
-					"file": "probus1",
-					"material": "BI",
-					"denomination": "Antoninianus",
-					"yearl": 276,
-					"yearh": 282,
-					"mint": "Tripolis",
-					"officina": null,
-					"emission": null,
-					"weight": 3.5,
-					"diameter": "24.0mm",
-					"axis": "6H",
-					"obverse_legend": "IMP C M AVR PROBVS P F AVG",
-					"reverse_legend": "CLEMENTIA TEMP",
-					"exergue": "✱//XXI",
-					"obverse_desc": "Bust of Probus, radiate, draped, right or bust of Probus, radiate, draped, cuirassed, right",
-					"reverse_desc": "Probus, standing right, holding sceptre, receiving globe from Jupiter, standing left, holding sceptre",
-					"reference": "RIC V 927",
-					"provenance": "Ex. JAZ Numismatics 2017",
-					"code": "$150",
-					"stock": "yes"
-				}
-			},{
-				"carausius1": {
-					"emperor": "Carausius",
-					"file": "carausius1",
-					"material": "AE",
-					"denomination": "Antoninianus",
-					"yearl": 286,
-					"yearh": 293,
-					"mint": "London",
-					"officina": null,
-					"emission": null,
-					"weight": 4.86,
-					"diameter": "23.5mm",
-					"axis": "7H",
-					"obverse_legend": "IMP C CARAVSIVS P F AVG",
-					"reverse_legend": "PAX AVG",
-					"exergue": "B/E//MLXXI",
-					"obverse_desc": "Bust of Carausius, radiate, cuirassed, right",
-					"reverse_desc": "Pax, draped, standing left, holding olive-branch in right hand and vertical sceptre in left hand",
-					"reference": "RIC V Carausius 98",
-					"provenance": "Ex. CNG eAuction 427, Lot 454",
-					"code": "$350",
 					"stock": "yes"
 				}
 			},{
