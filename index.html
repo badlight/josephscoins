@@ -85,17 +85,18 @@
               '          <p class="aligned"><strong>Weight:</strong> ' + wt + 'g, <strong>Diameter:</strong> ' + diam + ', <strong>Axis:</strong> ' + ax + '</em></p>' + 
 	          '          <p class="aligned"><strong>Obverse:</strong> ' + obv + ',</br><em>' + obvd + '</em></p>' +
 	          '          <p class="aligned"><strong>Reverse:</strong> ' + rev + ',</br><em>' + revd + '</em></p>' +
-	          '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br></br><p>' +
-	          //'          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
-	          //'          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
+	          '          <p class="aligned"><strong>Exergue:</strong> ' + ex + '</br><p>' +
+	          '          <p class="aligned"><strong>Provenance:</strong> ' + prov + '</br></br></p>' +
 	          '          <hr class="marginated">' +
 	          '          <p class="aligned"><strong>Reference:</strong> ' + ref + '</p>' + 
 	          '        </span>' + 
 	          '      </div>' + 
 	          '    </div>' +
 	          '  </div>';			
-            document.getElementById(key).appendChild(card);
-			}
+			  if (codenum == "Personal") {
+				 document.getElementById(key).appendChild(card);
+			  }			
+		    }
 		  }	
 		}
 	  }
