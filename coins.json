@@ -639,7 +639,7 @@
 					],
 					"provenance": "Ex. Marc R. Breitsprecher 2019",
 					"code": "NFS",
-					"stock": "yes"
+					"stock": null
 				}
 			},{
 				"constantinei58": {
@@ -687,7 +687,7 @@
 					"reference": "RIC VI Rome 350a",
 					"provenance": "Ex. Dattari Collection, Ex. Jesus Vico Online Auction 5, Lot 228",
 					"code": "NFS",
-					"stock": "yes"
+					"stock": null
 				}
 			},{
 				"constantinei13": {
@@ -714,7 +714,7 @@
 					],
 					"provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 342",
 					"code": "NFS",
-					"stock": "no"
+					"stock": null
 				}
 			},{
 				"constantinei18": {
@@ -840,7 +840,7 @@
 					],
 					"provenance": "Ex. Paul Munro-Walker, Ex. Victor Clark 2019",
 					"code": "NFS",
-					"stock": "no"
+					"stock": null
 				}
 			},{
 				"constantinei10": {
@@ -894,7 +894,7 @@
 					],
 					"provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 317",
 					"code": "NFS",
-					"stock": "no"
+					"stock": null
 				}
 			},{
 				"constantinei25": {
@@ -922,7 +922,7 @@
 					],
 					"provenance": "Ex. FORVM Ancient Coins 2018, Ex. Martin Maridvnvm Collection",
 					"code": "NFS",
-					"stock": "no"
+					"stock": null
 				}
 			},{
 				"constantinei22": {
@@ -949,7 +949,7 @@
 					],
 					"provenance": "Ex. FSRCoin Bargain List, March 2018",
 					"code": "NFS",
-					"stock": "no"
+					"stock": null
 				}
 			},{
 				"constantinei21": {
@@ -977,7 +977,7 @@
 					],
 					"provenance": "Ex. FSRCoin Bargain List, March 2018",
 					"code": "NFS",
-					"stock": "no"
+					"stock": null
 				}
 			},{
 				"constantinei8": {
@@ -1032,7 +1032,7 @@
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)",
 					"code": "NFS",
-					"stock": "yes"
+					"stock": null
 				}
 			},{
 				"constantinei6": {
