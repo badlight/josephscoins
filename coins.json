@@ -1031,8 +1031,8 @@
 						"CNG Lot"
 					],
 					"provenance": "Ex. CNG Electronic Auction 456, Lot 751 (part of)",
-					"code": "NFS",
-					"stock": null
+					"code": "Personal",
+					"stock": "yes"
 				}
 			},{
 				"constantinei6": {
