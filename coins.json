@@ -488,30 +488,6 @@
 					"stock": "yes"
 				}
 			},{
-				"maximian7": {
-					"emperor": "Maximian",
-					"file": "maximian7",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 307,
-					"yearh": 310,
-					"mint": "London",
-					"officina": null,
-					"emission": null,
-					"weight": 6.81,
-					"diameter": "26.5mm",
-					"axis": "12H",
-					"obverse_legend": "D N MAXIMIANO P F S AVG",
-					"reverse_legend": "GENIO POP ROM",
-					"exergue": "-/-//PLN",
-					"obverse_desc": "Laureate and cuirassed bust right",
-					"reverse_desc": "Genius standing left, wearing intermediate modius/towered crown, holding patera in right hand, cornucopia in left",
-					"reference": "RIC VI Londinium 85/90, Cloke & Toone 5.04.001",
-					"provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 152, Ex. James Pickering Romano-Britannic Collection",
-					"code": "Personal",
-					"stock": "yes"
-				}
-			},{
 				"constantinei35": {
 					"emperor": "Constantine the Great",
 					"file": "constantinei35",
@@ -715,33 +691,6 @@
 					"provenance": "Ex. C. Dattari Collection, Ex. Jesús Vico Online Auction 3, Lot 342",
 					"code": "NFS",
 					"stock": null
-				}
-			},{
-				"constantinei18": {
-					"emperor": "Constantine the Great",
-					"file": "constantinei18",
-					"material": "AE",
-					"denomination": "Follis",
-					"yearl": 312,
-					"yearh": 313,
-					"mint": "Ostia",
-					"officina": "1st",
-					"emission": null,
-					"weight": 4.5,
-					"diameter": "22.0mm",
-					"axis": "6H",
-					"obverse_legend": "IMP C CONSTANTINVS P F AVG",
-					"reverse_legend": "SOLI INV-I-CTO COMITI",
-					"exergue": "-/-//MOSTP",
-					"obverse_desc": "Bust of Constantine I, laureate, cuirassed, right",
-					"reverse_desc": "Sol, chlamys flying out, standing front, head left, raising right hand and holding up globe in left hand",
-					"reference": "RIC VI Ostia 89",
-					"sub_collection": [
-						"Constantine Sol Mint Set"
-					],
-					"provenance": "Ex. Navi eBay 2018",
-					"code": "Personal",
-					"stock": "yes"
 				}
 			},{
 				"constantinei29": {
@@ -1551,30 +1500,6 @@
 					"stock": "yes"
 				}
 			},{
-				"constansii2": {
-					"emperor": "Constans II",
-					"file": "constansii2",
-					"material": "OB",
-					"denomination": "Nomisma",
-					"yearl": 641,
-					"yearh": 646,
-					"mint": "Constantinople",
-					"officina": "2nd",
-					"emission": null,
-					"weight": 4.32,
-					"diameter": "21.0mm",
-					"axis": "6H",
-					"obverse_legend": "DN CONSTANTINVS PP AVG",
-					"reverse_legend": "VICTORIA AVGU B",
-					"exergue": "CONOB",
-					"obverse_desc": "Crowned, draped, and cuirassed bust facing, holding globus cruciger",
-					"reverse_desc": "Cross potent set upon three steps",
-					"reference": "SBCV 938",
-					"provenance": "Ex. Seaby Inventory, Ex. CNG e-Auction 522, lot 634",
-					"code": "Personal",
-					"stock": "yes"
-				}
-			},{
 				"constansii1": {
 					"emperor": "Constans II",
 					"file": "constansii1",
@@ -1777,30 +1702,6 @@
 					"provenance": "Ex. CNG e-Auction 437, lot 542",
 					"code": "Personal",
 					"stock": "yes"
-				}
-			},{
-				"manueli13": {
-					"emperor": "Manuel I Komnenos",
-					"file": "manueli13",
-					"material": "AV",
-					"denomination": "Hyperpyron",
-					"yearl": 1152,
-					"yearh": 1160,
-					"mint": "Constantinople",
-					"officina": null,
-					"emission": null,
-					"weight": 4.35,
-					"diameter": "31.5mm",
-					"axis": "6H",
-					"obverse_legend": "+KE ROHQEI",
-					"reverse_legend": "MANYHΛ ΔECΠOTHC; TW-POR-FV-POG-NH-T",
-					"exergue": null,
-					"obverse_desc": "IC-XC to left and right; Facing bust of beardless Christ Pantokrator; nimbus with one pellet in each double-lined arm",
-					"reverse_desc": "Manuel standing facing, holding labarum and and patriarchal globus cruciger; manus Dei above; three jewels on collar",
-					"reference": "SBCV 1956",
-					"provenance": "Ex. CNG e-Auction 532, Lot 706",
-					"code": "Personal",
-					"stock": null
 				}
 			},{
 				"manueli11": {
