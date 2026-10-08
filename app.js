@@ -1,12 +1,12 @@
 (function () {
   "use strict";
   const K = window.CoinKit, D = {}, FILTERS = ["collection", "ruler", "mint", "denomination", "material", "sub"];
-  const S = { coins: [], q: "", collection: "", ruler: "", mint: "", denomination: "", material: "", sub: "", sort: "original", compare: [], coin: "" };
+  const S = { coins: [], q: "", collection: "", ruler: "", mint: "", denomination: "", material: "", sub: "", sort: "original", coin: "" };
   let openedFromGallery = false, zoom = 1, panX = 0, panY = 0, drag = null, searchTimer, photoFallback = false;
   const el = (tag, className, value) => { const x = document.createElement(tag); if (className) x.className = className; if (value !== undefined) x.textContent = value; return x; };
   document.addEventListener("DOMContentLoaded", init);
   function init() {
-    for (const id of ["collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","actionStatus","coinGrid","emptyState","emptyClear","errorState","retryLoad","compareTray","compareCount","compareNames","compareOpen","compareClear","coinDialog","dialogClose","coinPrevious","coinNext","coinPosition","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent","compareDialog","compareContent","compareClose"]) D[id] = document.getElementById(id);
+    for (const id of ["collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","actionStatus","coinGrid","emptyState","emptyClear","errorState","retryLoad","coinDialog","dialogClose","coinPrevious","coinNext","coinPosition","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent"]) D[id] = document.getElementById(id);
     D.searchInput.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { S.q = D.searchInput.value; render(); writeURL(S.coin, "replace"); }, 100); });
     for (const field of FILTERS) D[field + "Filter"].addEventListener("change", () => { S[field] = D[field + "Filter"].value; render(); writeURL(S.coin, "replace"); });
     D.sortFilter.addEventListener("change", () => { S.sort = D.sortFilter.value; render(); writeURL(S.coin, "replace"); });
@@ -22,7 +22,7 @@
     D.detailPhoto.addEventListener("dblclick", () => setZoom(zoom === 1 ? 2 : 1));
     D.imageViewport.addEventListener("wheel", event => { if (event.ctrlKey) { event.preventDefault(); setZoom(zoom * (event.deltaY < 0 ? 1.15 : 0.87)); } }, { passive: false });
     D.imageViewport.addEventListener("pointerdown", event => {
-      if (zoom <= 1 || event.button > 0) return;
+      if (zoom <= 1 || event.button > 0 || event.target.closest("button,a")) return;
       event.preventDefault(); drag = { id: event.pointerId, x: event.clientX, y: event.clientY, panX, panY };
       D.imageViewport.setPointerCapture(event.pointerId); D.imageViewport.classList.add("dragging");
     });
@@ -35,10 +35,6 @@
     });
     document.addEventListener("fullscreenchange", () => { D.fullScreen.textContent = document.fullscreenElement || D.coinDialog.classList.contains("viewer-expanded") ? "Exit fullscreen" : "Fullscreen"; updateZoom(); });
     window.addEventListener("resize", updateZoom);
-    D.compareClear.addEventListener("click", () => { S.compare = []; updateCompare(); writeURL(S.coin, "replace"); });
-    D.compareOpen.addEventListener("click", compare);
-    D.compareClose.addEventListener("click", () => D.compareDialog.close());
-    D.compareDialog.addEventListener("click", event => { if (event.target === D.compareDialog) D.compareDialog.close(); });
     window.addEventListener("popstate", applyURL);
     load();
   }
@@ -56,7 +52,6 @@
     S.q = url.searchParams.get("q") || "";
     for (const field of FILTERS) S[field] = url.searchParams.get(field) || "";
     S.sort = K.SORTS.includes(url.searchParams.get("sort")) ? url.searchParams.get("sort") : "original";
-    S.compare = [...new Set((url.searchParams.get("compare") || "").split(","))].filter(key => S.coins.some(c => c._key === key)).slice(0,4);
     S.coin = url.searchParams.get("coin") || url.searchParams.get("id") || "";
     D.searchInput.value = S.q; D.sortFilter.value = S.sort; render();
     const browse = url.searchParams.get("browse");
@@ -73,7 +68,6 @@
     if (S.q.trim()) url.searchParams.set("q", S.q.trim());
     for (const field of FILTERS) if (S[field]) url.searchParams.set(field, S[field]);
     if (S.sort !== "original") url.searchParams.set("sort", S.sort);
-    if (S.compare.length) url.searchParams.set("compare", S.compare.join(","));
     if (key) url.searchParams.set("id", key);
     history[mode === "push" ? "pushState" : "replaceState"]({ coinViewer: !!key }, "", url);
   }
@@ -103,7 +97,6 @@
     updateFilters(); const coins = filtered();
     D.coinGrid.replaceChildren(...coins.map(card)); D.emptyState.hidden = !!coins.length; D.errorState.hidden = true;
     D.resultCount.textContent = coins.length + (coins.length === 1 ? " coin" : " coins");
-    updateCompare();
   }
   function card(coin) {
     const article = el("article","coin-card"), photo = el("div","coin-photo coin-bg-dark"), button = el("button","coin-open");
@@ -115,26 +108,7 @@
     if (coin.reference) overlay.append(el("p","reference",coin.reference));
     button.append(image,el("span","coin-type",coin._typeLabel),overlay); button.addEventListener("click",() => showCoin(coin,true)); photo.append(button);
     const footer = el("div","card-footer"), caption = el("div","card-caption"); caption.append(el("h2","",coin.emperor),el("p","",coin.denomination + " · " + K.date(coin)));
-    const label = el("label","compare-toggle"), check = el("input"); check.type = "checkbox"; check.id = "compare-" + coin._key; check.dataset.coin = coin._key;
-    check.setAttribute("aria-label","Compare " + K.title(coin) + ", " + coin.mint + ", " + coin._key); check.checked = S.compare.includes(coin._key);
-    check.addEventListener("change",() => selectCompare(coin._key,check.checked)); label.append(check,document.createTextNode("Compare")); footer.append(caption,label); article.append(photo,footer); return article;
-  }
-  function selectCompare(key, checked) {
-    if (checked && !S.compare.includes(key)) {
-      if (S.compare.length === 4) { announce("You can compare up to four coins."); updateCompare(); return; }
-      S.compare.push(key);
-    } else if (!checked) S.compare = S.compare.filter(value => value !== key);
-    updateCompare(); writeURL(S.coin,"replace");
-  }
-  function updateCompare() {
-    D.compareTray.hidden = !S.compare.length; D.compareCount.textContent = S.compare.length + " selected"; D.compareOpen.disabled = S.compare.length < 2;
-    D.compareNames.replaceChildren(...S.compare.map(key => {
-      const coin = S.coins.find(c => c._key === key), button = el("button","secondary",coin.emperor + " ×");
-      button.type = "button"; button.setAttribute("aria-label","Remove " + K.title(coin) + ", " + key + " from comparison"); button.addEventListener("click",() => selectCompare(key,false)); return button;
-    }));
-    for (const input of D.coinGrid.querySelectorAll('input[type="checkbox"]')) { input.checked = S.compare.includes(input.dataset.coin); input.disabled = S.compare.length === 4 && !input.checked; }
-    const detailButton = document.getElementById("detailCompare");
-    if (detailButton) detailButton.textContent = S.compare.includes(S.coin) ? "Remove from comparison" : "Add to comparison";
+    footer.append(caption); article.append(photo,footer); return article;
   }
   function clearFilters() {
     clearTimeout(searchTimer); for (const field of FILTERS) S[field] = ""; S.q = ""; S.sort = "original"; D.searchInput.value = ""; D.sortFilter.value = S.sort;
@@ -159,7 +133,6 @@
     D.coinPosition.textContent = (index + 1) + " of " + coins.length; D.coinPrevious.disabled = index <= 0; D.coinNext.disabled = index >= coins.length - 1;
     if (!D.coinDialog.open) D.coinDialog.showModal();
     D.coinDialog.scrollTop = 0; D.dialogClose.focus();
-    updateCompare();
   }
   function closeUI() {
     if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
@@ -175,20 +148,20 @@
   function advance(direction) {
     const coin = S.coins.find(c => c._key === S.coin); if (!coin) return;
     let coins = filtered(); if (!coins.some(c => c._key === coin._key)) coins = K.sort(S.coins,S.sort);
-    const next = coins[coins.findIndex(c => c._key === coin._key) + direction]; if (next) showCoin(next,false);
+    const next = coins[coins.findIndex(c => c._key === coin._key) + direction];
+    if (next) { const control = document.activeElement; showCoin(next,false); if (control === D.coinPrevious || control === D.coinNext) (control.disabled ? (control === D.coinPrevious ? D.coinNext : D.coinPrevious) : control).focus(); }
   }
   function detail(coin) {
     const container = el("article"), heading = el("h2","",coin.emperor); heading.id = "coinHeading";
     container.append(heading,el("p","detail-subtitle",[K.material(coin.material),coin.denomination,K.date(coin)].filter(K.present).join(" · ")));
-    const actions = el("div","detail-actions"), copy = el("button","secondary","Copy coin link"), compareButton = el("button","secondary","Add to comparison");
-    copy.type = compareButton.type = "button"; compareButton.id = "detailCompare";
+    const actions = el("div","detail-actions"), copy = el("button","secondary","Copy coin link");
+    copy.type = "button";
     copy.addEventListener("click",async () => {
       const url = new URL("coin.html",location.href); url.searchParams.set("id",coin._key);
       try { await navigator.clipboard.writeText(url.href); copy.textContent = "Link copied"; announce("Coin link copied."); }
       catch { const input = el("input"); input.readOnly = true; input.value = url.href; input.setAttribute("aria-label","Coin link"); actions.append(input); input.focus(); input.select(); }
     });
-    compareButton.addEventListener("click",() => selectCompare(coin._key,!S.compare.includes(coin._key)));
-    const edit = el("a","","Edit record"); edit.href = "add-coin.html?edit=" + encodeURIComponent(coin._key); actions.append(copy,compareButton,edit); container.append(actions);
+    const edit = el("a","","Edit record"); edit.href = "add-coin.html?edit=" + encodeURIComponent(coin._key); actions.append(copy,edit); container.append(actions);
     const facts = el("dl","detail-facts");
     for (const [name,value] of [["Collection",coin._typeLabel],["Mint",coin.mint],["Officina",coin.officina],["Emission",coin.emission],["Class",coin.class],["Weight",K.present(coin.weight) ? coin.weight + " g" : null],["Diameter",coin.diameter],["Axis",coin.axis],["Reference",coin.reference],["Record",coin._key]]) {
       if (!K.present(value)) continue; const row = el("div"); row.append(el("dt","",name),el("dd","",value)); facts.append(row);
@@ -209,20 +182,6 @@
     if (K.present(legend)) group.append(el("p","legend",legend)); if (K.present(description)) group.append(el("p","",description));
     if (refs.length) { const list = el("ul","source-links"); for (const source of refs) { const li = el("li"), a = el("a","",source.label); a.href = source.url; a.target = "_blank"; a.rel = "noopener noreferrer"; li.append(a); list.append(li); } group.append(list); }
     parent.append(group);
-  }
-  function compare() {
-    const coins = S.compare.map(key => S.coins.find(c => c._key === key)).filter(Boolean); if (coins.length < 2) return;
-    const table = el("table","comparison-table"), caption = el("caption","sr-only","Selected coin comparison"); table.append(caption);
-    const head = el("thead"), row = el("tr"), corner = el("th","row-label","Coin"); corner.scope = "col"; row.append(corner);
-    for (const coin of coins) {
-      const th = el("th","coin-column"); th.scope = "col"; th.append(document.createTextNode(K.title(coin)));
-      const image = el("img","compare-photo"); image.src = K.image(coin,false); image.alt = K.title(coin); image.addEventListener("load",() => matchBackground(image,image),{once:true});
-      const button = el("button","secondary","View coin"); button.type = "button"; button.setAttribute("aria-label","View " + K.title(coin) + ", " + coin._key); button.addEventListener("click",() => { D.compareDialog.close(); showCoin(coin,true); }); th.append(image,button); row.append(th);
-    }
-    head.append(row); table.append(head); const body = el("tbody");
-    const fields = [["Collection",c=>c._typeLabel],["Material",c=>K.material(c.material)],["Mint",c=>c.mint],["Date",K.date],["Denomination",c=>c.denomination],["Weight",c=>K.present(c.weight)?c.weight+" g":""],["Diameter",c=>c.diameter],["Axis",c=>c.axis],["Officina",c=>c.officina],["Class",c=>c.class],["Reference",c=>c.reference],["Obverse legend",c=>c.obverse_legend],["Reverse legend",c=>c.reverse_legend],["Exergue",c=>c.exergue],["Obverse",c=>c.obverse_desc],["Reverse",c=>c.reverse_desc],["Provenance",c=>c.provenance],["Tags",c=>(c.sub_collection||[]).join(" · ")]];
-    for (const [name,value] of fields) { const r = el("tr"), th = el("th","row-label",name); th.scope = "row"; r.append(th); for (const coin of coins) r.append(el("td","",K.present(value(coin))?value(coin):"—")); body.append(r); }
-    table.append(body); D.compareContent.replaceChildren(table); D.compareDialog.showModal(); D.compareClose.focus();
   }
   function resetZoom() { zoom = 1; panX = panY = 0; updateZoom(); }
   function setZoom(value) { zoom = Math.max(1,Math.min(6,value)); if (zoom === 1) panX = panY = 0; updateZoom(); }
