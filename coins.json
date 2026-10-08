@@ -865,6 +865,12 @@
 					"obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
 					"reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
 					"reference": "RIC VII Rome 33",
+					"reference_links": [
+					  {
+					    "label": "OCRE · RIC VII Rome 33",
+					    "url": "https://numismatics.org/ocre/id/ric.7.rom.33"
+					  }
+					],
 					"sub_collection": [
 						"Rome Mint Sol",
 						"Constantine Sol Mint Set"
@@ -893,6 +899,12 @@
 					"obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
 					"reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding globe in left hand",
 					"reference": "RIC VII Rome 33",
+					"reference_links": [
+					  {
+					    "label": "OCRE · RIC VII Rome 33",
+					    "url": "https://numismatics.org/ocre/id/ric.7.rom.33"
+					  }
+					],
 					"sub_collection": [
 						"Rome Mint Sol"
 					],
@@ -1214,6 +1226,12 @@
 					"reverse_desc": "Victory standing left, holding long, jeweled cross in right hand; star in right field",
 					"reference": "SBCV 3",
 					"provenance": "Ex. CNG e-Auction 505, lot 523",
+					"provenance_links": [
+					  {
+					    "label": "CNG eAuction 505 · lot 523",
+					    "url": "https://www.cngcoins.com/Lot.aspx?BACK_URL=/Lots.aspx?AUCTION_ID%3D65%26PAGE%3D27%26PAGE_NUM%3D20&LOT_ID=51141"
+					  }
+					],
 					"code": "NFS",
 					"stock": "yes"
 				}
