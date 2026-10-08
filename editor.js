@@ -38,7 +38,10 @@
     window.addEventListener("pagehide",() => { clearTimeout(saveTimer); if(S.data)persist().catch(()=>{}); });
     document.addEventListener("visibilitychange",() => { if(document.visibilityState==="hidden"&&S.data)persist().catch(()=>{}); });
     try {
-      const [data,saved]=await Promise.all([fetchCatalogue(),window.CoinDrafts.read().catch(()=>null)]);
+      const saved=await window.CoinDrafts.read().catch(()=>null);
+      let data,usingSavedCatalogue=false;
+      try{data=await fetchCatalogue();}
+      catch(error){if(!saved||!saved.baseData)throw error;K.validate(saved.baseData);data=saved.baseData;usingSavedCatalogue=true;}
       S.baseData=data;S.data=structuredClone(data);
       if(saved && Array.isArray(saved.changes) && saved.changes.length) {
         S.changes=saved.changes;
@@ -46,10 +49,10 @@
         catch(error) {K.validate(saved.baseData);S.baseData=saved.baseData;S.data=S.changes.reduce((d,c)=>K.upsert(d,c),structuredClone(S.baseData));status("batchStatus",error.message,"bad");}
       }
       refresh(); const requested=new URL(location.href).searchParams.get("edit");
-      if(requested && K.record(S.data,requested))loadRecord(requested);
+      if(requested && K.record(S.data,requested)){if(saved&&saved.form&&saved.editing===requested)restoreForm(saved);else loadRecord(requested);}
       else if(saved && saved.form && Object.values(saved.form).some(value=>value))restoreForm(saved);
       else resetForm();
-      status("loadStatus","Loaded "+K.normalize(data).length+" published coins."+(S.changes.length?" Restored "+S.changes.length+" pending change"+(S.changes.length===1?"":"s")+".":""),"good");
+      status("loadStatus",(usingSavedCatalogue?"Using the saved catalogue while the live collection is unavailable. ":"Loaded "+K.normalize(data).length+" published coins. ")+(S.changes.length?"Restored "+S.changes.length+" pending change"+(S.changes.length===1?"":"s")+".":""),usingSavedCatalogue?"":"good");
       if(saved && saved.form)D.draftStatus.textContent="Saved draft restored.";
       await persist();
     } catch(error){status("loadStatus",error.message,"bad");D.stageRecord.disabled=true;}

@@ -14,7 +14,7 @@
     D.filterToggle.addEventListener("click", () => { const expanded = D.filterToggle.getAttribute("aria-expanded") !== "true"; D.filterToggle.setAttribute("aria-expanded", String(expanded)); D.filterPanel.classList.toggle("expanded", expanded); });
     D.retryLoad.addEventListener("click", load);
     D.dialogClose.addEventListener("click", closeRequested);
-    D.coinDialog.addEventListener("cancel", event => { event.preventDefault(); closeRequested(); });
+    D.coinDialog.addEventListener("cancel", event => { event.preventDefault(); if (D.coinDialog.classList.contains("viewer-expanded")) { D.coinDialog.classList.remove("viewer-expanded"); D.fullScreen.textContent = "Fullscreen"; updateZoom(); D.fullScreen.focus(); } else closeRequested(); });
     D.coinDialog.addEventListener("click", event => { if (event.target === D.coinDialog) closeRequested(); });
     D.coinPrevious.addEventListener("click", () => advance(-1)); D.coinNext.addEventListener("click", () => advance(1));
     D.coinDialog.addEventListener("keydown", event => { if (event.key === "ArrowLeft") { event.preventDefault(); advance(-1); } if (event.key === "ArrowRight") { event.preventDefault(); advance(1); } });
@@ -29,10 +29,11 @@
     D.imageViewport.addEventListener("pointermove", event => { if (!drag || drag.id !== event.pointerId) return; panX = drag.panX + event.clientX - drag.x; panY = drag.panY + event.clientY - drag.y; updateZoom(); });
     for (const event of ["pointerup","pointercancel","lostpointercapture"]) D.imageViewport.addEventListener(event, () => { drag = null; D.imageViewport.classList.remove("dragging"); });
     D.fullScreen.addEventListener("click", async () => {
+      if (D.coinDialog.classList.contains("viewer-expanded")) { D.coinDialog.classList.remove("viewer-expanded"); D.fullScreen.textContent = "Fullscreen"; updateZoom(); return; }
       try { if (document.fullscreenElement) await document.exitFullscreen(); else if (D.coinViewer.requestFullscreen) await D.coinViewer.requestFullscreen(); else throw Error(); }
-      catch { D.imageStatus.textContent = "Fullscreen is unavailable in this browser. You can download the photograph."; }
+      catch { D.coinDialog.classList.add("viewer-expanded"); D.fullScreen.textContent = "Exit fullscreen"; updateZoom(); }
     });
-    document.addEventListener("fullscreenchange", () => { D.fullScreen.textContent = document.fullscreenElement ? "Exit fullscreen" : "Fullscreen"; updateZoom(); });
+    document.addEventListener("fullscreenchange", () => { D.fullScreen.textContent = document.fullscreenElement || D.coinDialog.classList.contains("viewer-expanded") ? "Exit fullscreen" : "Fullscreen"; updateZoom(); });
     window.addEventListener("resize", updateZoom);
     D.compareClear.addEventListener("click", () => { S.compare = []; updateCompare(); writeURL(S.coin, "replace"); });
     D.compareOpen.addEventListener("click", compare);
@@ -162,6 +163,7 @@
   }
   function closeUI() {
     if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
+    D.coinDialog.classList.remove("viewer-expanded"); D.fullScreen.textContent = "Fullscreen";
     if (D.coinDialog.open) D.coinDialog.close();
     document.title = "Joseph's Ancient Coins";
   }
