@@ -6,7 +6,7 @@
   const el = (tag, className, value) => { const x = document.createElement(tag); if (className) x.className = className; if (value !== undefined) x.textContent = value; return x; };
   document.addEventListener("DOMContentLoaded", init);
   function init() {
-    for (const id of ["collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","actionStatus","coinGrid","emptyState","emptyClear","errorState","retryLoad","coinDialog","dialogClose","coinPrevious","coinNext","coinPosition","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent"]) D[id] = document.getElementById(id);
+    for (const id of ["collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","actionStatus","coinGrid","emptyState","emptyClear","errorState","retryLoad","coinDialog","dialogClose","coinPrevious","coinNext","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent"]) D[id] = document.getElementById(id);
     D.searchInput.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { S.q = D.searchInput.value; render(); writeURL(S.coin, "replace"); }, 100); });
     for (const field of FILTERS) D[field + "Filter"].addEventListener("change", () => { S[field] = D[field + "Filter"].value; render(); writeURL(S.coin, "replace"); });
     D.sortFilter.addEventListener("change", () => { S.sort = D.sortFilter.value; render(); writeURL(S.coin, "replace"); });
@@ -104,9 +104,9 @@
     const image = el("img"); image.src = K.image(coin,false); image.alt = K.title(coin); image.loading = "lazy"; image.decoding = "async";
     image.addEventListener("load", () => matchBackground(image,photo), {once:true});
     image.addEventListener("error", () => { image.alt = "Photograph unavailable: " + K.title(coin); photo.append(el("span","image-status","Photograph unavailable")); }, {once:true});
-    const overlay = el("div","coin-overlay"); overlay.append(el("h2","",coin.emperor),el("p","",[coin.material,coin.denomination].filter(K.present).join(" ")),el("p","",[K.date(coin),coin.mint].filter(K.present).join(" · ")));
+    const overlay = el("div","coin-overlay"); overlay.append(el("span","coin-type",coin._typeLabel),el("h2","",coin.emperor),el("p","",[coin.material,coin.denomination].filter(K.present).join(" ")),el("p","",[K.date(coin),coin.mint].filter(K.present).join(" · ")));
     if (coin.reference) overlay.append(el("p","reference",coin.reference));
-    button.append(image,el("span","coin-type",coin._typeLabel),overlay); button.addEventListener("click",() => showCoin(coin,true)); photo.append(button);
+    button.append(image,overlay); button.addEventListener("click",() => showCoin(coin,true)); photo.append(button);
     const footer = el("div","card-footer"), caption = el("div","card-caption"); caption.append(el("h2","",coin.emperor),el("p","",coin.denomination + " · " + K.date(coin)));
     footer.append(caption); article.append(photo,footer); return article;
   }
@@ -130,7 +130,7 @@
     D.imageDownload.href = K.image(coin,true); D.imageDownload.download = coin.file + "." + (K.image(coin,true).split(".").pop() || "jpg");
     let coins = filtered(); if (!coins.some(c => c._key === coin._key)) coins = K.sort(S.coins,S.sort);
     const index = coins.findIndex(c => c._key === coin._key);
-    D.coinPosition.textContent = (index + 1) + " of " + coins.length; D.coinPrevious.disabled = index <= 0; D.coinNext.disabled = index >= coins.length - 1;
+    D.coinPrevious.disabled = index <= 0; D.coinNext.disabled = index >= coins.length - 1;
     if (!D.coinDialog.open) D.coinDialog.showModal();
     D.coinDialog.scrollTop = 0; D.dialogClose.focus();
   }
