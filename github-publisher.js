@@ -19,7 +19,7 @@
     const { changes, onProgress = () => {}, fetcher = fetch } = options;
     let token = String(options.token || "").trim();
     if (!token) throw Error("Enter a GitHub token with Contents: Read and write for badlight/josephscoins.");
-    if (!Array.isArray(changes) || !changes.length) throw Error("Add or edit a coin in the batch first.");
+    if (!Array.isArray(changes) || !changes.length) throw Error("Add, edit, or delete a coin in the batch first.");
     async function request(path, method, body) {
       const response = await fetcher("https://api.github.com/repos/" + REPOSITORY + "/" + path, {
         method: method || "GET",
@@ -45,6 +45,7 @@
       const catalogue = Kit.mergeChanges(remote, changes);
       const tree = [], seen = new Set();
       for (const change of changes) {
+        if (change.action === "delete") continue;
         for (const asset of change.assets || []) {
           if (!asset.path.startsWith("images/" + change.coin.file + "/") || asset.path.includes("..") || asset.path.includes("\\")) throw Error("Invalid image destination.");
           if (seen.has(asset.path)) throw Error("Two staged images use the same destination.");
@@ -65,3 +66,4 @@
   }
   return { REPOSITORY, BRANCH, publish, decode64 };
 });
+

@@ -23,7 +23,7 @@
       for (const [type, records] of Object.entries(section || {})) {
         for (const wrapper of Array.isArray(records) ? records : []) {
           for (const [key, coin] of Object.entries(wrapper || {})) {
-            if (coin && typeof coin === "object" && coin.file) coins.push({ ...coin, _key: key, _type: type, _typeLabel: TYPES[type] || type, _order: coins.length });
+            if (coin && typeof coin === "object" && coin.file) coins.push({ ...clean(coin), _key: key, _type: type, _typeLabel: TYPES[type] || type, _order: coins.length });
           }
         }
       }
@@ -96,7 +96,14 @@
     });
   }
   function linkText(value) { return links(value).map(item => item.label + " | " + item.url).join("\n"); }
-  function clean(coin) { return Object.fromEntries(Object.entries(coin).filter(([key]) => !key.startsWith("_"))); }
+  function clean(coin) { return Object.fromEntries(Object.entries(coin).filter(([key]) => !key.startsWith("_") && key !== "code")); }
+  function withoutRecordCodes(data) {
+    const result = clone(data);
+    for (const section of result || []) for (const rows of Object.values(section || {})) for (const row of Array.isArray(rows) ? rows : []) {
+      for (const coin of Object.values(row || {})) if (coin && typeof coin === "object") delete coin.code;
+    }
+    return result;
+  }
   function canonical(value) {
     if (Array.isArray(value)) return "[" + value.map(canonical).join(",") + "]";
     if (value && typeof value === "object") return "{" + Object.keys(value).sort().map(key => JSON.stringify(key) + ":" + canonical(value[key])).join(",") + "}";
@@ -104,12 +111,12 @@
   }
   function record(data, key) {
     for (const section of data || []) for (const [type, rows] of Object.entries(section || {})) for (const row of Array.isArray(rows) ? rows : []) {
-      if (Object.prototype.hasOwnProperty.call(row, key)) return { key, type, coin: clone(row[key]) };
+      if (Object.prototype.hasOwnProperty.call(row, key)) return { key, type, coin: clean(clone(row[key])) };
     }
     return null;
   }
   function upsert(data, entry) {
-    const result = clone(data);
+    const result = withoutRecordCodes(data);
     let replaced = false;
     for (const section of result) for (const [type, rows] of Object.entries(section)) {
       for (let index = rows.length - 1; index >= 0; index--) {
@@ -125,14 +132,27 @@
     }
     return result;
   }
+  function removeRecord(data, key) {
+    const result = withoutRecordCodes(data);
+    for (const section of result) for (const rows of Object.values(section)) {
+      for (let index = rows.length - 1; index >= 0; index--) {
+        delete rows[index][key];
+        if (!Object.keys(rows[index]).length) rows.splice(index, 1);
+      }
+    }
+    return result;
+  }
+  function applyChange(data, change) { return change.action === "delete" ? removeRecord(data, change.key) : upsert(data, change); }
   function mergeChanges(remote, changes) {
-    let result = clone(remote);
+    let result = withoutRecordCodes(remote);
     for (const change of changes) {
       const current = record(result, change.key);
+      if (change.action === "delete" && !change.original) throw Error("Only published coins can be deleted. Remove an unpublished coin from the batch instead.");
       if (change.original) {
-        if (!current || canonical(current) !== canonical(change.original)) throw Error("Conflict: " + change.key + " changed on GitHub. Your staged changes are saved; review the latest record before publishing.");
+        const original = { ...change.original, coin: clean(change.original.coin) };
+        if (!current || canonical(current) !== canonical(original)) throw Error("Conflict: " + change.key + " changed on GitHub. Your staged changes are saved; review the latest record before publishing.");
       } else if (current) throw Error("Conflict: " + change.key + " already exists on GitHub. Choose a different file slug.");
-      result = upsert(result, change);
+      result = applyChange(result, change);
     }
     validate(result);
     return result;
@@ -156,7 +176,6 @@
         }
       }
     }
-    if (!ids.size) throw Error("The catalogue has no coin records.");
     return true;
   }
   function slugify(value) { return text(value).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""); }
@@ -166,5 +185,6 @@
     while (used.has(slug)) slug = base + "-" + count++;
     return slug;
   }
-  return { TYPES, MATERIALS, SORTS, present, text, normalize, material, materialGroup, date, image, title, matches, sort, safeURL, links, parseLinks, linkText, clean, canonical, record, upsert, mergeChanges, validate, slugify, suggest };
+  return { TYPES, MATERIALS, SORTS, present, text, normalize, material, materialGroup, date, image, title, matches, sort, safeURL, links, parseLinks, linkText, clean, withoutRecordCodes, canonical, record, upsert, removeRecord, applyChange, mergeChanges, validate, slugify, suggest };
 });
+

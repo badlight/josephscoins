@@ -75,3 +75,43 @@ test("browser base64 preserves Unicode and image bytes across chunk boundaries",
   const entry=addition("test-browser-image"),bytes=Uint8Array.from({length:70000},(_,i)=>i%256);entry.assets=[{path:"images/test-browser-image/photo.jpg",blob:new Blob([bytes])}];const api=mockAPI();
   await browser.publish({token:"test-token",changes:[entry],fetcher:api.fetcher});assert.deepEqual(Buffer.from(api.calls.find(c=>c.route==="git/blobs").body.content,"base64"),Buffer.from(bytes));
 });
+test("deletion removes exactly one selected coin, keeps all unrelated records, and can empty the collection",()=>{
+  const original=K.record(data,"hadrian"),change={action:"delete",key:original.key,original,assets:[]};
+  const result=K.mergeChanges(data,[change]);
+  assert.equal(K.record(result,original.key),null);assert.equal(K.normalize(result).length,K.normalize(data).length-1);
+  assert.deepEqual(K.normalize(result),K.normalize(K.removeRecord(data,original.key)));
+  assert.ok(K.record(data,original.key));
+  const single=[{roman_imperial:[{hadrian:original.coin}]}],empty=K.mergeChanges(single,[change]);
+  assert.equal(K.normalize(empty).length,0);assert.equal(K.validate(empty),true);
+});
+test("deleting a remotely edited coin stops; unrelated remote additions survive deletion",()=>{
+  const original=K.record(data,"hadrian"),change={action:"delete",key:original.key,original,assets:[]};
+  const changed=K.upsert(data,{...original,coin:{...original.coin,weight:9}});
+  assert.throws(()=>K.mergeChanges(changed,[change]),/Conflict/);
+  assert.throws(()=>K.mergeChanges(data,[{...change,original:null}]),/published coins/);
+  const remote=K.upsert(data,addition("remote-added-coin"));
+  assert.ok(K.record(K.mergeChanges(remote,[change]),"remote-added-coin"));
+});
+test("retired record codes cannot return through imports, old drafts, edits, or exports",()=>{
+  const legacy=structuredClone(data);
+  for(const section of legacy)for(const rows of Object.values(section))for(const row of rows)for(const coin of Object.values(row))coin.code="Old code";
+  const original=K.record(legacy,"hadrian");original.coin.code="Saved code";
+  const change={...original,original,coin:{...original.coin,weight:3.11}};
+  const merged=K.mergeChanges(legacy,[change]);
+  assert.ok(K.normalize(merged).every(coin=>!("code" in coin)));
+  assert.ok(!JSON.stringify(merged).includes('"code":'));
+  assert.equal(K.record(merged,"hadrian").coin.weight,3.11);
+  assert.equal(K.record(merged,"hadrian").coin.file,original.coin.file);
+  assert.equal(K.canonical(K.withoutRecordCodes(legacy)),K.canonical(data));
+});
+test("a deletion publishes as one catalogue commit without uploading images or replacing other repository files",async()=>{
+  const original=K.record(data,"hadrian"),change={action:"delete",key:original.key,original,assets:[]},api=mockAPI();
+  const result=await P.publish({token:"test-token",changes:[change],fetcher:api.fetcher});
+  assert.equal(K.record(result.catalogue,original.key),null);
+  assert.equal(api.calls.some(call=>call.route==="git/blobs"),false);
+  const tree=api.calls.find(call=>call.route==="git/trees").body;
+  assert.equal(tree.base_tree,"base-tree");assert.deepEqual(tree.tree.map(entry=>entry.path),["coins.json"]);
+  assert.equal(K.record(JSON.parse(tree.tree[0].content),original.key),null);
+  assert.deepEqual(api.calls.at(-1).body,{sha:"new-commit",force:false});
+});
+

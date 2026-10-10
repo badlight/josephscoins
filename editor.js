@@ -1,12 +1,12 @@
 (function () {
   "use strict";
-  const K = window.CoinKit, D = {}, FIELDS = ["collection","emperor","denomination","material","mint","officina","emission","class","sub","yearl","yearh","era","weight","diameter","axis","obvL","revL","obvD","revD","exergue","reference","referenceLinks","provenance","provenanceLinks","slug","code","stock"];
+  const K = window.CoinKit, D = {}, FIELDS = ["collection","emperor","denomination","material","mint","officina","emission","class","sub","yearl","yearh","era","weight","diameter","axis","obvL","revL","obvD","revD","exergue","reference","referenceLinks","provenance","provenanceLinks","slug","stock"];
   const S = { baseData:null, data:null, changes:[], editing:"", original:null, image:null, autoSlug:true, publishing:false };
   let saveTimer, previewURL, previewBlob, saveQueue = Promise.resolve();
   const el = (tag,cls,value) => { const x=document.createElement(tag); if(cls)x.className=cls; if(value!==undefined)x.textContent=value; return x; };
   document.addEventListener("DOMContentLoaded",init);
   async function init() {
-    for(const id of [...FIELDS,"coinForm","newCoin","editSelect","reloadCatalogue","jsonFile","loadStatus","formHeading","draftStatus","image","imageHint","slugHint","suggestSlug","stageRecord","clearForm","formStatus","photo","photoImg","photoPlaceholder","previewTitle","previewMeta","previewSlug","previewWeight","previewReference","catalogueCount","batchCount","batchEmpty","batchList","batchStatus","publishSettings","githubToken","publishBatch","downloadBatch","downloadLinks","rulers","denoms","mints","subcollections"]) D[id]=document.getElementById(id);
+    for(const id of [...FIELDS,"coinForm","newCoin","editSelect","reloadCatalogue","jsonFile","loadStatus","formHeading","draftStatus","image","imageHint","slugHint","suggestSlug","stageRecord","clearForm","deleteCoin","deleteDialog","deleteName","deleteMessage","deleteStatus","cancelDelete","confirmDelete","formStatus","photo","photoImg","photoPlaceholder","previewTitle","previewMeta","previewSlug","previewWeight","previewReference","catalogueCount","batchCount","batchEmpty","batchList","batchStatus","publishSettings","githubToken","publishBatch","downloadBatch","downloadLinks","rulers","denoms","mints","subcollections"]) D[id]=document.getElementById(id);
     D.coinForm.addEventListener("submit",stage);
     D.coinForm.addEventListener("input",event => {
       if (event.target===D.slug) S.autoSlug=false;
@@ -24,10 +24,14 @@
     D.editSelect.addEventListener("change",() => { if(D.editSelect.value)loadRecord(D.editSelect.value);else resetForm();persist().catch(storageError); });
     D.suggestSlug.addEventListener("click",() => { S.autoSlug=true;D.slug.value=K.suggest(S.data,D.emperor.value,D.denomination.value);preview();scheduleSave(); });
     D.reloadCatalogue.addEventListener("click",reload);
+    D.deleteCoin.addEventListener("click",requestDelete);
+    D.cancelDelete.addEventListener("click",()=>D.deleteDialog.close());
+    D.confirmDelete.addEventListener("click",stageDelete);
+    D.deleteDialog.addEventListener("cancel",event=>{if(S.publishing)event.preventDefault();});
     D.jsonFile.addEventListener("change",async () => {
       const file=D.jsonFile.files[0];if(!file)return;
       try {
-        const data=JSON.parse(await file.text());K.validate(data);
+        const data=K.withoutRecordCodes(JSON.parse(await file.text()));K.validate(data);
         if(S.changes.length)throw Error("Publish or download the pending batch before loading a different catalogue.");
         S.baseData=data;S.data=structuredClone(data);resetForm();refresh();await persist();
         status("loadStatus","Loaded "+K.normalize(data).length+" coins from "+file.name+".","good");
@@ -41,12 +45,12 @@
       const saved=await window.CoinDrafts.read().catch(()=>null);
       let data,usingSavedCatalogue=false;
       try{data=await fetchCatalogue();}
-      catch(error){if(!saved||!saved.baseData)throw error;K.validate(saved.baseData);data=saved.baseData;usingSavedCatalogue=true;}
+      catch(error){if(!saved||!saved.baseData)throw error;K.validate(saved.baseData);data=K.withoutRecordCodes(saved.baseData);usingSavedCatalogue=true;}
       S.baseData=data;S.data=structuredClone(data);
       if(saved && Array.isArray(saved.changes) && saved.changes.length) {
         S.changes=saved.changes;
         try {S.data=K.mergeChanges(data,S.changes);}
-        catch(error) {K.validate(saved.baseData);S.baseData=saved.baseData;S.data=S.changes.reduce((d,c)=>K.upsert(d,c),structuredClone(S.baseData));status("batchStatus",error.message,"bad");}
+        catch(error) {K.validate(saved.baseData);S.baseData=K.withoutRecordCodes(saved.baseData);S.data=S.changes.reduce((d,c)=>K.applyChange(d,c),structuredClone(S.baseData));status("batchStatus",error.message,"bad");}
       }
       refresh(); const requested=new URL(location.href).searchParams.get("edit");
       if(requested && K.record(S.data,requested)){if(saved&&saved.form&&saved.editing===requested)restoreForm(saved);else loadRecord(requested);}
@@ -58,8 +62,8 @@
     } catch(error){status("loadStatus",error.message,"bad");D.stageRecord.disabled=true;}
   }
   async function fetchCatalogue() {
-    const response=await fetch("coins.json?v=20261008",{cache:"no-store"});if(!response.ok)throw Error("Could not load the catalogue. Use Load coins.json or reload.");
-    const data=await response.json();K.validate(data);return data;
+    const response=await fetch("coins.json?v=20261010",{cache:"no-store"});if(!response.ok)throw Error("Could not load the catalogue. Use Load coins.json or reload.");
+    const data=K.withoutRecordCodes(await response.json());K.validate(data);return data;
   }
   async function reload() {
     try {
@@ -77,21 +81,30 @@
     }
     D.catalogueCount.textContent=coins.length+" coins";D.batchCount.textContent=S.changes.length;D.batchEmpty.hidden=!!S.changes.length;
     D.batchList.replaceChildren(...S.changes.map(change=>{
-      const li=el("li"),label=el("strong","",change.coin.emperor+" · "+change.coin.denomination),meta=el("small","",(change.original?"Edit":"New")+" · "+change.key),actions=el("div","actions");
-      const edit=el("button","secondary","Edit"),remove=el("button","secondary","Remove from batch");edit.type=remove.type="button";
-      edit.addEventListener("click",()=>{loadRecord(change.key);persist().catch(storageError);D.emperor.focus();});
-      remove.addEventListener("click",async ()=>{
-        S.changes=S.changes.filter(c=>c.key!==change.key);S.data=S.changes.reduce((d,c)=>K.upsert(d,c),structuredClone(S.baseData));
-        if(S.editing===change.key)resetForm();refresh();try{await persist();}catch(error){storageError(error);}
+      const deleting=change.action==="delete",coin=deleting?change.original.coin:change.coin;
+      const li=el("li",deleting?"pending-delete":""),label=el("strong","",coin.emperor+" · "+coin.denomination),meta=el("small","",(deleting?"Delete":change.original?"Edit":"New")+" · "+change.key),actions=el("div","actions");
+      const remove=el("button","secondary",deleting?"Undo deletion":"Remove from batch");remove.type="button";
+      if(!deleting){const edit=el("button","secondary","Edit");edit.type="button";edit.addEventListener("click",()=>{loadRecord(change.key);persist().catch(storageError);D.emperor.focus();});actions.append(edit);}
+      remove.addEventListener("click",async()=>{
+        if(S.publishing)return;
+        const before={changes:S.changes,data:S.data,form:fields(),editing:S.editing,original:S.original,image:S.image,autoSlug:S.autoSlug};
+        try{
+          busy(true);clearTimeout(saveTimer);
+          const next=S.changes.filter(c=>c.key!==change.key);if(deleting&&change.previous)next.push(change.previous);
+          S.changes=next;S.data=S.changes.reduce((d,c)=>K.applyChange(d,c),structuredClone(S.baseData));
+          if(S.editing===change.key)resetForm();refresh();await persist();
+          status("batchStatus",deleting?"Deletion undone. The coin is back in the collection.":"Change removed from the batch.","good");
+        }catch(error){S.changes=before.changes;S.data=before.data;restoreForm(before);storageError(error);}
+        finally{busy(false);refresh();}
       });
-      actions.append(edit,remove);li.append(label,meta,actions);return li;
+      actions.append(remove);li.append(label,meta,actions);return li;
     }));
-    D.publishBatch.disabled=!S.changes.length||S.publishing;D.downloadBatch.disabled=!S.data||S.publishing;D.stageRecord.disabled=!S.data||S.publishing;
+    D.publishBatch.disabled=!S.changes.length||S.publishing;D.downloadBatch.disabled=!S.data||S.publishing;D.stageRecord.disabled=!S.data||S.publishing;D.deleteCoin.hidden=!S.editing;D.deleteCoin.disabled=!S.editing||S.publishing;
     preview();
   }
   function resetForm() {
     D.coinForm.reset();S.editing="";S.original=null;S.image=null;S.autoSlug=true;
-    D.slug.readOnly=false;D.image.required=true;D.editSelect.value="";D.formHeading.textContent="New coin";D.stageRecord.textContent="Add to batch";D.suggestSlug.disabled=false;
+    D.slug.readOnly=false;D.image.required=true;D.editSelect.value="";D.formHeading.textContent="New coin";D.stageRecord.textContent="Add to batch";D.suggestSlug.disabled=false;D.deleteCoin.hidden=true;D.deleteCoin.disabled=true;
     D.slug.value=S.data?K.suggest(S.data,"",""):"";D.imageHint.textContent="Choose a JPEG, PNG, or WebP up to 20 MB. A photograph is required for a new coin.";
     status("formStatus","Enter a record to add it to the batch.");preview();
   }
@@ -100,8 +113,8 @@
     D.coinForm.reset();S.editing=key;S.image=null;S.autoSlug=false;
     const staged=S.changes.find(c=>c.key===key);S.original=staged?staged.original:K.record(S.baseData,key);
     const coin=record.coin,values={collection:record.type,emperor:coin.emperor,denomination:coin.denomination,material:coin.material,mint:coin.mint,officina:coin.officina,emission:coin.emission,class:coin.class,sub:(coin.sub_collection||[]).join(", "),
-      yearl:Math.abs(coin.yearl),yearh:Math.abs(coin.yearh),era:coin.yearl<0?"BC":"AD",weight:coin.weight,diameter:coin.diameter?parseFloat(coin.diameter):"",axis:coin.axis,obvL:coin.obverse_legend,revL:coin.reverse_legend,obvD:coin.obverse_desc,revD:coin.reverse_desc,exergue:coin.exergue,reference:coin.reference,referenceLinks:K.linkText(coin.reference_links),provenance:coin.provenance,provenanceLinks:K.linkText(coin.provenance_links),slug:coin.file,code:coin.code,stock:coin.stock};
-    setFields(values);D.slug.readOnly=true;D.image.required=false;D.suggestSlug.disabled=true;D.editSelect.value=key;
+      yearl:Math.abs(coin.yearl),yearh:Math.abs(coin.yearh),era:coin.yearl<0?"BC":"AD",weight:coin.weight,diameter:coin.diameter?parseFloat(coin.diameter):"",axis:coin.axis,obvL:coin.obverse_legend,revL:coin.reverse_legend,obvD:coin.obverse_desc,revD:coin.reverse_desc,exergue:coin.exergue,reference:coin.reference,referenceLinks:K.linkText(coin.reference_links),provenance:coin.provenance,provenanceLinks:K.linkText(coin.provenance_links),slug:coin.file,stock:coin.stock};
+    setFields(values);D.slug.readOnly=true;D.image.required=false;D.suggestSlug.disabled=true;D.editSelect.value=key;D.deleteCoin.hidden=false;D.deleteCoin.disabled=S.publishing;
     D.formHeading.textContent="Edit "+coin.emperor;D.stageRecord.textContent="Save changes to batch";D.imageHint.textContent="Keep the existing photograph, or choose a replacement up to 20 MB.";
     status("formStatus","Changes are staged before publishing.");preview();
   }
@@ -148,7 +161,7 @@
     let lo=Number(D.yearl.value),hi=Number(D.yearh.value);if(D.era.value==="BC"){lo=-Math.abs(lo);hi=-Math.abs(hi);}[lo,hi]=[Math.min(lo,hi),Math.max(lo,hi)];
     const coin={...(previous?previous.coin:{}),emperor:D.emperor.value.trim(),file:D.slug.value.trim(),denomination:D.denomination.value.trim(),mint:D.mint.value.trim(),yearl:lo,yearh:hi};
     const optional={material:D.material.value,officina:D.officina.value.trim(),emission:D.emission.value.trim(),class:D.class.value.trim(),axis:D.axis.value.trim().toUpperCase(),
-      obverse_legend:D.obvL.value.trim(),reverse_legend:D.revL.value.trim(),obverse_desc:D.obvD.value.trim(),reverse_desc:D.revD.value.trim(),exergue:D.exergue.value.trim(),reference:D.reference.value.trim(),provenance:D.provenance.value.trim(),code:D.code.value.trim()||"Personal",stock:D.stock.value};
+      obverse_legend:D.obvL.value.trim(),reverse_legend:D.revL.value.trim(),obverse_desc:D.obvD.value.trim(),reverse_desc:D.revD.value.trim(),exergue:D.exergue.value.trim(),reference:D.reference.value.trim(),provenance:D.provenance.value.trim(),stock:D.stock.value};
     for(const [field,value]of Object.entries(optional)){if(value)coin[field]=value;else delete coin[field];}
     if(D.weight.value)coin.weight=Number(D.weight.value);else delete coin.weight;
     if(D.diameter.value)coin.diameter=Number(D.diameter.value)+"mm";else delete coin.diameter;
@@ -179,6 +192,31 @@
     }catch(error){status("formStatus",error.message,"bad");}
     finally{busy(false);refresh();}
   }
+  function requestDelete() {
+    if(S.publishing||!S.editing)return;
+    const record=K.record(S.data,S.editing);if(!record)return;
+    const staged=S.changes.find(change=>change.key===S.editing),original=staged?staged.original:K.record(S.baseData,S.editing);
+    D.deleteName.textContent=K.title(record.coin)+" · "+record.key;
+    D.deleteMessage.textContent=original?"The deletion will be added to your pending batch. The public gallery changes when you publish the batch. You can undo the deletion before publishing.":"This coin has not been published. It will be removed from your pending batch.";
+    D.confirmDelete.textContent=original?"Delete coin":"Remove draft coin";
+    status("deleteStatus","");D.deleteDialog.showModal();D.cancelDelete.focus();
+  }
+  async function stageDelete() {
+    if(S.publishing||!S.editing)return;
+    const key=S.editing,record=K.record(S.data,key);if(!record)return;
+    const staged=S.changes.find(change=>change.key===key),original=staged?staged.original:K.record(S.baseData,key);
+    const before={changes:S.changes,data:S.data,form:fields(),editing:S.editing,original:S.original,image:S.image,autoSlug:S.autoSlug};
+    try {
+      busy(true);clearTimeout(saveTimer);
+      const next=S.changes.filter(change=>change.key!==key);
+      if(original)next.push({action:"delete",key,original,previous:staged||null,assets:[]});
+      const data=next.reduce((value,change)=>K.applyChange(value,change),structuredClone(S.baseData));K.validate(data);
+      S.changes=next;S.data=data;resetForm();refresh();await persist();
+      D.deleteDialog.close();status("batchStatus",original?"Deletion saved to the batch. Publish to remove this coin from the gallery, or choose Undo deletion.":"Unpublished coin removed from the batch.","good");
+    } catch(error) {
+      S.changes=before.changes;S.data=before.data;restoreForm(before);refresh();status("deleteStatus",error.message||"The deletion could not be saved. Please try again.","bad");
+    } finally {busy(false);refresh();}
+  }
   function fields(){return Object.fromEntries(FIELDS.map(id=>[id,D[id].value]));}
   function scheduleSave(){clearTimeout(saveTimer);saveTimer=setTimeout(()=>persist().catch(storageError),350);}
   function persist() {
@@ -191,7 +229,7 @@
   function busy(value){
     S.publishing=value;
     for(const control of document.querySelectorAll("button,input,select,textarea"))control.disabled=value;
-    if(!value){D.suggestSlug.disabled=!!S.editing;D.publishBatch.disabled=!S.changes.length;D.downloadBatch.disabled=!S.data;D.stageRecord.disabled=!S.data;}
+    if(!value){D.suggestSlug.disabled=!!S.editing;D.publishBatch.disabled=!S.changes.length;D.downloadBatch.disabled=!S.data;D.stageRecord.disabled=!S.data;D.deleteCoin.disabled=!S.editing;}
   }
   async function publish() {
     if(!S.changes.length||S.publishing)return;
@@ -232,3 +270,4 @@
     status("batchStatus","Catalogue downloaded. Photograph downloads are also listed below; keep the shown folder structure.");
   }
 })();
+

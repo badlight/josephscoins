@@ -41,7 +41,7 @@
   async function load() {
     D.errorState.hidden = true; D.collectionCount.textContent = "Loading collection…";
     try {
-      const response = await fetch("coins.json?v=20261008", { cache: "no-store" });
+      const response = await fetch("coins.json?v=20261010", { cache: "no-store" });
       if (!response.ok) throw Error("Catalogue unavailable");
       const data = await response.json(); K.validate(data); S.coins = K.normalize(data);
       D.collectionCount.textContent = S.coins.length + " coins"; applyURL();
@@ -161,9 +161,9 @@
       try { await navigator.clipboard.writeText(url.href); copy.textContent = "Link copied"; announce("Coin link copied."); }
       catch { const input = el("input"); input.readOnly = true; input.value = url.href; input.setAttribute("aria-label","Coin link"); actions.append(input); input.focus(); input.select(); }
     });
-    const edit = el("a","","Edit record"); edit.href = "add-coin.html?edit=" + encodeURIComponent(coin._key); actions.append(copy,edit); container.append(actions);
+    const edit = el("a","","Edit coin"); edit.href = "add-coin.html?edit=" + encodeURIComponent(coin._key); actions.append(copy,edit); container.append(actions);
     const facts = el("dl","detail-facts");
-    for (const [name,value] of [["Collection",coin._typeLabel],["Mint",coin.mint],["Officina",coin.officina],["Emission",coin.emission],["Class",coin.class],["Weight",K.present(coin.weight) ? coin.weight + " g" : null],["Diameter",coin.diameter],["Axis",coin.axis],["Reference",coin.reference],["Record",coin._key]]) {
+    for (const [name,value] of [["Collection",coin._typeLabel],["Mint",coin.mint],["Officina",coin.officina],["Emission",coin.emission],["Class",coin.class],["Weight",K.present(coin.weight) ? coin.weight + " g" : null],["Diameter",coin.diameter],["Axis",coin.axis],["Reference",coin.reference]]) {
       if (!K.present(value)) continue; const row = el("div"); row.append(el("dt","",name),el("dd","",value)); facts.append(row);
     }
     container.append(facts); section(container,"Obverse",coin.obverse_legend,coin.obverse_desc); section(container,"Reverse",coin.reverse_legend,coin.reverse_desc);
@@ -204,3 +204,4 @@
   }
   function announce(message) { D.actionStatus.textContent = message; }
 })();
+

@@ -4,8 +4,8 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#f5f0e6">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' blob: data:; connect-src 'self' https://api.github.com; object-src 'none'; base-uri 'self'; form-action 'none'">
 <title>Collection editor · Joseph's Ancient Coins</title>
-<link rel="stylesheet" href="style.css?v=20261008b"><link rel="stylesheet" href="editor.css?v=20261008b">
-<script src="coin-utils.js?v=20261008b" defer></script><script src="github-publisher.js?v=20261008b" defer></script><script src="draft-store.js?v=20261008b" defer></script><script src="editor.js?v=20261008b" defer></script>
+<link rel="stylesheet" href="style.css?v=20261010a"><link rel="stylesheet" href="editor.css?v=20261010a">
+<script src="coin-utils.js?v=20261010a" defer></script><script src="github-publisher.js?v=20261010a" defer></script><script src="draft-store.js?v=20261010a" defer></script><script src="editor.js?v=20261010a" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#coinForm">Skip to coin record</a>
@@ -13,6 +13,7 @@
 <main class="editor-main">
 <section class="editor-toolbar card" aria-label="Choose a record">
 <button id="newCoin" class="primary" type="button">New coin</button><label><span>Edit an existing coin</span><select id="editSelect"><option value="">Choose a coin…</option></select></label>
+<button id="deleteCoin" class="danger" type="button" hidden disabled>Delete coin</button>
 <button id="reloadCatalogue" class="secondary" type="button">Reload catalogue</button>
 <div class="catalogue-tools"><label>Load coins.json<input id="jsonFile" type="file" accept=".json,application/json"></label></div>
 <p id="loadStatus" class="status" role="status">Loading catalogue…</p>
@@ -48,15 +49,20 @@
 <section class="card"><h2>Photograph and record</h2><div class="form-grid">
 <label class="wide">Coin photograph<input id="image" type="file" accept="image/jpeg,image/png,image/webp"><small id="imageHint">Choose a JPEG, PNG, or WebP up to 20 MB. A photograph is required for a new coin.</small></label>
 <label>File slug <span class="required">(required)</span><input id="slug" pattern="[a-z0-9][a-z0-9-]*" required maxlength="120"><small id="slugHint">Unique record ID and image-folder name.</small></label>
-<label>Record code<input id="code" value="Personal" maxlength="100"></label>
 <label>Stock<select id="stock"><option value="yes">yes</option><option value="">Not recorded</option><option value="no">no</option></select></label>
 </div><div class="actions"><button id="suggestSlug" class="secondary" type="button">Suggest slug</button><button id="stageRecord" class="primary" type="submit">Add to batch</button><button id="clearForm" class="secondary" type="button">Clear form</button></div><p id="formStatus" class="status" role="status">Enter a record to add it to the batch.</p></section>
 </form>
 <aside class="editor-sidebar">
 <section class="card preview-card"><div id="photo" class="editor-photo coin-bg-dark"><span id="photoPlaceholder">Coin preview</span><img id="photoImg" alt="Selected coin photograph" hidden></div><h2 id="previewTitle">New coin</h2><p id="previewMeta" class="muted"></p><dl class="preview-facts"><div><dt>Catalogue</dt><dd id="catalogueCount">—</dd></div><div><dt>Slug</dt><dd id="previewSlug">—</dd></div><div><dt>Weight</dt><dd id="previewWeight">—</dd></div><div><dt>Reference</dt><dd id="previewReference">—</dd></div></dl></section>
-<section class="card"><h2>Pending changes <span id="batchCount">0</span></h2><p id="batchEmpty" class="muted">Additions and edits appear here before publishing.</p><ul id="batchList" class="batch-list"></ul><p id="batchStatus" class="status" role="status"></p>
+<section class="card"><h2>Pending changes <span id="batchCount">0</span></h2><p id="batchEmpty" class="muted">Additions, edits, and deletions appear here before publishing.</p><ul id="batchList" class="batch-list"></ul><p id="batchStatus" class="status" role="status"></p>
 <details id="publishSettings"><summary>GitHub publishing</summary><p>Publishes to <strong>badlight/josephscoins</strong>.</p><label>GitHub token<input id="githubToken" type="password" autocomplete="off" spellcheck="false" data-lpignore="true" data-1p-ignore></label><p class="muted">Use a fine-grained token limited to this repository with <strong>Contents: Read and write</strong>. It is never saved in drafts and is cleared after publishing.</p><a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener noreferrer">Create a GitHub token</a></details>
 <div class="actions"><button id="publishBatch" class="primary" type="button" disabled>Publish batch</button><button id="downloadBatch" class="secondary" type="button" disabled>Download updated files</button></div><div id="downloadLinks" class="download-links"></div></section>
 </aside></div>
 <datalist id="rulers"></datalist><datalist id="denoms"></datalist><datalist id="mints"></datalist><datalist id="subcollections"></datalist>
-</main></body></html>
+</main>
+<dialog id="deleteDialog" class="delete-dialog" aria-labelledby="deleteTitle" aria-describedby="deleteName deleteMessage">
+<h2 id="deleteTitle">Delete this coin?</h2><p id="deleteName" class="delete-name"></p><p id="deleteMessage"></p><p id="deleteStatus" class="status" role="alert"></p>
+<div class="actions"><button id="cancelDelete" class="secondary" type="button">Keep coin</button><button id="confirmDelete" class="danger" type="button">Delete coin</button></div>
+</dialog>
+</body></html>
+
