@@ -1678,30 +1678,6 @@
         }
       },
       {
-        "alexiusi2": {
-          "emperor": "Alexius I Komnenos",
-          "file": "alexiusi2",
-          "material": "OB",
-          "denomination": "Hyperpyron",
-          "yearl": 1092,
-          "yearh": 1118,
-          "mint": "Constantinople",
-          "officina": null,
-          "emission": null,
-          "weight": 4.28,
-          "diameter": "31.0mm",
-          "axis": "6H",
-          "obverse_legend": "IC-XC",
-          "reverse_legend": "A LE XIW DEC PO TH",
-          "exergue": null,
-          "obverse_desc": "Christ Pantokrator enthroned facing, raising hand in benediction and holding Gospels",
-          "reverse_desc": "Alexius standing facing, holding labarum and globus cruciger; manus Dei above, pellet on shaft, six pellets in loros end",
-          "reference": "SBCV 1913",
-          "provenance": "Ex. CNG e-Auction 523, lot 756",
-          "stock": "yes"
-        }
-      },
-      {
         "johnii2": {
           "emperor": "John II Komnenos",
           "file": "johnii2",
