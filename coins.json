@@ -436,33 +436,6 @@
         }
       },
       {
-        "maximian6": {
-          "emperor": "Maximian",
-          "file": "maximian6",
-          "material": "AE",
-          "denomination": "Follis",
-          "yearl": 305,
-          "yearh": 307,
-          "mint": "London",
-          "officina": null,
-          "emission": null,
-          "weight": 9.15,
-          "diameter": "29.0mm",
-          "axis": "6H",
-          "obverse_legend": "D N MAXIMIANO BAEATISSIMO SEN AVG",
-          "reverse_legend": "PROVIDENTIA DEORVM QVIESS AVGG",
-          "exergue": "-/-//-",
-          "obverse_desc": "Laureate bust in Imperial mantle holding mappa in right hand and olive branch in left hand",
-          "reverse_desc": "Providentia standing left, and extending hand to personification of Quies, standing right, holding olive branch and leaning on sceptre",
-          "reference": "RIC VI Londinium 76b, Cloke & Toone 4.01.003 (R)",
-          "sub_collection": [
-            "Post-Abdication Folles"
-          ],
-          "provenance": "Ex. Ancient & Medieval Coins Canada Auction 1, Lot 147, Ex. James Pickering Romano-Britannic Collection",
-          "stock": "yes"
-        }
-      },
-      {
         "maximian11": {
           "emperor": "Maximian",
           "file": "maximian11",
@@ -510,30 +483,6 @@
           "reverse_desc": "Sol, chlamys falling from left shoulder, standing left, raising right hand and holding up globe with left hand",
           "reference": "RIC VI Londinium 121a, Cloke & Toone 6.02.010",
           "provenance": "Ex. MRBCoins 2019, Ex. Little Ormes Head Hoard (1873)",
-          "stock": "yes"
-        }
-      },
-      {
-        "constantinei45": {
-          "emperor": "Constantine I",
-          "file": "constantinei45",
-          "material": "AE",
-          "denomination": "Follis",
-          "yearl": 310,
-          "yearh": 310,
-          "mint": "London",
-          "officina": null,
-          "emission": null,
-          "weight": 4.7,
-          "diameter": "23.0mm",
-          "axis": "6H",
-          "obverse_legend": "IMP CONSTANTINVS P F AVG",
-          "reverse_legend": "SOLI INVI-CTO COMITI",
-          "exergue": "T/F//PLN",
-          "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
-          "reverse_desc": "Sol, chlamys falling from left shoulder, standing left, raising right hand and holding up globe with left hand",
-          "reference": "RIC VI Londinium 122, Cloke & Toone 6.02.011",
-          "provenance": "Ex. Victor Ancient Coins",
           "stock": "yes"
         }
       },
@@ -743,30 +692,6 @@
         }
       },
       {
-        "liciniusi12": {
-          "emperor": "Licinius I",
-          "file": "liciniusi12",
-          "material": "AE",
-          "denomination": "Follis",
-          "yearl": 313,
-          "yearh": 317,
-          "mint": "Nicomedia",
-          "officina": "5th",
-          "emission": null,
-          "weight": 3.41,
-          "diameter": "23.0mm",
-          "axis": "6H",
-          "obverse_legend": "IMP C VAL LICIN LICINIVS P F AVG",
-          "reverse_legend": "IOVI CONS-ERVATORI",
-          "exergue": "-/∈//SMN",
-          "obverse_desc": "Head of Licinius, laureate, right",
-          "reverse_desc": "Jupiter, nude, chlamys draped across left shoulder, standing left, holding Victory on globe in right hand and leaning on sceptre with left hand; to left, eagle holding wreath",
-          "reference": "RIC VII Nicomedia 13",
-          "provenance": "Ex. Savoca Blue Auction 18, Lot 1947",
-          "stock": "yes"
-        }
-      },
-      {
         "constantinei16": {
           "emperor": "Constantine I",
           "file": "constantinei16",
@@ -940,33 +865,6 @@
           ],
           "provenance": "Ex. FSRCoin Bargain List, March 2018",
           "stock": null
-        }
-      },
-      {
-        "constantinei8": {
-          "emperor": "Constantine I",
-          "file": "constantinei8",
-          "material": "AE",
-          "denomination": "Follis",
-          "yearl": 316,
-          "yearh": 316,
-          "mint": "Rome",
-          "officina": "3rd",
-          "emission": null,
-          "weight": 3.72,
-          "diameter": "19.0mm",
-          "axis": "12H",
-          "obverse_legend": "IMP CONSTANTINVS P F AVG",
-          "reverse_legend": "SOLI IN-VI-CT COM D N",
-          "exergue": "✱/🌙//RT",
-          "obverse_desc": "Bust of Constantine I, laureate, draped, cuirassed, right",
-          "reverse_desc": "Sol, radiate, chlamys draped across left shoulder, standing left, raising right hand and holding Victory on globe in left hand",
-          "reference": "RIC VII Rome 49",
-          "sub_collection": [
-            "Rome Mint Sol"
-          ],
-          "provenance": "Ex. Solidus Numismatik Online Auction 21, Lot 607",
-          "stock": "yes"
         }
       },
       {
@@ -1495,33 +1393,6 @@
         }
       },
       {
-        "heraclius5": {
-          "emperor": "Heraclius & Heraclius Constantine",
-          "file": "heraclius5",
-          "material": "AE",
-          "denomination": "Follis",
-          "yearl": 631,
-          "yearh": 631,
-          "mint": "Syracuse",
-          "officina": null,
-          "emission": null,
-          "weight": 6.76,
-          "diameter": "25.5mm",
-          "axis": "6H",
-          "obverse_legend": "-",
-          "reverse_legend": "-",
-          "exergue": "-",
-          "obverse_desc": "Crowned and draped facing busts of Heraclius and Heraclius Constantine; cross between; all within circular punch",
-          "reverse_desc": "SCLs within circular punch",
-          "reference": "SBCV 883",
-          "sub_collection": [
-            "Overstrikes"
-          ],
-          "provenance": "Ex. Frank S. Robinson Auction 107, Lot 415",
-          "stock": "yes"
-        }
-      },
-      {
         "constansii1": {
           "emperor": "Constans II",
           "file": "constansii1",
@@ -1570,34 +1441,6 @@
         }
       },
       {
-        "anonymous4": {
-          "emperor": "Basil II & Constantine VIII",
-          "file": "anonymous4",
-          "material": "AE",
-          "denomination": "Follis",
-          "yearl": 1023,
-          "yearh": 1028,
-          "mint": "Constantinople",
-          "officina": null,
-          "emission": null,
-          "weight": 9.41,
-          "diameter": "28.0mm",
-          "axis": "6H",
-          "obverse_legend": "☩ЄMMANOVHΛ/IC - XC",
-          "reverse_legend": "☩IҺSЧS/XRISTЧS/ЬASILЄЧ/ЬASILЄ",
-          "class": "A3",
-          "type": 24,
-          "obverse_desc": "Facing bust of Christ Pantokrator",
-          "reverse_desc": "Legend in four lines; decoration above and below",
-          "reference": "SBCV 1818",
-          "sub_collection": [
-            "Anonymous Folles"
-          ],
-          "provenance": "Ex. Savoca eBay 2018",
-          "stock": "yes"
-        }
-      },
-      {
         "anonymous15": {
           "emperor": "Basil II & Constantine VIII",
           "file": "anonymous15",
@@ -1622,33 +1465,6 @@
             "Anonymous Folles"
           ],
           "provenance": "Ex. Savoca London Blue Auction 1, Lot 1660",
-          "stock": "yes"
-        }
-      },
-      {
-        "anonymous13": {
-          "emperor": "Romanos III",
-          "file": "anonymous13",
-          "material": "AE",
-          "denomination": "Follis",
-          "yearl": 1028,
-          "yearh": 1034,
-          "mint": "Constantinople",
-          "officina": null,
-          "emission": null,
-          "weight": 14.97,
-          "diameter": "29.00mm",
-          "axis": "6H",
-          "obverse_legend": "☩ЄMMANOVHΛ/IC - XC",
-          "reverse_legend": "IS XS/bASILЄ/bASILЄ",
-          "exergue": "B",
-          "obverse_desc": "Nimbate bust of Christ facing, square in each limb of cross; wearing pallium and collobium and holding book of Gospels",
-          "reverse_desc": "Legend in three lines divided by limbs of cross with dot at each extremity on three-stepped base",
-          "reference": "SBCV 1823",
-          "sub_collection": [
-            "Anonymous Folles"
-          ],
-          "provenance": "Ex. CNG Auction 430, Lot 433; Ex. Anthony DiDonato Collection",
           "stock": "yes"
         }
       },
