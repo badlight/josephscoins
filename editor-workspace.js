@@ -84,8 +84,16 @@
   function list(workspace) {return Object.values(workspace.drafts).filter(changed).sort((a,b)=>b.updatedAt-a.updatedAt);}
   function ready(workspace) {return list(workspace).filter(d=>d.ready&&!errors(d,workspace.baseData,workspace.drafts).length);}
   function changes(workspace) {return ready(workspace).map(d=>entry(d,workspace.baseData,workspace.drafts));}
+  function refreshUntouched(workspace) {
+    for(const [id,draft]of Object.entries(workspace.drafts))if(draft.original&&!changed(draft)){
+      const current=K.record(workspace.baseData,draft.editing);
+      if(current)workspace.drafts[id]=fromRecord(current);else delete workspace.drafts[id];
+    }
+    if(!workspace.drafts[workspace.active])workspace.active="";
+    return workspace;
+  }
   function migrate(saved,data) {
-    if(saved&&saved.version>=3&&saved.drafts){return {version:3,baseData:K.withoutRecordCodes(data),drafts:clone(saved.drafts),active:saved.active||"",view:saved.view||"catalogue",savedAt:saved.savedAt||0};}
+    if(saved&&saved.version>=3&&saved.drafts){return refreshUntouched({version:3,baseData:K.withoutRecordCodes(data),drafts:clone(saved.drafts),active:saved.active||"",view:saved.view||"catalogue",savedAt:saved.savedAt||0});}
     const workspace={version:3,baseData:K.withoutRecordCodes(data),drafts:{},active:"",view:"catalogue",savedAt:0};
     for(const change of (saved&&saved.changes)||[]){
       let d;
@@ -105,13 +113,13 @@
       if(!staged||staged.action!=="delete")workspace.drafts[id]=d;
       workspace.active=id;
     }
-    return workspace;
+    return refreshUntouched(workspace);
   }
   function published(workspace,catalogue,ids) {
     const result=clone(workspace);result.baseData=K.withoutRecordCodes(catalogue);
     for(const id of ids)delete result.drafts[id];
     if(!result.drafts[result.active])result.active="";
-    return result;
+    return refreshUntouched(result);
   }
   return {FIELDS,LABELS,blank,form,fromRecord,fresh,key,differences,changed,errors,entry,touch,bulk,list,ready,changes,migrate,published};
 });

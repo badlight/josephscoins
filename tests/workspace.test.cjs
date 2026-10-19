@@ -53,3 +53,10 @@ test("IndexedDB round-trips many drafts and image blobs, reports transaction fai
   await window.CoinDrafts.save(w);const restored=await window.CoinDrafts.read();assert.equal(restored.drafts.hadrian.form.mint,"Saved A");assert.equal(restored.drafts.justiniani8.form.mint,"Saved B");assert.equal(await restored.drafts.hadrian.image.text(),"retained photo");
   const bad={...w,uncloneable:()=>{}};await assert.rejects(window.CoinDrafts.save(bad));await window.CoinDrafts.save(w);assert.equal((await window.CoinDrafts.read()).drafts.hadrian.form.mint,"Saved A");
 });
+
+test("reopening refreshes untouched published records while retaining edited records and conflict baselines",()=>{
+  const w=workspace();w.drafts.hadrian=M.fromRecord(record("hadrian"));edit(w,"justiniani8",{reference:"My unfinished research"});w.active="hadrian";
+  let remote=K.upsert(data,{...record("hadrian"),coin:{...record("hadrian").coin,mint:"Latest published mint"}});remote=K.upsert(remote,{...record("justiniani8"),coin:{...record("justiniani8").coin,mint:"Another remote update"}});
+  const resumed=M.migrate(w,remote);assert.equal(resumed.drafts.hadrian.form.mint,"Latest published mint");assert.equal(M.changed(resumed.drafts.hadrian),false);assert.equal(resumed.drafts.justiniani8.form.reference,"My unfinished research");assert.deepEqual(resumed.drafts.justiniani8.original,record("justiniani8"));
+  const removed=M.migrate(w,K.removeRecord(data,"hadrian"));assert.equal(removed.drafts.hadrian,undefined);assert.equal(removed.active,"");assert.ok(removed.drafts.justiniani8);
+});

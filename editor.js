@@ -76,7 +76,7 @@
   }
   async function reload(){
     if(!S.W)return;
-    try{await flush();const data=await fetchCatalogue();S.W.baseData=data;renderAll();await persist();status("loadStatus","Latest catalogue loaded. All per-coin drafts have been kept.","good");}
+    try{await flush();const data=await fetchCatalogue();S.W=M.migrate(S.W,data);if(!S.W.active)createBlank();S.current=S.W.drafts[S.W.active];loadCurrent();renderAll();await persist();status("loadStatus","Latest catalogue loaded. All per-coin drafts have been kept.","good");}
     catch(error){status("loadStatus",error.message,"bad");}
   }
   async function importCatalogue(){
