@@ -16,7 +16,8 @@ async function editor(saved=null,options={}){
 }
 test("the real editor keeps two unstaged forms when switching immediately and restores both after reload",async()=>{
   const e=await editor();try{
-    e.open("hadrian");e.fill(e.get("mint"),"Unstaged A");e.open("justiniani8");e.fill(e.get("mint"),"Unstaged B");e.open("hadrian");assert.equal(e.get("mint").value,"Unstaged A");await until(()=>e.store.value?.drafts?.hadrian?.form.mint==="Unstaged A");
+    const openPhoto=id=>{e.get("catalogueTab").click();e.w.document.querySelector('tr[data-id="'+id+'"] .table-photo-button').click();};
+    openPhoto("hadrian");e.fill(e.get("mint"),"Unstaged A");openPhoto("justiniani8");e.fill(e.get("mint"),"Unstaged B");openPhoto("hadrian");assert.equal(e.get("mint").value,"Unstaged A");await until(()=>e.store.value?.drafts?.hadrian?.form.mint==="Unstaged A");
     const restored=await editor(e.store.value);try{restored.open("justiniani8");assert.equal(restored.get("mint").value,"Unstaged B");restored.open("hadrian");assert.equal(restored.get("mint").value,"Unstaged A");assert.equal(restored.get("queueTotal").textContent,"2");}finally{restored.close();}
   }finally{e.close();}
 });

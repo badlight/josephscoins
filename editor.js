@@ -182,12 +182,14 @@
       const choice=el("input");choice.type="checkbox";choice.checked=S.selected.has(row.id);choice.disabled=d?.action==="delete"||S.busy;choice.setAttribute("aria-label","Select "+(row.form.emperor||"new coin")+" "+row.form.slug);choice.addEventListener("change",()=>{if(choice.checked)S.selected.add(row.id);else S.selected.delete(row.id);updateSelection();});
       const selectCell=el("td","select-cell");selectCell.append(choice);tr.append(selectCell);
       const nameCell=el("td","name-cell"),identity=el("div","coin-identity"),image=el("img","table-photo"),info=el("div");image.alt="";image.loading="lazy";
+      const photo=button("",()=>openDraft(row.id),"table-photo-button"),hint=el("span","photo-open-hint","››");
+      photo.disabled=S.busy||d?.action==="delete";photo.setAttribute("aria-label","Open "+(row.form.emperor||"new coin")+" "+row.form.slug);photo.title="Open coin";hint.setAttribute("aria-hidden","true");
       const blob=d?.image||d?.assets?.[0]?.blob;
-      if(blob){image.src=URL.createObjectURL(blob);tableURLs.push(image.src);}else if(row.record)image.src=K.image(row.record.coin,false);else image.hidden=true;
-      image.addEventListener("error",()=>image.hidden=true);
-      const ruler=tableInput(row,"emperor","Ruler / authority"),meta=el("small","",K.TYPES[row.form.collection]+" · "+row.form.slug);info.append(ruler,meta);identity.append(image,info);nameCell.append(identity);tr.append(nameCell);
+      if(blob){image.src=URL.createObjectURL(blob);tableURLs.push(image.src);}else if(row.record)image.src=K.image(row.record.coin,false);else{image.hidden=true;photo.classList.add("no-photo");}
+      image.addEventListener("error",()=>{image.hidden=true;photo.classList.add("no-photo");});photo.append(image,hint);
+      const ruler=tableInput(row,"emperor","Ruler / authority"),meta=el("small","",K.TYPES[row.form.collection]+" · "+row.form.slug);info.append(ruler,meta);identity.append(photo,info);nameCell.append(identity);tr.append(nameCell);
       for(const [field,label]of [["denomination","Denomination"],["mint","Mint"],["material","Material"],["weight","Weight (g)"],["sub","Sub-collections"]]){const cell=el("td",field+"-cell");cell.append(tableInput(row,field,label));tr.append(cell);}
-      const actions=el("td","row-actions"),stateHolder=el("div","row-state");stateHolder.append(badge(d));const open=button("Open",()=>openDraft(row.id));open.disabled=S.busy||d?.action==="delete";open.setAttribute("aria-label","Open "+(row.form.emperor||"new coin")+" "+row.form.slug);actions.append(stateHolder,open);tr.append(actions);return tr;
+      const statusCell=el("td","row-status"),stateHolder=el("div","row-state");stateHolder.append(badge(d));statusCell.append(stateHolder);tr.append(statusCell);return tr;
     }));updateSelection();
   }
   function tableInput(row,field,label){
