@@ -22,12 +22,12 @@ test("the real editor keeps two unstaged forms when switching immediately and re
 });
 test("table search, selection, bulk updates, changed-field review, and one ready publication preserve unfinished work",async()=>{
   const e=await editor();try{
-    e.fill(e.get("tableSearch"),"Hadrian");assert.equal(e.get("catalogueRows").children.length,1);e.fill(e.get("tableSearch"),"");
+    e.fill(e.get("tableSearch"),"Hadrian");assert.equal(e.get("catalogueRows").children.length,1);e.fill(e.get("tableSearch"),"Gold");assert.equal(e.get("catalogueRows").children.length,K.normalize(data).filter(c=>K.materialGroup(c.material)==="Gold").length);e.fill(e.get("tableSearch"),"");
     for(const id of ["hadrian","justiniani8"]){const c=e.w.document.querySelector('tr[data-id="'+id+'"] input[type=checkbox]');c.click();}
     assert.equal(e.get("selectionCount").textContent,"2 selected");e.get("bulkMintEnabled").click();e.fill(e.get("bulkMint"),"Batch mint");e.get("applyBulk").click();await until(()=>e.get("tableStatus").textContent.includes("Saved changes"));
     const drafts=e.store.value.drafts;for(const id of ["hadrian","justiniani8"]){assert.equal(drafts[id].form.mint,"Batch mint");assert.equal(drafts[id].form.weight,String(K.record(data,id).coin.weight||""));assert.equal(drafts[id].form.obvL,K.record(data,id).coin.obverse_legend||"");}
     e.get("reviewTab").click();assert.equal(e.get("batchList").children.length,2);assert.ok(e.get("batchList").textContent.includes("Mint"));assert.ok(e.get("batchList").textContent.includes("Batch mint"));e.get("prepareAll").click();await until(()=>e.get("publishBatch").textContent.includes("(2)"));
-    e.open("hadrian");e.fill(e.get("mint"),"");e.get("reviewTab").click();assert.ok(e.get("reviewCounts").textContent.includes("1 need details"));assert.ok(e.get("publishBatch").textContent.includes("(1)"));e.get("githubToken").value="test-token";e.get("publishBatch").click();await until(()=>e.get("batchStatus").textContent.startsWith("Published."));
+    e.open("hadrian");e.fill(e.get("mint"),"");assert.ok(e.get("editSelect").selectedOptions[0].textContent.includes("Needs details"));assert.equal(e.get("editSelect").selectedOptions[0].textContent.includes("Ready"),false);e.get("reviewTab").click();assert.ok(e.get("reviewCounts").textContent.includes("1 need details"));assert.ok(e.get("publishBatch").textContent.includes("(1)"));e.get("githubToken").value="test-token";e.get("publishBatch").click();await until(()=>e.get("batchStatus").textContent.startsWith("Published."));
     assert.equal(e.store.published.length,1);assert.equal(e.store.published[0].key,"justiniani8");assert.equal(e.store.value.drafts.hadrian.form.mint,"");assert.equal(e.store.value.drafts.justiniani8,undefined);assert.equal(e.get("githubToken").value,"");assert.equal(JSON.stringify(e.store.value).includes("test-token"),false);assert.equal(e.get("queueTotal").textContent,"1");
   }finally{e.close();}
 });

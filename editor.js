@@ -130,8 +130,8 @@
   }
   function badge(d){const info=state(d);return el("span","state-badge "+info.cls,info.label);}
   function updateCurrentBadge(){const info=state(S.current);D.formBadge.textContent=info.label==="Published"&&!S.current.editing?"Draft":info.label;D.formBadge.className="state-badge "+info.cls;D.stageRecord.textContent=S.current.ready?"Ready for publishing":"Mark ready for publishing";}
-  function edited(){
-    S.revision++;if(!S.saveFailed)D.draftStatus.textContent="Saving drafts…";clearTimeout(saveTimer);saveTimer=setTimeout(()=>persist().catch(storageError),350);updateCounts();
+  function edited(id=S.current?.id){
+    S.revision++;if(!S.saveFailed)D.draftStatus.textContent="Saving drafts…";clearTimeout(saveTimer);saveTimer=setTimeout(()=>persist().catch(storageError),350);updateChooserItem(id);updateCounts();
   }
   function flush(){clearTimeout(saveTimer);return persist();}
   function persist(){
@@ -149,10 +149,16 @@
   }
   function filteredRows(){
     const q=K.text(D.tableSearch.value).trim().split(/\s+/).filter(Boolean),collection=D.tableCollection.value;
-    return rows().filter(row=>(!collection||row.form.collection===collection)&&q.every(part=>K.text(Object.values(row.form).join(" ")+" "+row.id).includes(part)));
+    return rows().filter(row=>(!collection||row.form.collection===collection)&&q.every(part=>K.text(Object.values(row.form).join(" ")+" "+row.id+" "+K.material(row.form.material)+" "+K.TYPES[row.form.collection]).includes(part)));
+  }
+  function chooserLabel(f,id,draft){return (f.emperor||"New coin")+" · "+(f.denomination||f.slug)+" · "+(draft&&M.changed(draft)?state(draft).label:id);}
+  function updateChooserItem(id){
+    const draft=S.W.drafts[id];if(!draft)return;const option=[...D.editSelect.options].find(o=>o.value===id),label=chooserLabel(draft.form,id,draft);
+    if(option)option.textContent=label;else if(M.changed(draft))D.editSelect.append(new Option(label,id));
+    D.editSelect.value=S.W.active;
   }
   function renderChooser(){
-    const all=rows();D.editSelect.replaceChildren(new Option("Choose a coin…",""),...all.filter(r=>r.draft?.action!=="delete").map(r=>new Option((r.form.emperor||"New coin")+" · "+(r.form.denomination||r.form.slug)+" · "+(r.draft&&M.changed(r.draft)?state(r.draft).label:r.id),r.id)));D.editSelect.value=S.W.active;
+    const all=rows();D.editSelect.replaceChildren(new Option("Choose a coin…",""),...all.filter(r=>r.draft?.action!=="delete").map(r=>new Option(chooserLabel(r.form,r.id,r.draft),r.id)));D.editSelect.value=S.W.active;
     for(const [id,values]of [["rulers",all.map(r=>r.form.emperor)],["denoms",all.map(r=>r.form.denomination)],["mints",all.map(r=>r.form.mint)],["subcollections",all.flatMap(r=>r.form.sub.split(",").map(s=>s.trim()))]])D[id].replaceChildren(...[...new Set(values.filter(Boolean))].sort().map(value=>Object.assign(document.createElement("option"),{value})));
   }
   function renderAll(){renderChooser();renderTable();renderReview();updateCounts();}
@@ -192,7 +198,7 @@
     input.value=row.form[field]||"";input.disabled=S.busy||row.draft?.action==="delete";input.setAttribute("aria-label",label+" for "+(row.form.slug||row.id));input.dataset.field=field;
     input.addEventListener("input",()=>{
       const draft=ensureDraft(row.id);M.touch(draft,{[field]:input.value});if(S.W.active===row.id)S.current=draft;
-      const holder=input.closest("tr").querySelector(".row-state");holder.replaceChildren(badge(draft));input.closest("tr").classList.add("has-draft");edited();
+      const holder=input.closest("tr").querySelector(".row-state");holder.replaceChildren(badge(draft));input.closest("tr").classList.add("has-draft");edited(draft.id);
     });
     input.addEventListener("change",()=>flush().catch(storageError));return input;
   }
