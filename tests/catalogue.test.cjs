@@ -26,7 +26,7 @@ function mockAPI(remote=data,{race=false,denied=false}={}) {
 test("the catalogue validates and searches dates, materials, aliases, and classes",()=>{
   assert.equal(K.validate(data),true);const coins=K.normalize(data),find=q=>coins.filter(c=>K.matches(c,{q}));
   assert.ok(find("538").some(c=>c._key==="justiniani8"));assert.ok(find("538 AD").some(c=>c._key==="justiniani8"));
-  assert.ok(find("Justinian Nicomedia").length>=2);assert.equal(find("gold").length,3);assert.ok(find("Alexios").length);assert.ok(find("Class A3").length);
+  assert.ok(find("Justinian Nicomedia").length>=2);assert.deepEqual(find("gold").map(c=>c._key).sort(),coins.filter(c=>K.materialGroup(c.material)==="Gold").map(c=>c._key).sort());assert.ok(K.matches({emperor:"Alexius I",file:"alias-fixture",class:"A3"},{q:"Alexios Class A3"}));
   const oldest=K.sort(coins,"oldest");assert.ok(oldest.every((c,i)=>!i||c.yearl>=oldest[i-1].yearl));
   assert.equal(K.materialGroup("OB"),K.materialGroup("AV"));
 });
@@ -114,4 +114,5 @@ test("a deletion publishes as one catalogue commit without uploading images or r
   assert.equal(K.record(JSON.parse(tree.tree[0].content),original.key),null);
   assert.deepEqual(api.calls.at(-1).body,{sha:"new-commit",force:false});
 });
+
 
