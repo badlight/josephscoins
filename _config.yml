@@ -1,0 +1,3 @@
+# Include the local map libraries in GitHub Pages' Jekyll output.
+include:
+  - vendor
