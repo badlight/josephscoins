@@ -2,3 +2,5 @@
 @media(max-width:900px){.mint-map-layout{grid-template-columns:minmax(0,1fr) 245px}.mint-sidebar{padding:14px}.mint-map-canvas,.mint-sidebar{height:460px}}
 @media(max-width:680px){.mint-explorer{padding:17px}.explore-heading h2{font-size:1.9rem}.mint-map-layout{grid-template-columns:1fr}.mint-map-canvas{height:360px}.mint-sidebar{height:auto;max-height:340px;border-left:0;border-top:1px solid var(--line)}.map-tools label:first-child{flex-basis:100%}.map-tools{gap:10px}.empire-legend{gap:8px}.map-toggles label{font-size:.8rem}}
 @media(prefers-reduced-motion:reduce){.leaflet-zoom-animated,.leaflet-marker-icon{transition:none!important}}
+
+.mint-coin-row.is-current{background:var(--card);border:1px solid #a48b65;border-radius:10px;padding:9px;margin-bottom:9px}.mint-coin-row.is-current .mint-coin-open strong{color:var(--accent)}
