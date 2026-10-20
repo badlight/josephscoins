@@ -3,11 +3,12 @@
   const K = window.CoinKit, D = {}, FILTERS = ["collection", "ruler", "mint", "denomination", "material", "sub"];
   const S = { coins: [], q: "", collection: "", ruler: "", mint: "", denomination: "", material: "", sub: "", sort: "original", coin: "", view:"gallery", mapYear:"", mapMint:"", mapCoin:"", mapOnly:"" };
   let mintMap, mapLoading;
+  let shareRequest = 0, shareTimer;
   let openedFromGallery = false, zoom = 1, panX = 0, panY = 0, drag = null, searchTimer, photoFallback = false;
   const el = (tag, className, value) => { const x = document.createElement(tag); if (className) x.className = className; if (value !== undefined) x.textContent = value; return x; };
   document.addEventListener("DOMContentLoaded", init);
   function init() {
-    for (const id of ["galleryView","mapView","mintExplorer","collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","actionStatus","coinGrid","emptyState","emptyClear","errorState","retryLoad","coinDialog","dialogClose","coinPrevious","coinNext","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent"]) D[id] = document.getElementById(id);
+    for (const id of ["galleryView","mapView","mintExplorer","collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","coinGrid","emptyState","emptyClear","errorState","retryLoad","coinDialog","dialogClose","coinShare","shareFeedback","shareStatus","shareLink","shareURL","coinPrevious","coinNext","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent"]) D[id] = document.getElementById(id);
     D.galleryView.addEventListener('click',()=>{S.view='gallery';mintMap?.pause();render();writeURL(S.coin,'replace');});
     D.mapView.addEventListener('click',()=>{S.view='map';render();writeURL(S.coin,'replace');});
     D.searchInput.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { S.q = D.searchInput.value; render(); writeURL(S.coin, "replace"); }, 100); });
@@ -17,10 +18,11 @@
     D.filterToggle.addEventListener("click", () => { const expanded = D.filterToggle.getAttribute("aria-expanded") !== "true"; D.filterToggle.setAttribute("aria-expanded", String(expanded)); D.filterPanel.classList.toggle("expanded", expanded); });
     D.retryLoad.addEventListener("click", load);
     D.dialogClose.addEventListener("click", closeRequested);
+    D.coinShare.addEventListener("click", shareCoin);
     D.coinDialog.addEventListener("cancel", event => { event.preventDefault(); if (D.coinDialog.classList.contains("viewer-expanded")) { D.coinDialog.classList.remove("viewer-expanded"); D.fullScreen.textContent = "Fullscreen"; updateZoom(); D.fullScreen.focus(); } else closeRequested(); });
     D.coinDialog.addEventListener("click", event => { if (event.target === D.coinDialog) closeRequested(); });
     D.coinPrevious.addEventListener("click", () => advance(-1)); D.coinNext.addEventListener("click", () => advance(1));
-    D.coinDialog.addEventListener("keydown", event => { if (event.key === "ArrowLeft") { event.preventDefault(); advance(-1); } if (event.key === "ArrowRight") { event.preventDefault(); advance(1); } });
+    D.coinDialog.addEventListener("keydown", event => { if (event.target.closest("input,textarea,select")) return; if (event.key === "ArrowLeft") { event.preventDefault(); advance(-1); } if (event.key === "ArrowRight") { event.preventDefault(); advance(1); } });
     D.zoomIn.addEventListener("click", () => setZoom(zoom * 1.5)); D.zoomOut.addEventListener("click", () => setZoom(zoom / 1.5)); D.zoomReset.addEventListener("click", resetZoom);
     D.detailPhoto.addEventListener("dblclick", () => setZoom(zoom === 1 ? 2 : 1));
     D.imageViewport.addEventListener("wheel", event => { if (event.ctrlKey) { event.preventDefault(); setZoom(zoom * (event.deltaY < 0 ? 1.15 : 0.87)); } }, { passive: false });
@@ -127,6 +129,7 @@
     render(); writeURL(S.coin,"replace");
   }
   function showCoin(coin, push, write = true) {
+    resetShare();
     if (push) openedFromGallery = !D.coinDialog.open;
     S.coin = coin._key;
     if (write) writeURL(coin._key,push ? "push" : "replace");
@@ -147,6 +150,7 @@
     D.coinDialog.scrollTop = 0; D.dialogClose.focus();
   }
   function closeUI() {
+    resetShare();
     if (document.fullscreenElement) document.exitFullscreen().catch(() => {});
     D.coinDialog.classList.remove("viewer-expanded"); D.fullScreen.textContent = "Fullscreen";
     if (D.coinDialog.open) D.coinDialog.close();
@@ -163,18 +167,46 @@
     const next = coins[coins.findIndex(c => c._key === coin._key) + direction];
     if (next) { const control = document.activeElement; showCoin(next,false); if (control === D.coinPrevious || control === D.coinNext) (control.disabled ? (control === D.coinPrevious ? D.coinNext : D.coinPrevious) : control).focus(); }
   }
+  function resetShare() {
+    shareRequest++; clearTimeout(shareTimer);
+    D.shareFeedback.hidden = true; D.shareStatus.textContent = "";
+    D.shareLink.hidden = true; D.shareURL.value = "";
+    D.coinShare.disabled = false; D.coinShare.removeAttribute("aria-busy");
+  }
+  async function shareCoin() {
+    const coin = S.coins.find(c => c._key === S.coin);
+    if (!coin || D.coinShare.disabled) return;
+    resetShare();
+    const request = shareRequest, current = () => request === shareRequest && S.coin === coin._key && D.coinDialog.open;
+    const url = new URL("coin.html", location.href); url.searchParams.set("id", coin._key);
+    D.coinShare.disabled = true; D.coinShare.setAttribute("aria-busy", "true");
+    try {
+      if (typeof navigator.share === "function") {
+        try { await navigator.share({ title: K.title(coin) + " · Joseph's Ancient Coins", url: url.href }); return; }
+        catch (error) { if (error?.name === "AbortError" || !current()) return; }
+      }
+      if (!current()) return;
+      try {
+        if (!navigator.clipboard?.writeText) throw Error("Clipboard unavailable");
+        await navigator.clipboard.writeText(url.href);
+        if (!current()) return;
+        D.shareFeedback.hidden = false; D.shareStatus.textContent = "Link copied";
+        shareTimer = setTimeout(() => { if (current()) resetShare(); }, 4000);
+      } catch {
+        if (!current()) return;
+        D.shareFeedback.hidden = false; D.shareStatus.textContent = "Copy this link to share the coin.";
+        D.shareLink.hidden = false; D.shareURL.value = url.href; D.shareURL.focus(); D.shareURL.select();
+      }
+    } finally {
+      if (current()) { D.coinShare.disabled = false; D.coinShare.removeAttribute("aria-busy"); }
+    }
+  }
   function detail(coin) {
     const container = el("article"), heading = el("h2","",coin.emperor); heading.id = "coinHeading";
     container.append(heading,el("p","detail-subtitle",[K.material(coin.material),coin.denomination,K.date(coin)].filter(K.present).join(" · ")));
-    const actions = el("div","detail-actions"), copy = el("button","secondary","Copy coin link");
-    copy.type = "button";
-    copy.addEventListener("click",async () => {
-      const url = new URL("coin.html",location.href); url.searchParams.set("id",coin._key);
-      try { await navigator.clipboard.writeText(url.href); copy.textContent = "Link copied"; announce("Coin link copied."); }
-      catch { const input = el("input"); input.readOnly = true; input.value = url.href; input.setAttribute("aria-label","Coin link"); actions.append(input); input.focus(); input.select(); }
-    });
-    const edit = el("a","","Edit coin"); edit.href = "add-coin.html?edit=" + encodeURIComponent(coin._key); const mapButton=el('button','secondary','Find mint on map');mapButton.type='button';mapButton.onclick=async()=>{closeUI();S.coin='';openedFromGallery=false;S.view='map';S.mapCoin=coin._key;render();const instance=await ensureMap(filtered());if(instance)instance.focusCoin(coin);writeURL('','replace');D.mintExplorer.scrollIntoView({block:'start',behavior:'smooth'});};
-    actions.append(copy,edit,mapButton); container.append(actions);
+    const actions = el("div","detail-actions"), edit = el("button","secondary","Edit coin");
+    edit.type = "button"; edit.addEventListener("click", () => location.assign("add-coin.html?edit=" + encodeURIComponent(coin._key)));
+    actions.append(edit); container.append(actions);
     const facts = el("dl","detail-facts");
     for (const [name,value] of [["Collection",coin._typeLabel],["Mint",coin.mint],["Officina",coin.officina],["Emission",coin.emission],["Class",coin.class],["Weight",K.present(coin.weight) ? coin.weight + " g" : null],["Diameter",coin.diameter],["Axis",coin.axis],["Reference",coin.reference]]) {
       if (!K.present(value)) continue; const row = el("div"); row.append(el("dt","",name),el("dd","",value)); facts.append(row);
@@ -215,6 +247,5 @@
       const light = count>0 && total/count>145; target.classList.toggle("coin-bg-light",light); target.classList.toggle("coin-bg-dark",!light);
     } catch { target.classList.add("coin-bg-dark"); }
   }
-  function announce(message) { D.actionStatus.textContent = message; }
 })();
 

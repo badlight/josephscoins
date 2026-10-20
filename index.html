@@ -4,7 +4,7 @@
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Joseph's personal collection of Roman Imperial, Roman Provincial, and Byzantine coins."><meta name="theme-color" content="#f5f0e6">
 <title>Joseph's Ancient Coins</title>
-<link rel="stylesheet" href="style.css?v=20261020b"><script src="coin-utils.js?v=20261020" defer></script><script src="app.js?v=20261020b" defer></script>
+<link rel="stylesheet" href="style.css?v=20261020c"><script src="coin-utils.js?v=20261020" defer></script><script src="app.js?v=20261020c" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#collection">Skip to collection</a>
@@ -24,14 +24,19 @@
 <label><span>Material</span><select id="materialFilter"><option value="">All materials</option></select></label>
 <label><span>Sub-collection</span><select id="subFilter"><option value="">All sub-collections</option></select></label>
 </div></section>
-<div class="results-bar"><span id="resultCount" role="status"></span><div class="collection-view" role="group" aria-label="Collection view"><button id="galleryView" aria-pressed="true">Gallery</button><button id="mapView" aria-pressed="false">Mint map &amp; timeline</button></div></div><p id="actionStatus" class="sr-only" role="status"></p>
+<div class="results-bar"><span id="resultCount" role="status"></span><div class="collection-view" role="group" aria-label="Collection view"><button id="galleryView" aria-pressed="true">Gallery</button><button id="mapView" aria-pressed="false">Map</button></div></div>
 <section id="coinGrid" class="coin-grid" aria-label="Ancient coin collection"></section>
-<section id="mintExplorer" aria-label="Mint map and historical timeline" hidden></section>
+<section id="mintExplorer" aria-label="Map" hidden></section>
 <section id="emptyState" class="empty-state" hidden><p>No coins match these filters.</p><button id="emptyClear" class="secondary" type="button">Clear filters</button></section>
 <section id="errorState" class="empty-state" hidden><p>The collection could not be loaded.</p><button id="retryLoad" class="primary" type="button">Try again</button></section>
 </main>
 <dialog id="coinDialog" class="coin-dialog" aria-labelledby="coinHeading">
-<div id="coinViewer" class="coin-viewer coin-bg-dark"><button id="dialogClose" class="icon-button viewer-close" type="button" aria-label="Close coin">×</button>
+<div id="coinViewer" class="coin-viewer coin-bg-dark">
+<div class="viewer-actions">
+<button id="coinShare" class="icon-button viewer-action" type="button" aria-label="Share coin" title="Share coin"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 16V3m-5 5 5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg></button>
+<button id="dialogClose" class="icon-button viewer-action" type="button" aria-label="Close coin" title="Close coin"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="m6 6 12 12M6 18 18 6"/></svg></button>
+</div>
+<div id="shareFeedback" class="share-feedback" hidden><p id="shareStatus" role="status" aria-live="polite"></p><label id="shareLink" hidden><span class="sr-only">Coin link</span><input id="shareURL" type="url" readonly aria-label="Coin link"></label></div>
 <div id="imageViewport" class="image-viewport"><img id="detailPhoto" alt="" draggable="false"><button id="coinPrevious" class="image-nav image-previous" type="button" aria-label="Previous coin">&lt;</button><button id="coinNext" class="image-nav image-next" type="button" aria-label="Next coin">&gt;</button><span id="imageStatus" class="image-status" role="status"></span></div>
 <div class="viewer-tools"><button id="zoomOut" type="button" aria-label="Zoom out">−</button><span id="zoomLevel" aria-live="polite">100%</span><button id="zoomIn" type="button" aria-label="Zoom in">+</button><button id="zoomReset" type="button">Reset</button><button id="fullScreen" type="button">Fullscreen</button><a id="imageDownload" download>Download photo</a></div>
 </div><div id="dialogContent" class="detail-copy"></div></dialog>
