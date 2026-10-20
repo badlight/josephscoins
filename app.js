@@ -1,12 +1,15 @@
 (function () {
   "use strict";
   const K = window.CoinKit, D = {}, FILTERS = ["collection", "ruler", "mint", "denomination", "material", "sub"];
-  const S = { coins: [], q: "", collection: "", ruler: "", mint: "", denomination: "", material: "", sub: "", sort: "original", coin: "" };
+  const S = { coins: [], q: "", collection: "", ruler: "", mint: "", denomination: "", material: "", sub: "", sort: "original", coin: "", view:"gallery", mapYear:"", mapMint:"", mapCoin:"", mapOnly:"" };
+  let mintMap, mapLoading;
   let openedFromGallery = false, zoom = 1, panX = 0, panY = 0, drag = null, searchTimer, photoFallback = false;
   const el = (tag, className, value) => { const x = document.createElement(tag); if (className) x.className = className; if (value !== undefined) x.textContent = value; return x; };
   document.addEventListener("DOMContentLoaded", init);
   function init() {
-    for (const id of ["collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","actionStatus","coinGrid","emptyState","emptyClear","errorState","retryLoad","coinDialog","dialogClose","coinPrevious","coinNext","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent"]) D[id] = document.getElementById(id);
+    for (const id of ["galleryView","mapView","mintExplorer","printCollection","collectionCount","searchInput","sortFilter","collectionFilter","rulerFilter","mintFilter","denominationFilter","materialFilter","subFilter","clearFilters","filterToggle","filterBadge","filterPanel","resultCount","actionStatus","coinGrid","emptyState","emptyClear","errorState","retryLoad","coinDialog","dialogClose","coinPrevious","coinNext","coinViewer","imageViewport","detailPhoto","imageStatus","zoomOut","zoomIn","zoomReset","zoomLevel","fullScreen","imageDownload","dialogContent"]) D[id] = document.getElementById(id);
+    D.galleryView.addEventListener('click',()=>{S.view='gallery';mintMap?.pause();render();writeURL(S.coin,'replace');});
+    D.mapView.addEventListener('click',()=>{S.view='map';render();writeURL(S.coin,'replace');});
     D.searchInput.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer = setTimeout(() => { S.q = D.searchInput.value; render(); writeURL(S.coin, "replace"); }, 100); });
     for (const field of FILTERS) D[field + "Filter"].addEventListener("change", () => { S[field] = D[field + "Filter"].value; render(); writeURL(S.coin, "replace"); });
     D.sortFilter.addEventListener("change", () => { S.sort = D.sortFilter.value; render(); writeURL(S.coin, "replace"); });
@@ -50,6 +53,7 @@
   function applyURL() {
     const url = new URL(location.href);
     S.q = url.searchParams.get("q") || "";
+    S.view=url.searchParams.get('view')==='map'?'map':'gallery';S.mapYear=url.searchParams.get('mapYear')||'';S.mapMint=url.searchParams.get('mapMint')||'';S.mapCoin=url.searchParams.get('mapCoin')||'';S.mapOnly=url.searchParams.get('mapOnly')==='1'?'1':'';
     for (const field of FILTERS) S[field] = url.searchParams.get(field) || "";
     S.sort = K.SORTS.includes(url.searchParams.get("sort")) ? url.searchParams.get("sort") : "original";
     S.coin = url.searchParams.get("coin") || url.searchParams.get("id") || "";
@@ -69,6 +73,7 @@
     for (const field of FILTERS) if (S[field]) url.searchParams.set(field, S[field]);
     if (S.sort !== "original") url.searchParams.set("sort", S.sort);
     if (key) url.searchParams.set("id", key);
+    if(S.view==='map'){url.searchParams.set('view','map');for(const f of ['mapYear','mapMint','mapCoin','mapOnly'])if(S[f])url.searchParams.set(f,S[f]);}
     history[mode === "push" ? "pushState" : "replaceState"]({ coinViewer: !!key }, "", url);
   }
   function filtered() { return K.sort(S.coins.filter(c => K.matches(c, S)), S.sort); }
@@ -95,8 +100,16 @@
   function unique(values) { return [...new Set(values.filter(K.present))].sort((a,b) => a.localeCompare(b,undefined,{sensitivity:"base",numeric:true})); }
   function render() {
     updateFilters(); const coins = filtered();
-    D.coinGrid.replaceChildren(...coins.map(card)); D.emptyState.hidden = !!coins.length; D.errorState.hidden = true;
+    D.coinGrid.replaceChildren(...coins.map(card));D.coinGrid.hidden=S.view==='map';D.mintExplorer.hidden=S.view!=='map';D.galleryView.setAttribute('aria-pressed',String(S.view!=='map'));D.mapView.setAttribute('aria-pressed',String(S.view==='map'));if(S.view==='map')ensureMap(coins);else mintMap?.pause();
+    const printURL=new URL('print.html',location.href);if(S.q.trim())printURL.searchParams.set('q',S.q.trim());for(const field of FILTERS)if(S[field])printURL.searchParams.set(field,S[field]);if(S.sort!=='original')printURL.searchParams.set('sort',S.sort);D.printCollection.href=printURL.href;
+    D.emptyState.hidden = !!coins.length||S.view==='map'; D.errorState.hidden = true;
     D.resultCount.textContent = coins.length + (coins.length === 1 ? " coin" : " coins");
+  }
+  async function ensureMap(coins){
+    if(mintMap){mintMap.update(coins);mintMap.resize();return mintMap;}if(mapLoading)return mapLoading;
+    D.mintExplorer.replaceChildren(el('p','map-loading','Loading ancient mints and historical borders…'));
+    const script=src=>new Promise((resolve,reject)=>{const n=document.createElement('script');n.src=src;n.onload=resolve;n.onerror=()=>{n.remove();reject(Error('A map component could not be loaded.'));};document.head.append(n);});
+    mapLoading=(async()=>{if(!document.querySelector('[data-mint-map-css]')){for(const href of ['vendor/leaflet/leaflet.css','mint-map.css?v=20261020']){const link=el('link');link.rel='stylesheet';link.href=href;link.dataset.mintMapCss='1';document.head.append(link);}}await Promise.all([window.L?null:script('vendor/leaflet/leaflet.js'),window.topojson?null:script('vendor/topojson/topojson-client.min.js'),window.CoinExplore?null:script('coin-explore.js?v=20261020')]);if(!window.CoinMintMap)await script('mint-map.js?v=20261020');mintMap=await window.CoinMintMap.create(D.mintExplorer,{coins:filtered(),onOpen:coin=>showCoin(coin,true),initialYear:S.mapYear,initialMint:S.mapMint,initialCoin:S.mapCoin,initialYearOnly:S.mapOnly==='1',onState:state=>{S.mapYear=String(state.year);S.mapMint=state.mint;S.mapCoin=state.mapCoin;S.mapOnly=state.yearOnly?'1':'';writeURL(S.coin,'replace');}});if(S.view!=='map')mintMap.pause();return mintMap;})().catch(error=>{const text=el('p','',error.message||'The map could not be loaded.'),retry=el('button','secondary','Retry map');retry.onclick=()=>ensureMap(filtered());D.mintExplorer.replaceChildren(text,retry);return null;}).finally(()=>{mapLoading=null;});return mapLoading;
   }
   function card(coin) {
     const article = el("article","coin-card"), photo = el("div","coin-photo coin-bg-dark"), button = el("button","coin-open");
@@ -161,7 +174,8 @@
       try { await navigator.clipboard.writeText(url.href); copy.textContent = "Link copied"; announce("Coin link copied."); }
       catch { const input = el("input"); input.readOnly = true; input.value = url.href; input.setAttribute("aria-label","Coin link"); actions.append(input); input.focus(); input.select(); }
     });
-    const edit = el("a","","Edit coin"); edit.href = "add-coin.html?edit=" + encodeURIComponent(coin._key); actions.append(copy,edit); container.append(actions);
+    const edit = el("a","","Edit coin"); edit.href = "add-coin.html?edit=" + encodeURIComponent(coin._key); const mapButton=el('button','secondary','Find mint on map');mapButton.type='button';mapButton.onclick=async()=>{closeUI();S.coin='';openedFromGallery=false;S.view='map';S.mapCoin=coin._key;render();const instance=await ensureMap(filtered());if(instance)instance.focusCoin(coin);writeURL('','replace');D.mintExplorer.scrollIntoView({block:'start',behavior:'smooth'});};
+    const print=el('a','','Print coin / label');print.href='print.html?keys='+encodeURIComponent(coin._key);actions.append(copy,edit,mapButton,print); container.append(actions);
     const facts = el("dl","detail-facts");
     for (const [name,value] of [["Collection",coin._typeLabel],["Mint",coin.mint],["Officina",coin.officina],["Emission",coin.emission],["Class",coin.class],["Weight",K.present(coin.weight) ? coin.weight + " g" : null],["Diameter",coin.diameter],["Axis",coin.axis],["Reference",coin.reference]]) {
       if (!K.present(value)) continue; const row = el("div"); row.append(el("dt","",name),el("dd","",value)); facts.append(row);

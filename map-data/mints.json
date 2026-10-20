@@ -1,0 +1,240 @@
+{
+  "source": "Pleiades: A Gazetteer of Past Places",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "retrieved": "2026-10-20",
+  "places": [
+    {
+      "name": "Rome",
+      "title": "Roma",
+      "uri": "https://pleiades.stoa.org/places/423025",
+      "aliases": [
+        "Roma"
+      ],
+      "coordinates": [
+        12.491258,
+        41.889977
+      ],
+      "authors": [
+        "L. Quilici",
+        "S. Quilici Gigli"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Alexandria",
+      "title": "Alexandria",
+      "uri": "https://pleiades.stoa.org/places/727070",
+      "aliases": [],
+      "coordinates": [
+        29.909773,
+        31.201435
+      ],
+      "authors": [
+        "A. Bernand"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Antioch",
+      "title": "Antiochia/Theoupolis",
+      "uri": "https://pleiades.stoa.org/places/658381",
+      "aliases": [
+        "Antiochia",
+        "Antioch on the Orontes"
+      ],
+      "coordinates": [
+        36.176842,
+        36.215887
+      ],
+      "authors": [
+        "T. Sinclair",
+        "P.-L. Gatier"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Arelate",
+      "title": "Theline/Col. Arelate/Constantina",
+      "uri": "https://pleiades.stoa.org/places/148217",
+      "aliases": [
+        "Arles",
+        "Constantina"
+      ],
+      "coordinates": [
+        4.630799,
+        43.677616
+      ],
+      "authors": [
+        "S. Loseby"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Carthage",
+      "title": "Carthago",
+      "uri": "https://pleiades.stoa.org/places/314921",
+      "aliases": [
+        "Carthago"
+      ],
+      "coordinates": [
+        10.323056,
+        36.853056
+      ],
+      "authors": [
+        "R.B. Hitchner"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Constantinople",
+      "title": "Byzantium",
+      "uri": "https://pleiades.stoa.org/places/520985",
+      "aliases": [
+        "Constantinopolis",
+        "Byzantium"
+      ],
+      "coordinates": [
+        28.973881,
+        41.005902
+      ],
+      "authors": [
+        "C. Foss"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Cyzicus",
+      "title": "Cyzicus",
+      "uri": "https://pleiades.stoa.org/places/511218",
+      "aliases": [
+        "Kyzikos"
+      ],
+      "coordinates": [
+        27.883191,
+        40.385565
+      ],
+      "authors": [
+        "C. Foss"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Emesa",
+      "title": "(H)Emesa",
+      "uri": "https://pleiades.stoa.org/places/668261",
+      "aliases": [
+        "Homs"
+      ],
+      "coordinates": [
+        36.719319,
+        34.737656
+      ],
+      "authors": [
+        "J.P. Brown",
+        "P.-L. Gatier"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Heraclea",
+      "title": "Perinthus/Heraclea",
+      "uri": "https://pleiades.stoa.org/places/511357",
+      "aliases": [
+        "Perinthus",
+        "Heraclea Thraciae"
+      ],
+      "coordinates": [
+        27.952973,
+        40.971013
+      ],
+      "authors": [
+        "C. Foss"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "London",
+      "title": "Londinium/Augusta",
+      "uri": "https://pleiades.stoa.org/places/79574",
+      "aliases": [
+        "Londinium"
+      ],
+      "coordinates": [
+        -0.088949,
+        51.513335
+      ],
+      "authors": [
+        "A.S. Esmonde Cleary"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Nicomedia",
+      "title": "Nicomedia",
+      "uri": "https://pleiades.stoa.org/places/511337",
+      "aliases": [
+        "Izmit"
+      ],
+      "coordinates": [
+        29.919887,
+        40.765191
+      ],
+      "authors": [
+        "C. Foss"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Syracuse",
+      "title": "Syracusae/Syrakousai",
+      "uri": "https://pleiades.stoa.org/places/462503",
+      "aliases": [
+        "Syracusae"
+      ],
+      "coordinates": [
+        15.283336,
+        37.070079
+      ],
+      "authors": [
+        "R.J.A. Wilson"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Thessaloniki",
+      "title": "Thessalonica",
+      "uri": "https://pleiades.stoa.org/places/491741",
+      "aliases": [
+        "Thessalonica",
+        "Thessalonike"
+      ],
+      "coordinates": [
+        22.952885,
+        40.628342
+      ],
+      "authors": [
+        "E.N. Borza"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    },
+    {
+      "name": "Treveri",
+      "title": "Col. Augusta Treverorum",
+      "uri": "https://pleiades.stoa.org/places/108894",
+      "aliases": [
+        "Trier",
+        "Treverorum"
+      ],
+      "coordinates": [
+        6.641693,
+        49.752234
+      ],
+      "authors": [
+        "C. Haselgrove",
+        "J. Kunow"
+      ],
+      "precision": "Representative ancient city location; not an excavated mint building."
+    }
+  ]
+}
